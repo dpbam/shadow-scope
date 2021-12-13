@@ -15,7 +15,7 @@ header {
 
 .logo {
   margin-left: 3rem;
-  font-style: italic;
+  font-style: bold;
   font-weight: bold;
   text-shadow: 2px 2px 4px black;
 }
@@ -25,6 +25,7 @@ header {
   overflow: hidden;
   background-color: rgb(135, 131, 131);
   float: right;
+  margin-right: 3rem;
 }
 
 /* Links inside the navbar */
@@ -89,4 +90,22 @@ header {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.shadow-scope-img {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background: rgb(135, 131, 131);
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fab {
+  float: left;
 }
