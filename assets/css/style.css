@@ -125,9 +125,17 @@ nav {
 .hero-container {
   display: flex;
   justify-content: space-evenly;
+  font-family: bemio;
+  padding: 3rem;
 }
 
 /* blog page */
+.blog-title {
+  text-align: center;
+  font-family: bemio;
+  margin-top: 3rem;
+}
+
 .blog-block {
   border: blue;
   display: flex;
