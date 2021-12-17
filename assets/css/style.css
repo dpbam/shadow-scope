@@ -24,6 +24,7 @@ header {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -54,6 +55,7 @@ nav {
   background-color: #2441bf;
   float: right;
   margin-right: 3rem;
+  margin-top: 5rem;
 }
 
 /* Links inside the navbar */
@@ -122,7 +124,7 @@ nav {
 
 .hero-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /* blog page */
