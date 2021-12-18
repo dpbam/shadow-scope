@@ -44,6 +44,11 @@ header {
   font-size: 1.5rem;
 }
 
+.fa-bars {
+  float: right;
+  font-size: xx-large;
+}
+
 nav {
   display: flex;
   font-family: bemio;
@@ -68,6 +73,11 @@ nav {
   text-decoration: none;
 }
 
+.navbar-nav {
+  text-decoration: none;
+  list-style: none;
+}
+
 /* The dropdown container */
 .dropdown {
   float: left;
@@ -90,6 +100,48 @@ nav {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   text-shadow: 5px 5px 5px black;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #fff;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 50px;
+  overflow: hidden;
+  width: 100%;
 }
 
 /* Dropdown content (hidden by default) */
@@ -162,8 +214,8 @@ footer {
   color: white;
   width: 100%;
   padding: 40px 35px;
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   text-shadow: 2px 2px 4px black;
   font-family: bemio;
@@ -180,6 +232,10 @@ footer {
   display: flex;
   float: right;
   font-size: 1.5rem;
+}
+
+.font-credit a {
+  color: ivory;
 }
 
 /* .fab {
@@ -344,4 +400,18 @@ input[type='checkbox']:checked + label {
 
 div.info-and-form {
   background-color: white;
+}
+
+@media (max-width: 568px) {
+  .navbar-nav {
+    display: none;
+  }
+  .fa-bars {
+    float: right;
+  }
+}
+@media (min-width: 568px) {
+  .open-slide {
+    display: none;
+  }
 }

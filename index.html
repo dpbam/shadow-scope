@@ -31,11 +31,17 @@
         </div>
         <nav role="navigation" aria-label="main menu">
           <div class="navbar">
-            <a href="#">Home</a>
-            <a href="blog.html">Our Blog</a>
-            <a href="#">Videos</a>
-            <a href="#">Learn</a>
-            <!-- <div class="dropdown">
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </span>
+            <ul class="navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="blog.html">Our Blog</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="/learn.html">Learn More</a></li>
+              <!-- <div class="dropdown">
               <button class="dropbtn">
                 Learn
                 <i class="fa fa-caret-down"></i>
@@ -47,7 +53,21 @@
                 <a href="">Links</a>
               </div>
             </div> -->
-            <a href="/contact.html">Contact</a>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()"
+                >&times;</a
+              >
+              <a href="/index.html">Home</a>
+              <a href="/blog.html">Our Blog</a>
+              <a href="#">Videos</a>
+              <a href="/learn.html">Learn More</a>
+              <a href="/contact.html">Contact</a>
+            </div>
+            <!-- <div id="main">
+              <h1>Responsive Side Menu</h1>
+            </div> -->
           </div>
         </nav>
       </div>
@@ -68,15 +88,25 @@
         <i class="fab fa-pinterest-square"></i>
         <i class="fab fa-instagram-square"></i>
       </div>
-      <div class="footer-copyright">
-        <i class="far fa-copyright"></i>
-        <h3>Tim Stasevich Lab</h3>
-      </div>
-      <div>
+      <div class="font-credit">
         Font made from
         <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed
         by CC BY 3.0
       </div>
+      <div class="footer-copyright">
+        <i class="far fa-copyright"></i>
+        <h3>Tim Stasevich Lab</h3>
+      </div>
     </footer>
+    <script>
+      function openSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+      function closeSlideMenu() {
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+    </script>
   </body>
 </html>
