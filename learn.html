@@ -31,23 +31,43 @@
         </div>
         <nav role="navigation" aria-label="main menu">
           <div class="navbar">
-            <a href="#">Home</a>
-            <a href="blog.html">Our Blog</a>
-            <a href="#">Videos</a>
-            <a href="/learn.html">Learn</a>
-            <!-- <div class="dropdown">
-                <button class="dropbtn">
-                  Learn
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="">History of Microscopy</a>
-                  <a href="">How to use it</a>
-                  <a href="">How to make it</a>
-                  <a href="">Links</a>
-                </div>
-              </div> -->
-            <a href="/contact.html">Contact</a>
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </span>
+            <ul class="navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="blog.html">Our Blog</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="/learn.html">Learn More</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <!-- <div class="dropdown">
+              <button class="dropbtn">
+                Learn
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="">History of Microscopy</a>
+                <a href="">How to use it</a>
+                <a href="">How to make it</a>
+                <a href="">Links</a>
+              </div>
+            </div> -->
+            </ul>
+            <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()"
+                >&times;</a
+              >
+              <a href="/index.html">Home</a>
+              <a href="/blog.html">Our Blog</a>
+              <a href="#">Videos</a>
+              <a href="/learn.html">Learn More</a>
+              <a href="/contact.html">Contact</a>
+            </div>
+            <!-- <div id="main">
+              <h1>Responsive Side Menu</h1>
+            </div> -->
           </div>
         </nav>
       </div>
@@ -86,5 +106,15 @@
         by CC BY 3.0
       </div>
     </footer>
+    <script>
+      function openSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+      function closeSlideMenu() {
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+    </script>
   </body>
 </html>
