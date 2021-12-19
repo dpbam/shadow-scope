@@ -77,6 +77,11 @@ nav {
   text-decoration: none;
   list-style: none;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 /* .navbar-nav li a {
