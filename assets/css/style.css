@@ -76,7 +76,12 @@ nav {
 .navbar-nav {
   text-decoration: none;
   list-style: none;
+  width: auto;
 }
+
+/* .navbar-nav li a {
+  position: relative;
+} */
 
 /* The dropdown container */
 .dropdown {
