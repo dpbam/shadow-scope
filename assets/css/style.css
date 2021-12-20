@@ -305,8 +305,23 @@ footer {
 /* contact form */
 
 .contact-container {
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding: 5rem 10rem 5rem 10rem;
+  text-align: center;
+  display: block;
+  margin: 3rem 30rem 3rem 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.contact-container {
+  background-color: mediumorchid;
+}
+
+.contact-container p {
+  font-size: 25px;
+  font-family: roboto;
+  color: white;
 }
 
 .contact-container h4 {
@@ -333,12 +348,14 @@ footer {
   float: right;
 }
 
-.contact-me-header {
+.contact-us-header {
   color: #ffbd51;
   font-family: bemio;
   font-weight: 600;
   font-size: 45px;
   text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* .email-link {
