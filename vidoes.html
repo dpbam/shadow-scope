@@ -4,9 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0e4312690b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      href="//db.onlinewebfonts.com/c/5db8bbfb6a548babd3c88584bc301dd2?family=Bemio"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,600&family=Barlow:ital@1&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Videos</title>
   </head>
   <body>
-    <h1>Videos</h1>
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <h1 class="the logo">The</h1>
+          <h1 class="logo">Shadow Scope</h1>
+        </div>
+        <nav role="navigation" aria-label="main menu">
+          <div class="navbar">
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </span>
+            <ul class="navbar-nav">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/blog.html">Our Blog</a></li>
+              <li><a href="/vidoes.html">Videos</a></li>
+              <li><a href="/learn.html">Learn More</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <!-- <div class="dropdown">
+                <button class="dropbtn">
+                  Learn
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="">History of Microscopy</a>
+                  <a href="">How to use it</a>
+                  <a href="">How to make it</a>
+                  <a href="">Links</a>
+                </div>
+              </div> -->
+            </ul>
+            <div id="side-menu" class="side-nav">
+              <a href="#" class="btn-close" onclick="closeSlideMenu()"
+                >&times;</a
+              >
+              <a href="/index.html">Home</a>
+              <a href="/blog.html">Our Blog</a>
+              <a href="/vidoes.html">Videos</a>
+              <a href="/learn.html">Learn More</a>
+              <a href="/contact.html">Contact</a>
+            </div>
+            <!-- <div id="main">
+                <h1>Responsive Side Menu</h1>
+              </div> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <h1>Videos:</h1>
+    <footer>
+      <div class="footer-icons">
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-google-plus-square"></i>
+        <i class="fab fa-dribbble-square"></i>
+        <i class="fab fa-pinterest-square"></i>
+        <i class="fab fa-instagram-square"></i>
+      </div>
+      <div class="font-credit">
+        Font made from
+        <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed
+        by CC BY 3.0
+      </div>
+      <div class="footer-copyright">
+        <i class="far fa-copyright"></i>
+        <h3>Tim Stasevich Lab</h3>
+      </div>
+    </footer>
+    <script>
+      function openSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+      function closeSlideMenu() {
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+    </script>
   </body>
 </html>
