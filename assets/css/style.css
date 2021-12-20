@@ -201,6 +201,7 @@ nav {
   text-align: center;
   font-family: bemio;
   margin-top: 3rem;
+  font-size: 3rem;
 }
 
 .blog-block {
@@ -210,6 +211,12 @@ nav {
   /* margin: 3rem; */
   max-width: 600px;
   margin: 1em auto;
+}
+
+.blog-block p {
+  font-family: roboto;
+  font-weight: 900;
+  font-size: 1rem;
 }
 
 /* learn more page */
