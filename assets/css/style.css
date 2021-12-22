@@ -197,8 +197,25 @@ nav {
   padding: 3rem;
 }
 
+.shadow-scope-img {
+  box-shadow: 2px 4px 4px black;
+}
+
+.twitter {
+  margin-left: 3rem;
+  align-items: center;
+}
+
+.twitter-feed {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
 .twitter-container {
-  background-color: rgb(49, 51, 53);
+  height: 80rem;
+  width: 20rem;
+  background-color: rgb(215, 221, 227);
   box-shadow: 2px 4px 4px black;
 }
 
@@ -259,7 +276,7 @@ nav {
   padding: 0px 10px;
 }
 
-.grid {
+.videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
@@ -274,7 +291,7 @@ nav {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.grid > div > img {
+.grid > div > video {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -315,6 +332,7 @@ footer {
 .footer-icons i:hover {
   color: #f9f871;
   cursor: pointer;
+  box-shadow: 2px 2px 2px black;
 }
 
 .footer-copyright {
