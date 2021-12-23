@@ -276,10 +276,16 @@ nav {
   padding: 0px 10px;
 }
 
+.videos-title {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
 .videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 8rem;
+  margin: 5rem;
 }
 
 .grid > div {
