@@ -43,18 +43,6 @@
               <li><a href="/vidoes.html">Videos</a></li>
               <li><a href="/learn.html">Learn More</a></li>
               <li><a href="/contact.html">Contact</a></li>
-              <!-- <div class="dropdown">
-                <button class="dropbtn">
-                  Learn
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="">History of Microscopy</a>
-                  <a href="">How to use it</a>
-                  <a href="">How to make it</a>
-                  <a href="">Links</a>
-                </div>
-              </div> -->
             </ul>
             <div id="side-menu" class="side-nav">
               <a href="#" class="btn-close" onclick="closeSlideMenu()"
@@ -66,19 +54,54 @@
               <a href="/learn.html">Learn More</a>
               <a href="/contact.html">Contact</a>
             </div>
-            <!-- <div id="main">
-                <h1>Responsive Side Menu</h1>
-              </div> -->
           </div>
         </nav>
       </div>
     </header>
-    <div>
+    <div class="video-container">
       <h1>Video #001 in Detail:</h1>
-      <video width="500" height="400" controls>
+      <video width="800" height="600" controls>
         <source src="Video Link" />
       </video>
     </div>
+    <form class="radio-buttons">
+      <h2>What do you see?</h2>
+      <p>Shape</p>
+      <input type="radio" name="shape" value="worm" />
+      <label for="worm">worm</label><br />
+
+      <input type="radio" name="shape" value="beetle" />
+      <label for="bettle">bettle</label><br />
+
+      <input type="radio" name="shape" value="blob" />
+      <label for="blob">blob</label><br />
+
+      <input type="radio" name="shape" value="stick" />
+      <label for="stick">stick</label><br />
+
+      <input type="radio" name="shape" value="leggy" />
+      <label for="leggy">leggy</label><br />
+      <p>Motion</p>
+      <input type="radio" name="movement" value="fast" />
+      <label for="fast">fast</label><br />
+
+      <input type="radio" name="movement" value="erratic" />
+      <label for="erratic">erratic</label><br />
+
+      <input type="radio" name="movement" value="directional" />
+
+      <label for="directional">directional</label><br />
+
+      <input type="radio" name="movement" value="spinning" />
+      <label for="spinning">spinning</label><br />
+
+      <input type="radio" name="movement" value="circular" />
+      <label for="circular">circular</label><br />
+
+      <input type="text" name="size" value="size" />
+      <label for="size"> mm</label><br />
+    </form>
+
     <footer>
       <div class="footer-icons">
         <i class="fab fa-twitter-square"

@@ -197,6 +197,26 @@ nav {
   padding: 3rem;
 }
 
+.news {
+  margin-right: 3rem;
+  align-items: center;
+}
+
+.news-container {
+  height: 80rem;
+  width: 20rem;
+  background-color: rgb(215, 221, 227);
+  border-style: solid;
+  border-color: #ff7e61;
+  box-shadow: 2px 4px 4px black;
+}
+
+.news-feed {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
 .shadow-scope-img {
   box-shadow: 2px 4px 4px black;
 }
@@ -216,6 +236,8 @@ nav {
   height: 80rem;
   width: 20rem;
   background-color: rgb(215, 221, 227);
+  border-style: solid;
+  border-color: #2441bf;
   box-shadow: 2px 4px 4px black;
 }
 
@@ -301,6 +323,14 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.video-container {
+  margin: 10rem;
+}
+
+.video-container h1 {
+  margin-bottom: 3rem;
 }
 
 .learn-content {
