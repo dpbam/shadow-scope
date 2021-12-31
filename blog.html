@@ -40,20 +40,19 @@
               <li><a href="/index.html">Home</a></li>
               <li><a href="blog.html">Our Blog</a></li>
               <li><a href="/vidoes.html">Videos</a></li>
-              <li><a href="/learn.html">Learn More</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-              <!-- <div class="dropdown">
-              <button class="dropbtn">
-                Learn
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="">History of Microscopy</a>
-                <a href="">How to use it</a>
-                <a href="">How to make it</a>
-                <a href="">Links</a>
+              <!-- <li><a href="/learn.html">Learn More</a></li> -->
+              <!-- <li><a href="/contact.html">Contact</a></li> -->
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Learn More
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="">How to use it</a>
+                  <a href="">How to make it</a>
+                  <a href="">More about Microscopy</a>
+                </div>
               </div>
-            </div> -->
             </ul>
             <div id="side-menu" class="side-nav">
               <a href="#" class="btn-close" onclick="closeSlideMenu()"
@@ -62,8 +61,17 @@
               <a href="/index.html">Home</a>
               <a href="/blog.html">Our Blog</a>
               <a href="/vidoes.html">Videos</a>
-              <a href="/learn.html">Learn More</a>
-              <a href="/contact.html">Contact</a>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Learn More
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="">How to use it</a>
+                  <a href="">How to make it</a>
+                  <a href="">More about Microscopy</a>
+                </div>
+              </div>
             </div>
             <!-- <div id="main">
               <h1>Responsive Side Menu</h1>
@@ -72,51 +80,61 @@
         </nav>
       </div>
     </header>
-    <h2 class="blog-title">What has happened?</h2>
-    <article class="blog-block">
-      <span>
-        <h3>Stock Show 1</h3>
-        <h4>Jan. 7, 2022</h4>
-      </span>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-        fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-        accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-        molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-        officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-        nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-      </p>
-    </article>
-    <article class="blog-block">
-      <span>
-        <h3>Stock Show 2</h3>
-        <h4>Jan. 15, 2022</h4>
-      </span>
-      <p>
-        Veritatis obcaecati tenetur iure eius earum ut molestias architecto
-        voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit
-        sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas
-        aliquid. Reprehenderit, quia. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
-        repudiandae consequuntur voluptatum laborum numquam blanditiis harum
-        quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
-        Provident similique accusantium nemo autem.
-      </p>
-    </article>
-    <article class="blog-block">
-      <span>
-        <h3>Another Event</h3>
-        <h4>Jan. 29, 2022</h4>
-      </span>
-      <p>
-        Provident similique accusantium nemo autem. Veritatis obcaecati tenetur
-        iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-        aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-        error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-      </p>
-    </article>
+    <div class="happen-container">
+      <div class="what-has-happened">
+        <h2 class="blog-title">What has happened</h2>
+      </div>
+      <div class="what-will-happen">
+        <h2 class="blog-title">What will happen?</h2>
+        <article class="blog-block">
+          <span>
+            <h3>Stock Show 1</h3>
+            <h4>Jan. 7, 2022</h4>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+            fugiat iusto fuga praesentium optio, eaque rerum! Provident
+            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
+            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
+            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
+            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+            quia.
+          </p>
+        </article>
+        <article class="blog-block">
+          <span>
+            <h3>Stock Show 2</h3>
+            <h4>Jan. 15, 2022</h4>
+          </span>
+          <p>
+            Veritatis obcaecati tenetur iure eius earum ut molestias architecto
+            voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit
+            sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis
+            quas aliquid. Reprehenderit, quia. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Maxime mollitia, molestiae quas vel
+            sint commodi repudiandae consequuntur voluptatum laborum numquam
+            blanditiis harum quisquam eius sed odit fugiat iusto fuga
+            praesentium optio, eaque rerum! Provident similique accusantium nemo
+            autem.
+          </p>
+        </article>
+        <article class="blog-block">
+          <span>
+            <h3>Another Event</h3>
+            <h4>Jan. 29, 2022</h4>
+          </span>
+          <p>
+            Provident similique accusantium nemo autem. Veritatis obcaecati
+            tenetur iure eius earum ut molestias architecto voluptate aliquam
+            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat,
+            odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.
+            Reprehenderit, quia.
+          </p>
+        </article>
+      </div>
+    </div>
     <footer>
       <div class="footer-icons">
         <i class="fab fa-twitter-square"
