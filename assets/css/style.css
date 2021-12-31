@@ -8,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  background-color: #f7f7f7;
+  background-color: #e8ecee;
 }
 
 @font-face {
@@ -87,6 +87,10 @@ nav {
   list-style: none;
 }
 
+.side-nav a {
+  color: white;
+}
+
 /* .navbar-nav li a {
   position: relative;
 } */
@@ -95,11 +99,13 @@ nav {
 .dropdown {
   float: left;
   overflow: hidden;
+  /* border-end-end-radius: 15px; */
+  color: white;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 25px;
+  font-size: 24px;
   border: none;
   outline: none;
   color: white;
@@ -109,11 +115,21 @@ nav {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
+.dropbtn-sidenav {
+  font-size: 22px;
+}
+
+.dropdown-sidenav-container {
+  align-items: center;
+}
+
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  text-shadow: 5px 5px 5px black;
+  /* text-shadow: 5px 5px 5px black; */
   color: #ff7e61;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .fa-caret-down {
@@ -138,13 +154,13 @@ nav {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
   font-size: 22px;
-  color: #ccc;
+  color: white;
   display: block;
   transition: 0.3s;
 }
 
 .side-nav a:hover {
-  color: #fff;
+  color: rgb(184, 180, 180);
 }
 
 .side-nav .btn-close {
@@ -454,18 +470,29 @@ footer {
   font-size: 1.5rem;
 }
 
+.font-credit {
+  font-size: 1rem;
+}
+
 .font-credit a {
   color: ivory;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
 }
 
 .contact-info h3 {
   font-weight: bold;
   padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.25rem;
 }
 
 .contact-info a {
   color: white;
+  font-size: 1.25rem;
 }
 
 /* .fab {
@@ -740,11 +767,15 @@ div.info-and-form {
   .navbar-nav {
     display: none;
   }
-  .fa-bars {
-    float: right;
+  .side-nav {
+    display: flex;
+    flex-direction: column;
   }
-  .contact-container {
+  .dropbtn .contact-container {
     margin: 0;
+  }
+  .dropbtn {
+    font-size: 0.1rem;
   }
 }
 
@@ -768,6 +799,19 @@ div.info-and-form {
   .video-card {
     margin: 1rem;
   }
+  .blog-title {
+    font-size: 3rem;
+  }
+  .blog-block span h3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .blog-block span h4 {
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 370px) {
@@ -780,9 +824,9 @@ div.info-and-form {
   .blog-block p {
     font-size: 1.5rem;
   }
-  /* .video-grid {
-    margin-left: -1rem;
-  } */
+  .videos-grid {
+    margin-left: 1vw;
+  }
   .logo {
     font-size: 3rem;
   }
