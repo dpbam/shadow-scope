@@ -213,6 +213,58 @@ nav {
   display: block;
 }
 
+.main-container {
+}
+
+/* Banner */
+
+#banner {
+  position: relative;
+  padding: 4.5em;
+  background: white;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border-radius: 10px;
+}
+
+#banner h2 {
+  font-size: 3.2em;
+  margin: 0.1em 0 0.35em 0;
+  font-weight: bolder;
+}
+
+#banner p {
+  font-size: 2.75em;
+  line-height: 1.35em;
+  margin: 0;
+}
+
+#banner .button {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+#banner .button.icon:before {
+  position: absolute;
+  right: 0.15em;
+  top: 50%;
+  margin-top: -0.5em;
+}
+
+#banner .button.alt {
+  margin-bottom: 0;
+}
+
+#banner ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0 2em;
+}
+
+#banner ul li {
+  padding-left: 0;
+}
+
 .hero-img {
   width: 100%;
 }
@@ -697,6 +749,44 @@ div.info-and-form {
 @media (max-width: 1215px) {
   .navbar-nav {
     display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  #banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  /* Banner */
+
+  #banner {
+    padding: 4.5em 3em;
+    text-align: center;
+  }
+
+  #banner ul {
+    margin: 2em 0 0 0;
+  }
+
+  #banner img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  #banner .button.icon:before {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+
+  #banner h2 {
+    text-align: center;
   }
 }
 
