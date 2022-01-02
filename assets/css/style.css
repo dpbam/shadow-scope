@@ -240,8 +240,15 @@ nav {
 }
 
 #banner .button {
-  width: 100%;
+  width: 75%;
   margin-bottom: 0.5em;
+  background: cornflowerblue;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
 }
 
 #banner .button.icon:before {
@@ -263,6 +270,13 @@ nav {
 
 #banner ul li {
   padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#banner img {
+  margin-bottom: 1rem;
+  border-radius: 10px;
 }
 
 .hero-img {
@@ -361,7 +375,7 @@ nav {
 
 .blog-title {
   text-align: center;
-  font-family: bemio;
+  font-family: 'Poppins', sans-serif;
   margin-top: 8rem;
   margin-bottom: 3rem;
   font-size: 4rem;
