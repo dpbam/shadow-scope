@@ -32,7 +32,7 @@ header {
 .logo {
   margin-left: 3rem;
   font-family: bemio;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
   color: #fdf17f;
@@ -44,7 +44,7 @@ header {
 }
 
 .the {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
 }
 
 .fa-bars {
@@ -228,7 +228,7 @@ nav {
 }
 
 #banner h2 {
-  font-size: 3.2em;
+  font-size: 4em;
   margin: 0.1em 0 0.35em 0;
   font-weight: bolder;
 }
@@ -249,6 +249,7 @@ nav {
   text-decoration: none;
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 #banner .button.icon:before {
@@ -549,16 +550,21 @@ footer {
 .contact-info h3 {
   font-weight: bold;
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .contact-info p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .contact-info a {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.contact-info address {
+  font-size: 1.5rem;
 }
 
 /* .fab {
