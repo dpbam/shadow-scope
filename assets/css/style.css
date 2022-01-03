@@ -93,6 +93,7 @@ nav {
 
 .navbar-nav {
   text-decoration: none;
+  text-transform: uppercase;
   list-style: none;
   width: auto;
   display: flex;
@@ -125,6 +126,7 @@ nav {
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 24px;
+  text-transform: uppercase;
   border: none;
   outline: none;
   color: white;
