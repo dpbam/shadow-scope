@@ -348,21 +348,50 @@ nav {
 
 .preview-cards {
   display: block;
-  background: white;
+  /* background: white; */
+  margin-left: 5rem;
+}
+
+.preview-card-title-and-paragraph {
+  padding: 1rem;
+}
+
+.preview-card-title-and-paragraph h3 {
+  padding: 1rem;
+}
+.preview-card-title-and-paragraph p {
+  padding: 1rem;
 }
 
 .about-shadow-microscopy.videos-preview.learn-more-preview.build-one {
   display: flex;
   justify-content: space-between;
   margin: 5rem;
+}
+
+.about-shadow-microscopy {
+  display: flex;
   background: white;
+  border-radius: 10px;
+  margin: 3rem;
 }
 
 .videos-preview {
-  /* display: block; */
-  /* float: right; */
-  /* margin-right: 5rem;
-  margin-bottom: 5rem; */
+  display: flex;
+  background: white;
+  margin: 3rem;
+}
+
+.learn-more-preview {
+  display: flex;
+  background: white;
+  margin: 3rem;
+}
+
+.build-one {
+  display: flex;
+  background: white;
+  margin: 3rem;
 }
 
 .news-and-twitter {
