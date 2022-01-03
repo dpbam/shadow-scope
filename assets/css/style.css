@@ -136,6 +136,11 @@ nav {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
+.dropdown-content {
+  border-end-end-radius: 6px;
+  width: 20rem;
+}
+
 .dropbtn-sidenav {
   font-size: 22px;
 }
@@ -328,17 +333,25 @@ nav {
   padding: 3rem;
 }
 
-.preview-cards {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+.main-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 980px;
   background: white;
-  margin-left: 5rem;
-  width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 90rem; */
+}
+
+.preview-cards {
+  display: block;
 }
 
 .about-shadow-microscopy.videos-preview.learn-more-preview.build-one {
-  float: left;
+  /* float: left; */
   width: 70%;
   /* display: flex;
   justify-content: space-between; */
@@ -346,14 +359,14 @@ nav {
 }
 
 .videos-preview {
-  display: block;
+  /* display: block; */
   /* float: right; */
-  margin-right: 5rem;
-  margin-bottom: 5rem;
+  /* margin-right: 5rem;
+  margin-bottom: 5rem; */
 }
 
 .news-and-twitter {
-  float: left;
+  /* float: left; */
   width: 30%;
   margin: 3rem;
 }
