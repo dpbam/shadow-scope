@@ -339,8 +339,8 @@ nav {
   justify-content: space-around;
   padding-left: 0;
   padding-right: 0;
-  max-width: 980px;
-  background: white;
+  /* max-width: 980px; */
+  /* background: white; */
   margin-left: auto;
   margin-right: auto;
   /* width: 90rem; */
@@ -348,14 +348,14 @@ nav {
 
 .preview-cards {
   display: block;
+  background: white;
 }
 
 .about-shadow-microscopy.videos-preview.learn-more-preview.build-one {
-  /* float: left; */
-  width: 70%;
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   margin: 5rem;
+  background: white;
 }
 
 .videos-preview {
@@ -367,7 +367,7 @@ nav {
 
 .news-and-twitter {
   /* float: left; */
-  width: 30%;
+  /* width: 30%; */
   margin: 3rem;
 }
 
