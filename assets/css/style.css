@@ -258,7 +258,7 @@ nav {
 }
 
 #banner.box.container {
-  width: 80vw;
+  width: 90vw;
 }
 
 #banner h2 {
@@ -293,11 +293,12 @@ nav {
   font-weight: bold;
 }
 
-#banner .button.icon:before {
+#banner .button.icon::before {
   position: absolute;
   right: 0.15em;
   top: 50%;
   margin-top: -0.5em;
+  display: none;
 }
 
 #banner .button.alt {
@@ -358,6 +359,12 @@ nav {
 
 .preview-card-title-and-paragraph h3 {
   padding: 1rem;
+  font-size: 2rem;
+}
+
+.preview-card-title-and-paragraph a:hover {
+  color: #ff7e61;
+  text-decoration: none;
 }
 .preview-card-title-and-paragraph p {
   padding: 1rem;
@@ -376,27 +383,44 @@ nav {
   margin: 3rem;
 }
 
+.about-shadow-microscopy a {
+  padding: 1rem;
+}
+
 .videos-preview {
   display: flex;
   background: white;
+  border-radius: 10px;
   margin: 3rem;
+}
+
+.video-preview {
+  padding: 1rem;
 }
 
 .learn-more-preview {
   display: flex;
   background: white;
+  border-radius: 10px;
   margin: 3rem;
+}
+
+.learn-more-preview a {
+  padding: 1rem;
 }
 
 .build-one {
   display: flex;
   background: white;
+  border-radius: 10px;
   margin: 3rem;
 }
 
+.build-one img {
+  padding: 1rem;
+}
+
 .news-and-twitter {
-  /* float: left; */
-  /* width: 30%; */
   margin: 3rem;
 }
 
@@ -437,13 +461,17 @@ nav {
   box-shadow: 2px 4px 4px black;
 }
 
+.news-feed:hover {
+  box-shadow: 0px 0px 0px white;
+  color: #ff7e61;
+}
+
 .shadow-scope-img {
   box-shadow: 2px 4px 4px black;
   border-radius: 7px;
 }
 
 .twitter {
-  /* margin-left: 3rem; */
   align-items: center;
 }
 
