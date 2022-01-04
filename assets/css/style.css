@@ -227,6 +227,7 @@ nav {
   text-decoration: none;
   display: block;
   text-align: left;
+  font-size: 15px;
 }
 
 /* Add a grey background color to dropdown links on hover */
@@ -258,25 +259,33 @@ nav {
 }
 
 #banner.box.container {
-  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+}
+
+#banner.title {
+  padding-right: 3rem;
 }
 
 #banner h2 {
-  font-size: 7rem;
+  font-size: 4rem;
   margin: 0.1em 0 0.35em 0;
   font-weight: bolder;
 }
 
 #banner p {
-  font-size: 4em;
+  font-size: 2rem;
   line-height: 1.35em;
   margin: 0;
 }
 
 #banner .scope-and-at-scope-button {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  justify-content: center;
   flex-wrap: wrap;
+  /* float: right; */
   margin-right: 5rem;
 }
 
@@ -308,7 +317,7 @@ nav {
 #banner ul {
   list-style: none;
   padding-left: 0;
-  margin: 0 0 0 2em;
+  margin: 0 0 0 2rem;
 }
 
 #banner ul li {
@@ -346,6 +355,8 @@ nav {
   margin-right: auto;
   /* width: 90rem; */
 }
+
+/* preview cards */
 
 .preview-cards {
   display: block;
