@@ -152,7 +152,8 @@ nav {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  /* text-shadow: 5px 5px 5px black; */
+  /* text-shadow: 0px 1px 1px black; */
+  font-weight: bold;
   color: #ff7e61;
   background-color: white;
   border-radius: 5px;
@@ -214,6 +215,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #40adce;
+  opacity: 0.9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -262,18 +264,23 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 95%;
+  box-shadow: 2px 4px 4px gray;
+}
+
+.about-scope {
+  width: 80%;
 }
 
 #banner h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 0.1em 0 0.35em 0;
   font-weight: bolder;
 }
 
 #banner p {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.35em;
-  margin: 0;
+  margin: 0f;
 }
 
 #banner .scope-and-at-scope-button {
@@ -283,6 +290,11 @@ nav {
   flex-wrap: wrap;
   /* float: right; */
   margin-right: 5rem;
+}
+
+#banner .at-scope-now {
+  font-size: 2rem;
+  text-align: center;
 }
 
 #banner .button {
@@ -296,6 +308,12 @@ nav {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  box-shadow: 2px 4px 4px gray;
+}
+
+#banner .button:hover {
+  box-shadow: 0px 0px 0px white;
+  color: #ff7e61;
 }
 
 #banner .button.icon::before {
@@ -360,6 +378,10 @@ nav {
   margin-left: 5rem;
 }
 
+.preview-cards p {
+  font-size: larger;
+}
+
 .preview-card-title-and-paragraph {
   padding: 1rem;
 }
@@ -388,6 +410,7 @@ nav {
   background: white;
   border-radius: 10px;
   margin: 3rem;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .about-shadow-microscopy a {
@@ -399,6 +422,7 @@ nav {
   background: white;
   border-radius: 10px;
   margin: 3rem;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .video-preview {
@@ -410,6 +434,7 @@ nav {
   background: white;
   border-radius: 10px;
   margin: 3rem;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .learn-more-preview a {
@@ -421,6 +446,7 @@ nav {
   background: white;
   border-radius: 10px;
   margin: 3rem;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .build-one img {
@@ -442,10 +468,10 @@ nav {
   height: 60rem;
   width: 30rem;
   background-color: white;
-  border-style: solid;
-  border-color: #ff7e61;
+  /* border-style: solid; */
+  /* border-color: #ff7e61; */
   border-radius: 7px;
-  box-shadow: 2px 4px 4px black;
+  box-shadow: 2px 4px 4px gray;
   margin-bottom: 5rem;
 }
 
@@ -467,7 +493,7 @@ nav {
   background-color: cornflowerblue;
   padding: 1rem;
   border-radius: 7px;
-  box-shadow: 2px 4px 4px black;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .news-feed:hover {
@@ -476,7 +502,7 @@ nav {
 }
 
 .shadow-scope-img {
-  box-shadow: 2px 4px 4px black;
+  box-shadow: 2px 4px 4px gray;
   border-radius: 7px;
 }
 
@@ -500,10 +526,10 @@ nav {
   height: 60rem;
   width: 30rem;
   background-color: white;
-  border-style: solid;
-  border-color: #2441bf;
+  /* border-style: solid; */
+  /* border-color: #2441bf; */
   border-radius: 7px;
-  box-shadow: 2px 4px 4px black;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .twitter-container p {
@@ -540,6 +566,7 @@ nav {
   /* margin: 3rem; */
   max-width: 800px;
   margin: 3em auto;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .blog-block span h3 {
@@ -611,11 +638,12 @@ nav {
 }
 
 video {
-  border-style: solid;
-  border-width: 1px;
+  /* width: 100%; */
+  /* border-style: solid; */
+  /* border-width: 1px; */
   border-color: black;
   border-radius: 7px;
-  box-shadow: 2px 4px 4px black;
+  box-shadow: 2px 4px 4px gray;
 }
 
 .grid > div {
@@ -872,7 +900,7 @@ textarea {
 }
 
 .submit-btn {
-  float: right;
+  /* float: right; */
   width: 12rem;
   margin-top: 15px;
   padding: 7px 35px;
@@ -937,6 +965,37 @@ div.info-and-form {
   .navbar-nav {
     display: block;
   }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .preview-cards {
+    margin-left: 0;
+  }
+  .news-and-twitter {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-left: 4rem;
+  }
+  .news-feed {
+    width: 30rem;
+  }
+  /* .news {
+    margin-right: 0;
+  }
+  .news-container {
+    margin: 0;
+  } */
+  .twitter-feed {
+    width: 30rem;
+  }
+  /* .twitter {
+    margin-right: 0;
+  }
+  .twitter-container {
+    margin: 0;
+  } */
 }
 
 @media (max-width: 1200px) {
