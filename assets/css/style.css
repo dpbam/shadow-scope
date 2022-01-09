@@ -720,12 +720,6 @@ footer {
   box-shadow: 2px 2px 2px black;
 }
 
-.footer-copyright {
-  display: flex;
-  float: right;
-  font-size: 1.5rem;
-}
-
 .font-credit {
   font-size: 1rem;
 }
@@ -734,6 +728,11 @@ footer {
   color: ivory;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
+}
+
+.resources a {
+  text-decoration: none;
+  color: ivory;
 }
 
 .contact-info h3 {
@@ -753,6 +752,12 @@ footer {
 }
 
 .contact-info address {
+  font-size: 1.5rem;
+}
+
+.footer-copyright {
+  display: flex;
+  float: right;
   font-size: 1.5rem;
 }
 
