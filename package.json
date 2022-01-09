@@ -1,0 +1,27 @@
+{
+  "name": "Shadow Scope",
+  "version": "1.0.0",
+  "description": "App for CSU Molecular Biology Dept. project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seeds": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpbam/shadow-scope.git"
+  },
+  "author": "Derek Phelps",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpbam/shadow-scope/issues"
+  },
+  "homepage": "https://github.com/dpbam/shadow-scope#readme",
+  "dependencies": {
+    "franc": "^6.0.0",
+    "node-notifier": "^10.0.0",
+    "open": "^8.4.0",
+    "twit": "^2.2.11"
+  }
+}

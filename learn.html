@@ -26,10 +26,14 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="logo-container">
+        <!-- <div class="logo-container">
           <h1 class="the logo"><a href="/index.html">The</a></h1>
           <h1 class="logo"><a href="/index.html">Shadow Scope</a></h1>
+        </div> -->
+        <div id="logo">
+          <a href="/index.html"><span>The</span> Shadow Scope</a>
         </div>
+
         <nav role="navigation" aria-label="main menu">
           <div class="navbar">
             <span class="open-slide">
@@ -44,16 +48,17 @@
               <!-- <li><a href="/learn.html">Learn More</a></li> -->
               <!-- <li><a href="/contact.html">Contact</a></li> -->
               <div class="dropdown">
-              <button class="dropbtn">
-                Learn
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="/diagrams.html">How to use it</a>
-                  <!-- <a href="">How to make it</a> -->
-                  <a href="/learn.html">More about Microscopy and Shadows</a>               
+                <button class="dropbtn">
+                  Learn
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="/diagrams.html">- How to use it</a>
+                  <a href="/build.html">- How to make it</a>
+                  <a href="/learn.html">- More about Microscopy and Shadows</a>
+                  <a href="">- Links</a>
+                </div>
               </div>
-            </div>
             </ul>
             <div id="side-menu" class="side-nav">
               <a href="#" class="btn-close" onclick="closeSlideMenu()"
@@ -68,9 +73,9 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="/diagrams.html">How to use it</a>
-                  <!-- <a href="">How to make it</a> -->
-                  <a href="/learn.html">More about Microscopy and Shadows</a>
+                  <a href="/diagrams.html">- How to use it</a>
+                  <a href="/build.html">- How to make it</a>
+                  <a href="/learn.html">- More about Microscopy and Shadows</a>
                 </div>
               </div>
             </div>
@@ -78,10 +83,18 @@
               <h1>Responsive Side Menu</h1>
             </div> -->
           </div>
-          <div class='csu-ram'>
-            <a href="https://www.colostate.edu/" rel="noopener noreferrer" target="_blank">
-              <img src="/assets/images/CSU-Ram.png" alt="Colorado State University logo" height="80">
-            </a>          
+          <div class="csu-ram">
+            <a
+              href="https://www.colostate.edu/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/assets/images/CSU-Ram.png"
+                alt="Colorado State University logo"
+                height="80"
+              />
+            </a>
           </div>
         </nav>
       </div>
@@ -129,8 +142,6 @@
           types of objects.
         </p>
       </section>
-
-
     </main>
     <footer>
       <div class="footer-icons">
@@ -157,13 +168,19 @@
       <div class="contact-info">
         <h3>Contact</h3>
         <p>
-          Timothy J. Stasevich, Ph.D. Assistant Professor Department of
-          Biochemistry & Molecular Biology
-        </p><br/>
+          Timothy J. Stasevich, Ph.D. <br />
+          Assistant Professor <br />Department of Biochemistry & Molecular
+          Biology
+        </p>
+        <br />
         <address>
-          Campus Delivery 1870 Colorado State University Fort Collins, CO 80523
-        </address><br/>
-        <a href="tel:970-491-0583">Lab: (970) 491-0583</a> <br/>Fax: (970) 491-0494</p><br/>
+          Campus Delivery<br />1870 Colorado State University<br />
+          Fort Collins, CO 80523
+        </address>
+        <br />
+        <a href="tel:970-491-0583">Lab: (970) 491-0583</a> <br />
+        <p>Fax: (970) 491-0494</p>
+        <br />
         <p>Email:</p>
         <a href="mailto:tim.stasevich@colostate.edu"
           >tim.stasevich@colostate.edu</a

@@ -34,18 +34,26 @@ header {
   justify-content: space-between;
 }
 
-.logo {
+#logo {
   margin-left: 3rem;
   font-family: bemio;
   font-size: 7rem;
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
   color: #fdf17f;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo a {
+#logo span {
+  font-size: 2.5rem;
+}
+
+#logo a {
   text-decoration: none;
   color: #fdf17f;
+  display: flex;
+  flex-direction: column;
 }
 
 .the a {
@@ -56,10 +64,6 @@ header {
 .logo-container {
   display: block;
   width: 50%;
-}
-
-.the {
-  font-size: 2.5rem;
 }
 
 .fa-bars {
@@ -125,7 +129,7 @@ nav {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 24px;
+  font-size: 26px;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -134,6 +138,7 @@ nav {
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+  margin-bottom: 4px;
 }
 
 .dropdown-content {
@@ -300,7 +305,7 @@ nav {
 #banner .button {
   width: 100%;
   margin-bottom: 0.5em;
-  background: cornflowerblue;
+  background: #b831ab;
   color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -344,6 +349,7 @@ nav {
 #banner img {
   margin-bottom: 1rem;
   border-radius: 10px;
+  max-width: 100%;
 }
 
 .hero-img {
@@ -453,6 +459,11 @@ nav {
   padding: 1rem;
 }
 
+.shadow-scope-img {
+  box-shadow: 2px 4px 4px gray;
+  border-radius: 7px;
+}
+
 .news-and-twitter {
   margin: 3rem;
   display: flex;
@@ -465,7 +476,7 @@ nav {
 }
 
 .news-container {
-  height: 60rem;
+  height: 61.5rem;
   width: 30rem;
   background-color: white;
   /* border-style: solid; */
@@ -482,7 +493,7 @@ nav {
   font-size: 13pt;
   color: #696969;
   font-weight: 300;
-  line-height: 2.25em;
+  line-height: 1.5em;
 }
 
 .news-feed {
@@ -501,9 +512,11 @@ nav {
   color: #ff7e61;
 }
 
-.shadow-scope-img {
-  box-shadow: 2px 4px 4px gray;
-  border-radius: 7px;
+.blog-block-news-feed {
+  padding: 1rem;
+  border-bottom: black;
+  border-style: ridge;
+  border-width: 1px;
 }
 
 .twitter {
