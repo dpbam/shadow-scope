@@ -259,6 +259,8 @@ nav {
   /* margin-right: 5rem; */
   /* margin-left: 50rem; */
   margin: 0 auto;
+  position: relative;
+  top: -20px;
 }
 
 #banner-wrapper {
@@ -286,7 +288,8 @@ nav {
 #banner p {
   font-size: 3rem;
   line-height: 1.35em;
-  margin: 0f;
+  margin: 0;
+  font-weight: 200;
 }
 
 #banner .scope-and-at-scope-button {
@@ -362,6 +365,8 @@ nav {
   height: 10rem;
   width: 12rem;
   margin-left: 3rem;
+  /* bottom: -20px; */
+  position: relative;
 }
 
 .hero-img {
@@ -407,6 +412,8 @@ nav {
 .preview-card-title-and-paragraph h3 {
   padding: 1rem;
   font-size: 2rem;
+  font-weight: 800;
+  color: #696969;
 }
 
 .preview-card-title-and-paragraph a:hover {
