@@ -253,11 +253,12 @@ nav {
   position: relative;
   padding: 4.5em;
   background: white;
-  margin-top: 5em;
+  /* margin-top: 5em; */
   margin-bottom: 5em;
   border-radius: 10px;
   /* margin-right: 5rem; */
   /* margin-left: 50rem; */
+  margin: 0 auto;
 }
 
 #banner-wrapper {
@@ -346,10 +347,21 @@ nav {
   width: 20rem;
 }
 
-#banner img {
+.shadow-scope-img1 img {
   margin-bottom: 1rem;
   border-radius: 10px;
-  max-width: 100%;
+  /* width: 100%; */
+}
+
+#banner-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.peaking-sillhouette {
+  height: 10rem;
+  width: 12rem;
+  margin-left: 3rem;
 }
 
 .hero-img {
@@ -722,6 +734,7 @@ footer {
 
 .font-credit {
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .font-credit a {
@@ -730,35 +743,57 @@ footer {
   font-size: 1rem;
 }
 
+.resources {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.resources h3 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 .resources a {
   text-decoration: none;
   color: ivory;
 }
 
+/* .contact-info {
+  font-size: 1.5rem;
+} */
+
 .contact-info h3 {
-  font-weight: bold;
+  font-weight: 400;
   padding-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
 
-.contact-info p {
-  font-size: 1.5rem;
+.contact-info p,
+address,
+a {
+  font-size: 1 rem;
   color: white;
+  font-weight: 200;
 }
 
 .contact-info a {
   color: white;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .contact-info address {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .footer-copyright {
   display: flex;
   float: right;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
 }
 
 /* .fab {
