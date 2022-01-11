@@ -288,7 +288,7 @@ nav {
 }
 
 .banner-title h2:hover {
-  text-shadow: 112px 54px 4px black;
+  /* text-shadow: 112px 54px 4px black; */
 }
 
 #banner p {
