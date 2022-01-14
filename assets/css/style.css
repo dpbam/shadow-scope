@@ -35,9 +35,9 @@ header {
 }
 
 #logo {
-  margin-left: 3rem;
+  margin-left: 2rem;
   font-family: bemio;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
   color: #fdf17f;
@@ -45,8 +45,12 @@ header {
   flex-direction: column;
 }
 
+#logo a:hover {
+  text-shadow: none;
+}
+
 #logo span {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 #logo a {
@@ -56,9 +60,13 @@ header {
   flex-direction: column;
 }
 
-.the a {
+#logo span a {
   text-decoration: none;
   color: #fdf17f;
+}
+
+#logo span a:hover {
+  color: #e6da6d;
 }
 
 .logo-container {
@@ -81,14 +89,14 @@ nav {
   overflow: hidden;
   background-color: #2441bf;
   float: right;
-  margin-right: 3rem;
-  margin-top: 5rem;
+  margin-right: 2rem;
+  margin-top: 10rem;
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -129,7 +137,7 @@ nav {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 26px;
+  font-size: 21px;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -137,8 +145,9 @@ nav {
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
+  font-weight: 200;
   margin: 0; /* Important for vertical align on mobile phones */
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .dropdown-content {
@@ -281,7 +290,7 @@ nav {
 }
 
 .banner-title {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0.1em 0 0.35em 0;
   font-weight: bolder;
   width: 60%;
@@ -292,10 +301,11 @@ nav {
 }
 
 #banner p {
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 1.35em;
   margin: 0;
   font-weight: 200;
+  padding-top: 2rem;
 }
 
 #banner .scope-and-at-scope-button {
@@ -405,13 +415,14 @@ nav {
 /* preview cards */
 
 .preview-cards {
-  display: block;
+  display: flex;
+  flex-direction: column;
   /* background: white; */
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
 }
 
 .preview-cards p {
-  font-size: larger;
+  font-size: 1rem;
 }
 
 .preview-card-title-and-paragraph {
@@ -419,8 +430,8 @@ nav {
 }
 
 .preview-card-title-and-paragraph h3 {
-  padding: 1rem;
-  font-size: 2rem;
+  /* padding: 1rem; */
+  font-size: 1.75rem;
   font-weight: 800;
   color: #696969;
 }
@@ -433,17 +444,14 @@ nav {
   padding: 1rem;
 }
 
-.about-shadow-microscopy.videos-preview.learn-more-preview.build-one {
-  display: flex;
-  justify-content: space-between;
-  margin: 5rem;
-}
-
-.about-shadow-microscopy {
+.about-shadow-microscopy,
+.videos-preview,
+.learn-more-preview,
+.build-one {
   display: flex;
   background: white;
   border-radius: 10px;
-  margin: 3rem;
+  margin: 1rem 1rem 2rem 2rem;
   box-shadow: 2px 4px 4px gray;
 }
 
@@ -451,36 +459,12 @@ nav {
   padding: 1rem;
 }
 
-.videos-preview {
-  display: flex;
-  background: white;
-  border-radius: 10px;
-  margin: 3rem;
-  box-shadow: 2px 4px 4px gray;
-}
-
 .video-preview {
   padding: 1rem;
 }
 
-.learn-more-preview {
-  display: flex;
-  background: white;
-  border-radius: 10px;
-  margin: 3rem;
-  box-shadow: 2px 4px 4px gray;
-}
-
 .learn-more-preview a {
   padding: 1rem;
-}
-
-.build-one {
-  display: flex;
-  background: white;
-  border-radius: 10px;
-  margin: 3rem;
-  box-shadow: 2px 4px 4px gray;
 }
 
 .build-one img {
@@ -493,22 +477,21 @@ nav {
 }
 
 .news-and-twitter {
-  margin: 3rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .news {
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   align-items: center;
 }
 
-.news-container {
+.news-container,
+.twitter-container {
   height: 61.5rem;
-  width: 30rem;
+  width: 20rem;
   background-color: white;
-  /* border-style: solid; */
-  /* border-color: #ff7e61; */
   border-radius: 7px;
   box-shadow: 2px 4px 4px gray;
   margin-bottom: 5rem;
@@ -524,19 +507,22 @@ nav {
   line-height: 1.5em;
 }
 
-.news-feed {
+.news-feed,
+.twitter-feed {
   text-align: center;
-  /* margin-top: 3rem; */
   margin-bottom: 2rem;
   color: white;
-  background-color: cornflowerblue;
   padding: 1rem;
   border-radius: 7px;
   box-shadow: 2px 4px 4px gray;
 }
 
+.news-feed {
+  background-color: cornflowerblue;
+}
+
 .news-feed:hover {
-  box-shadow: 0px 0px 0px white;
+  box-shadow: 0px 0px 0px;
   color: #ff7e61;
 }
 
@@ -547,30 +533,8 @@ nav {
   border-width: 1px;
 }
 
-.twitter {
-  align-items: center;
-}
-
 .twitter-feed {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  margin-right: 3rem;
-  color: white;
   background-color: #ff7e61;
-  padding: 1rem;
-  border-radius: 7px;
-  box-shadow: 2px 4px 4px black;
-}
-
-.twitter-container {
-  height: 60rem;
-  width: 30rem;
-  background-color: white;
-  /* border-style: solid; */
-  /* border-color: #2441bf; */
-  border-radius: 7px;
-  box-shadow: 2px 4px 4px gray;
 }
 
 .twitter-container p {
