@@ -262,11 +262,8 @@ nav {
   position: relative;
   padding: 4.5em;
   background: white;
-  /* margin-top: 5em; */
   margin-bottom: 5em;
   border-radius: 10px;
-  /* margin-right: 5rem; */
-  /* margin-left: 50rem; */
   margin: 0 auto;
   position: relative;
   top: -20px;
@@ -285,15 +282,23 @@ nav {
   flex-direction: row wrap;
 }
 
-.about-scope {
-  width: 80%;
-}
-
 .banner-title {
   font-size: 3rem;
   margin: 0.1em 0 0.35em 0;
   font-weight: bolder;
-  width: 60%;
+  width: 100%;
+}
+
+.banner-title-and-sillhoette {
+  /* display: flex; */
+}
+
+.banner-title-and-sillhoette img {
+  height: 22rem;
+}
+
+.banner-title-and-paragraph {
+  width: 70%;
 }
 
 .banner-title h2:hover {
@@ -501,7 +506,7 @@ nav {
   text-align: center;
   margin-top: 1rem;
   font-family: 'Open Sans', sans-serif;
-  font-size: 13pt;
+  font-size: 1rem;
   color: #696969;
   font-weight: 300;
   line-height: 1.5em;
