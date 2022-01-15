@@ -286,6 +286,7 @@ nav {
   font-size: 3rem;
   margin: 0.1em 0 0.35em 0;
   font-weight: bolder;
+  /* make this width percent smaller if sillouette on right */
   width: 100%;
 }
 
@@ -306,7 +307,7 @@ nav {
 }
 
 #banner p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.35em;
   margin: 0;
   font-weight: 200;
@@ -495,7 +496,7 @@ nav {
 .news-container,
 .twitter-container {
   height: 61.5rem;
-  width: 20rem;
+  width: 25rem;
   background-color: white;
   border-radius: 7px;
   box-shadow: 2px 4px 4px gray;
