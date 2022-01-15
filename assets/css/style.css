@@ -17,7 +17,7 @@ body a {
 }
 
 @font-face {
-  font-family: 'bemio';
+  font-family: bemio;
   src: url(assets/fonts/bemio/bemio.ttf);
   font-style: normal;
   font-weight: 900;
