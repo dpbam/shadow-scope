@@ -426,12 +426,12 @@ nav {
   padding: 1rem;
 }
 
-.preview-card-title-and-paragraph h3 {
-  /* padding: 1rem; */
+/* .preview-card-title-and-paragraph h3 {
+  padding: 1rem;
   font-size: 1.75rem;
   font-weight: 800;
   color: #696969;
-}
+} */
 .preview-card-title-and-paragraph a {
   /* padding: 1rem; */
   font-size: 1.75rem;
@@ -443,10 +443,10 @@ nav {
   color: #ff7e61;
   text-decoration: none;
 }
-.preview-card-title-and-paragraph h3:hover {
+/* .preview-card-title-and-paragraph h3:hover {
   color: #ff7e61;
   text-decoration: none;
-}
+} */
 .preview-card-title-and-paragraph p {
   padding: 1rem;
 }
