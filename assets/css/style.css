@@ -16,13 +16,6 @@ body a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'Bemio';
-  src: url(assets/fonts/Bemio/Bemio.ttf);
-  font-style: normal;
-  font-weight: 900;
-}
-
 header {
   background-color: #2441bf;
   color: white;
