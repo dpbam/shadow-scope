@@ -565,7 +565,7 @@ nav {
   font-family: 'Poppins', sans-serif;
   margin-top: 8rem;
   margin-bottom: 3rem;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .blog-block {
@@ -576,7 +576,7 @@ nav {
   display: flex;
   flex-direction: column;
   /* margin: 3rem; */
-  max-width: 800px;
+  max-width: 600px;
   margin: 3em auto;
   box-shadow: 2px 4px 4px gray;
 }
@@ -997,7 +997,7 @@ div.info-and-form {
 
 @media (max-width: 1600px) {
   .happen-container {
-    display: block;
+    display: flex;
   }
 }
 
