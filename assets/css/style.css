@@ -6,8 +6,6 @@
 
 body {
   font-family: 'poppins', sans-serif;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
   background-color: #e8ecee;
   color: #696969;
 }
@@ -145,7 +143,7 @@ nav {
 
 .dropdown-content {
   border-end-end-radius: 6px;
-  width: 20rem;
+  width: 15rem;
 }
 
 .dropbtn-sidenav {
@@ -434,8 +432,18 @@ nav {
   font-weight: 800;
   color: #696969;
 }
+.preview-card-title-and-paragraph a {
+  /* padding: 1rem; */
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #696969;
+}
 
 .preview-card-title-and-paragraph a:hover {
+  color: #ff7e61;
+  text-decoration: none;
+}
+.preview-card-title-and-paragraph h3:hover {
   color: #ff7e61;
   text-decoration: none;
 }
