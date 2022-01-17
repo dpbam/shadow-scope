@@ -319,6 +319,7 @@ nav {
 #banner .at-scope-now {
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 2.5rem;
 }
 
 #banner .button {
@@ -787,6 +788,11 @@ a {
   float: right;
   font-size: 1.25rem;
   margin-top: 1rem;
+}
+
+.fa-copyright {
+  font-size: 2.5rem;
+  padding-right: 0.75rem;
 }
 
 /* .fab {
