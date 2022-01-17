@@ -36,6 +36,10 @@ header {
   flex-direction: column;
 }
 
+#logo a {
+  font-family: 'Bemio';
+}
+
 #logo a:hover {
   text-shadow: none;
 }
