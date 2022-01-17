@@ -414,6 +414,8 @@ nav {
 .preview-cards {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   /* background: white; */
   /* margin-left: 5rem; */
 }
@@ -458,7 +460,7 @@ nav {
   display: flex;
   background: white;
   border-radius: 10px;
-  margin: 1rem 1rem 2rem 2rem;
+  margin: 1rem 2rem 5rem 2rem;
   box-shadow: 2px 4px 4px gray;
 }
 
@@ -496,7 +498,7 @@ nav {
 
 .news-container,
 .twitter-container {
-  height: 61.5rem;
+  height: 51rem;
   width: 25rem;
   background-color: white;
   border-radius: 7px;
@@ -538,6 +540,10 @@ nav {
   border-bottom: black;
   border-style: ridge;
   border-width: 1px;
+}
+
+.twitter-container {
+  margin-bottom: 10rem;
 }
 
 .twitter-feed {
