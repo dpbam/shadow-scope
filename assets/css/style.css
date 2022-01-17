@@ -12,7 +12,7 @@ body {
 
 @font-face {
   font-family: 'Bemio';
-  src: url('/assets/fonts/Bemio/@font-face/5db8bbfb6a548babd3c88584bc301dd2.woff2');
+  src: url('https://db.onlinewebfonts.com/c/5db8bbfb6a548babd3c88584bc301dd2?family=Bemio');
   /* src: url('https://db.onlinewebfonts.com/c/5db8bbfb6a548babd3c88584bc301dd2.eot'); IE9
   src: url('https://db.onlinewebfonts.com/c/5db8bbfb6a548babd3c88584bc301dd2.eot?#iefix')
       format('embedded-opentype'),
