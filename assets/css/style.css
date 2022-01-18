@@ -472,6 +472,7 @@ nav {
 .learn-more-preview,
 .build-one {
   display: flex;
+  justify-content: space-between;
   background: white;
   border-radius: 10px;
   margin: 1rem 2rem 5rem 2rem;
@@ -480,18 +481,37 @@ nav {
 
 .about-shadow-microscopy a {
   padding: 1rem;
+  /* width: 100%;
+  height: auto; */
+}
+.about-shadow-microscopy img {
+  width: 200%;
+  height: auto;
 }
 
 .video-preview {
   padding: 1rem;
 }
 
-.learn-more-preview a {
-  padding: 1rem;
+.video-loop-preview {
+  width: 100%;
+  height: auto;
 }
 
-.build-one img {
+.learn-more-preview a {
   padding: 1rem;
+  width: 200%;
+  height: auto;
+}
+.learn-more-preview img {
+}
+
+.build-one a {
+  padding: 1rem;
+}
+.build-one img {
+  width: 100%;
+  height: auto;
 }
 
 .shadow-scope-img {
