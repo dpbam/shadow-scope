@@ -54,7 +54,8 @@ header {
 }
 
 #logo span {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  padding-left: 1.25rem;
 }
 
 #logo a {
@@ -94,7 +95,7 @@ nav {
   background-color: #2441bf;
   float: right;
   margin-right: 2rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 /* Links inside the navbar */
@@ -637,6 +638,11 @@ nav {
   font-weight: 400;
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+.moon-boy {
+  /* width: 100%;
+  height: auto; */
 }
 
 /* learn more page */
