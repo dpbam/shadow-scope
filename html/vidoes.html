@@ -35,29 +35,34 @@
           <h1 class="the logo"><a href="/index.html">The</a></h1>
           <h1 class="logo"><a href="/index.html">Shadow Scope</a></h1>
         </div> -->
-        <div id="logo"><a href="index.html"><span>the</span> Shadow Scope</a></div>
-
+        <div id="logo">
+          <a href="index.html"><span>the</span> Shadow Scope</a>
+        </div>
         <nav role="navigation" aria-label="main menu">
           <div class="navbar">
             <span class="open-slide">
               <a href="#" onclick="openSlideMenu()">
+                <!-- <h3>MENU</h3> -->
                 <i class="fas fa-bars"></i>
               </a>
             </span>
             <ul class="navbar-nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="blog.html">Our Blog</a></li>
-              <li><a href="vidoes.html">Videos</a></li>
+              <li><a href="html/blog.html">Our Blog</a></li>
+              <li><a href="html/vidoes.html">Videos</a></li>
+              <!-- <li><a href="/learn.html">Learn More</a></li> -->
+              <!-- <li><a href="/contact.html">Contact</a></li> -->
               <div class="dropdown">
                 <button class="dropbtn">
                   Learn More
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="diagrams.html">- How to use it</a>
-                  <a href="">- How to make it</a>
-                  <a href="learn.html">- More about Microscopy and Shadows</a>
-                  <a href="">- Links</a>
+                  <a href="html/diagrams.html">- How to use it</a>
+                  <a href="html/build.html">- How to make it</a>
+                  <a href="html/learn.html"
+                    >- More about Microscopy and Shadows</a
+                  >
                 </div>
               </div>
             </ul>
@@ -66,25 +71,44 @@
                 >&times;</a
               >
               <a href="index.html">Home</a>
-              <a href="blog.html">Our Blog</a>
-              <a href="vidoes.html">Videos</a>
+              <a href="html/blog.html">Our Blog</a>
+              <a href="html/vidoes.html">Videos</a>
+
               <div class="dropdown">
-                <button class="dropbtn">
-                  Learn More
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">                  
-                  <a href="diagrams.html">- How to use it</a>
-                  <a href="build.html">- How to make it</a>
-                  <a href="learn.html">- More about Microscopy and Shadows</a>           
+                <div class="dropdown-sidenav-container">
+                  <button class="dropbtn-sidenav">
+                    Learn More
+                    <i class="fa fa-caret-down"></i>
+                  </button>
                 </div>
+                <ul class="dropdown-content">
+                  <li><a href="html/diagrams.html">- How to use it</a></li>
+                  <li><a href="html/build.html">- How to make it</a></li>
+                  <li>
+                    <a href="html/learn.html"
+                      >- More about Microscopy and Shadows</a
+                    >
+                  </li>
+                  <li>
+                    <a href="html/build.html">- How to build one.</a>
+                  </li>
+                </ul>
               </div>
+              <!-- <a href="/contact.html">Contact</a> -->
             </div>
           </div>
-          <div class='csu-ram'>
-            <a href="https://www.colostate.edu/" rel="noopener noreferrer" target="_blank">
-              <img src="assets/images/CSU-Ram.png" alt="Colorado State University logo" height="80">
-            </a>          
+          <div class="csu-ram">
+            <a
+              href="https://www.colostate.edu/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="assets/images/CSU-Ram.png"
+                alt="Colorado State University logo"
+                height="80"
+              />
+            </a>
           </div>
         </nav>
       </div>
