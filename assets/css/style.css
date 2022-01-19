@@ -35,6 +35,8 @@ header {
 }
 
 #logo {
+  position: relative;
+
   margin-left: 2rem;
   font-family: 'bemio';
   font-size: 5rem;
@@ -43,19 +45,19 @@ header {
   color: #fdf17f;
   display: flex;
   flex-direction: column;
-}
 
-/* #logo a {
-  font-family: 'Bemio';
-} */
+  line-height: 4rem;
+}
 
 #logo a:hover {
   text-shadow: none;
 }
 
 #logo span {
+  position: relative;
   font-size: 1.75rem;
   padding-left: 1.25rem;
+  padding-bottom: -2rem;
 }
 
 #logo a {
@@ -125,7 +127,7 @@ nav {
 }
 
 .csu-ram {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 /* .navbar-nav li a {
@@ -222,12 +224,12 @@ nav {
   justify-content: space-around;
 }
 
-#main {
+/* #main {
   transition: margin-left 0.5s;
   padding: 50px;
   overflow: hidden;
   width: 100%;
-}
+} */
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
