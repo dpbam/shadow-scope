@@ -10,15 +10,6 @@ body {
   color: #696969;
 }
 
-@font-face {
-  font-family: 'bemio';
-  src: url('Webfont.eot');
-  src: url('Webfont.eot?#iefix') format('embedded-opentype'),
-    url('bemio-webfont.woff') format('woff'),
-    url('bemio-webfont.ttf') format('truetype'),
-    url('Webfont.svg#webfont') format('svg');
-}
-
 body a {
   text-decoration: none;
 }
@@ -32,6 +23,15 @@ header {
 .header-container {
   display: flex;
   justify-content: space-between;
+}
+
+@font-face {
+  font-family: 'bemio';
+  src: url('Webfont.eot');
+  src: url('Webfont.eot?#iefix') format('embedded-opentype'),
+    url('bemio-webfont.woff') format('woff'),
+    url('bemio-webfont.ttf') format('truetype'),
+    url('Webfont.svg#webfont') format('svg');
 }
 
 #logo {
@@ -643,8 +643,7 @@ nav {
 }
 
 .moon-boy {
-  /* width: 100%;
-  height: auto; */
+  margin-top: 4rem;
 }
 
 /* learn more page */
