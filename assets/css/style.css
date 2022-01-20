@@ -736,6 +736,10 @@ video {
 /* footer */
 footer {
   background: #2441bf;
+  /* background-image: url('../images/footer-bckgd.png');
+  background-size: cover; */
+  position: relative;
+
   color: white;
   width: 100%;
   padding: 40px 35px;
@@ -745,6 +749,19 @@ footer {
   text-shadow: 2px 2px 4px black;
   font-family: 'Poppins', sans-serif;
 }
+
+/* .footer-after::after {
+  content: '';
+  background-image: url('../images/footer-bckgd.png');
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+} */
 
 .footer-icons {
   /* display: flex; */
