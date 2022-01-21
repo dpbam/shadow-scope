@@ -438,7 +438,7 @@ nav {
 }
 
 .preview-cards p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .preview-card-title-and-paragraph {
@@ -466,16 +466,10 @@ nav {
 .learn-more-preview,
 .build-one {
   display: flex;
-  justify-content: space-around;
   background: white;
   border-radius: 10px;
   margin: 1rem 2rem 5rem 2rem;
   box-shadow: 2px 4px 4px gray;
-}
-
-.about-shadow-microscopy {
-  display: flex;
-  justify-content: space-between;
 }
 
 .about-shadow-microscopy a {
@@ -486,10 +480,6 @@ nav {
 .about-shadow-microscopy img {
   width: 170%;
   height: auto;
-}
-
-.about-shadow-microscopy.preview-card-title-and-paragraph {
-  margin-left: 2rem;
 }
 
 .video-preview {
