@@ -422,16 +422,25 @@ nav {
   margin-bottom: 5rem;
 }
 
+.preview-card-title-and-paragraph {
+  width: 70%;
+  padding: 3rem;
+}
+
 .preview-card-title-and-paragraph a {
   font-size: 1.75rem;
   font-weight: 800;
   color: #696969;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .preview-card-title-and-paragraph a:hover {
   color: #ff7e61;
   text-decoration: none;
+}
+
+.preview-card-title-and-paragraph h3 {
+  padding-bottom: 1rem;
 }
 
 .about-shadow-microscopy,
@@ -447,9 +456,12 @@ nav {
 }
 
 .img-video {
-  width: 100%;
+  width: 30%;
   height: auto;
-  padding: 1rem 2rem 1rem 1rem;
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-shadow-microscopy img {
@@ -458,7 +470,7 @@ nav {
 }
 
 .video-loop-preview {
-  width: 85%;
+  width: 100%;
   height: auto;
 }
 
@@ -469,7 +481,7 @@ nav {
 }
 
 .build-one img {
-  width: 100%;
+  width: 120%;
   height: auto;
 }
 
@@ -1020,16 +1032,18 @@ div.info-and-form {
 }
 
 @media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
   .csu-ram {
     margin-top: 0;
+    margin-right: 2rem;
   }
+
   nav {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+@media (max-width: 768px) {
 }
 
 @media (max-width: 640px) {
