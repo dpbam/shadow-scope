@@ -417,7 +417,7 @@ nav {
 .preview-cards {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 5rem;
 }
 
@@ -448,7 +448,7 @@ nav {
 .img-video {
   width: 100%;
   height: auto;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 .about-shadow-microscopy img {
@@ -528,10 +528,6 @@ nav {
   border-bottom: black;
   border-style: ridge;
   border-width: 1px;
-}
-
-.twitter-container {
-  margin-bottom: 10rem;
 }
 
 .twitter-feed {
