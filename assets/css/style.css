@@ -388,6 +388,7 @@ nav {
   height: 10rem;
   width: 12rem;
   margin-left: 3rem;
+  margin-top: 3rem;
   position: relative;
   z-index: 100;
 }
@@ -1006,13 +1007,29 @@ div.info-and-form {
 
 /* media queries */
 
+@media (min-width: 1281px) {
+  .fa-bars {
+    display: none;
+  }
+}
+
 @media (max-width: 1280px) {
+  .navbar-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
 }
 
 @media (max-width: 768px) {
+  .csu-ram {
+    margin-top: 0;
+  }
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 640px) {
