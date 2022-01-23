@@ -297,20 +297,12 @@ nav {
   width: 100%;
 }
 
-.banner-title-and-sillhoette {
-  /* display: flex; */
-}
-
 .banner-title-and-sillhoette img {
   height: 22rem;
 }
 
 .banner-title-and-paragraph {
   width: 70%;
-}
-
-.banner-title h2:hover {
-  /* text-shadow: 112px 54px 4px black; */
 }
 
 #banner p {
@@ -326,8 +318,6 @@ nav {
   /* justify-content: flex-end; */
   justify-content: center;
   flex-wrap: wrap;
-  /* float: right; */
-  /* margin-right: 5rem; */
   padding: 2rem;
   width: 40%;
 }
@@ -415,15 +405,11 @@ nav {
 
 .main-container {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
   padding-left: 0;
   padding-right: 0;
-  /* max-width: 980px; */
-  /* background: white; */
   margin-left: auto;
   margin-right: auto;
-  /* width: 90rem; */
 }
 
 /* preview cards */
@@ -433,32 +419,18 @@ nav {
   flex-direction: column;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  /* background: white; */
-  /* margin-left: 5rem; */
-}
-
-.preview-cards p {
-  /* font-size: 1rem; */
-}
-
-.preview-card-title-and-paragraph {
-  padding: 1rem;
 }
 
 .preview-card-title-and-paragraph a {
-  /* padding: 1rem; */
   font-size: 1.75rem;
   font-weight: 800;
   color: #696969;
+  padding: 1rem;
 }
 
 .preview-card-title-and-paragraph a:hover {
   color: #ff7e61;
   text-decoration: none;
-}
-
-.preview-card-title-and-paragraph p {
-  padding: 1rem;
 }
 
 .about-shadow-microscopy,
@@ -467,23 +439,21 @@ nav {
 .build-one {
   display: flex;
   background: white;
-  border-radius: 10px;
   margin: 1rem 2rem 5rem 2rem;
   box-shadow: 2px 4px 4px gray;
+  height: 20rem;
+  border-radius: 5px;
 }
 
-.about-shadow-microscopy a {
-  padding: 1rem;
-  /* width: 100%; */
-  /* height: auto; */
-}
-.about-shadow-microscopy img {
-  width: 170%;
+.img-video {
+  width: 100%;
   height: auto;
+  padding: 1rem;
 }
 
-.video-preview {
-  padding: 1rem;
+.about-shadow-microscopy img {
+  width: 100%;
+  height: auto;
 }
 
 .video-loop-preview {
@@ -492,20 +462,13 @@ nav {
 }
 
 .learn-more-preview a {
-  padding: 1rem;
+  /* padding: 1rem; */
   width: 200%;
   height: auto;
 }
 
-.learn-more-preview img {
-  width: 80%;
-}
-
-.build-one a {
-  padding: 1rem;
-}
 .build-one img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
