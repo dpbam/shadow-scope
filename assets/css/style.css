@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #e8ecee;
   color: #696969;
 }
@@ -45,8 +45,14 @@ header {
   color: #fdf17f;
   display: flex;
   flex-direction: column;
-
   line-height: 4rem;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #fdf17f;
+  display: flex;
+  flex-direction: column;
 }
 
 #logo a:hover {
@@ -58,13 +64,6 @@ header {
   font-size: 1.75rem;
   padding-left: 1.25rem;
   padding-bottom: -2rem;
-}
-
-#logo a {
-  text-decoration: none;
-  color: #fdf17f;
-  display: flex;
-  flex-direction: column;
 }
 
 #logo span a {
@@ -95,15 +94,12 @@ nav {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #2441bf;
-  float: right;
-  /* margin-top: 5rem; */
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -118,8 +114,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  list-style: none;
+  /* align-items: center; */
 }
 
 .csu-ram {
@@ -171,7 +166,6 @@ nav {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  /* font-weight: ; */
   color: #ff7e61;
   background-color: white;
   border-radius: 5px;
@@ -1025,21 +1019,86 @@ div.info-and-form {
   .navbar-nav {
     display: none;
   }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-cards {
+    margin-top: 5rem;
+  }
+  .about-shadow-microscopy img {
+    width: 80%;
+    height: auto;
+  }
+  .video-loop-preview {
+    width: 80%;
+    height: auto;
+  }
+  .learn-more-preview img {
+    width: 80%;
+    height: auto;
+  }
+  .build-one img {
+    width: 100%;
+    height: auto;
+  }
+  .news-and-twitter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .news-feed,
+  .twitter-feed {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {
   .csu-ram {
     margin-top: 0;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 
-  nav {
+  /* nav {
     display: flex;
     flex-direction: column-reverse;
+  } */
+}
+
+@media (max-width: 888px) {
+  .news-and-twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .news-container,
+  .twitter-container {
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  #logo span {
+    padding-left: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: end;
+  }
+  .csu-ram {
+    display: flex;
+    justify-content: end;
+    margin-right: 0;
+  }
+  #banner.box.container {
+    width: 100%;
+  }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one {
+    margin: 1rem 2rem 2rem 2rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1054,12 +1113,12 @@ div.info-and-form {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   #logo {
-    font-size: 3rem;
+    font-size: 2.85rem;
   }
-  nav {
+  /* nav {
     flex-direction: column-reverse;
     justify-content: flex-end;
-  }
+  } */
 }
