@@ -89,6 +89,7 @@ header {
 nav {
   display: flex;
   /* font-family: bemio; */
+  flex-direction: column-reverse;
 }
 
 /* Navbar container */
@@ -96,8 +97,7 @@ nav {
   overflow: hidden;
   background-color: #2441bf;
   float: right;
-  margin-right: 2rem;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 /* Links inside the navbar */
@@ -122,17 +122,10 @@ nav {
   list-style: none;
 }
 
-.side-nav a {
-  color: white;
-}
-
 .csu-ram {
-  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-end;
 }
-
-/* .navbar-nav li a {
-  position: relative;
-} */
 
 /* The dropdown container */
 .dropdown {
@@ -163,7 +156,12 @@ nav {
 }
 
 .dropbtn-sidenav {
-  font-size: 22px;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  background: none;
+  color: white;
+  font-family: 'Poppins';
+  border: none;
 }
 
 .dropdown-sidenav-container {
@@ -173,8 +171,7 @@ nav {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  /* text-shadow: 0px 1px 1px black; */
-  font-weight: bold;
+  /* font-weight: ; */
   color: #ff7e61;
   background-color: white;
   border-radius: 5px;
@@ -201,7 +198,7 @@ nav {
 .side-nav a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1.5rem;
   color: white;
   display: block;
   transition: 0.3s;
@@ -423,24 +420,24 @@ nav {
 }
 
 .preview-card-title-and-paragraph {
-  width: 70%;
+  width: 65%;
   padding: 3rem;
-}
-
-.preview-card-title-and-paragraph a {
-  font-size: 1.75rem;
-  font-weight: 800;
   color: #696969;
-  /* padding: 1rem; */
-}
-
-.preview-card-title-and-paragraph a:hover {
-  color: #ff7e61;
-  text-decoration: none;
 }
 
 .preview-card-title-and-paragraph h3 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #696969;
   padding-bottom: 1rem;
+}
+
+.preview-card-title-and-paragraph h3:hover {
+  color: #ff7e61;
+}
+
+.preview-card-title-and-paragraph a {
+  text-decoration: none;
 }
 
 .about-shadow-microscopy,
@@ -456,7 +453,7 @@ nav {
 }
 
 .img-video {
-  width: 30%;
+  width: 35%;
   height: auto;
   padding: 2rem 2rem 2rem 2rem;
   display: flex;
@@ -474,9 +471,8 @@ nav {
   height: auto;
 }
 
-.learn-more-preview a {
-  /* padding: 1rem; */
-  width: 200%;
+.learn-more-preview img {
+  width: 100%;
   height: auto;
 }
 
@@ -1047,4 +1043,23 @@ div.info-and-form {
 }
 
 @media (max-width: 640px) {
+  #logo {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #logo {
+    font-size: 3rem;
+  }
+  nav {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
 }
