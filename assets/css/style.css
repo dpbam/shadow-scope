@@ -460,9 +460,27 @@ nav {
   height: auto;
 }
 
+.about-shadow-microscopy a {
+  color: #696969;
+  text-decoration: none;
+}
+
+.about-shadow-microscopy a:hover {
+  color: #ff7e61;
+}
+
 .video-loop-preview {
   width: 100%;
   height: auto;
+}
+
+.videos-preview a {
+  color: #696969;
+  text-decoration: none;
+}
+
+.videos-preview a:hover {
+  color: #ff7e61;
 }
 
 .learn-more-preview img {
@@ -470,9 +488,27 @@ nav {
   height: auto;
 }
 
+.learn-more-preview a {
+  color: #696969;
+  text-decoration: none;
+}
+
+.learn-more-preview a:hover {
+  color: #ff7e61;
+}
+
 .build-one img {
   width: 120%;
   height: auto;
+}
+
+.build-one a {
+  color: #696969;
+  text-decoration: none;
+}
+
+.build-one a:hover {
+  color: #ff7e61;
 }
 
 /* aside */
@@ -1075,6 +1111,13 @@ div.info-and-form {
   .twitter-container {
     width: 100%;
   }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one {
+    margin: 0rem 2rem 2rem 2rem;
+    height: 25rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1093,11 +1136,33 @@ div.info-and-form {
   #banner.box.container {
     width: 100%;
   }
+  .preview-cards {
+    margin-bottom: 0rem;
+  }
+  .img-video {
+    /* width: 50%; */
+    padding-left: 1rem;
+    padding-right: 0rem;
+    float: left;
+  }
+  .preview-card-title-and-paragraph {
+    width: auto;
+    padding: 1rem;
+  }
+  .preview-card-title-and-paragraph h3 {
+    /* float: right; */
+  }
+  .preview-card-title-and-paragraph p {
+    /* width: 50%; */
+    /* float: right; */
+    text-align: justify;
+  }
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
   .build-one {
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 0rem 1rem 1rem 1rem;
+    display: block;
   }
 }
 
@@ -1110,6 +1175,18 @@ div.info-and-form {
 @media (max-width: 500px) {
   #logo {
     font-size: 4rem;
+  }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one {
+    height: 29rem;
+  }
+  .img-video {
+    padding-left: 0.5;
+  }
+  .build-one img {
+    padding-right: 0.5rem;
   }
 }
 
