@@ -1157,6 +1157,22 @@ div.info-and-form {
     padding-right: 0rem;
     float: left;
   }
+  .about-shadow-microscopy img {
+    width: 95%;
+    height: auto;
+  }
+  .video-loop-preview {
+    width: 90%;
+    height: auto;
+  }
+  .learn-more-preview img {
+    width: 95%;
+    height: auto;
+  }
+  .build-one img {
+    width: 100%;
+    height: auto;
+  }
   .preview-card-title-and-paragraph {
     width: auto;
     padding: 1rem;
@@ -1181,6 +1197,9 @@ div.info-and-form {
 @media (max-width: 640px) {
   #logo {
     margin-left: 0;
+  }
+  .news-container {
+    height: 65rem;
   }
 }
 
