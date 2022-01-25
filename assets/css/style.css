@@ -269,7 +269,7 @@ nav {
 
 #banner-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 #banner.box.container {
@@ -277,7 +277,7 @@ nav {
   justify-content: space-between;
   width: 95%;
   box-shadow: 2px 4px 4px gray;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
 }
 
 .banner-title {
@@ -368,11 +368,6 @@ nav {
   border-radius: 10px;
   width: 100%;
   height: auto;
-}
-
-#banner-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .peaking-sillhouette {
@@ -1133,8 +1128,25 @@ div.info-and-form {
     justify-content: end;
     margin-right: 0;
   }
+  .peaking-sillhouette {
+    margin-left: 5rem;
+  }
+  #banner {
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
   #banner.box.container {
     width: 100%;
+  }
+  .banner-title-and-paragraph {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  #banner .scope-and-at-scope-button {
+    width: 100%;
+    padding: 0;
   }
   .preview-cards {
     margin-bottom: 0rem;
