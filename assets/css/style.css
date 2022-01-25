@@ -277,7 +277,7 @@ nav {
   justify-content: space-between;
   width: 95%;
   box-shadow: 2px 4px 4px gray;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
 }
 
 .banner-title {
@@ -1137,7 +1137,7 @@ div.info-and-form {
     padding: 1em;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   #banner.box.container {
     width: 100%;
@@ -1148,7 +1148,8 @@ div.info-and-form {
   }
   #banner .scope-and-at-scope-button {
     width: 100%;
-    padding: 0;
+    padding-bottom: 2rem;
+    padding-left: 0;
   }
   .preview-cards {
     margin-bottom: 0rem;
@@ -1193,12 +1194,19 @@ div.info-and-form {
   .build-one {
     margin: 0rem 1rem 1rem 1rem;
     display: block;
+    height: 18rem;
   }
 }
 
 @media (max-width: 640px) {
   #logo {
     margin-left: 0;
+  }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one p {
+    font-size: 0.9rem;
   }
   .news-container {
     height: 65rem;
@@ -1237,8 +1245,49 @@ div.info-and-form {
   #logo {
     font-size: 2.85rem;
   }
-  /* nav {
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 281px) {
+  header {
+    padding: 1rem;
+  }
+  #logo {
+    font-size: 2.25rem;
+  }
+  #logo span {
+    font-size: 1.5rem;
+  }
+  .peaking-sillhouette {
+    margin-left: 2.5rem;
+  }
+  #banner {
+    display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
-  } */
+  }
+  #banner h2 {
+    font-size: 3rem;
+  }
+  #banner p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one {
+    height: 28rem;
+  }
+  .news-container {
+    height: 90rem;
+  }
+  .news-and-twitter {
+    margin: 0;
+    width: 100%;
+  }
 }
