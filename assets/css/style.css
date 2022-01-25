@@ -1090,10 +1090,9 @@ div.info-and-form {
     margin-right: 1rem;
   }
 
-  /* nav {
-    display: flex;
-    flex-direction: column-reverse;
-  } */
+  .blog-title {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 888px) {
@@ -1112,6 +1111,9 @@ div.info-and-form {
   .build-one {
     margin: 0rem 2rem 2rem 2rem;
     height: 25rem;
+  }
+  .moon-boy img {
+    display: none;
   }
 }
 
@@ -1200,6 +1202,16 @@ div.info-and-form {
   }
   .news-container {
     height: 65rem;
+  }
+  .happen-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .blog-title {
+    margin-top: 2rem;
+  }
+  .blog-block {
+    margin: 0;
   }
 }
 
