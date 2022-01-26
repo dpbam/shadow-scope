@@ -1180,12 +1180,8 @@ div.info-and-form {
     width: auto;
     padding: 1rem;
   }
-  .preview-card-title-and-paragraph h3 {
-    /* float: right; */
-  }
+
   .preview-card-title-and-paragraph p {
-    /* width: 50%; */
-    /* float: right; */
     text-align: justify;
   }
   .about-shadow-microscopy,
@@ -1231,7 +1227,7 @@ div.info-and-form {
   .videos-preview,
   .learn-more-preview,
   .build-one {
-    height: 29rem;
+    height: 20rem;
   }
   .img-video {
     padding-left: 0.5;
@@ -1244,6 +1240,9 @@ div.info-and-form {
 @media (max-width: 415px) {
   #logo {
     font-size: 2.85rem;
+  }
+  .peaking-sillhouette {
+    margin-left: 6.5rem;
   }
   .about-shadow-microscopy,
   .videos-preview,
