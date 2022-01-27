@@ -11,4 +11,8 @@ $(function() {
   $('#headerDIV').load('../html/header.html');
   $('#footerDIV').load('../html/footer.html');
 });
+$(function() {
+  $('#html-header').load('..html/html-header.html');
+  $('#html-footer').load('../html/html-footer.html');
+});
 
