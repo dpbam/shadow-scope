@@ -791,6 +791,11 @@ footer {
   text-decoration: none;
   color: ivory;
 }
+
+.resources a:hover {
+  color: #fc4385;
+}
+
 .in-site-links h3 {
   font-weight: 400;
   padding-bottom: 1rem;
@@ -801,6 +806,10 @@ footer {
 
 .in-site-links li {
   list-style-type: none;
+}
+
+.in-site-links a:hover {
+  color: #fc4385;
 }
 
 /* .contact-info {
@@ -826,6 +835,10 @@ a {
 .contact-info a {
   color: white;
   /* font-size: 1.5rem; */
+}
+
+.contact-info a:hover {
+  color: #fc4385;
 }
 
 .contact-info address {
