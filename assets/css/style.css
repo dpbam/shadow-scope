@@ -81,7 +81,7 @@ header {
 }
 
 .fa-bars {
-  float: right;
+  /* float: right; */
   font-size: xx-large;
 }
 
