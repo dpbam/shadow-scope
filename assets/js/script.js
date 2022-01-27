@@ -13,8 +13,8 @@ $(function() {
   $('#html-headerDIV').load('../html/html-header.html');
   $('#html-footerDIV').load('../html/html-footer.html');
 });
-$(function() {
-  $('#html-header').load('..html/html-header.html');
-  $('#html-footer').load('../html/html-footer.html');
-});
+// $(function() {
+//   $('#html-header').load('..html/html-header.html');
+//   $('#html-footer').load('../html/html-footer.html');
+// });
 
