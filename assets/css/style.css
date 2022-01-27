@@ -180,7 +180,8 @@ nav {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: auto;
+  right: 0;
   background-color: #111;
   opacity: 0.9;
   overflow-x: hidden;
