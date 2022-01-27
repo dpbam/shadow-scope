@@ -7,3 +7,8 @@ function closeSlideMenu() {
   document.getElementById('main').style.marginLeft = '0';
 }
 
+$(function() {
+  $('#headerDIV').load('../html/header.html');
+  $('#footerDIV').load('../html/footer.html');
+});
+

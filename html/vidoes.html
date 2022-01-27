@@ -21,85 +21,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="../assets/css/style.css" />
     <title>Videos Gallery</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div id="logo">
-          <a href="../index.html"><span>the</span> Shadow Scope</a>
-        </div>
-        <nav role="navigation" aria-label="main menu">
-          <div class="navbar">
-            <span class="open-slide">
-              <a href="#" onclick="openSlideMenu()">
-                <i class="fas fa-bars"></i>
-              </a>
-            </span>
-            <ul class="navbar-nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./blog.html">Our Blog</a></li>
-              <li><a href="./vidoes.html">Videos</a></li>
-
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Learn More
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="./diagrams.html">- How to use it</a>
-                  <a href="./build.html">- How to make it</a>
-                  <a href="./learn.html">- More about Microscopy and Shadows</a>
-                </div>
-              </div>
-            </ul>
-            <div id="side-menu" class="side-nav">
-              <a href="#" class="btn-close" onclick="closeSlideMenu()"
-                >&times;</a
-              >
-              <a href="../index.html">Home</a>
-              <a href="./blog.html">Our Blog</a>
-              <a href="./vidoes.html">Videos</a>
-
-              <div class="dropdown">
-                <div class="dropdown-sidenav-container">
-                  <button class="dropbtn-sidenav">
-                    Learn More
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                </div>
-                <ul class="dropdown-content">
-                  <li><a href="./diagrams.html">- How to use it</a></li>
-                  <li><a href="./build.html">- How to make it</a></li>
-                  <li>
-                    <a href="./learn.html"
-                      >- More about Microscopy and Shadows</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./build.html">- How to build one.</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="csu-ram">
-            <a
-              href="https://www.colostate.edu/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="../assets/images/CSU-Ram.png"
-                alt="Colorado State University logo"
-                height="80"
-              />
-            </a>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <div id="headerDIV"></div>
+    
     <h1 class="videos-title">Videos:</h1>
     <div class="videos-grid">
       <div class="video-card">
@@ -213,120 +142,8 @@
         </video>
       </div> -->
     </div>
-    <footer>
-      <div class="footer-icons">
-        <a
-          href="https://twitter.com/CSUShadowScope"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <i class="fab fa-twitter-square"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/csushadowscope/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <i class="fab fa-instagram-square"></i
-        ></a>
-        <div class="font-credit">
-          Logo font made from<br />
-          <a
-            href="http://www.onlinewebfonts.com"
-            target="_blank"
-            rel="noreferrer noopener"
-            >oNline Web Fonts </a
-          ><br />is licensed by CC BY 3.0
-        </div>
-      </div>
-
-      <div class="resources">
-        <h3>Resources and Links</h3>
-        <a
-          href="https://www.colostate.edu/"
-          target="_blank"
-          rel="noreferrer noopener"
-          title="Colorado State University"
-          aria-label="Colorado State University link"
-          >> Colorado State University</a
-        ><br />
-        <a
-          href="https://www.bmb.colostate.edu/"
-          target="_blank"
-          rel="noreferrer noopener"
-          title="CSU Biochemistry and Molecular Biology"
-          aria-label="CSU Biochemistry and Molecular Biology link"
-          >> CSU Biochemistry & Molecular Biology</a
-        ><br />
-        <a
-          href="https://www.natsci.colostate.edu/"
-          target="_blank"
-          rel="noreferrer noopener"
-          title="CSU College of Natural Sciences"
-          aria-label="CSU College of Natural Sciences link"
-          >> CSU College of Natural Sciences</a
-        ><br />
-        <a
-          href="https://www.cns-eoc.colostate.edu"
-          target="_blank"
-          rel="noreferrer noopener"
-          title="CSU Natural Sciences Education & Outreach Center"
-          aria-label="CSU Natural Sciences Education & Outreach Center link"
-          >> CSU Natural Sciences Education & <br />Outreach Center</a
-        ><br />
-        <a
-          href="https://cmb.colostate.edu/"
-          target="_blank"
-          rel="noreferrer noopener"
-          title="CSU Cell & Molecular Biology"
-          aria-label="CSU Cell & Molecular Biology link"
-          >> CSU Cell & Molecular Biology</a
-        ><br />
-        <a
-          href="https://www.engr.colostate.edu/sbme/"
-          target="_blank"
-          rel="noreferrer noopener"
-          title="CSU School of Biomedical Engineering"
-          aria-label="CSU School of Biomedical Engineering link"
-          >> CSU School of Biomedical Engineering</a
-        ><br />
-      </div>
-      <div class="in-site-links">
-        <h3>Shadow Scope</h3>
-        <ul>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./vidoes.html">Videos</a></li>
-          <li><a href="./learn.html">Learn More</a></li>
-          <li><a href="./diagrams.html">How to Use It</a></li>
-          <li><a href="./build.html">How to Build It</a></li>
-        </ul>
-      </div>
-      <div class="contact-info">
-        <h3>Contact</h3>
-        <p>
-          Timothy J. Stasevich, Ph.D. <br />
-          Assistant Professor <br />Department of Biochemistry <br />& Molecular
-          Biology
-        </p>
-        <br />
-        <address>
-          Campus Delivery<br />1870 Colorado State University<br />
-          Fort Collins, CO 80523
-        </address>
-        <br />
-        <a href="tel:970-491-0583">Lab: (970) 491-0583</a> <br />
-        <p>Fax: (970) 491-0494</p>
-        <br />
-        <p>Email:</p>
-        <a href="mailto:tim.stasevich@colostate.edu"
-          >tim.stasevich@colostate.edu</a
-        >
-      </div>
-      <div class="footer-copyright">
-        <i class="far fa-copyright"></i>
-        <h3>Tim Stasevich Lab</h3>
-      </div>
-    </footer>
+    <div id="footerDIV"></div>
+    
 
     <script src="../assets/js/script.js"></script>
   </body>
