@@ -87,7 +87,6 @@ header {
 
 nav {
   display: flex;
-  /* font-family: bemio; */
   flex-direction: column-reverse;
 }
 
@@ -107,6 +106,7 @@ nav {
 }
 
 .navbar-nav {
+  display: none;
   text-decoration: none;
   text-transform: uppercase;
   list-style: none;
@@ -114,7 +114,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .csu-ram {
@@ -557,13 +556,6 @@ nav {
   color: #ff7e61;
 }
 
-.blog-container {
-  width: 50rem;
-  height: 50rem;
-  border-style: solid;
-  border-width: 2px;
-}
-
 .blog-block-news-feed {
   padding: 1rem;
   border-bottom: black;
@@ -586,10 +578,10 @@ nav {
 }
 
 /* blog page */
-.happen-container {
+/* .happen-container {
   display: flex;
   justify-content: space-around;
-}
+} */
 
 .blog-title {
   text-align: center;
@@ -604,7 +596,7 @@ nav {
   background-color: white;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 1000px;
   margin: 3em auto;
   box-shadow: 2px 4px 4px gray;
 }
@@ -616,7 +608,8 @@ nav {
 }
 
 .blog-block span h4 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   padding: 1rem;
 }
 
@@ -624,7 +617,7 @@ nav {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .moon-boy {
@@ -1048,15 +1041,15 @@ div.info-and-form {
 /* media queries */
 
 @media (min-width: 1281px) {
-  .fa-bars {
+  /* .fa-bars {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 1280px) {
-  .navbar-nav {
+  /* .navbar-nav {
     display: none;
-  }
+  } */
   .main-container {
     display: flex;
     flex-direction: column;
