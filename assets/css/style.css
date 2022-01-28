@@ -85,7 +85,7 @@ header {
 
 nav {
   display: flex;
-  flex-direction: column-reverse;
+  align-items: center
 }
 
 /* Navbar container */
@@ -254,14 +254,12 @@ nav {
 /* Banner */
 
 #banner {
-  position: relative;
   padding: 4.5em;
   background: white;
-  margin-bottom: 5em;
+  margin: 2rem auto 0 auto;
   border-radius: 10px;
-  margin: 0 auto;
-  position: relative;
-  top: -20px;
+  /*margin: 0 auto;
+  top: -20px; */
 }
 
 #banner-wrapper {
@@ -291,6 +289,11 @@ nav {
 
 .banner-title-and-paragraph {
   width: 70%;
+}
+
+.banner-title-and-paragraph img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #banner p {
