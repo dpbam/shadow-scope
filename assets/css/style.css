@@ -85,12 +85,13 @@ header {
 
 nav {
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 /* Navbar container */
 .navbar {
   overflow: hidden;
+  padding-right: 2rem;
 }
 
 /* Links inside the navbar */
@@ -289,11 +290,14 @@ nav {
 
 .banner-title-and-paragraph {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner-title-and-paragraph img {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 #banner p {
@@ -404,7 +408,7 @@ nav {
 .preview-cards {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -1058,6 +1062,21 @@ div.info-and-form {
 
 /* media queries */
 
+@media (min-width: 1536px) {
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one {
+    margin: 0rem 2rem 2rem 2rem;
+    height: 35rem;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 3rem;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 1281px) {
   /* .fa-bars {
     display: none;
@@ -1215,6 +1234,13 @@ div.info-and-form {
 @media (max-width: 640px) {
   #logo {
     margin-left: 0;
+  }
+  nav {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .navbar {
+    padding: 0;
   }
   .about-shadow-microscopy,
   .videos-preview,
