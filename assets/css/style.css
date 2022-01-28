@@ -36,7 +36,6 @@ header {
 
 #logo {
   position: relative;
-
   margin-left: 2rem;
   font-family: 'bemio';
   font-size: 5rem;
@@ -81,7 +80,6 @@ header {
 }
 
 .fa-bars {
-  /* float: right; */
   font-size: xx-large;
 }
 
@@ -369,7 +367,7 @@ nav {
   height: auto;
 }
 
-.peaking-sillhouette {
+.peaking-silhouette {
   height: 10rem;
   width: 12rem;
   margin-left: 3rem;
