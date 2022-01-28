@@ -301,7 +301,7 @@ nav {
 }
 
 #banner p {
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 1.35em;
   margin: 0;
   font-weight: 200;
@@ -419,10 +419,16 @@ nav {
 }
 
 .preview-card-title-and-paragraph h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #696969;
   padding-bottom: 1rem;
+}
+
+.preview-card-title-and-paragraph p {
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #696969;
 }
 
 .preview-card-title-and-paragraph h3:hover {
