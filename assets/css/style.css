@@ -437,7 +437,8 @@ nav {
 .about-shadow-microscopy,
 .videos-preview,
 .learn-more-preview,
-.build-one {
+.build-one,
+.lessons-preview {
   display: flex;
   background: white;
   margin: 1rem 2rem 5rem 2rem;
@@ -509,6 +510,11 @@ nav {
 
 .build-one a:hover {
   color: #ff7e61;
+}
+
+.lessons-preview img {
+  width: 100%;
+  height: auto;
 }
 
 /* aside */
