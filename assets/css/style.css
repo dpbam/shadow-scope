@@ -959,14 +959,26 @@ a {
   float: right;
   font-size: 1rem;
   margin-top: 1rem;
-}
-.footer-copyright h3 {
   font-weight: 400;
 }
 
-.fa-copyright {
-  font-size: 2rem;
-  padding-right: 0.75rem;
+.footer-copyright h3 {
+  font-weight: 400;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.footer-copyright p {
+  font-weight: 200;
+}
+
+.footer-copyright a:hover {
+  color: #fc4385;
+}
+
+.website-credits {
+  display: flex;
+  flex-direction: column;
 }
 
 /* .fab {
