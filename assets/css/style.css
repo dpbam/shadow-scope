@@ -502,6 +502,7 @@ nav {
 
 .preview-card-title-and-paragraph {
   width: 65%;
+  max-width: 1500px;
   padding: 2rem;
   color: #696969;
 }
@@ -543,15 +544,24 @@ nav {
 .img-video {
   width: 35%;
   height: auto;
+  max-width: 400px;
+  overflow: hidden;
   padding: 2rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.about-shadow-microscopy img {
+.about-shadow-microscopy img,
+.video-loop-preview,
+.learn-more-preview img,
+.build-one img,
+.lessons-preview img {
+  max-width: 100%;
+  /* max-height: 100%; */
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .about-shadow-microscopy a {
@@ -563,11 +573,6 @@ nav {
   color: #ff7e61;
 }
 
-.video-loop-preview {
-  width: 100%;
-  height: auto;
-}
-
 .videos-preview a {
   color: #696969;
   text-decoration: none;
@@ -575,11 +580,6 @@ nav {
 
 .videos-preview a:hover {
   color: #ff7e61;
-}
-
-.learn-more-preview img {
-  width: 100%;
-  height: auto;
 }
 
 .learn-more-preview a {
@@ -591,11 +591,6 @@ nav {
   color: #ff7e61;
 }
 
-.build-one img {
-  width: 120%;
-  height: auto;
-}
-
 .build-one a {
   color: #696969;
   text-decoration: none;
@@ -603,11 +598,6 @@ nav {
 
 .build-one a:hover {
   color: #ff7e61;
-}
-
-.lessons-preview img {
-  width: 100%;
-  height: auto;
 }
 
 /* aside */
@@ -625,7 +615,7 @@ nav {
 .news-container,
 .twitter-container {
   height: 51rem;
-  width: 25rem;
+  max-width: 45rem;
   background-color: white;
   border-radius: 7px;
   box-shadow: 2px 4px 4px gray;
