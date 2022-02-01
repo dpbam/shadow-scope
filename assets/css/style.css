@@ -563,25 +563,10 @@ nav {
   object-fit: contain;
 }
 
-.about-shadow-microscopy a {
-  color: #696969;
-  text-decoration: none;
-}
-
-.about-shadow-microscopy a:hover {
-  color: #ff7e61;
-}
-
-.videos-preview a {
-  color: #696969;
-  text-decoration: none;
-}
-
-.videos-preview a:hover {
-  color: #ff7e61;
-}
-
-.learn-more-preview a {
+.about-shadow-microscopy a,
+.videos-preview a,
+.learn-more-preview a,
+.build-one a {
   color: #696969;
   text-decoration: none;
 }
@@ -591,15 +576,6 @@ nav {
 .learn-more-preview a:hover,
 .build-one a:hover,
 .lessons-preview a:hover {
-  color: #ff7e61;
-}
-
-.build-one a {
-  color: #696969;
-  text-decoration: none;
-}
-
-.build-one a:hover {
   color: #ff7e61;
 }
 
