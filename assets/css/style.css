@@ -296,8 +296,8 @@ nav {
 }
 
 #banner p {
-  font-size: 1.25rem;
-  line-height: 1.35em;
+  font-size: 1.5rem;
+  /* line-height: 1.35em; */
   margin: 0;
   font-weight: 200;
   padding-top: 2rem;
@@ -388,6 +388,11 @@ nav {
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
 }
 
 /* Next & previous buttons */
