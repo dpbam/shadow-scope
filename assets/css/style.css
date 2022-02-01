@@ -1156,7 +1156,8 @@ div.info-and-form {
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
-  .build-one {
+  .build-one,
+  .lessons-preview {
     margin: 0rem 2rem 2rem 2rem;
     height: 35rem;
   }
@@ -1200,6 +1201,10 @@ div.info-and-form {
     width: 100%;
     height: auto;
   }
+  .lessons-preview img {
+    width: 80%;
+    height: auto;
+  }
   .news-and-twitter {
     display: flex;
     flex-direction: row;
@@ -1235,7 +1240,8 @@ div.info-and-form {
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
-  .build-one {
+  .build-one,
+  .lessons-preview {
     margin: 0rem 2rem 2rem 2rem;
     height: 25rem;
   }
@@ -1303,6 +1309,9 @@ div.info-and-form {
     width: 100%;
     height: auto;
   }
+  .lessons-preview img {
+    width: 95%;
+  }
   .preview-card-title-and-paragraph {
     width: auto;
     padding: 1rem;
@@ -1314,7 +1323,8 @@ div.info-and-form {
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
-  .build-one {
+  .build-one,
+  .lessons-preview {
     margin: 0rem 1rem 1rem 1rem;
     display: block;
     height: 18rem;
@@ -1332,10 +1342,11 @@ div.info-and-form {
   .navbar {
     padding: 0;
   }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one p {
+  .about-shadow-microscopy p,
+  .videos-preview p,
+  .learn-more-preview p,
+  .build-one p,
+  .lessons-preview p {
     font-size: 0.9rem;
   }
   .news-container {
@@ -1360,7 +1371,8 @@ div.info-and-form {
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
-  .build-one {
+  .build-one,
+  .lessons-preview {
     height: 20rem;
   }
   .img-video {
@@ -1381,7 +1393,8 @@ div.info-and-form {
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
-  .build-one {
+  .build-one,
+  .lessons-preview {
     height: 22rem;
   }
 }
@@ -1413,7 +1426,8 @@ div.info-and-form {
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
-  .build-one {
+  .build-one,
+  .lessons-preview {
     height: 28rem;
   }
   .news-container {
