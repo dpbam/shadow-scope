@@ -508,7 +508,7 @@ nav {
 .preview-card-title-and-paragraph {
   width: 65%;
   max-width: 1500px;
-  padding: 2rem;
+  padding: 2.5rem 2rem 2rem 0;
   color: #696969;
 }
 
@@ -584,6 +584,13 @@ nav {
 .build-one a:hover,
 .lessons-preview a:hover {
   color: #ff7e61;
+}
+
+/* under construction */
+.coming-soon p {
+  color: #ff7e61;
+  font-weight: 800;
+  font-size: 4rem;
 }
 
 /* aside */
@@ -712,6 +719,8 @@ nav {
 /* learn more page */
 /* sidenav not to be confused with the popout sidenav for small screens */
 .sidenav {
+  /* hidden until this page is done */
+  display: none;
   width: 250px;
   position: absolute;
   z-index: 1;
@@ -739,6 +748,8 @@ nav {
 }
 
 .main {
+  /* hide for now */
+  display: none;
   margin: 5rem 10rem 5rem 20rem;
   padding: 0px 10px;
 }
@@ -1312,7 +1323,7 @@ div.info-and-form {
     height: auto;
   }
   .video-loop-preview {
-    width: 90%;
+    width: 95%;
     height: auto;
   }
   .learn-more-preview img {
@@ -1341,7 +1352,14 @@ div.info-and-form {
   .lessons-preview {
     margin: 0rem 1rem 1rem 1rem;
     display: block;
-    height: 18rem;
+    height: 23rem;
+  }
+  .about-shadow-microscopy p,
+  .videos-preview p,
+  .learn-more-preview p,
+  .build-one p,
+  .lessons-preview p {
+    font-size: 1.15rem;
   }
 }
 
@@ -1414,6 +1432,10 @@ div.info-and-form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .img-video {
+    width: 100%;
+    height: auto;
   }
   .preview-card-title-and-paragraph h3 {
     font-size: 1.5rem;
