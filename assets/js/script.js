@@ -7,12 +7,12 @@ function closeSlideMenu() {
   document.getElementById('main').style.marginLeft = '0';
 }
 
-$(function() {
+$(function () {
   $('#headerDIV').load('../html/header.html');
   $('#footerDIV').load('../html/footer.html');
 });
 
-// Slideshow 
+// Slideshow
 
 // Automatic slideshow
 var slideIndex = 0;
@@ -20,14 +20,16 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName('mySlides');
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = 'none';
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 // User conrols slideshow:
 // var slideIndex = 1;
