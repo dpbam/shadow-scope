@@ -1312,7 +1312,7 @@ div.info-and-form {
     height: auto;
   }
   .video-loop-preview {
-    width: 90%;
+    width: 95%;
     height: auto;
   }
   .learn-more-preview img {
@@ -1341,7 +1341,14 @@ div.info-and-form {
   .lessons-preview {
     margin: 0rem 1rem 1rem 1rem;
     display: block;
-    height: 18rem;
+    height: 23rem;
+  }
+  .about-shadow-microscopy p,
+  .videos-preview p,
+  .learn-more-preview p,
+  .build-one p,
+  .lessons-preview p {
+    font-size: 1.15rem;
   }
 }
 
@@ -1414,6 +1421,10 @@ div.info-and-form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .img-video {
+    width: 100%;
+    height: auto;
   }
   .preview-card-title-and-paragraph h3 {
     font-size: 1.5rem;
