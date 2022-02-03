@@ -600,7 +600,7 @@ nav {
 .news-container,
 .twitter-container {
   height: 80rem;
-  max-width: 45rem;
+  max-width: 46rem;
   background-color: white;
   border-radius: 7px;
   box-shadow: 2px 4px 4px gray;
@@ -1457,8 +1457,10 @@ div.info-and-form {
   .lessons-preview {
     height: 28rem;
   }
-  .news-container {
+  .news-container,
+  .twitter-container {
     height: 90rem;
+    width: 100%;
   }
   .news-and-twitter {
     margin: 0;
