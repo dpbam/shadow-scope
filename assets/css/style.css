@@ -1215,6 +1215,12 @@ div.info-and-form {
   .twitter-feed {
     width: 100%;
   }
+  .news {
+    width: 49%;
+  }
+  .twitter {
+    width: 49%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1234,9 +1240,15 @@ div.info-and-form {
     flex-direction: column;
     justify-content: center;
   }
+  .news,
+  .twitter {
+    width: 100%;
+    margin: 0;
+  }
   .news-container,
   .twitter-container {
     width: 100%;
+    margin-right: 0;
   }
   .about-shadow-microscopy,
   .videos-preview,
@@ -1397,6 +1409,17 @@ div.info-and-form {
   .build-one,
   .lessons-preview {
     height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 0.75rem;
   }
 }
 
@@ -1416,6 +1439,9 @@ div.info-and-form {
   #banner {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .banner-title {
+    font-size: 2rem;
   }
   #banner h2 {
     font-size: 3rem;
