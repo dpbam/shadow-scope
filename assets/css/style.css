@@ -15,8 +15,9 @@ body a {
 }
 
 header {
-  background-color: #2441bf;
-  color: white;
+  /* background-color: #2441bf; */
+  background: #1e4d2b;
+  color: #ffffff;
   padding: 2rem;
 }
 
@@ -41,7 +42,8 @@ header {
   font-size: 5rem;
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
-  color: #fdf17f;
+  /* color: #fdf17f; */
+  color: #bdb878;
   display: flex;
   flex-direction: column;
   line-height: 4rem;
@@ -49,7 +51,7 @@ header {
 
 #logo a {
   text-decoration: none;
-  color: #fdf17f;
+  color: #bdb878;
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +100,7 @@ nav {
 .navbar a {
   float: left;
   font-size: 1.2rem;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -125,7 +127,7 @@ nav {
   float: left;
   overflow: hidden;
   /* border-end-end-radius: 15px; */
-  color: white;
+  color: #ffffff;
 }
 
 /* Dropdown button */
@@ -134,7 +136,7 @@ nav {
   text-transform: uppercase;
   border: none;
   outline: none;
-  color: white;
+  color: #ffffff;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -152,7 +154,7 @@ nav {
   font-size: 1.5rem;
   padding-left: 2rem;
   background: none;
-  color: white;
+  color: #ffffff;
   font-family: 'Poppins';
   border: none;
 }
@@ -165,7 +167,7 @@ nav {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   color: #ff7e61;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 5px;
 }
 
@@ -191,7 +193,7 @@ nav {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
   font-size: 1.5rem;
-  color: white;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
@@ -322,7 +324,7 @@ nav {
   width: 100%;
   margin-bottom: 0.5em;
   background: #b831ab;
-  color: white;
+  color: #ffffff;
   border-radius: 10px;
   padding: 1rem;
   text-decoration: none;
@@ -333,7 +335,7 @@ nav {
 }
 
 #banner .button:hover {
-  box-shadow: 0px 0px 0px white;
+  box-shadow: 0px 0px 0px #ffffff;
   color: #ff7e61;
 }
 
@@ -587,6 +589,11 @@ nav {
 }
 
 /* under construction */
+.coming-soon-preview p {
+  color: #ff7e61;
+  font-weight: 400;
+  font-size: 3rem;
+}
 .coming-soon p {
   color: #ff7e61;
   font-weight: 800;
@@ -716,44 +723,6 @@ nav {
   margin-top: 4rem;
 }
 
-/* learn more page */
-/* sidenav not to be confused with the popout sidenav for small screens */
-.sidenav {
-  /* hidden until this page is done */
-  display: none;
-  width: 250px;
-  position: absolute;
-  z-index: 1;
-  /* top: 0; */
-  left: 0;
-  /* background-color: lightblue; */
-  overflow-x: hidden;
-  margin-top: 2rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  box-shadow: 2px 4px 4px 4px lightgray;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #fc4385;
-  /* text-shadow: 2px 4px 4px black; */
-}
-
-.main {
-  /* hide for now */
-  display: none;
-  margin: 5rem 10rem 5rem 20rem;
-  padding: 0px 10px;
-}
-
 /* videos gallery page */
 .videos-title {
   margin-top: 3rem;
@@ -805,6 +774,51 @@ video {
   margin-bottom: 3rem;
 }
 
+/* how to use it page */
+
+.use-diagram {
+  display: flex;
+  justify-content: center;
+}
+
+/* learn more page */
+/* sidenav not to be confused with the popout sidenav for small screens */
+.sidenav {
+  /* hidden until this page is done */
+  display: none;
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  /* top: 0; */
+  left: 0;
+  /* background-color: lightblue; */
+  overflow-x: hidden;
+  margin-top: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 2px 4px 4px 4px lightgray;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #fc4385;
+  /* text-shadow: 2px 4px 4px black; */
+}
+
+.main {
+  /* hide for now */
+  display: none;
+  margin: 5rem 10rem 5rem 20rem;
+  padding: 0px 10px;
+}
+
 .learn-content {
   text-align: center;
   display: flex;
@@ -819,12 +833,13 @@ video {
 
 /* footer */
 footer {
-  background: #2441bf;
+  /* background: #2441bf; */
+  background: #1e4d2b;
   /* background-image: url('../images/footer-bckgd.png');
   background-size: cover; */
   position: relative;
 
-  color: white;
+  color: #ffffff;
   width: 100%;
   padding: 40px 35px;
   display: flex;
@@ -855,7 +870,8 @@ footer {
 }
 
 .footer-icons i:hover {
-  color: #fdf17f;
+  /* color: #fdf17f; */
+  color: #ffffff;
   cursor: pointer;
   box-shadow: 2px 2px 2px black;
 }
@@ -866,7 +882,8 @@ footer {
 }
 
 .font-credit a {
-  color: ivory;
+  /* color: ivory; */
+  color: #ffffff;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
 }
@@ -885,7 +902,7 @@ footer {
 
 .resources a {
   text-decoration: none;
-  color: ivory;
+  color: #ffffff;
 }
 
 .resources a:hover {
@@ -924,12 +941,12 @@ footer {
 address,
 a {
   font-size: 1 rem;
-  color: white;
+  color: #ffffff;
   font-weight: 200;
 }
 
 .contact-info a {
-  color: white;
+  color: #ffffff;
   /* font-size: 1.5rem; */
 }
 
@@ -997,7 +1014,7 @@ div.contact-container {
 .contact-container p {
   font-size: 25px;
   font-family: roboto;
-  color: white;
+  color: #ffffff;
 }
 
 .contact-container h4 {
@@ -1136,7 +1153,7 @@ textarea {
   border-radius: 4px;
   display: inline-block;
   background-color: #4b8cfb;
-  color: white;
+  color: #ffffff;
   font-size: 18px;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
@@ -1180,11 +1197,25 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 1.5rem;
   }
+  .coming-soon-preview p {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1281px) {
-  /* .fa-bars {
-    display: none;
-  } */
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one,
+  .lessons-preview {
+    margin: 0rem 2rem 2rem 2rem;
+    height: 35rem;
+  }
+}
+
+@media (max-width: 1536px) {
+  .coming-soon-preview p {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -1198,26 +1229,19 @@ div.info-and-form {
   .preview-cards {
     margin-top: 5rem;
   }
-  .about-shadow-microscopy img {
-    width: 80%;
-    height: auto;
-  }
-  .video-loop-preview {
-    width: 80%;
-    height: auto;
-  }
-  .learn-more-preview img {
-    width: 80%;
-    height: auto;
-  }
-  .build-one img {
-    width: 100%;
-    height: auto;
-  }
+  .about-shadow-microscopy img,
+  .video-loop-preview,
+  .learn-more-preview img,
   .lessons-preview img {
     width: 80%;
     height: auto;
   }
+
+  .build-one img {
+    width: 100%;
+    height: auto;
+  }
+
   .news-and-twitter {
     display: flex;
     flex-direction: row;
@@ -1227,9 +1251,7 @@ div.info-and-form {
   .twitter-feed {
     width: 100%;
   }
-  .news {
-    width: 49%;
-  }
+  .news,
   .twitter {
     width: 49%;
   }
@@ -1242,6 +1264,10 @@ div.info-and-form {
   }
 
   .blog-title {
+    font-size: 2rem;
+  }
+
+  .coming-soon-preview p {
     font-size: 2rem;
   }
 }
