@@ -122,6 +122,10 @@ nav {
   justify-content: flex-end;
 }
 
+.csu-ram img {
+  height: 4rem;
+}
+
 /* The dropdown container */
 .dropdown {
   float: left;
@@ -729,6 +733,40 @@ nav {
   margin-left: 2rem;
 }
 
+/* search in videos page */
+.searchContainer {
+  display: flex;
+  max-width: 35rem;
+  flex: 1 1 300px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.searchIcon {
+  padding: 1rem;
+  width: 5rem;
+  background: white;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  width: 20rem;
+  /* flex: 1; */
+  width: 100%;
+}
+
+.searchButton {
+  background: #538ac5;
+  width: 10rem;
+  border: 0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+
 .videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1229,6 +1267,13 @@ div.info-and-form {
   .preview-cards {
     margin-top: 5rem;
   }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one,
+  .lessons-preview {
+    height: 25rem;
+  }
   .about-shadow-microscopy img,
   .video-loop-preview,
   .learn-more-preview img,
@@ -1294,10 +1339,25 @@ div.info-and-form {
   .build-one,
   .lessons-preview {
     margin: 0rem 2rem 2rem 2rem;
-    height: 25rem;
+  }
+  .img-video {
+    /* width: 50%; */
+    padding-left: 1rem;
+    padding-right: 0rem;
+    float: left;
+  }
+  .build-one .preview-card-title-and-paragraph {
+    padding-left: 1rem;
+  }
+  .preview-card-title-and-paragraph {
+    padding-right: 0.2;
+    padding-top: 1rem;
   }
   .moon-boy img {
     display: none;
+  }
+  .coming-soon-preview p {
+    font-size: 1.25rem;
   }
 }
 
@@ -1344,24 +1404,13 @@ div.info-and-form {
     padding-right: 0rem;
     float: left;
   }
-  .about-shadow-microscopy img {
-    width: 95%;
-    height: auto;
-  }
-  .video-loop-preview {
-    width: 95%;
-    height: auto;
-  }
-  .learn-more-preview img {
-    width: 95%;
-    height: auto;
-  }
-  .build-one img {
-    width: 100%;
-    height: auto;
-  }
+  .about-shadow-microscopy img,
+  .video-loop-preview,
+  .learn-more-preview img,
+  .build-one img,
   .lessons-preview img {
     width: 95%;
+    height: auto;
   }
   .preview-card-title-and-paragraph {
     width: auto;
@@ -1387,6 +1436,10 @@ div.info-and-form {
   .lessons-preview p {
     font-size: 1.15rem;
   }
+  .news-and-twitter {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1408,7 +1461,7 @@ div.info-and-form {
     font-size: 0.9rem;
   }
   .news-container {
-    height: 65rem;
+    height: 68rem;
   }
   .happen-container {
     display: flex;
@@ -1422,7 +1475,7 @@ div.info-and-form {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   #logo {
     font-size: 4rem;
   }
@@ -1439,14 +1492,29 @@ div.info-and-form {
   .build-one img {
     padding-right: 0.5rem;
   }
+  .news-container {
+    height: 85rem;
+  }
 }
 
 @media (max-width: 415px) {
+  header {
+    padding: 1rem;
+  }
   #logo {
     font-size: 2.85rem;
   }
+  nav {
+    justify-content: space-between;
+  }
+  .csu-ram img {
+    height: 3.5rem;
+  }
   .peaking-sillhouette {
     margin-left: 6rem;
+  }
+  #banner h4 {
+    font-size: 2.5rem;
   }
   .about-shadow-microscopy,
   .videos-preview,
@@ -1468,6 +1536,12 @@ div.info-and-form {
     text-align: center;
   }
   .preview-card-title-and-paragraph p {
+    font-size: 0.75rem;
+  }
+  .news-container {
+    height: 75rem;
+  }
+  .blog-block-news-feed p {
     font-size: 0.75rem;
   }
 }
@@ -1492,8 +1566,8 @@ div.info-and-form {
   .banner-title {
     font-size: 2rem;
   }
-  #banner h2 {
-    font-size: 3rem;
+  #banner h4 {
+    font-size: 2rem;
   }
   #banner p {
     font-size: 1.5rem;
