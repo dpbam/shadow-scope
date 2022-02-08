@@ -653,9 +653,10 @@ nav {
 
 .blog-block-news-feed {
   padding: 1rem;
-  border-bottom: black;
-  border-style: ridge;
-  border-width: 1px;
+}
+
+.blog-block-news-feed p {
+  padding-bottom: 1rem;
 }
 
 .twitter-feed {
