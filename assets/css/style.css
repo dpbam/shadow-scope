@@ -725,6 +725,11 @@ nav {
   justify-content: space-around;
 }
 
+.delaney-blogone img {
+  width: 48%;
+  height: auto;
+}
+
 /* videos gallery page */
 .videos-title {
   margin-top: 3rem;
