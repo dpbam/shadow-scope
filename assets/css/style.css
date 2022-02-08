@@ -763,6 +763,8 @@ nav {
   width: 10rem;
   border: 0;
   color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
   padding: 0.5rem;
   border-radius: 0;
 }

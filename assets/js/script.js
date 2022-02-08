@@ -61,3 +61,22 @@ function showSlides() {
 //   dots[slideIndex-1].className += " active";
 // }
 // End user controls slideshow
+
+// videos search bar
+var videos = [10, 20, 30, 40, 50];
+var myInputs = document.getElementById('myInput');
+var searchButton = document.getElementById('search-button');
+
+function searchFunction() {
+  if (videos.indexOf(Number(myInputs.value)) == -1) {
+    document.write(myInputs.value + '<b>Not Found</b>');
+  } else {
+    document.write(
+      '<b>Element found at ' +
+        videos.indexOf(Number(myInputs.value)) +
+        ' Position</b>'
+    );
+  }
+}
+
+searchButton.addEventListener('click', searchFunction);
