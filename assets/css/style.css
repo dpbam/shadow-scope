@@ -719,8 +719,9 @@ nav {
   width: 50%;
 }
 
-.moon-boy {
-  margin-top: 4rem;
+.delaney-blogone {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* videos gallery page */
