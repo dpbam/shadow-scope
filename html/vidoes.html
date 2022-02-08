@@ -29,18 +29,23 @@
   <body>
     <div id="headerDIV"></div>
     <h1 class="videos-title">Videos:</h1>
-    <div class="searchContainer">  
-      <i class="fa fa-search searchIcon"></i>  
-      <input type="search" class="searchBox" id="myInput" name="search" onkeyup="videosSearchFunction()" placeholder="Search videos by date or time">
-      <button type="submit" id="search-button" value="Search" class="searchButton">Search</button>
+    <div class="search-container">  
+      <form class="form">
+        <i class="fa fa-search searchIcon"></i>  
+        <input type="text" id="search" name="search" class="input" placeholder="Search videos by date or time">
+        <button type="submit" id="search-button" class="searchButton" value="Search" >Search</button>
+      </form>
     </div>
-    <ul id="myUL">
+    <div class="results-container">
+      <ul class="results-list" id="list"></ul>
+    </div>
+    <!-- <ul id="myUL">
       <li><a href=""></a>12/05/21 at 10:00am</li>
       <li><a href=""></a>12/05/21 at 11:00am</li>
       <li><a href=""></a>12/05/21 at 11:30am</li>
       <li><a href=""></a>12/05/21 at 11:35am</li>
       <li><a href=""></a>12/05/21 at 11:45am</li>
-    </ul>
+    </ul> -->
     <div class="videos-grid">
       <div class="video-card">
         <h2>

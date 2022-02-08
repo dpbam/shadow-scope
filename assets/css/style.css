@@ -657,9 +657,9 @@ nav {
 
 .blog-block-news-feed {
   padding: 1rem;
-  border-bottom: black;
+  /* border-bottom: black;
   border-style: ridge;
-  border-width: 1px;
+  border-width: 1px; */
 }
 
 .twitter-feed {
@@ -734,7 +734,7 @@ nav {
 }
 
 /* search in videos page */
-.searchContainer {
+.search-container {
   display: flex;
   max-width: 35rem;
   flex: 1 1 300px;
@@ -742,6 +742,12 @@ nav {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+  margin-left: 3rem;
+}
+
+.form {
+  display: flex;
+  width: 100%;
 }
 
 .searchIcon {
@@ -750,7 +756,7 @@ nav {
   background: white;
 }
 
-.searchBox {
+#search {
   border: 0;
   padding: 0.5rem 0.5rem 0.5rem 0;
   width: 20rem;
@@ -767,6 +773,11 @@ nav {
   text-transform: uppercase;
   padding: 0.5rem;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background: #3c6b9c;
 }
 
 .videos-grid {
