@@ -819,44 +819,35 @@ video {
   text-transform: uppercase;
 }
 
-.at-scope-now-one p {
-  text-align: center;
-}
-
-.front-and-bottom {
-  display: flex;
-  justify-content: center;
-}
-
-.front-and-bottom img {
-  padding: 2rem;
-}
-
-.scope-on {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.at-scope-now-two p {
+.at-scope-now-one p,
+.at-scope-now-two p,
+.at-scope-now-three p,
+.at-scope-now-four p,
+.at-scope-now-five p {
   text-align: center;
   padding: 2rem;
 }
 
+.front-and-bottom,
+.scope-on,
+.pipetting,
+.insert-slide,
+.move-slide-and-press-record,
 .slide-image {
   display: flex;
   justify-content: center;
+}
+
+.front-and-bottom img,
+.pipetting img,
+.insert-slide img,
+.move-slide-and-press-record img {
   padding: 2rem;
 }
 
-.pipetting {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.pipetting img {
-  padding: 2rem;
+.picture-seven {
+  width: 48rem;
+  height: auto;
 }
 
 .main {
