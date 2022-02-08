@@ -817,6 +817,7 @@ video {
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
+  padding-top: 3rem;
 }
 
 .at-scope-now-one p,
