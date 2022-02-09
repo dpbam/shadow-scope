@@ -30,165 +30,28 @@
     <div id="headerDIV"></div>
     <h1 class="videos-title">Videos:</h1>
     <div class="search-container">
-      <form class="form">
+      <div class="search-bar">
         <i class="fa fa-search searchIcon"></i>
         <input
           type="text"
           id="search"
           name="search"
           class="input"
-          placeholder="Search videos by date or time"
+          placeholder="Search videos by unique id"
         />
-        <button
-          type="submit"
-          id="search-button"
-          class="searchButton"
-          value="Search"
-        >
+        <button type="button" id="search-button" class="searchButton">
           Search
         </button>
-      </form>
+      </div>
     </div>
-    <div class="results-container">
+    <!-- <div class="results-container">
       <ul class="results-list" id="list"></ul>
-    </div>
-    <!-- <ul id="myUL">
-      <li><a href=""></a>12/05/21 at 10:00am</li>
-      <li><a href=""></a>12/05/21 at 11:00am</li>
-      <li><a href=""></a>12/05/21 at 11:30am</li>
-      <li><a href=""></a>12/05/21 at 11:35am</li>
-      <li><a href=""></a>12/05/21 at 11:45am</li>
-    </ul> -->
-    <!-- <div class="videos-grid">
-      <div class="video-card">
-        <h2>
-          <a href="video.html"> Video #001</a>
-        </h2>
-        <video controls>
-          <source
-            src="../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4"
-          />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #002</h2>
-        <video controls>
-          <source
-            src="../assets/videos/bumpercar-and-zigzag-20210121-145856shadow_scope1.mp4"
-          />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #003</h2>
-        <video controls>
-          <source
-            src="../assets/videos/creepy-moving-bug-20210121-115601shadow_scope1.mp4"
-          />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #004</h2>
-        <video controls>
-          <source
-            src="../assets/videos/dot-tracking-greenplant-20210121-160535shadow_scope1.mp4"
-          />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #005</h2>
-        <video controls>
-          <source
-            src="../assets/videos/dot-tracking-plant-20210121-155902shadow_scope1.mp4"
-          />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #006</h2>
-        <video controls>
-          <source
-            src="../assets/videos/inching-worm2-20210121-151712shadow_scope1.mp4"
-          />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #007</h2>
-        <video controls>
-          <source
-            src="../assets/videos/littleguy-bumpercar-20210121-145755shadow_scope1.mp4"
-          />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #008</h2>
-        <video controls>
-          <source
-            src="../assets/videos/littleguy-spirals-20210121-145740shadow_scope1.mp4"
-          />
-        </video>
-      </div> -->
-      <!-- <div class="video-card">
-        <h2>Video #009</h2>
-        <video  controls>
-          <source src="../assets/videos/party-elegans-20210121-090808shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #010</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/pooping-flea-20210121-114516shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #011</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/rotation-20201026-173549shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #012</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/segmented-nematode-20210121-204833shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #013</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/segmented-worm-and-flea-20210121-204848shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #014</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/spirals-and-zigzags-20210121-153913shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #015</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/super-spin-20210121-082703shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #016</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/waterflea-great-20201026-223810shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #018</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/wormy-worms-20210121-151600shadow_scope1.mp4" />
-        </video>
-      </div>
-      <div class="video-card">
-        <h2>Video #019</h2>
-        <video width="300" height="240" controls>
-          <source src="../assets/videos/zip-and-tiny-spirals-20210120-235145shadow_scope1.mp4" />
-        </video>
-      </div> -->
+    </div> -->
+
+    <div id="videos-grid">
+      <!-- Videos are to be injected by the script file -->
     </div>
     <div id="footerDIV"></div>
-
     <script src="../assets/js/script.js"></script>
   </body>
 </html>

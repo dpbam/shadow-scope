@@ -28,7 +28,9 @@ function showSlides() {
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
-  slides[slideIndex - 1].style.display = 'block';
+  if (slides?.length > 0) {
+    slides[slideIndex - 1].style.display = 'block';
+  }
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 // User conrols slideshow:
@@ -64,22 +66,120 @@ function showSlides() {
 
 // videos search bar
 var videos = [
-  { name: 'Video001' },
-  { name: 'Video002' },
-  { name: 'Video003' },
-  { name: 'Video004' },
-  { name: 'Video005' },
-  { name: 'Video006' },
-  { name: 'Video007' },
-  { name: 'Video008' },
+  {
+    name: 'Video001',
+    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
+  },
+  {
+    name: 'Video002',
+    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
+  },
+  {
+    name: 'Video003',
+    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
+  },
+  {
+    name: 'Video004',
+    url: '../assets/videos/chasing-blobby-with-whiskers-20210121-210350shadow_scope1.mp4',
+  },
+  {
+    name: 'Video005',
+    url: '../assets/videos/creepy-moving-bug-20210121-115601shadow_scope1.mp4',
+  },
+  {
+    name: 'Video006',
+    url: '../assets/videos/dot-tracking-greenplant-20210121-160535shadow_scope1.mp4',
+  },
+  {
+    name: 'Video007',
+    url: '../assets/videos/dot-tracking-plant-20210121-155902shadow_scope1.mp4',
+  },
+  {
+    name: 'Video008',
+    url: '../assets/videos/inching-worm2-20210121-151712shadow_scope1.mp4',
+  },
+  {
+    name: 'Video009',
+    url: '../assets/videos/littleguy-bumpercar-20210121-145755shadow_scope1.mp4',
+  },
+  {
+    name: 'Video010',
+    url: '../assets/videos/littleguy-spirals-20210121-145740shadow_scope1.mp4',
+  },
+  {
+    name: 'Video011',
+    url: '../assets/videos/party-elegans-20210121-090808shadow_scope1.mp4',
+  },
+  {
+    name: 'Video012',
+    url: '../assets/videos/pooping-flea-20210121-114516shadow_scope1.mp4',
+  },
+  {
+    name: 'Video013',
+    url: '../assets/videos/rotation-20201026-173549shadow_scope1.mp4',
+  },
+  {
+    name: 'Video014',
+    url: '../assets/videos/segmented-nematode-20210121-204833shadow_scope1.mp4',
+  },
+  {
+    name: 'Video015',
+    url: '../assets/videos/segmented-worm-and-flea-20210121-204848shadow_scope1.mp4',
+  },
+  {
+    name: 'Video016',
+    url: '../assets/videos/spirals-and-zigzags-20210121-153913shadow_scope1.mp4',
+  },
+  {
+    name: 'Video017',
+    url: '../assets/videos/super-spin-20210121-082703shadow_scope1.mp4',
+  },
+  {
+    name: 'Video018',
+    url: '../assets/videos/waterflea-great-20201026-223810shadow_scope1.mp4',
+  },
+  {
+    name: 'Video019',
+    url: '../assets/videos/wormy-worms-20210121-151600shadow_scope1.mp4',
+  },
+  {
+    name: 'Video020',
+    url: '../assets/videos/zip-and-tiny-spirals-20210120-235145shadow_scope1.mp4',
+  },
 ];
+
 const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
 
-searchInput.addEventListener('input', (e) => {
+// Initially load the videos by default
+renderVideos(videos);
+
+// Injects the videos into the grid based on the array of `videosToRender`
+
+function renderVideos(videosToRender) {
+  var videoGrid = document.getElementById('videos-grid')[0];
+
+  if (videoGrid !== null) {
+    videoGrid.innerHTML = '';
+
+    // Loop through each video and add the html element to the grid
+    videosToRender.forEach((video) => {
+      videoGrid.innerHTML += `
+        <div class="video-card">
+          <h2>${video.name}</a></h2>
+          <video conrols>
+            <source src="${video.url}" />
+          </video>
+        </div>
+      `;
+    });
+  }
+}
+
+searchButton.addEventListener('click', (e) => {
   // inside, we will need to achieve a few things:
   // 1. declare and assign the value of the event's target to a variable AKA whatever is typed into the search bar
-  let value = e.target.value;
+  let searchInputValue = searchInput.value;
 
   // 2. check: if input exists and if input is larger than 0
   if (value && value.trim().length > 0) {
