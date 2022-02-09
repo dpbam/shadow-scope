@@ -794,14 +794,14 @@ nav {
   background: #3c6b9c;
 }
 
-.videos-grid {
+#videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 6rem;
   margin: 3rem;
 }
 
-.videos-grid h2 {
+#videos-grid h2 {
   margin-bottom: 1rem;
 }
 

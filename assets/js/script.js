@@ -152,12 +152,12 @@ const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
 
 // Initially load the videos by default
-renderVideos(videos);
+// renderVideos(videos);
 
 // Injects the videos into the grid based on the array of `videosToRender`
 
 function renderVideos(videosToRender) {
-  var videoGrid = document.getElementById('videos-grid')[0];
+  var videoGrid = document.getElementById('videos-grid');
 
   if (videoGrid !== null) {
     videoGrid.innerHTML = '';
@@ -167,13 +167,21 @@ function renderVideos(videosToRender) {
       videoGrid.innerHTML += `
         <div class="video-card">
           <h2>${video.name}</a></h2>
-          <video conrols>
+          <video controls>
             <source src="${video.url}" />
           </video>
         </div>
       `;
     });
   }
+}
+
+function filterVideosByName(nameValue) {
+  let filteredVideos = videos.filter((v) =>
+    v.name.toLocaleLowerCase().includes(nameValue)
+  );
+
+  renderVideos(filteredVideos);
 }
 
 searchButton.addEventListener('click', (e) => {
