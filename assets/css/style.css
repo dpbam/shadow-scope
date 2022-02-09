@@ -6,7 +6,7 @@
 
 html {
   position: relative;
-  min-height: 100%;
+  /* min-height: 100vh; */
   margin: 0;
   padding: 0;
 }
@@ -24,7 +24,7 @@ body a {
 }
 
 .pageContentWrapper {
-  margin-bottom: 500px;
+  min-height: 50vh;
 }
 
 header {
@@ -742,8 +742,7 @@ nav {
 
 /* videos gallery page */
 .videos-title {
-  margin-top: 3rem;
-  margin-left: 2rem;
+  padding: 3rem 0 2rem 2rem;
 }
 
 /* search in videos page */
@@ -902,7 +901,7 @@ footer {
   background: #1e4d2b;
   /* background-image: url('../images/footer-bckgd.png');
   background-size: cover; */
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   overflow: hidden;
   color: #ffffff;

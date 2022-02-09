@@ -28,28 +28,33 @@
   </head>
   <body>
     <div id="headerDIV"></div>
-    <h1 class="videos-title">Videos:</h1>
-    <div class="search-container">
-      <div class="search-bar">
-        <i class="fa fa-search searchIcon"></i>
-        <input
-          type="text"
-          id="search"
-          name="search"
-          class="input"
-          placeholder="Search videos by unique id"
-        />
-        <button type="button" id="search-button" class="searchButton">
-          Search
-        </button>
+    <div class="pageContentWrapper">
+      <h1 class="videos-title">
+        Here's where you can search for the video(s) that you took on the Shadow
+        Scope!
+      </h1>
+      <div class="search-container">
+        <div class="search-bar">
+          <i class="fa fa-search searchIcon"></i>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            class="input"
+            placeholder="Search videos by unique id"
+          />
+          <button type="button" id="search-button" class="searchButton">
+            Search
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="results-container">
-      <ul class="results-list" id="list"></ul>
-    </div>
+      <div class="results-container">
+        <ul class="results-list" id="list"></ul>
+      </div>
 
-    <div id="videos-grid">
-      <!-- Videos are to be injected by the script file -->
+      <div id="videos-grid">
+        <!-- Videos are to be injected by the script file -->
+      </div>
     </div>
     <div id="footerDIV"></div>
     <script src="../assets/js/script.js"></script>
