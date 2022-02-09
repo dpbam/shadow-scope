@@ -813,11 +813,26 @@ video {
 }
 
 /* how-to page */
-.at-scope-now-one h5 {
+h5 {
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
   padding-top: 3rem;
+}
+
+h4 {
+  text-align: center;
+}
+
+.instructions-container {
+  background: white;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
 }
 
 .at-scope-now-one p,
@@ -839,11 +854,16 @@ video {
   justify-content: center;
 }
 
+.scope-on img,
 .front-and-bottom img,
 .pipetting img,
 .insert-slide img,
 .move-slide-and-press-record img {
-  padding: 2rem;
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.pipetting img {
+  width: 40rem;
 }
 
 .picture-seven {
