@@ -73,10 +73,10 @@ var videos = [
   { name: 'Video007' },
   { name: 'Video008' },
 ];
-var searchInput = document.querySelector('.input');
-var searchButton = document.getElementById('search-button');
+const searchInput = document.querySelector('.input');
+const searchButton = document.getElementById('search-button');
 
-searchButton.addEventListener('input', (e) => {
+searchInput.addEventListener('input', (e) => {
   // inside, we will need to achieve a few things:
   // 1. declare and assign the value of the event's target to a variable AKA whatever is typed into the search bar
   let value = e.target.value;
@@ -112,7 +112,7 @@ searchButton.addEventListener('input', (e) => {
 function setList(results) {
   for (const video of results) {
     // creating a li element for each result item
-    const resultItem = document.createElement('li');
+    const resultItem = document.createElement('<li>');
 
     // adding a class to each item of the results
     resultItem.classList.add('result-item');

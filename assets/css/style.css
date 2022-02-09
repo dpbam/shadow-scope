@@ -4,14 +4,27 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #e8ecee;
   color: #696969;
+  margin: 0;
+  padding: 0;
 }
 
 body a {
   text-decoration: none;
+}
+
+.pageContentWrapper {
+  margin-bottom: 500px;
 }
 
 header {
@@ -737,6 +750,7 @@ nav {
 .search-container {
   display: flex;
   max-width: 35rem;
+  max-height: 3rem;
   flex: 1 1 300px;
   position: relative;
   border: 1px solid #ccc;
@@ -888,8 +902,9 @@ footer {
   background: #1e4d2b;
   /* background-image: url('../images/footer-bckgd.png');
   background-size: cover; */
-  position: relative;
-
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
   color: #ffffff;
   width: 100%;
   padding: 40px 35px;
