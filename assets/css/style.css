@@ -835,11 +835,8 @@ hr {
   margin: auto;
 }
 
-.at-scope-now-one p,
-.at-scope-now-two p,
-.at-scope-now-three p,
-.at-scope-now-four p,
-.at-scope-now-five p {
+.instructions-container p {
+  font-size: 1.5rem;
   text-align: center;
   padding: 2rem;
 }
