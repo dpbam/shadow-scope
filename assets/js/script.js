@@ -69,6 +69,8 @@ var videos = [
   {
     name: 'Video001',
     url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
+    date: '12-2-2021',
+    event: 'Stock Show',
   },
   {
     name: 'Video002',
