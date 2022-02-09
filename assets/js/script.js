@@ -182,28 +182,38 @@ searchButton.addEventListener('click', (e) => {
   let searchInputValue = searchInput.value;
 
   // 2. check: if input exists and if input is larger than 0
-  if (value && value.trim().length > 0) {
+  if (searchInputValue && searchInputValue.trim().length > 0) {
     // 3. redefine 'value' to exclude white space and change input to all lowercase
-    value = value.trim().toLowerCase();
+    searchInputValue = searchInputValue.trim().toLowerCase();
     // 4. return the results only if the value of the search is included in the video's name
     // we need to write code (a function for filtering through our data to include the search input value)
-    searchButton.addEventListener('input', (e) => {
-      let value = e.target.value;
-
-      if (value && value.trim().length > 0) {
-        value = value.trim().toLowerCase();
-
-        // returning only the results of setList if the value of the search is included in the video's name
-        setList(
-          videos.filter((video) => {
-            return video.name.includes(value);
-          })
-        );
-      }
-    });
+    filterVideosByName(searchInputValue);
   } else {
     // 5. return nothing
     // input is invalid -- show an error message or show no results
+  }
+});
+
+searchInput.addEventListener('keyup', (e) => {
+  // Enter key is hit, apply filter
+  if (e.key == 'Enter' || e.keyCode == 13) {
+    // This is duplicate code as in the searchButton click event listener above.
+    // I added this to show how to trigger the same action from two different events.
+
+    // 1. declare and assign the value of the event's target to a variable AKA whatever is typed into the search bar
+    let searchInputValue = searchInput.value;
+
+    // 2. check if input exists and if input is larger than 0
+    if (searchInputValue && searchInputValue.trim().length > 0) {
+      // 3. redefine 'value' to exclude white space and change input to all lowercase
+      searchInputValue = searchInputValue.trim().toLowerCase();
+      // 4. return the results only if the value of the search is included in the video's name
+      // we need to write code (a function for filtering through our data to include the search input value)
+      filterVideosByName(searchInputValue);
+    } else {
+      // 5. return nothing
+      // input is invalid -- show an error message or show no results
+    }
   }
 });
 
