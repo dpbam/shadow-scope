@@ -916,7 +916,7 @@ video {
 }
 
 /* how-to page */
-h2 {
+.how-to-title {
   text-align: center;
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -925,7 +925,7 @@ h2 {
   text-shadow: 2px 4px 4px lightgray;
 }
 
-h3 {
+.how-to-subtitle {
   text-align: center;
 }
 
