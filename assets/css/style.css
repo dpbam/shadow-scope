@@ -883,6 +883,62 @@ video {
   /* text-shadow: 2px 4px 4px black; */
 }
 
+/* how-to page */
+h5 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+h4 {
+  text-align: center;
+}
+
+.instructions-container {
+  background: white;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+.instructions-container p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.front-and-bottom,
+.scope-on,
+.pipetting,
+.insert-slide,
+.move-slide-and-press-record,
+.slide-image {
+  display: flex;
+  justify-content: center;
+}
+
+.scope-on img,
+.front-and-bottom img,
+.pipetting img,
+.insert-slide img,
+.move-slide-and-press-record img {
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.pipetting img {
+  width: 40rem;
+}
+
+.picture-seven {
+  width: 48rem;
+  height: auto;
+}
+
 .main {
   /* hide for now */
   display: none;
