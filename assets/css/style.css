@@ -813,14 +813,14 @@ video {
 }
 
 /* how-to page */
-h5 {
+h2 {
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
   padding-top: 3rem;
 }
 
-h4 {
+h3 {
   text-align: center;
 }
 
@@ -857,14 +857,7 @@ hr {
 .insert-slide img,
 .move-slide-and-press-record img {
   padding: 3rem 1rem 3rem 1rem;
-}
-
-.pipetting img {
   width: 40rem;
-}
-
-.picture-seven {
-  width: 48rem;
   height: auto;
 }
 
