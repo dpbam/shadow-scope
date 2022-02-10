@@ -749,7 +749,28 @@ nav {
 
 /* videos gallery page */
 .videos-title {
+  text-align: center;
   padding: 3rem 0 2rem 2rem;
+}
+
+.pageContentWrapper h3 {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-weight: 400;
+}
+
+.sample-video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sample-video {
+  width: 20rem;
+  /* margin: 1rem 0 3rem 0; */
+}
+
+.sample-video video {
+  margin: 1rem;
 }
 
 /* search in videos page */
@@ -763,6 +784,7 @@ nav {
   border-radius: 5px;
   overflow: hidden;
   margin-left: 3rem;
+  margin-top: 2rem;
 }
 
 .search-bar {
@@ -839,10 +861,6 @@ video {
 
 .video-container {
   margin: 10rem;
-}
-
-.video-container h1 {
-  margin-bottom: 3rem;
 }
 
 /* how to use it page */
