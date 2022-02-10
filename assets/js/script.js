@@ -215,6 +215,10 @@ function renderVideos(videosToRender) {
             <source src="${video.url}" />
           </video>
         </div>
+        <p>
+          Click the three vertical dots, download your video, and share with your
+          friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
+        </p>
       `;
     });
   }
