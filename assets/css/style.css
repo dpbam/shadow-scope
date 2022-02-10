@@ -4,14 +4,27 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  /* min-height: 100vh; */
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #e8ecee;
   color: #696969;
+  margin: 0;
+  padding: 0;
 }
 
 body a {
   text-decoration: none;
+}
+
+.pageContentWrapper {
+  min-height: 60vh;
 }
 
 header {
@@ -43,7 +56,7 @@ header {
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
   /* color: #fdf17f; */
-  color: #bdb878;
+  color: #c7c26d;
   display: flex;
   flex-direction: column;
   line-height: 4rem;
@@ -122,6 +135,10 @@ nav {
   justify-content: flex-end;
 }
 
+.csu-ram img {
+  height: 4rem;
+}
+
 /* The dropdown container */
 .dropdown {
   float: left;
@@ -183,7 +200,7 @@ nav {
   top: 0;
   right: 0;
   background-color: #111;
-  opacity: 0.8;
+  opacity: 0.95;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -725,20 +742,72 @@ nav {
   justify-content: space-around;
 }
 
-/* videos gallery page */
-.videos-title {
-  margin-top: 3rem;
-  margin-left: 2rem;
+.delaney-blogone img {
+  width: 48%;
+  height: auto;
 }
 
-.videos-grid {
+/* videos gallery page */
+.videos-title {
+  padding: 3rem 0 2rem 2rem;
+}
+
+/* search in videos page */
+.search-container {
+  display: flex;
+  max-width: 35rem;
+  max-height: 3rem;
+  flex: 1 1 300px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 3rem;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+}
+
+.searchIcon {
+  padding: 1rem;
+  width: 5rem;
+  background: white;
+}
+
+#search {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  width: 20rem;
+  /* flex: 1; */
+  width: 100%;
+}
+
+.searchButton {
+  background: #538ac5;
+  width: 10rem;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background: #3c6b9c;
+}
+
+#videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 6rem;
   margin: 3rem;
 }
 
-.videos-grid h2 {
+#videos-grid h2 {
   margin-bottom: 1rem;
 }
 
@@ -814,6 +883,62 @@ video {
   /* text-shadow: 2px 4px 4px black; */
 }
 
+/* how-to page */
+h5 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+h4 {
+  text-align: center;
+}
+
+.instructions-container {
+  background: white;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+.instructions-container p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.front-and-bottom,
+.scope-on,
+.pipetting,
+.insert-slide,
+.move-slide-and-press-record,
+.slide-image {
+  display: flex;
+  justify-content: center;
+}
+
+.scope-on img,
+.front-and-bottom img,
+.pipetting img,
+.insert-slide img,
+.move-slide-and-press-record img {
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.pipetting img {
+  width: 40rem;
+}
+
+.picture-seven {
+  width: 48rem;
+  height: auto;
+}
+
 .main {
   /* hide for now */
   display: none;
@@ -839,8 +964,9 @@ footer {
   background: #1e4d2b;
   /* background-image: url('../images/footer-bckgd.png');
   background-size: cover; */
-  position: relative;
-
+  /* position: absolute; */
+  bottom: 0;
+  overflow: hidden;
   color: #ffffff;
   width: 100%;
   padding: 40px 35px;
@@ -1231,6 +1357,13 @@ div.info-and-form {
   .preview-cards {
     margin-top: 5rem;
   }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one,
+  .lessons-preview {
+    height: 25rem;
+  }
   .about-shadow-microscopy img,
   .video-loop-preview,
   .learn-more-preview img,
@@ -1296,10 +1429,25 @@ div.info-and-form {
   .build-one,
   .lessons-preview {
     margin: 0rem 2rem 2rem 2rem;
-    height: 25rem;
+  }
+  .img-video {
+    /* width: 50%; */
+    padding-left: 1rem;
+    padding-right: 0rem;
+    float: left;
+  }
+  .build-one .preview-card-title-and-paragraph {
+    padding-left: 1rem;
+  }
+  .preview-card-title-and-paragraph {
+    padding-right: 0.2;
+    padding-top: 1rem;
   }
   .moon-boy img {
     display: none;
+  }
+  .coming-soon-preview p {
+    font-size: 1.25rem;
   }
 }
 
@@ -1346,24 +1494,13 @@ div.info-and-form {
     padding-right: 0rem;
     float: left;
   }
-  .about-shadow-microscopy img {
-    width: 95%;
-    height: auto;
-  }
-  .video-loop-preview {
-    width: 95%;
-    height: auto;
-  }
-  .learn-more-preview img {
-    width: 95%;
-    height: auto;
-  }
-  .build-one img {
-    width: 100%;
-    height: auto;
-  }
+  .about-shadow-microscopy img,
+  .video-loop-preview,
+  .learn-more-preview img,
+  .build-one img,
   .lessons-preview img {
     width: 95%;
+    height: auto;
   }
   .preview-card-title-and-paragraph {
     width: auto;
@@ -1389,6 +1526,10 @@ div.info-and-form {
   .lessons-preview p {
     font-size: 1.15rem;
   }
+  .news-and-twitter {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1410,7 +1551,7 @@ div.info-and-form {
     font-size: 0.9rem;
   }
   .news-container {
-    height: 65rem;
+    height: 68rem;
   }
   .happen-container {
     display: flex;
@@ -1424,7 +1565,7 @@ div.info-and-form {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   #logo {
     font-size: 4rem;
   }
@@ -1441,14 +1582,29 @@ div.info-and-form {
   .build-one img {
     padding-right: 0.5rem;
   }
+  .news-container {
+    height: 85rem;
+  }
 }
 
 @media (max-width: 415px) {
+  header {
+    padding: 1rem;
+  }
   #logo {
     font-size: 2.85rem;
   }
+  nav {
+    justify-content: space-between;
+  }
+  .csu-ram img {
+    height: 3.5rem;
+  }
   .peaking-sillhouette {
     margin-left: 6rem;
+  }
+  #banner h4 {
+    font-size: 2.5rem;
   }
   .about-shadow-microscopy,
   .videos-preview,
@@ -1470,6 +1626,12 @@ div.info-and-form {
     text-align: center;
   }
   .preview-card-title-and-paragraph p {
+    font-size: 0.75rem;
+  }
+  .news-container {
+    height: 75rem;
+  }
+  .blog-block-news-feed p {
     font-size: 0.75rem;
   }
 }
@@ -1494,8 +1656,8 @@ div.info-and-form {
   .banner-title {
     font-size: 2rem;
   }
-  #banner h2 {
-    font-size: 3rem;
+  #banner h4 {
+    font-size: 2rem;
   }
   #banner p {
     font-size: 1.5rem;

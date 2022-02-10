@@ -31,21 +31,22 @@
     <title>Shadow Scope</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div id="logo">
-          <a href="index.html">The Shadow Scope</a>
-        </div>
-        <nav role="navigation" aria-label="main menu">
-          <div class="navbar">
-            <span class="open-slide">
-              <a href="#" onclick="openSlideMenu()">
-                <!-- <h3>MENU</h3> -->
-                <i class="fas fa-bars"></i>
-              </a>
-            </span>
+    <div class="pageContentWrapper">
+      <header>
+        <div class="header-container">
+          <div id="logo">
+            <a href="index.html">The Shadow Scope</a>
+          </div>
+          <nav role="navigation" aria-label="main menu">
+            <div class="navbar">
+              <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                  <!-- <h3>MENU</h3> -->
+                  <i class="fas fa-bars"></i>
+                </a>
+              </span>
 
-            <!-- <ul class="navbar-nav">
+              <!-- <ul class="navbar-nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="./html/blog.html">Our Blog</a></li>
               <li><a href="./html/vidoes.html">Videos</a></li>
@@ -56,7 +57,7 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="./html/diagrams.html">- How to use it</a>
+                  <a href="./html/how-to.html">- How to use it</a>
                   <a href="./html/build.html">- How to make it</a>
                   <a href="./html/learn.html"
                     >- More about Microscopy and Shadows</a
@@ -64,14 +65,15 @@
                 </div>
               </li>
             </ul> -->
-            <div id="side-menu" class="side-nav">
-              <a href="#" class="btn-close" onclick="closeSlideMenu()"
-                >&times;</a
-              >
-              <a href="index.html">Home</a>
-              <a href="./html/blog.html">Our Blog</a>
-              <a href="./html/vidoes.html">Videos</a>
-              <!-- <a href="./html/lessons.html">Lesson Plans</a> -->
+              <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()"
+                  >&times;</a
+                >
+                <a href="index.html">Home</a>
+                <a href="./html/blog.html">Our Blog</a>
+                <a href="./html/vidoes.html">Videos</a>
+                <!-- <a href="./html/lessons.html">Lesson Plans</a> -->
+
 
               <div class="dropdown">
                 <div class="dropdown-sidenav-container">
@@ -81,361 +83,368 @@
                   </button>
                 </div>
                 <ul class="dropdown-content">
-                  <li><a href="./html/diagrams.html">- How to use it</a></li>
-                  <!-- <li>
+                  <li><a href="./html/how-to.html">- How to use it</a></li>
+                
                     <a href="./html/learn.html"
                       >- More about Microscopy and Shadows</a
                     >
                   </li> -->
-                  <li>
-                    <a href="./html/build.html">- How to build one.</a>
-                  </li>
-                </ul>
+                    <li>
+                      <a href="./html/build.html">- How to build one.</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="csu-ram">
-            <a
-              href="https://www.colostate.edu/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="assets/images/CSU-Ram.png"
-                alt="Colorado State University logo"
-                height="80"
-              />
-            </a>
-          </div>
-        </nav>
-      </div>
-    </header>
+            <div class="csu-ram">
+              <a
+                href="https://www.colostate.edu/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/CSU-Ram.png"
+                  alt="Colorado State University logo"
+                />
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-    <!-- <h4>Our Mission Statement:</h4> -->
-    <!-- Banner -->
-    <div id="banner-wrapper">
-      <div id="banner" class="box container">
-        <div class="banner-title-and-paragraph">
-          <!-- <div class="banner-title-and-sillhoette"> -->
-          <div class="banner-title">
-            <h4>Cast a big shadow with lensless microscopy.</h4>
-          </div>
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">1 / 3</div> -->
-              <img
-                src="./assets/images/Shadow-Scope-User-Images/cropped-for-slideshow/Kids-Shadow-Scope-02.jpg"
-                alt="bunch of kids looking at shadow scope and measuring"
-              />
-              <!-- <div class="text">Caption Text</div> -->
+      <!-- <h4>Our Mission Statement:</h4> -->
+      <!-- Banner -->
+      <div id="banner-wrapper">
+        <div id="banner" class="box container">
+          <div class="banner-title-and-paragraph">
+            <!-- <div class="banner-title-and-sillhoette"> -->
+            <div class="banner-title">
+              <h4>Cast a big shadow with lensless microscopy.</h4>
             </div>
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">2 / 3</div> -->
-              <img
-                src="./assets/images/Shadow-Scope-User-Images/cropped-for-slideshow/Boy-Girl-Shadow-Scope-05.jpg"
-                alt="girl with hand on shadow scope"
-              />
-              <!-- <div class="text">Caption Two</div> -->
-            </div>
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">3 / 3</div> -->
-              <img
-                src="./assets/images/Shadow-Scope-User-Images/cropped-for-slideshow/Girl-Shadow-Scope-01.jpg"
-                alt="girl looking at shadow scope"
-              />
-              <!-- <div class="text">Caption Three</div> -->
-            </div>
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">3 / 3</div> -->
-              <img
-                src="./assets/images/building-with-computer-wide-cropped.jpg"
-                alt="building-shadow-scope-at-computer"
-              />
-              <!-- <div class="text">Caption Three</div> -->
-            </div>
-            <div class="mySlides fade">
-              <!-- <div class="numbertext">3 / 3</div> -->
-              <img
-                src="./assets/images/dropper-cropped.jpg"
-                alt="water dropper on slide"
-              />
-              <!-- <div class="text">Caption Three</div> -->
-            </div>
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                <img
+                  src="./assets/images/Shadow-Scope-User-Images/cropped-for-slideshow/Kids-Shadow-Scope-02.jpg"
+                  alt="bunch of kids looking at shadow scope and measuring"
+                />
+                <!-- <div class="text">Caption Text</div> -->
+              </div>
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+                <img
+                  src="./assets/images/Shadow-Scope-User-Images/cropped-for-slideshow/Boy-Girl-Shadow-Scope-05.jpg"
+                  alt="girl with hand on shadow scope"
+                />
+                <!-- <div class="text">Caption Two</div> -->
+              </div>
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img
+                  src="./assets/images/Shadow-Scope-User-Images/cropped-for-slideshow/Girl-Shadow-Scope-01.jpg"
+                  alt="girl looking at shadow scope"
+                />
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img
+                  src="./assets/images/building-with-computer-wide-cropped.jpg"
+                  alt="building-shadow-scope-at-computer"
+                />
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img
+                  src="./assets/images/dropper-cropped.jpg"
+                  alt="water dropper on slide"
+                />
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
 
-            <!-- Next and Previous buttons -->
-            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <!-- Next and Previous buttons -->
+              <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-          </div>
-          <br />
+            </div>
+            <br />
 
-          <!-- The dots/circles -->
-          <!-- <div style="text-align: center">
+            <!-- The dots/circles -->
+            <!-- <div style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div> -->
-          <!-- </div> -->
-          <div class="about-scope">
-            <p>
-              Most normal microscopes use light and lenses to produce an image.
-              Light is focused through the lenses to increase magnification,
-              making the subject appear larger than it would with the naked eye.
-            </p>
-            <br />
-            <p>
-              But, the Shadow Scope instead does the opposite–it uses shadows.
-              Light is focused through a tiny hole onto the subject, which casts
-              a shadow onto the camera. This creates a magnified image that can
-              even show multiple layers!
-            </p>
+            <!-- </div> -->
+            <div class="about-scope">
+              <p>
+                Most normal microscopes use light and lenses to produce an
+                image. Light is focused through the lenses to increase
+                magnification, making the subject appear larger than it would
+                with the naked eye.
+              </p>
+              <br />
+              <p>
+                But, the Shadow Scope instead does the opposite–it uses shadows.
+                Light is focused through a tiny hole onto the subject, which
+                casts a shadow onto the camera. This creates a magnified image
+                that can even show multiple layers!
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="scope-and-at-scope-button">
-          <ul>
-            <li>
-              <div class="shadow-scope-img1">
-                <img
-                  src="assets/images/shadow-scope-white-bg.jpeg"
-                  alt="shadow scope looking to the right"
-                />
-                <!-- <p class="at-scope-now">
+          <div class="scope-and-at-scope-button">
+            <ul>
+              <li>
+                <div class="shadow-scope-img1">
+                  <img
+                    src="assets/images/shadow-scope-white-bg.jpeg"
+                    alt="shadow scope looking to the right"
+                  />
+                  <!-- <p class="at-scope-now">
                   Are you in front of the Shadow Scope and want to know how it
                   works?
                 </p> -->
+
               </div>
             </li>
             <li>
               <a
-                href="./html/diagrams.html"
+                href="./html/how-to.html"
                 class="button large icon solid fa-question-circle"
                 >At scope now?
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <section class="main-container">
-      <div class="preview-cards">
-        <article class="about-shadow-microscopy">
-          <div class="img-video">
-            <a href="./html/learn.html">
-              <img
-                src="assets/images/The_Silhouettes.jpg"
-                alt="The-Silhouettes-cartoon"
-              />
-            </a>
-          </div>
 
-          <div class="preview-card-title-and-paragraph">
-            <a href="./html/learn.html">
-              <h3>About shadow microscopy</h3>
-            </a>
-            <p>
-              The Shadow Scope uses shadows to project images, making it easier
-              and cheaper to build than traditional light microscopes without
-              sacrificing significant image quality. Click
-              <a href=""><strong>here</strong></a> to take a behind-the-scenes
-              look at what makes the Shadow Scope work, and to get an inside
-              view of the techniques used in shadow microscopy.
-            </p>
-          </div>
-        </article>
-        <article class="videos-preview">
-          <div class="img-video">
-            <a href="./html/vidoes.html">
-              <video class="video-loop-preview" controls autoplay muted loop>
-                <source
-                  src="assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4"
-                />
-              </video>
-            </a>
-          </div>
-          <div class="preview-card-title-and-paragraph">
-            <a href="./html/vidoes.html">
-              <h3>View our video gallery!</h3>
-            </a>
-            <p>
-              Users of the Shadow Scope can record videos of what they see,
-              which get uploaded here to our website. Click
-              <a href="./html/vidoes.html"><strong>here</strong></a> to scroll
-              through the recordings captured by other users and see more of the
-              unseen world through shadows.
-            </p>
-          </div>
-        </article>
-        <article class="learn-more-preview">
-          <div class="img-video">
-            <a href="./html/learn.html">
-              <img
-                src="assets/images/Silhouette-Images/Silhoette-GirlMoonShadow.png"
-                alt="cartoon girl moon shadow"
-              />
-            </a>
-          </div>
-          <div class="preview-card-title-and-paragraph">
-            <a href="./html/learn.html">
-              <h3>Learn about shadows!</h3>
-            </a>
-            <p>
-              Shadows are one of the most underappreciated phenomena in our
-              world. They are all around us, and yet they often go unnoticed
-              because of how simple they seem. How much do you know about the
-              shadows you cast? Click
-              <a href="./html/learn.html"><strong>here</strong></a> to learn
-              more.
-            </p>
-            <br />
-            <div class="coming-soon-preview">
-              <p>COMING SOON!</p>
-            </div>
-          </div>
-        </article>
-        <article class="build-one">
-          <div class="img-video">
-            <a href="./html/diagrams.html">
-              <img
-                src="assets/images/shadow-scope-diagram.png"
-                alt="shadow scope diagram"
-              />
-            </a>
-          </div>
-          <div class="preview-card-title-and-paragraph">
-            <a href="./html/diagrams.html">
-              <h3>How to build a Shadow Scope</h3>
-            </a>
-            <p>
-              You don’t need any woodcutting tools or secret knowledge to make a
-              Shadow Scope of your own. By gathering a small set of easy-to-find
-              supplies, you can start your journey into the world of shadow
-              microscopy. Are you ready? Click
-              <a href="./html/build.html"><strong>here</strong></a> to get
-              started!
-            </p>
-          </div>
-        </article>
-        <article class="lessons-preview">
-          <div class="img-video">
-            <a href="./html/diagrams.html">
-              <img
-                src="assets/images/Shadow-Scope-User-Images/00100dPORTRAIT_00100_BURST20220130150642840_COVER.jpg"
-                alt="girl thinking in front of Shadow Scope"
-              />
-            </a>
-          </div>
-          <div class="preview-card-title-and-paragraph">
-            <a href="./html/lessons.html">
-              <h3>Ready-To-Go Lesson Plans</h3>
-            </a>
-            <p>
-              Are you a teacher that would like some easy, ready-to-go lesson
-              plans for teaching and using the Shadow Scope in YOUR classroom?
-              Click
-              <a href="./html/lessons.html"><strong>here</strong></a> to get
-              started!
-            </p>
-            <br />
-            <div class="coming-soon-preview">
-              <p>COMING SOON!</p>
-            </div>
-          </div>
-        </article>
+        </div>
       </div>
-      <aside class="news-and-twitter">
-        <div class="news">
-          <a href="./html/blog.html">
-            <h2 class="news-feed">NEWS FEED</h2>
-          </a>
-          <div class="news-container">
-            <article class="blog-block-news-feed">
-              <span>
-                <h3>An Event</h3>
-                <h4>Feb. 20, 2022</h4>
-              </span>
+      <section class="main-container">
+        <div class="preview-cards">
+          <article class="about-shadow-microscopy">
+            <div class="img-video">
+              <a href="./html/learn.html">
+                <img
+                  src="assets/images/The_Silhouettes.jpg"
+                  alt="The-Silhouettes-cartoon"
+                />
+              </a>
+            </div>
+
+
+            <div class="preview-card-title-and-paragraph">
+              <a href="./html/learn.html">
+                <h3>About shadow microscopy</h3>
+              </a>
               <p>
-                Veritatis obcaecati tenetur iure eius earum ut molestias
-                architecto voluptate aliquam nihil, eveniet aliquid culpa
-                officia aut! Impedit sit sunt quaerat, odit, tenetur error,
-                harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                eaque rerum! Provident similique accusantium nemo autem.
+                The Shadow Scope uses shadows to project images, making it
+                easier and cheaper to build than traditional light microscopes
+                without sacrificing significant image quality. Click
+                <a href=""><strong>here</strong></a> to take a behind-the-scenes
+                look at what makes the Shadow Scope work, and to get an inside
+                view of the techniques used in shadow microscopy.
               </p>
-              <hr />
-            </article>
-            <article class="blog-block-news-feed">
-              <span>
-                <h3>An Event</h3>
-                <h4>Feb. 22, 2022</h4>
-              </span>
+
+              <div class="coming-soon-preview">
+                <p>COMING SOON!</p>
+              </div>
+            </div>
+          </article>
+          <article class="videos-preview">
+            <div class="img-video">
+              <a href="./html/vidoes.html">
+                <video class="video-loop-preview" controls autoplay muted loop>
+                  <source
+                    src="assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4"
+                  />
+                </video>
+              </a>
+            </div>
+            <div class="preview-card-title-and-paragraph">
+              <a href="./html/vidoes.html">
+                <h3>View our video gallery!</h3>
+              </a>
               <p>
-                Veritatis obcaecati tenetur iure eius earum ut molestias
-                architecto voluptate aliquam nihil, eveniet aliquid culpa
-                officia aut! Impedit sit sunt quaerat, odit, tenetur error,
-                harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                eaque rerum!
+                Users of the Shadow Scope can record videos of what they see,
+                which get uploaded here to our website. Click
+                <a href="./html/vidoes.html"><strong>here</strong></a> to scroll
+                through the recordings captured by other users and see more of
+                the unseen world through shadows.
               </p>
-              <hr />
-            </article>
-            <article class="blog-block-news-feed">
-              <span>
-                <h3>Another Event</h3>
-                <h4>Feb 29, 2022</h4>
-              </span>
+            </div>
+          </article>
+          <article class="learn-more-preview">
+            <div class="img-video">
+              <a href="./html/learn.html">
+                <img
+                  src="assets/images/Silhouette-Images/Silhoette-GirlMoonShadow.png"
+                  alt="cartoon girl moon shadow"
+                />
+              </a>
+            </div>
+            <div class="preview-card-title-and-paragraph">
+              <a href="./html/learn.html">
+                <h3>Learn about shadows!</h3>
+              </a>
               <p>
-                Provident similique accusantium nemo autem. Veritatis obcaecati
-                tenetur iure eius earum ut molestias architecto voluptate
-                aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit
-                sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis
-                quas aliquid. Reprehenderit, quia.
+                Shadows are one of the most underappreciated phenomena in our
+                world. They are all around us, and yet they often go unnoticed
+                because of how simple they seem. How much do you know about the
+                shadows you cast? Click
+                <a href="./html/learn.html"><strong>here</strong></a> to learn
+                more.
               </p>
-              <hr />
-            </article>
-            <article class="blog-block-news-feed">
-              <span>
-                <h3>Event 3</h3>
-                <h4>Mar. 15, 2022</h4>
-              </span>
+              <br />
+              <div class="coming-soon-preview">
+                <p>COMING SOON!</p>
+              </div>
+            </div>
+          </article>
+          <article class="build-one">
+            <div class="img-video">
+              <a href="./html/how-to.html">
+                <img
+                  src="assets/images/shadow-scope-diagram.png"
+                  alt="shadow scope diagram"
+                />
+              </a>
+            </div>
+            <div class="preview-card-title-and-paragraph">
+              <a href="./html/how-to.html">
+                <h3>How to build a Shadow Scope</h3>
+              </a>
               <p>
-                Provident similique accusantium nemo autem. Veritatis obcaecati
-                tenetur iure eius earum ut molestias architecto voluptate
-                aliquam nihil, eveniet aliquid culpa officia aut!
+                You don’t need any woodcutting tools or secret knowledge to make
+                a Shadow Scope of your own. By gathering a small set of
+                easy-to-find supplies, you can start your journey into the world
+                of shadow microscopy. Are you ready? Click
+                <a href="./html/build.html"><strong>here</strong></a> to get
+                started!
               </p>
-              <hr />
-            </article>
-          </div>
+            </div>
+          </article>
+          <article class="lessons-preview">
+            <div class="img-video">
+              <a href="./html/how-to.html">
+                <img
+                  src="assets/images/Shadow-Scope-User-Images/00100dPORTRAIT_00100_BURST20220130150642840_COVER.jpg"
+                  alt="girl thinking in front of Shadow Scope"
+                />
+              </a>
+            </div>
+            <div class="preview-card-title-and-paragraph">
+              <a href="./html/lessons.html">
+                <h3>Ready-To-Go Lesson Plans</h3>
+              </a>
+              <p>
+                Are you a teacher that would like some easy, ready-to-go lesson
+                plans for teaching and using the Shadow Scope in YOUR classroom?
+                Click
+                <a href="./html/lessons.html"><strong>here</strong></a> to get
+                started!
+              </p>
+              <br />
+              <div class="coming-soon-preview">
+                <p>COMING SOON!</p>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="twitter">
-          <a
-            href="https://twitter.com/CSUShadowScope"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <h2 class="twitter-feed">TWITTER FEED</h2></a
-          >
-          <div class="twitter-container">
+        <aside class="news-and-twitter">
+          <div class="news">
+            <a href="./html/blog.html">
+              <h2 class="news-feed">NEWS FEED</h2>
+            </a>
+            <div class="news-container">
+              <article class="blog-block-news-feed">
+                <span>
+                  <h3>An Event</h3>
+                  <h4>Feb. 20, 2022</h4>
+                </span>
+                <p>
+                  Veritatis obcaecati tenetur iure eius earum ut molestias
+                  architecto voluptate aliquam nihil, eveniet aliquid culpa
+                  officia aut! Impedit sit sunt quaerat, odit, tenetur error,
+                  harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                  quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
+                  consequuntur voluptatum laborum numquam blanditiis harum
+                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
+                  eaque rerum! Provident similique accusantium nemo autem.
+                </p>
+                <hr />
+              </article>
+              <article class="blog-block-news-feed">
+                <span>
+                  <h3>An Event</h3>
+                  <h4>Feb. 22, 2022</h4>
+                </span>
+                <p>
+                  Veritatis obcaecati tenetur iure eius earum ut molestias
+                  architecto voluptate aliquam nihil, eveniet aliquid culpa
+                  officia aut! Impedit sit sunt quaerat, odit, tenetur error,
+                  harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                  quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
+                  consequuntur voluptatum laborum numquam blanditiis harum
+                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
+                  eaque rerum! Provident similique accusantium nemo autem.
+                </p>
+                <hr />
+              </article>
+              <article class="blog-block-news-feed">
+                <span>
+                  <h3>Another Event</h3>
+                  <h4>Feb 29, 2022</h4>
+                </span>
+                <p>
+                  Provident similique accusantium nemo autem. Veritatis
+                  obcaecati tenetur iure eius earum ut molestias architecto
+                  voluptate aliquam nihil, eveniet aliquid culpa officia aut!
+                  Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt
+                  ipsum debitis quas aliquid. Reprehenderit, quia.
+                </p>
+                <hr />
+              </article>
+              <article class="blog-block-news-feed">
+                <span>
+                  <h3>Event 3</h3>
+                  <h4>Mar. 15, 2022</h4>
+                </span>
+                <p>
+                  Provident similique accusantium nemo autem. Veritatis
+                  obcaecati tenetur iure eius earum ut molestias architecto
+                  voluptate aliquam nihil, eveniet aliquid culpa officia aut!
+                </p>
+                <hr />
+              </article>
+            </div>
+          </div>
+          <div class="twitter">
             <a
-              class="twitter-timeline"
-              data-height="78rem"
-              href="https://twitter.com/CSUShadowScope?ref_src=twsrc%5Etfw"
-              >Tweets by CSUShadowScope</a
+              href="https://twitter.com/CSUShadowScope"
+              target="_blank"
+              rel="noreferrer noopener"
             >
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
+              <h2 class="twitter-feed">TWITTER FEED</h2></a
+            >
+            <div class="twitter-container">
+              <a
+                class="twitter-timeline"
+                data-height="78rem"
+                href="https://twitter.com/CSUShadowScope?ref_src=twsrc%5Etfw"
+                >Tweets by CSUShadowScope</a
+              >
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
           </div>
-        </div>
-      </aside>
-    </section>
+        </aside>
+      </section>
+    </div>
     <footer>
       <div class="footer-icons">
         <a
@@ -520,7 +529,7 @@
           <li><a href="./html/blog.html">Blog</a></li>
           <li><a href="./html/vidoes.html">Videos</a></li>
           <li><a href="./html/learn.html">Learn More</a></li>
-          <li><a href="./html/diagrams.html">How to Use It</a></li>
+          <li><a href="./html/how-to.html">How to Use It</a></li>
           <li><a href="./html/build.html">How to Build It</a></li>
         </ul>
       </div>
