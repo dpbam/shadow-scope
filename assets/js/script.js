@@ -146,6 +146,50 @@ var videos = [
     name: 'Video020',
     url: '../assets/videos/zip-and-tiny-spirals-20210120-235145shadow_scope1.mp4',
   },
+  {
+    name: '165630986',
+    url: '../assets/videos/165630986_shadow_scope1-cool-twirler.mp4',
+  },
+  {
+    name: '325211119',
+    url: '../assets/videos/325211119_shadow_scope1-twirl-no-art.mp4',
+  },
+  {
+    name: '396658953',
+    url: '../assets/videos/396658953_shadow_scope1-clean-art-tinyflipper.mp4',
+  },
+  {
+    name: '409856315',
+    url: '../assets/videos/409856315_shadow_scope1-twirler2.mp4',
+  },
+  {
+    name: '441121359',
+    url: '../assets/videos/441121359_shadow_scope1-letter-o.mp4',
+  },
+  {
+    name: '588718730',
+    url: '../assets/videos/588718730_shadow_scope1-best-twirl-no-art.mp4',
+  },
+  {
+    name: '719834883',
+    url: '../assets/videos/719834883_shadow_scope1-twirler3-art.mp4',
+  },
+  {
+    name: '752028009',
+    url: '../assets/videos/752028009_shadow_scope1-twirler4.mp4',
+  },
+  {
+    name: '820976329',
+    url: '../assets/videos/820976329_shadow_scope1-clearntwirler-noart.mp4',
+  },
+  {
+    name: '834630658',
+    url: '../assets/videos/834630658_shadow_scope1-cleantwirler-2.mp4',
+  },
+  {
+    name: '906913564',
+    url: '../assets/videos/906913564_shadow_scope1-twirler4-art.mp4',
+  },
 ];
 
 const searchInput = document.querySelector('.input');
@@ -171,6 +215,10 @@ function renderVideos(videosToRender) {
             <source src="${video.url}" />
           </video>
         </div>
+        <p>
+          Click the three vertical dots, download your video, and share with your
+          friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
+        </p>
       `;
     });
   }

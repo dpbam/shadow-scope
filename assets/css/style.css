@@ -749,7 +749,28 @@ nav {
 
 /* videos gallery page */
 .videos-title {
+  text-align: center;
   padding: 3rem 0 2rem 2rem;
+}
+
+.pageContentWrapper h3 {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-weight: 400;
+}
+
+.sample-video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sample-video {
+  width: 20rem;
+  /* margin: 1rem 0 3rem 0; */
+}
+
+.sample-video video {
+  margin: 1rem;
 }
 
 /* search in videos page */
@@ -763,6 +784,7 @@ nav {
   border-radius: 5px;
   overflow: hidden;
   margin-left: 3rem;
+  margin-top: 2rem;
 }
 
 .search-bar {
@@ -800,15 +822,24 @@ nav {
   background: #3c6b9c;
 }
 
-#videos-grid {
+/* #videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 6rem;
+  margin: 3rem;
+} */
+
+#videos-grid {
+  width: 500px;
   margin: 3rem;
 }
 
 #videos-grid h2 {
   margin-bottom: 1rem;
+}
+
+#videos-grid p {
+  padding-top: 1rem;
 }
 
 video {
@@ -841,8 +872,9 @@ video {
   margin: 10rem;
 }
 
-.video-container h1 {
-  margin-bottom: 3rem;
+.share {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* how to use it page */
@@ -884,14 +916,16 @@ video {
 }
 
 /* how-to page */
-h5 {
+.how-to-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   padding-top: 3rem;
+  color: #fc4385;
+  text-shadow: 2px 4px 4px lightgray;
 }
 
-h4 {
+.how-to-subtitle {
   text-align: center;
 }
 
@@ -899,6 +933,7 @@ h4 {
   background: white;
   margin: 2rem;
   border-radius: 5px;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
 hr {
@@ -928,15 +963,23 @@ hr {
 .insert-slide img,
 .move-slide-and-press-record img {
   padding: 3rem 1rem 3rem 1rem;
-}
-
-.pipetting img {
   width: 40rem;
+  height: auto;
 }
 
-.picture-seven {
-  width: 48rem;
-  height: auto;
+.build-title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  color: #1e4d2b;
+}
+
+.build-pdf iframe {
+  height: 100vh;
+  width: 90vw;
+  margin: 3rem;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
 .main {
@@ -1080,10 +1123,6 @@ a {
 
 .contact-info a:hover {
   color: #fc4385;
-}
-
-.contact-info address {
-  /* font-size: 1.5rem; */
 }
 
 .footer-copyright {
