@@ -918,9 +918,11 @@ video {
 /* how-to page */
 h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   padding-top: 3rem;
+  color: #fc4385;
+  text-shadow: 2px 4px 4px lightgray;
 }
 
 h3 {
@@ -931,6 +933,7 @@ h3 {
   background: white;
   margin: 2rem;
   border-radius: 5px;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
 hr {
