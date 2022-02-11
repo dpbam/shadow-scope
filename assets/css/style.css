@@ -944,28 +944,68 @@ hr {
 .instructions-container p {
   font-size: 1.5rem;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 0 1rem 0;
 }
 
-.front-and-bottom,
+.bottom-of-scope,
+.turned-on,
 .scope-on,
+.choose-slide,
+.place-slide,
+.insert-sample-holder,
+.move-sample-holder,
 .pipetting,
+.draw-micro-mural,
 .insert-slide,
 .move-slide-and-press-record,
-.slide-image {
+.capture-code,
+.slide-image,
+.dump-water,
+.q-tip,
+.final-q-tip,
+.place-mural {
   display: flex;
   justify-content: center;
 }
 
-.front-and-bottom img,
+.at-scope-now-one img,
+.turned-on img,
+.choose-slide img,
+.draw-micro-mural img,
+.place-slide img,
+.insert-sample-holder img,
+.move-sample-holder img,
 .pipetting img,
 .insert-slide img,
-.move-slide-and-press-record img {
-  padding: 3rem 1rem 3rem 1rem;
+.move-slide-and-press-record img,
+.capture-code img,
+.dump-water img,
+.q-tip img,
+.final-q-tip img,
+.place-mural img {
+  padding: 1rem 1rem 3rem 1rem;
   width: 40rem;
   height: auto;
 }
 
+.reminder {
+  padding: 3rem;
+}
+
+.reminder p {
+  font-size: 2.5rem;
+}
+
+.reminder a {
+  color: black;
+}
+
+.reminder a:hover {
+  color: #fc4385;
+  font-weight: bold;
+}
+
+/* build page */
 .build-title {
   text-align: center;
   font-size: 3rem;
