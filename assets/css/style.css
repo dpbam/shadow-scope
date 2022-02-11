@@ -629,7 +629,24 @@ nav {
   align-items: center;
 }
 
-.news-container,
+.news-container {
+  height: 30rem;
+  max-width: 52rem;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 2px 4px 4px gray;
+  margin-bottom: 5rem;
+}
+
+.news-title {
+  font-weight: bold;
+  padding-bottom: ;
+}
+
+.news-date {
+  font-weight: 200;
+}
+
 .twitter-container {
   height: 80rem;
   max-width: 52rem;
@@ -1608,6 +1625,13 @@ div.info-and-form {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  .how-to-subtitle {
+    padding-bottom: 1rem;
+  }
+  .instructions-container {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1641,6 +1665,24 @@ div.info-and-form {
   .blog-block {
     margin: 0;
   }
+  .at-scope-now-one img,
+  .turned-on img,
+  .choose-slide img,
+  .draw-micro-mural img,
+  .place-slide img,
+  .insert-sample-holder img,
+  .move-sample-holder img,
+  .pipetting img,
+  .insert-slide img,
+  .move-slide-and-press-record img,
+  .capture-code img,
+  .dump-water img,
+  .q-tip img,
+  .final-q-tip img,
+  .place-mural img {
+    width: 30rem;
+    height: auto;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1662,6 +1704,25 @@ div.info-and-form {
   }
   .news-container {
     height: 85rem;
+  }
+  .at-scope-now-one img,
+  .turned-on img,
+  .slide-image img,
+  .choose-slide img,
+  .draw-micro-mural img,
+  .place-slide img,
+  .insert-sample-holder img,
+  .move-sample-holder img,
+  .pipetting img,
+  .insert-slide img,
+  .move-slide-and-press-record img,
+  .capture-code img,
+  .dump-water img,
+  .q-tip img,
+  .final-q-tip img,
+  .place-mural img {
+    width: 25rem;
+    height: auto;
   }
 }
 
@@ -1712,6 +1773,35 @@ div.info-and-form {
   .blog-block-news-feed p {
     font-size: 0.75rem;
   }
+  .how-to-subtitle {
+    padding: 1rem;
+  }
+
+  .at-scope-now-one img,
+  .turned-on img,
+  .choose-slide img,
+  .draw-micro-mural img,
+  .place-slide img,
+  .insert-sample-holder img,
+  .move-sample-holder img,
+  .pipetting img,
+  .insert-slide img,
+  .move-slide-and-press-record img,
+  .capture-code img,
+  .dump-water img,
+  .q-tip img,
+  .final-q-tip img,
+  .place-mural img {
+    width: 23rem;
+    height: auto;
+  }
+  .slide-image img {
+    width: 21.5rem;
+    height: auto;
+  }
+  .instructions-container p {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 281px) {
@@ -1756,5 +1846,45 @@ div.info-and-form {
   .news-and-twitter {
     margin: 0;
     width: 100%;
+  }
+  .instructions-container {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .how-to-title,
+  .how-to-subtitle {
+    padding: 0.25rem;
+  }
+  .instructions-container p {
+    padding: 0.5rem;
+  }
+  .how-to-title {
+    padding: 1rem;
+  }
+  .at-scope-now-one img,
+  .turned-on img,
+  .choose-slide img,
+  .draw-micro-mural img,
+  .place-slide img,
+  .insert-sample-holder img,
+  .move-sample-holder img,
+  .pipetting img,
+  .insert-slide img,
+  .move-slide-and-press-record img,
+  .capture-code img,
+  .dump-water img,
+  .q-tip img,
+  .final-q-tip img,
+  .place-mural img {
+    width: 18rem;
+    height: auto;
+  }
+  .slide-image img {
+    width: 16rem;
+    height: auto;
+  }
+  .reminder p {
+    font-size: 1.5rem;
   }
 }
