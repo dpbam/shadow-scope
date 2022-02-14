@@ -693,6 +693,10 @@ nav {
   padding-bottom: 1rem;
 }
 
+.blog-block-news-feed h4 {
+  font-weight: 400;
+}
+
 .twitter-feed {
   background-color: #ff7e61;
 }
