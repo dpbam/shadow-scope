@@ -23,10 +23,6 @@ body a {
   text-decoration: none;
 }
 
-.pageContentWrapper {
-  min-height: 60vh;
-}
-
 header {
   /* background-color: #2441bf; */
   background: #1e4d2b;
@@ -640,7 +636,7 @@ nav {
 
 .news-title {
   font-weight: bold;
-  padding-bottom: ;
+  padding-bottom: 1rem;
 }
 
 .news-date {
@@ -772,12 +768,6 @@ nav {
 .videos-title {
   text-align: center;
   padding: 3rem 0 2rem 2rem;
-}
-
-.pageContentWrapper h3 {
-  text-align: center;
-  padding-bottom: 3rem;
-  font-weight: 400;
 }
 
 .sample-video-container {
