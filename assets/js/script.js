@@ -65,10 +65,11 @@ function showSlides() {
 // End user controls slideshow
 
 // videos search bar
+
 var videos = [
   {
     name: 'Video001',
-    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
+    url: 'https://youtu.be/tx-0LNf7nLw',
   },
   {
     name: 'Video002',

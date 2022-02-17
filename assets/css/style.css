@@ -1026,8 +1026,30 @@ hr {
   padding: 2rem;
   color: #1e4d2b;
 }
+.part-title-and-summary {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  width: 40%;
+}
 
-.build-pdf iframe {
+.part-title-and-summary p {
+  padding: 2rem;
+}
+
+.part-title a {
+  color: black;
+  padding: 3rem;
+}
+
+.part-title a:hover {
+  color: #fc4385;
+}
+
+.build-pdf1 iframe,
+.build-pdf2 iframe,
+.build-pdf3 iframe {
   height: 100vh;
   width: 90vw;
   margin: 3rem;
