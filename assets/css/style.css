@@ -1032,15 +1032,23 @@ hr {
   flex-direction: column;
   margin: 2rem;
   width: 40%;
+  box-shadow: 2px 4px 4px lightgray;
+  border-radius: 5px;
+}
+
+.part-title {
+  padding: 1rem;
+  font-weight: 800;
 }
 
 .part-title-and-summary p {
-  padding: 2rem;
+  padding: 0 0 1rem 2rem;
 }
 
 .part-title a {
-  color: black;
+  color: #696969;
   padding: 3rem;
+  font-weight: 600;
 }
 
 .part-title a:hover {
