@@ -772,6 +772,11 @@ nav {
   padding: 3rem 0 2rem 2rem;
 }
 
+.wait-for-videos {
+  padding: 2rem;
+  text-align: center;
+}
+
 .sample-video-container {
   display: flex;
   justify-content: center;
@@ -1659,6 +1664,10 @@ div.info-and-form {
     width: 100%;
     margin: 0;
   }
+  .part-title-and-summary {
+    width: 92%;
+    margin-left: 1.5rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1710,6 +1719,9 @@ div.info-and-form {
     width: 30rem;
     height: auto;
   }
+  .part-title-and-summary {
+    width: 88%;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1750,6 +1762,10 @@ div.info-and-form {
   .place-mural img {
     width: 25rem;
     height: auto;
+  }
+  .part-title-and-summary {
+    width: 88%;
+    margin-left: 1.5rem;
   }
 }
 

@@ -69,43 +69,43 @@ function showSlides() {
 var videos = [
   {
     name: 'Video001',
-    url: 'https://youtu.be/tx-0LNf7nLw',
+    url: 'src="https://www.youtube.com/embed/tx-0LNf7nLw">',
   },
   {
     name: 'Video002',
-    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ENqn4gUsH1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video003',
-    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
+    url: '.<iframe width="560" height="315" src="https://www.youtube.com/embed/DCj1K84IkLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video004',
-    url: '../assets/videos/chasing-blobby-with-whiskers-20210121-210350shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/L75V2Qnz80w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video005',
-    url: '../assets/videos/creepy-moving-bug-20210121-115601shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/1Z7YHfkDKr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video006',
-    url: '../assets/videos/dot-tracking-greenplant-20210121-160535shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/4NmNGORCi3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video007',
-    url: '../assets/videos/dot-tracking-plant-20210121-155902shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/cXKY_r6UGxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video008',
-    url: '../assets/videos/inching-worm2-20210121-151712shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/6D9vTvk-gSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video009',
-    url: '../assets/videos/littleguy-bumpercar-20210121-145755shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/EmVRDp6aTN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video010',
-    url: '../assets/videos/littleguy-spirals-20210121-145740shadow_scope1.mp4',
+    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/XtlfKk5SxDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     name: 'Video011',
@@ -211,9 +211,10 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoGrid.innerHTML += `
         <div class="video-card">
-          <h2>${video.name}</a></h2>
+          <h2><a>${video.name}</a></h2>
           <video controls>
             <source src="${video.url}" />
+            <iframe src="${video.url}" />
           </video>
         </div>
         <p>
