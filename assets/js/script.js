@@ -69,7 +69,7 @@ function showSlides() {
 var videos = [
   {
     name: 'Video001',
-    url: 'src="https://www.youtube.com/embed/tx-0LNf7nLw">',
+    url: 'https://www.youtube.com/embed/tx-0LNf7nLw',
   },
   {
     name: 'Video002',
@@ -214,7 +214,7 @@ function renderVideos(videosToRender) {
           <h2><a>${video.name}</a></h2>
           <video controls>
             <source src="${video.url}" />
-            <iframe src="${video.url}" />
+            <iframe width="560" height="315" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
           </video>
         </div>
         <p>
