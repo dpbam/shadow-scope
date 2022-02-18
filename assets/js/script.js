@@ -257,29 +257,29 @@ function renderVideos(videosToRender) {
   }
 }
 
-function filterVideosByName(nameValue) {
-  let filteredVideos = videos.filter((v) =>
-    v.name.toLocaleLowerCase().includes(nameValue)
-  );
-
-  renderVideos(filteredVideos);
-}
-
-function filterVideosByEvent(eventValue) {
-  let filteredVideos = videos.filter((v) =>
-    v?.event?.toLocaleLowerCase()?.includes(eventValue)
-  );
-
-  renderVideos(filteredVideos);
-}
-
-// function filterVideosByUrl(urlValue) {
+// function filterVideosByName(nameValue) {
 //   let filteredVideos = videos.filter((v) =>
-//     v.url.toLocaleLowerCase().includes(urlValue)
+//     v.name.toLocaleLowerCase().includes(nameValue)
 //   );
 
 //   renderVideos(filteredVideos);
 // }
+
+// function filterVideosByEvent(eventValue) {
+//   let filteredVideos = videos.filter((v) =>
+//     v?.event?.toLocaleLowerCase()?.includes(eventValue)
+//   );
+
+//   renderVideos(filteredVideos);
+// }
+
+function filterVideosBy(nameValue, eventValue) {
+  let filteredVideos = videos.filter((v) =>
+    v.url.toLocaleLowerCase().includes(nameValue, eventValue)
+  );
+
+  renderVideos(filteredVideos);
+}
 
 searchButton.addEventListener('click', (e) => {
   // inside, we will need to achieve a few things:
@@ -293,8 +293,8 @@ searchButton.addEventListener('click', (e) => {
     // we need to write code (a function for filtering through our data to include the search input value)
 
     searchInputValue = searchInputValue.trim().toLowerCase();
-    filterVideosByName(searchInputValue) ||
-      filterVideosByEvent(searchInputValue);
+    filterVideosBy(searchInputValue);
+    // filterVideosByEvent(searchInputValue);
     // filterVideosByUrl(searchInputValue);
 
     // input is invalid -- show an error message or show no results
@@ -318,8 +318,8 @@ searchInput.addEventListener('keyup', (e) => {
       searchInputValue = searchInputValue.trim().toLowerCase();
       // 4. return the results only if the value of the search is included in the video's name
       // we need to write code (a function for filtering through our data to include the search input value)
-      filterVideosByName(searchInputValue);
-      filterVideosByEvent(searchInputValue);
+      filterVideosBy(searchInputValue);
+      // filterVideosByEvent(searchInputValue);
       // filterVideosByUrl(searchInputValue);
     } else {
       // 5. return nothing
