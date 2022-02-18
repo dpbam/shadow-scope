@@ -791,6 +791,15 @@ nav {
   margin: 1rem;
 }
 
+.video-card a {
+  color: #696969;
+}
+
+.video-card a:hover {
+  color: #fc4385;
+  cursor: pointer;
+}
+
 /* search in videos page */
 .search-container {
   display: flex;

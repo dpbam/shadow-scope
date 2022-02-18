@@ -69,83 +69,103 @@ function showSlides() {
 var videos = [
   {
     name: 'Video001',
+    event: 'event1',
     url: 'https://www.youtube.com/embed/tx-0LNf7nLw',
   },
   {
     name: 'Video002',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ENqn4gUsH1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/ENqn4gUsH1o',
   },
   {
     name: 'Video003',
-    url: '.<iframe width="560" height="315" src="https://www.youtube.com/embed/DCj1K84IkLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/DCj1K84IkLw',
   },
   {
     name: 'Video004',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/L75V2Qnz80w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/L75V2Qnz80w',
   },
   {
     name: 'Video005',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/1Z7YHfkDKr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/1Z7YHfkDKr8',
   },
   {
     name: 'Video006',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/4NmNGORCi3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/4NmNGORCi3I',
   },
   {
     name: 'Video007',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/cXKY_r6UGxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/cXKY_r6UGxk',
   },
   {
     name: 'Video008',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/6D9vTvk-gSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/6D9vTvk-gSc',
   },
   {
     name: 'Video009',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/EmVRDp6aTN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/EmVRDp6aTN4',
   },
   {
     name: 'Video010',
-    url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/XtlfKk5SxDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/XtlfKk5SxDA',
   },
   {
     name: 'Video011',
-    url: '../assets/videos/party-elegans-20210121-090808shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/ZomlIUn4Bm4',
   },
   {
     name: 'Video012',
-    url: '../assets/videos/pooping-flea-20210121-114516shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/QcKVCuRgp4s',
   },
   {
     name: 'Video013',
-    url: '../assets/videos/rotation-20201026-173549shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/nxyZzSgKKXU',
   },
   {
     name: 'Video014',
-    url: '../assets/videos/segmented-nematode-20210121-204833shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/mwR3JC4MfaE',
   },
   {
     name: 'Video015',
-    url: '../assets/videos/segmented-worm-and-flea-20210121-204848shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/e1Q_uCbw9qY',
   },
   {
     name: 'Video016',
-    url: '../assets/videos/spirals-and-zigzags-20210121-153913shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/T_obeZvgypI',
   },
   {
     name: 'Video017',
-    url: '../assets/videos/super-spin-20210121-082703shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/cWFsKFaFv_A',
   },
   {
     name: 'Video018',
-    url: '../assets/videos/waterflea-great-20201026-223810shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/kyhRDZmZrZI',
   },
   {
     name: 'Video019',
-    url: '../assets/videos/wormy-worms-20210121-151600shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/lLeiPrxFAV8',
   },
   {
     name: 'Video020',
-    url: '../assets/videos/zip-and-tiny-spirals-20210120-235145shadow_scope1.mp4',
+    event: 'event1',
+    url: 'https://www.youtube.com/embed/3oyKoztr9xY',
   },
   {
     name: '165630986',
@@ -211,11 +231,11 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoGrid.innerHTML += `
         <div class="video-card">
-          <h2><a>${video.name}</a></h2>
-          <video controls>
+          <h2><a href="./video.html>${video.name}</a></h2>
+       
             <source src="${video.url}" />
-            <iframe width="560" height="315" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
-          </video>
+            <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+          
         </div>
         <p>
           Click the three vertical dots, download your video, and share with your
@@ -233,6 +253,20 @@ function filterVideosByName(nameValue) {
 
   renderVideos(filteredVideos);
 }
+function filterVideosByUrl(urlValue) {
+  let filteredVideos = videos.filter((v) =>
+    v.url.toLocaleLowerCase().includes(urlValue)
+  );
+
+  renderVideos(filteredVideos);
+}
+function filterVideosByEvent(eventValue) {
+  let filteredVideos = videos.filter((v) =>
+    v.event.toLocaleLowerCase().includes(eventValue)
+  );
+
+  renderVideos(filteredVideos);
+}
 
 searchButton.addEventListener('click', (e) => {
   // inside, we will need to achieve a few things:
@@ -246,6 +280,9 @@ searchButton.addEventListener('click', (e) => {
     // 4. return the results only if the value of the search is included in the video's name
     // we need to write code (a function for filtering through our data to include the search input value)
     filterVideosByName(searchInputValue);
+    filterVideosByUrl(searchInputValue);
+    filterVideosByEvent(searchInputValue);
+    // filterVideosByEvent(searchInputValue);
   } else {
     // 5. return nothing
     // input is invalid -- show an error message or show no results
@@ -268,6 +305,9 @@ searchInput.addEventListener('keyup', (e) => {
       // 4. return the results only if the value of the search is included in the video's name
       // we need to write code (a function for filtering through our data to include the search input value)
       filterVideosByName(searchInputValue);
+      filterVideosByUrl(searchInputValue);
+      filterVideosByEvent(searchInputValue);
+      // filterVideosByEvent(searchInputValue);
     } else {
       // 5. return nothing
       // input is invalid -- show an error message or show no results
