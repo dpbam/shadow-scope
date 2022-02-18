@@ -169,46 +169,57 @@ var videos = [
   },
   {
     name: '165630986',
+    event: 'event2',
     url: '../assets/videos/165630986_shadow_scope1-cool-twirler.mp4',
   },
   {
     name: '325211119',
+    event: 'event2',
     url: '../assets/videos/325211119_shadow_scope1-twirl-no-art.mp4',
   },
   {
     name: '396658953',
+    event: 'event2',
     url: '../assets/videos/396658953_shadow_scope1-clean-art-tinyflipper.mp4',
   },
   {
     name: '409856315',
+    event: 'event2',
     url: '../assets/videos/409856315_shadow_scope1-twirler2.mp4',
   },
   {
     name: '441121359',
+    event: 'event2',
     url: '../assets/videos/441121359_shadow_scope1-letter-o.mp4',
   },
   {
     name: '588718730',
+    event: 'event2',
     url: '../assets/videos/588718730_shadow_scope1-best-twirl-no-art.mp4',
   },
   {
     name: '719834883',
+    event: 'event2',
     url: '../assets/videos/719834883_shadow_scope1-twirler3-art.mp4',
   },
   {
     name: '752028009',
+    event: 'event2',
     url: '../assets/videos/752028009_shadow_scope1-twirler4.mp4',
   },
   {
     name: '820976329',
+    event: 'event2',
     url: '../assets/videos/820976329_shadow_scope1-clearntwirler-noart.mp4',
   },
   {
     name: '834630658',
+    event: 'event2',
     url: '../assets/videos/834630658_shadow_scope1-cleantwirler-2.mp4',
   },
   {
     name: '906913564',
+    event: 'event2',
     url: '../assets/videos/906913564_shadow_scope1-twirler4-art.mp4',
   },
 ];
@@ -253,20 +264,22 @@ function filterVideosByName(nameValue) {
 
   renderVideos(filteredVideos);
 }
-function filterVideosByUrl(urlValue) {
-  let filteredVideos = videos.filter((v) =>
-    v.url.toLocaleLowerCase().includes(urlValue)
-  );
 
-  renderVideos(filteredVideos);
-}
 function filterVideosByEvent(eventValue) {
   let filteredVideos = videos.filter((v) =>
-    v.event.toLocaleLowerCase().includes(eventValue)
+    v?.event?.toLocaleLowerCase()?.includes(eventValue)
   );
 
   renderVideos(filteredVideos);
 }
+
+// function filterVideosByUrl(urlValue) {
+//   let filteredVideos = videos.filter((v) =>
+//     v.url.toLocaleLowerCase().includes(urlValue)
+//   );
+
+//   renderVideos(filteredVideos);
+// }
 
 searchButton.addEventListener('click', (e) => {
   // inside, we will need to achieve a few things:
@@ -276,16 +289,17 @@ searchButton.addEventListener('click', (e) => {
   // 2. check: if input exists and if input is larger than 0
   if (searchInputValue && searchInputValue.trim().length > 0) {
     // 3. redefine 'value' to exclude white space and change input to all lowercase
-    searchInputValue = searchInputValue.trim().toLowerCase();
     // 4. return the results only if the value of the search is included in the video's name
     // we need to write code (a function for filtering through our data to include the search input value)
-    filterVideosByName(searchInputValue);
-    filterVideosByUrl(searchInputValue);
-    filterVideosByEvent(searchInputValue);
-    // filterVideosByEvent(searchInputValue);
-  } else {
-    // 5. return nothing
+
+    searchInputValue = searchInputValue.trim().toLowerCase();
+    filterVideosByName(searchInputValue) ||
+      filterVideosByEvent(searchInputValue);
+    // filterVideosByUrl(searchInputValue);
+
     // input is invalid -- show an error message or show no results
+    // default:
+    //   alert('Try search again!');
   }
 });
 
@@ -305,9 +319,8 @@ searchInput.addEventListener('keyup', (e) => {
       // 4. return the results only if the value of the search is included in the video's name
       // we need to write code (a function for filtering through our data to include the search input value)
       filterVideosByName(searchInputValue);
-      filterVideosByUrl(searchInputValue);
       filterVideosByEvent(searchInputValue);
-      // filterVideosByEvent(searchInputValue);
+      // filterVideosByUrl(searchInputValue);
     } else {
       // 5. return nothing
       // input is invalid -- show an error message or show no results
