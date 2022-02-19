@@ -170,57 +170,57 @@ var videos = [
   {
     name: '165630986',
     event: 'event2',
-    url: '../assets/videos/165630986_shadow_scope1-cool-twirler.mp4',
+    url: 'https://www.youtube.com/embed/1TCxm4qMmWY',
   },
   {
     name: '325211119',
     event: 'event2',
-    url: '../assets/videos/325211119_shadow_scope1-twirl-no-art.mp4',
+    url: 'https://www.youtube.com/embed/QIG58eo_7L0',
   },
   {
     name: '396658953',
     event: 'event2',
-    url: '../assets/videos/396658953_shadow_scope1-clean-art-tinyflipper.mp4',
+    url: 'https://www.youtube.com/embed/2Td48rux3A4',
   },
   {
     name: '409856315',
     event: 'event2',
-    url: '../assets/videos/409856315_shadow_scope1-twirler2.mp4',
+    url: 'https://www.youtube.com/embed/k_85umJemqw',
   },
   {
     name: '441121359',
     event: 'event2',
-    url: '../assets/videos/441121359_shadow_scope1-letter-o.mp4',
+    url: 'https://www.youtube.com/embed/kZ1y24nfFDo',
   },
   {
     name: '588718730',
     event: 'event2',
-    url: '../assets/videos/588718730_shadow_scope1-best-twirl-no-art.mp4',
+    url: 'https://www.youtube.com/embed/y-ZABdnuBhA',
   },
   {
     name: '719834883',
     event: 'event2',
-    url: '../assets/videos/719834883_shadow_scope1-twirler3-art.mp4',
+    url: 'https://www.youtube.com/embed/gf70FtVeEEg',
   },
   {
     name: '752028009',
     event: 'event2',
-    url: '../assets/videos/752028009_shadow_scope1-twirler4.mp4',
+    url: 'https://www.youtube.com/embed/BpZnonBm9Nw',
   },
   {
     name: '820976329',
     event: 'event2',
-    url: '../assets/videos/820976329_shadow_scope1-clearntwirler-noart.mp4',
+    url: 'https://www.youtube.com/embed/yr7S8lv0EQI',
   },
   {
     name: '834630658',
     event: 'event2',
-    url: '../assets/videos/834630658_shadow_scope1-cleantwirler-2.mp4',
+    url: 'https://www.youtube.com/embed/tGBE2R3QA-Y',
   },
   {
     name: '906913564',
     event: 'event2',
-    url: '../assets/videos/906913564_shadow_scope1-twirler4-art.mp4',
+    url: 'https://www.youtube.com/embed/-872LNe35-s',
   },
 ];
 
