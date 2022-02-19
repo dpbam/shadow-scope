@@ -224,6 +224,14 @@ var videos = [
   },
 ];
 
+for (let i = 0; i < videos.length; i++) {
+  console.log(videos[i]);
+}
+
+videos.forEach(function (value, index, videos) {
+  console.log(value, index, videos);
+});
+
 const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
 
@@ -242,7 +250,7 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoGrid.innerHTML += `
         <div class="video-card">
-          <h2><a href="./video.html>${video.name}</a></h2>
+          <h2><a href="./video.html">${video.name}</a></h2>
        
             <source src="${video.url}" />
             <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
@@ -273,9 +281,14 @@ function renderVideos(videosToRender) {
 //   renderVideos(filteredVideos);
 // }
 
-function filterVideosBy(nameValue, eventValue) {
-  let filteredVideos = videos.filter((v) =>
-    v.url.toLocaleLowerCase().includes(nameValue, eventValue)
+function filterVideos(value) {
+  let filteredVideos = videos.filter(
+    (v) =>
+      v.name.toLocaleLowerCase().includes(value) ||
+      v.event.toLocaleLowerCase().includes(value)
+    // || v.teacher.toLocaleLowerCase().includes(value)
+    // || v.shape.toLocaleLowerCase().includes(value)
+    // || v.direction.toLocaleLowerCase().includes(value)
   );
 
   renderVideos(filteredVideos);
@@ -293,7 +306,7 @@ searchButton.addEventListener('click', (e) => {
     // we need to write code (a function for filtering through our data to include the search input value)
 
     searchInputValue = searchInputValue.trim().toLowerCase();
-    filterVideosBy(searchInputValue);
+    filterVideos(searchInputValue);
     // filterVideosByEvent(searchInputValue);
     // filterVideosByUrl(searchInputValue);
 
@@ -318,12 +331,13 @@ searchInput.addEventListener('keyup', (e) => {
       searchInputValue = searchInputValue.trim().toLowerCase();
       // 4. return the results only if the value of the search is included in the video's name
       // we need to write code (a function for filtering through our data to include the search input value)
-      filterVideosBy(searchInputValue);
+      filterVideos(searchInputValue);
       // filterVideosByEvent(searchInputValue);
       // filterVideosByUrl(searchInputValue);
     } else {
       // 5. return nothing
       // input is invalid -- show an error message or show no results
+      console.log('Try your search again');
     }
   }
 });
