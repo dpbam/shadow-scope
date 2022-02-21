@@ -125,6 +125,14 @@ var videos = [
   },
 ];
 
+for (let i = 0; i < videos.length; i++) {
+  console.log(videos[i]);
+}
+
+videos.forEach(function (value, index, videos) {
+  console.log(value, index, videos);
+});
+
 const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
 
@@ -143,11 +151,11 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoGrid.innerHTML += `
         <div class="video-card">
-          <h2>${video.name}</a></h2>
-          <video controls>
+          <h2><a href="./video.html">${video.name}</a></h2>
+       
             <source src="${video.url}" />
-            <iframe src="${video.url}" />
-          </video>
+            <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+          
         </div>
         <p>
           Click the three vertical dots, download your video, and share with your
@@ -158,9 +166,30 @@ function renderVideos(videosToRender) {
   }
 }
 
-function filterVideosByName(nameValue) {
-  let filteredVideos = videos.filter((v) =>
-    v.name.toLocaleLowerCase().includes(nameValue)
+// function filterVideosByName(nameValue) {
+//   let filteredVideos = videos.filter((v) =>
+//     v.name.toLocaleLowerCase().includes(nameValue)
+//   );
+
+//   renderVideos(filteredVideos);
+// }
+
+// function filterVideosByEvent(eventValue) {
+//   let filteredVideos = videos.filter((v) =>
+//     v?.event?.toLocaleLowerCase()?.includes(eventValue)
+//   );
+
+//   renderVideos(filteredVideos);
+// }
+
+function filterVideos(value) {
+  let filteredVideos = videos.filter(
+    (v) =>
+      v.name.toLocaleLowerCase().includes(value) ||
+      v.event.toLocaleLowerCase().includes(value)
+    // || v.teacher.toLocaleLowerCase().includes(value)
+    // || v.shape.toLocaleLowerCase().includes(value)
+    // || v.direction.toLocaleLowerCase().includes(value)
   );
 
   renderVideos(filteredVideos);
@@ -174,13 +203,17 @@ searchButton.addEventListener('click', (e) => {
   // 2. check: if input exists and if input is larger than 0
   if (searchInputValue && searchInputValue.trim().length > 0) {
     // 3. redefine 'value' to exclude white space and change input to all lowercase
-    searchInputValue = searchInputValue.trim().toLowerCase();
     // 4. return the results only if the value of the search is included in the video's name
     // we need to write code (a function for filtering through our data to include the search input value)
-    filterVideosByName(searchInputValue);
-  } else {
-    // 5. return nothing
+
+    searchInputValue = searchInputValue.trim().toLowerCase();
+    filterVideos(searchInputValue);
+    // filterVideosByEvent(searchInputValue);
+    // filterVideosByUrl(searchInputValue);
+
     // input is invalid -- show an error message or show no results
+    // default:
+    //   alert('Try search again!');
   }
 });
 
@@ -199,10 +232,13 @@ searchInput.addEventListener('keyup', (e) => {
       searchInputValue = searchInputValue.trim().toLowerCase();
       // 4. return the results only if the value of the search is included in the video's name
       // we need to write code (a function for filtering through our data to include the search input value)
-      filterVideosByName(searchInputValue);
+      filterVideos(searchInputValue);
+      // filterVideosByEvent(searchInputValue);
+      // filterVideosByUrl(searchInputValue);
     } else {
       // 5. return nothing
       // input is invalid -- show an error message or show no results
+      console.log('Try your search again');
     }
   }
 });
@@ -227,17 +263,3 @@ function setList(results) {
     list.appendChild(resultItem);
   }
 }
-
-// function videosSearchFunction() {
-//   if (videos.indexOf(Number(myInputs.value)) == -1) {
-//     document.write(myInputs.value + '<b>Not Found</b>');
-//   } else {
-//     document.write(
-//       '<b>Element found at ' +
-//         videos.indexOf(Number(myInputs.value)) +
-//         ' Position</b>'
-//     );
-//   }
-// }
-
-// searchButton.addEventListener('click', searchFunction);

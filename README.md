@@ -12,4 +12,4 @@ The Shadow Scope is a lens-less microscope. This interactive website will help o
 
 ## Website
 
-https://stasevichlab.colostate.edu/shadow-scope/
+## Click [here](https://stasevichlab.colostate.edu/shadow-scope/) for the live app.
