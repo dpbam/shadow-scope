@@ -905,11 +905,30 @@ video {
   margin-bottom: 2rem;
 }
 
-/* how to use it page */
+/* team page */
 
-.use-diagram {
-  display: flex;
-  justify-content: center;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 6rem;
+  margin: 3rem;
+}
+
+.team-grid > div > img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: contain;
+}
+
+.team-grid > div {
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 4px 4px 4px lightgray;
+}
+
+.team-grid > div > h2 {
+  font-size: 1.1rem;
 }
 
 /* learn more page */
@@ -967,6 +986,11 @@ video {
 hr {
   width: 80%;
   margin: auto;
+}
+
+.use-diagram {
+  display: flex;
+  justify-content: center;
 }
 
 .instructions-container p {
