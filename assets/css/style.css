@@ -1040,12 +1040,21 @@ hr {
   padding: 2rem;
   color: #1e4d2b;
 }
+
+.summary-cards {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+}
+
 .part-title-and-summary {
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
-  width: 40%;
+  /* margin: 2rem; */
+  margin: auto;
+  width: 80%;
   box-shadow: 2px 4px 4px lightgray;
   border-radius: 5px;
 }
