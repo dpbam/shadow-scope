@@ -1,226 +1,127 @@
-function openSlideMenu() {
-  document.getElementById('side-menu').style.width = '250px';
-  document.getElementById('main').style.marginLeft = '250px';
-}
-function closeSlideMenu() {
-  document.getElementById('side-menu').style.width = '0';
-  document.getElementById('main').style.marginLeft = '0';
-}
-
-$(function () {
-  $('#headerDIV').load('../html/header.html');
-  $('#footerDIV').load('../html/footer.html');
-});
-
-// Slideshow
-
-// Automatic slideshow
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName('mySlides');
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  if (slides?.length > 0) {
-    slides[slideIndex - 1].style.display = 'block';
-  }
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
-// User conrols slideshow:
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/Previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
-// End user controls slideshow
-
-// videos search bar
-
 var videos = [
   {
     name: 'Video001',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/tx-0LNf7nLw',
+    url: 'https://youtu.be/tx-0LNf7nLw',
   },
   {
     name: 'Video002',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/ENqn4gUsH1o',
+    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
   },
   {
     name: 'Video003',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/DCj1K84IkLw',
+    url: '../assets/videos/blobby-with-whiskers-20210121-210334shadow_scope1.mp4',
   },
   {
     name: 'Video004',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/L75V2Qnz80w',
+    url: '../assets/videos/chasing-blobby-with-whiskers-20210121-210350shadow_scope1.mp4',
   },
   {
     name: 'Video005',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/1Z7YHfkDKr8',
+    url: '../assets/videos/creepy-moving-bug-20210121-115601shadow_scope1.mp4',
   },
   {
     name: 'Video006',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/4NmNGORCi3I',
+    url: '../assets/videos/dot-tracking-greenplant-20210121-160535shadow_scope1.mp4',
   },
   {
     name: 'Video007',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/cXKY_r6UGxk',
+    url: '../assets/videos/dot-tracking-plant-20210121-155902shadow_scope1.mp4',
   },
   {
     name: 'Video008',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/6D9vTvk-gSc',
+    url: '../assets/videos/inching-worm2-20210121-151712shadow_scope1.mp4',
   },
   {
     name: 'Video009',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/EmVRDp6aTN4',
+    url: '../assets/videos/littleguy-bumpercar-20210121-145755shadow_scope1.mp4',
   },
   {
     name: 'Video010',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/XtlfKk5SxDA',
+    url: '../assets/videos/littleguy-spirals-20210121-145740shadow_scope1.mp4',
   },
   {
     name: 'Video011',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/ZomlIUn4Bm4',
+    url: '../assets/videos/party-elegans-20210121-090808shadow_scope1.mp4',
   },
   {
     name: 'Video012',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/QcKVCuRgp4s',
+    url: '../assets/videos/pooping-flea-20210121-114516shadow_scope1.mp4',
   },
   {
     name: 'Video013',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/nxyZzSgKKXU',
+    url: '../assets/videos/rotation-20201026-173549shadow_scope1.mp4',
   },
   {
     name: 'Video014',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/mwR3JC4MfaE',
+    url: '../assets/videos/segmented-nematode-20210121-204833shadow_scope1.mp4',
   },
   {
     name: 'Video015',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/e1Q_uCbw9qY',
+    url: '../assets/videos/segmented-worm-and-flea-20210121-204848shadow_scope1.mp4',
   },
   {
     name: 'Video016',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/T_obeZvgypI',
+    url: '../assets/videos/spirals-and-zigzags-20210121-153913shadow_scope1.mp4',
   },
   {
     name: 'Video017',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/cWFsKFaFv_A',
+    url: '../assets/videos/super-spin-20210121-082703shadow_scope1.mp4',
   },
   {
     name: 'Video018',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/kyhRDZmZrZI',
+    url: '../assets/videos/waterflea-great-20201026-223810shadow_scope1.mp4',
   },
   {
     name: 'Video019',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/lLeiPrxFAV8',
+    url: '../assets/videos/wormy-worms-20210121-151600shadow_scope1.mp4',
   },
   {
     name: 'Video020',
-    event: 'event1',
-    url: 'https://www.youtube.com/embed/3oyKoztr9xY',
+    url: '../assets/videos/zip-and-tiny-spirals-20210120-235145shadow_scope1.mp4',
   },
   {
     name: '165630986',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/1TCxm4qMmWY',
+    url: '../assets/videos/165630986_shadow_scope1-cool-twirler.mp4',
   },
   {
     name: '325211119',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/QIG58eo_7L0',
+    url: '../assets/videos/325211119_shadow_scope1-twirl-no-art.mp4',
   },
   {
     name: '396658953',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/2Td48rux3A4',
+    url: '../assets/videos/396658953_shadow_scope1-clean-art-tinyflipper.mp4',
   },
   {
     name: '409856315',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/k_85umJemqw',
+    url: '../assets/videos/409856315_shadow_scope1-twirler2.mp4',
   },
   {
     name: '441121359',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/kZ1y24nfFDo',
+    url: '../assets/videos/441121359_shadow_scope1-letter-o.mp4',
   },
   {
     name: '588718730',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/y-ZABdnuBhA',
+    url: '../assets/videos/588718730_shadow_scope1-best-twirl-no-art.mp4',
   },
   {
     name: '719834883',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/gf70FtVeEEg',
+    url: '../assets/videos/719834883_shadow_scope1-twirler3-art.mp4',
   },
   {
     name: '752028009',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/BpZnonBm9Nw',
+    url: '../assets/videos/752028009_shadow_scope1-twirler4.mp4',
   },
   {
     name: '820976329',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/yr7S8lv0EQI',
+    url: '../assets/videos/820976329_shadow_scope1-clearntwirler-noart.mp4',
   },
   {
     name: '834630658',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/tGBE2R3QA-Y',
+    url: '../assets/videos/834630658_shadow_scope1-cleantwirler-2.mp4',
   },
   {
     name: '906913564',
-    event: 'event2',
-    url: 'https://www.youtube.com/embed/-872LNe35-s',
+    url: '../assets/videos/906913564_shadow_scope1-twirler4-art.mp4',
   },
 ];
 
@@ -362,17 +263,3 @@ function setList(results) {
     list.appendChild(resultItem);
   }
 }
-
-// function videosSearchFunction() {
-//   if (videos.indexOf(Number(myInputs.value)) == -1) {
-//     document.write(myInputs.value + '<b>Not Found</b>');
-//   } else {
-//     document.write(
-//       '<b>Element found at ' +
-//         videos.indexOf(Number(myInputs.value)) +
-//         ' Position</b>'
-//     );
-//   }
-// }
-
-// searchButton.addEventListener('click', searchFunction);
