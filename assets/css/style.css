@@ -910,8 +910,8 @@ video {
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 6rem;
-  margin: 3rem;
+  grid-gap: 4rem;
+  margin: 3rem 20rem;
 }
 
 .team-grid > div > img {
@@ -925,6 +925,7 @@ video {
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 2px 4px 4px 4px lightgray;
+  width: auto;
 }
 
 .team-grid > div > h2 {
