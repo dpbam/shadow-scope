@@ -849,6 +849,24 @@ nav {
   background: #3c6b9c;
 }
 
+.search-and-youtube-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.youtube-link {
+  padding: 2rem;
+}
+
+.youtube-link h5 {
+  font-size: 1.5rem;
+}
+
+.youtube-link img {
+  width: 10rem;
+  padding: 1rem;
+}
+
 /* #videos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
