@@ -1641,6 +1641,12 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 1.25rem;
   }
+  .part-one-img {
+    padding: 1rem;
+  }
+  .part-one-img img {
+    width: 95%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1787,6 +1793,9 @@ div.info-and-form {
   .part-title-and-summary {
     width: 88%;
   }
+  .part-one-img img {
+    width: 98%;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1831,6 +1840,12 @@ div.info-and-form {
   .part-title-and-summary {
     width: 88%;
     margin-left: 1.5rem;
+  }
+  .part-one-img {
+    padding: 0.5rem;
+  }
+  .part-one-img img {
+    width: 100%;
   }
 }
 
