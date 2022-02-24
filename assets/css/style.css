@@ -1114,6 +1114,16 @@ hr {
   color: #fc4385;
 }
 
+.part-one-img {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.part-one-img img {
+  width: 80%;
+}
+
 .build-pdf1 iframe,
 .build-pdf2 iframe,
 .build-pdf3 iframe {
