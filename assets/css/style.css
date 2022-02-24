@@ -1085,9 +1085,20 @@ hr {
 
 .summary-cards {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* flex-wrap: wrap; */
   gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.title-and-arrow {
+  display: flex;
+}
+
+.fa-solid {
+  color: black;
+  background-color: gray;
 }
 
 .part-title-and-summary {
@@ -1099,6 +1110,7 @@ hr {
   width: 80%;
   box-shadow: 2px 4px 4px lightgray;
   border-radius: 5px;
+  min-height: 13rem;
 }
 
 .part-title {
@@ -1118,6 +1130,17 @@ hr {
 
 .part-title a:hover {
   color: #fc4385;
+}
+
+.part-one-img {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.part-one-img img {
+  width: 80%;
+  border-radius: 5px;
 }
 
 .build-pdf1 iframe,
@@ -1636,6 +1659,12 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 1.25rem;
   }
+  .part-one-img {
+    padding: 1rem;
+  }
+  .part-one-img img {
+    width: 95%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1782,6 +1811,9 @@ div.info-and-form {
   .part-title-and-summary {
     width: 88%;
   }
+  .part-one-img img {
+    width: 98%;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1826,6 +1858,12 @@ div.info-and-form {
   .part-title-and-summary {
     width: 88%;
     margin-left: 1.5rem;
+  }
+  .part-one-img {
+    padding: 0.5rem;
+  }
+  .part-one-img img {
+    width: 100%;
   }
 }
 
