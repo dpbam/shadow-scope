@@ -1122,6 +1122,7 @@ hr {
 
 .part-one-img img {
   width: 80%;
+  border-radius: 5px;
 }
 
 .build-pdf1 iframe,
