@@ -1067,9 +1067,20 @@ hr {
 
 .summary-cards {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* flex-wrap: wrap; */
   gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.title-and-arrow {
+  display: flex;
+}
+
+.fa-solid {
+  color: black;
+  background-color: gray;
 }
 
 .part-title-and-summary {
@@ -1081,6 +1092,7 @@ hr {
   width: 80%;
   box-shadow: 2px 4px 4px lightgray;
   border-radius: 5px;
+  min-height: 13rem;
 }
 
 .part-title {
