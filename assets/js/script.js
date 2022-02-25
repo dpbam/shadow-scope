@@ -250,7 +250,7 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoGrid.innerHTML += `
         <div class="video-card">
-          <h2><a href="./video.html">${video.name}</a></h2>
+          <h2>${video.name}</h2>
        
             <source src="${video.url}" />
             <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
