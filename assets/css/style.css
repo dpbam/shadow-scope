@@ -691,8 +691,13 @@ nav {
   padding-bottom: 1rem;
 }
 
-.blog-block-news-feed h4 {
+.blog-block-news-feed h4 a {
   font-weight: 400;
+  color: gray;
+}
+
+.blog-block-news-feed h4 a:hover {
+  color: #fc4385;
 }
 
 .twitter-feed {
@@ -1580,6 +1585,7 @@ div.info-and-form {
   }
   .preview-cards {
     margin-top: 5rem;
+    width: 100%;
   }
   .about-shadow-microscopy,
   .videos-preview,
@@ -1604,15 +1610,19 @@ div.info-and-form {
   .news-and-twitter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .news-feed,
   .twitter-feed {
-    width: 100%;
+    width: 88%;
+    margin-left: 1.5rem;
   }
-  .news,
-  .twitter {
-    width: 49%;
+  .news-container,
+  .twitter-container {
+    width: 25rem;
+    margin: 2rem;
   }
 }
 
@@ -1629,15 +1639,19 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 2rem;
   }
+  .news-container,
+  .twitter-container {
+    width: 22rem;
+  }
 }
 
 @media (max-width: 888px) {
   .news-and-twitter {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
   }
-  .news,
+  /* .news,
   .twitter {
     width: 100%;
     margin: 0;
@@ -1646,7 +1660,7 @@ div.info-and-form {
   .twitter-container {
     width: 100%;
     margin-right: 0;
-  }
+  } */
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
@@ -1678,6 +1692,10 @@ div.info-and-form {
   }
   .part-one-img img {
     width: 95%;
+  }
+  .news-container,
+  .twitter-container {
+    width: 20rem;
   }
 }
 
