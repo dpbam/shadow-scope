@@ -2097,4 +2097,7 @@ div.info-and-form {
   .reminder p {
     font-size: 1.5rem;
   }
+  .youtube-link {
+    padding: 0.5;
+  }
 }
