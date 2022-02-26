@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --csu-green: #1e4d2b;
+  --csu-gold: #c8c372;
+  --csu-white: #ffffff;
+  --eighty-gray: #59595b;
+  --aggie-orange: #d9782d;
+  --alfalfa: #c9d845;
+  --canyon: #cc5430;
+  --dark-slate: #105456;
+  --reservoir: #12a4b6;
+  --sunshine: #ecc530;
+}
+
 html {
   position: relative;
   /* min-height: 100vh; */
@@ -14,7 +27,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #e8ecee;
-  color: #696969;
+  color: var(--eighty-gray);
   margin: 0;
   padding: 0;
 }
@@ -25,8 +38,8 @@ body a {
 
 header {
   /* background-color: #2441bf; */
-  background: #1e4d2b;
-  color: #ffffff;
+  background: var(--csu-green);
+  color: var(--csu-white);
   padding: 2rem;
 }
 
@@ -51,8 +64,7 @@ header {
   font-size: 5rem;
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
-  /* color: #fdf17f; */
-  color: #c7c26d;
+  color: var(--csu-gold);
   display: flex;
   flex-direction: column;
   line-height: 4rem;
@@ -60,7 +72,7 @@ header {
 
 #logo a {
   text-decoration: none;
-  color: #bdb878;
+  color: var(--csu-gold);
   display: flex;
   flex-direction: column;
 }
@@ -74,15 +86,6 @@ header {
   font-size: 1.75rem;
   padding-left: 1.25rem;
   padding-bottom: -2rem;
-}
-
-#logo span a {
-  text-decoration: none;
-  color: #fdf17f;
-}
-
-#logo span a:hover {
-  color: #e6da6d;
 }
 
 .logo-container {
@@ -109,7 +112,7 @@ nav {
 .navbar a {
   float: left;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: var(--csu-white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -140,7 +143,7 @@ nav {
   float: left;
   overflow: hidden;
   /* border-end-end-radius: 15px; */
-  color: #ffffff;
+  color: var(--csu-white);
 }
 
 /* Dropdown button */
