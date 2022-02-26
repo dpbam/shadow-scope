@@ -1624,6 +1624,11 @@ div.info-and-form {
     width: 25rem;
     margin: 2rem;
   }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 15rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1696,6 +1701,11 @@ div.info-and-form {
   .news-container,
   .twitter-container {
     width: 20rem;
+  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10rem;
   }
 }
 
@@ -1860,6 +1870,9 @@ div.info-and-form {
   .part-one-img img {
     width: 98%;
   }
+  .team-grid {
+    margin: 2rem 5rem;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1928,6 +1941,9 @@ div.info-and-form {
   .sample-video iframe {
     width: 20rem;
     height: 15rem;
+  }
+  .team-grid {
+    margin: 2rem 2rem;
   }
 }
 
