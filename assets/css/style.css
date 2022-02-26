@@ -1992,7 +1992,16 @@ div.info-and-form {
     font-size: 0.75rem;
   }
   .how-to-subtitle {
-    padding: 1rem;
+    padding: 0;
+  }
+  .instructions-container {
+    margin-top: 1rem;
+  }
+  .instructions-container > section p {
+    font-size: 1rem;
+  }
+  .reminder-p a:hover {
+    color: #fc4385;
   }
 
   .at-scope-now-one img,
@@ -2010,7 +2019,7 @@ div.info-and-form {
   .q-tip img,
   .final-q-tip img,
   .place-mural img {
-    width: 23rem;
+    width: 100%;
     height: auto;
   }
   .slide-image img {
