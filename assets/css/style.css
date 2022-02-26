@@ -565,7 +565,7 @@ nav {
 
 .img-video {
   width: 35%;
-  height: auto;
+  height: 100%;
   max-width: 400px;
   overflow: hidden;
   padding: 2rem 2rem 2rem 2rem;
@@ -582,7 +582,7 @@ nav {
   max-width: 100%;
   /* max-height: 100%; */
   width: 100%;
-  height: auto;
+  height: 20rem;
   object-fit: contain;
 }
 
@@ -691,8 +691,13 @@ nav {
   padding-bottom: 1rem;
 }
 
-.blog-block-news-feed h4 {
+.blog-block-news-feed h4 a {
   font-weight: 400;
+  color: gray;
+}
+
+.blog-block-news-feed h4 a:hover {
+  color: #fc4385;
 }
 
 .twitter-feed {
@@ -770,6 +775,7 @@ nav {
 .videos-title {
   text-align: center;
   padding: 3rem 0 2rem 2rem;
+  font-size: 2.5rem;
 }
 
 .wait-for-videos {
@@ -783,12 +789,19 @@ nav {
 }
 
 .sample-video {
-  width: 20rem;
+  background-color: white;
+  width: 30rem;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px lightgray;
   /* margin: 1rem 0 3rem 0; */
 }
 
-.sample-video video {
+.sample-video iframe {
   margin: 1rem;
+  width: 25rem;
+  height: 20rem;
 }
 
 .video-card a {
@@ -801,6 +814,13 @@ nav {
 }
 
 /* search in videos page */
+
+.sample-and-youtube-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .search-container {
   display: flex;
   max-width: 35rem;
@@ -810,8 +830,9 @@ nav {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
-  margin-left: 3rem;
-  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
 }
 
 .search-bar {
@@ -847,6 +868,22 @@ nav {
 
 .searchButton:hover {
   background: #3c6b9c;
+}
+
+.youtube-link {
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+.youtube-link h5 {
+  font-size: 1rem;
+}
+
+.youtube-link img {
+  width: 8rem;
+  padding: 1rem;
+  margin-left: 6rem;
 }
 
 /* #videos-grid {
@@ -1067,9 +1104,20 @@ hr {
 
 .summary-cards {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* flex-wrap: wrap; */
   gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.title-and-arrow {
+  display: flex;
+}
+
+.fa-solid {
+  color: black;
+  background-color: gray;
 }
 
 .part-title-and-summary {
@@ -1081,6 +1129,7 @@ hr {
   width: 80%;
   box-shadow: 2px 4px 4px lightgray;
   border-radius: 5px;
+  min-height: 13rem;
 }
 
 .part-title {
@@ -1100,6 +1149,17 @@ hr {
 
 .part-title a:hover {
   color: #fc4385;
+}
+
+.part-one-img {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.part-one-img img {
+  width: 80%;
+  border-radius: 5px;
 }
 
 .build-pdf1 iframe,
@@ -1525,6 +1585,7 @@ div.info-and-form {
   }
   .preview-cards {
     margin-top: 5rem;
+    width: 100%;
   }
   .about-shadow-microscopy,
   .videos-preview,
@@ -1538,7 +1599,7 @@ div.info-and-form {
   .learn-more-preview img,
   .lessons-preview img {
     width: 80%;
-    height: auto;
+    height: 20rem;
   }
 
   .build-one img {
@@ -1549,15 +1610,24 @@ div.info-and-form {
   .news-and-twitter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .news-feed,
   .twitter-feed {
-    width: 100%;
+    width: 88%;
+    margin-left: 1.5rem;
   }
-  .news,
-  .twitter {
-    width: 49%;
+  .news-container,
+  .twitter-container {
+    width: 25rem;
+    margin: 2rem;
+  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 15rem;
   }
 }
 
@@ -1574,15 +1644,19 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 2rem;
   }
+  .news-container,
+  .twitter-container {
+    width: 22rem;
+  }
 }
 
 @media (max-width: 888px) {
   .news-and-twitter {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
   }
-  .news,
+  /* .news,
   .twitter {
     width: 100%;
     margin: 0;
@@ -1591,7 +1665,7 @@ div.info-and-form {
   .twitter-container {
     width: 100%;
     margin-right: 0;
-  }
+  } */
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
@@ -1617,6 +1691,21 @@ div.info-and-form {
   }
   .coming-soon-preview p {
     font-size: 1.25rem;
+  }
+  .part-one-img {
+    padding: 1rem;
+  }
+  .part-one-img img {
+    width: 95%;
+  }
+  .news-container,
+  .twitter-container {
+    width: 20rem;
+  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10rem;
   }
 }
 
@@ -1655,13 +1744,24 @@ div.info-and-form {
     padding-left: 0;
   }
   .preview-cards {
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
   }
   .img-video {
     /* width: 50%; */
     padding-left: 1rem;
     padding-right: 0rem;
     float: left;
+  }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one,
+  .lessons-preview {
+    margin-bottom: 0 0 1rem 0;
+    display: block;
+    height: 20rem;
+    width: 100%;
+    margin-left: 0;
   }
   .about-shadow-microscopy img,
   .video-loop-preview,
@@ -1675,18 +1775,8 @@ div.info-and-form {
     width: auto;
     padding: 1rem;
   }
-
   .preview-card-title-and-paragraph p {
     text-align: justify;
-  }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
-    margin: 0rem 1rem 1rem 1rem;
-    display: block;
-    height: 23rem;
   }
   .about-shadow-microscopy p,
   .videos-preview p,
@@ -1696,8 +1786,23 @@ div.info-and-form {
     font-size: 1.15rem;
   }
   .news-and-twitter {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .news-feed,
+  .twitter-feed {
+    width: 100%;
+    margin: 0;
+  }
+  .news-container,
+  .twitter-container {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .news-container {
+    height: 22rem;
   }
   .how-to-subtitle {
     padding-bottom: 1rem;
@@ -1730,9 +1835,6 @@ div.info-and-form {
   .lessons-preview p {
     font-size: 0.9rem;
   }
-  .news-container {
-    height: 68rem;
-  }
   .happen-container {
     display: flex;
     flex-direction: column-reverse;
@@ -1741,7 +1843,8 @@ div.info-and-form {
     margin-top: 2rem;
   }
   .blog-block {
-    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
   }
   .at-scope-now-one img,
   .turned-on img,
@@ -1764,6 +1867,12 @@ div.info-and-form {
   .part-title-and-summary {
     width: 88%;
   }
+  .part-one-img img {
+    width: 98%;
+  }
+  .team-grid {
+    margin: 2rem 5rem;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1783,8 +1892,16 @@ div.info-and-form {
   .build-one img {
     padding-right: 0.5rem;
   }
-  .news-container {
-    height: 85rem;
+  .news-feed,
+  .twitter-feed {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news-container,
+  .twitter-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .at-scope-now-one img,
   .turned-on img,
@@ -1805,9 +1922,28 @@ div.info-and-form {
     width: 25rem;
     height: auto;
   }
+  .blog-block a {
+    font-size: 2rem;
+  }
   .part-title-and-summary {
     width: 88%;
     margin-left: 1.5rem;
+  }
+  .part-one-img {
+    padding: 0.5rem;
+  }
+  .part-one-img img {
+    width: 100%;
+  }
+  .sample-video {
+    width: 25rem;
+  }
+  .sample-video iframe {
+    width: 20rem;
+    height: 15rem;
+  }
+  .team-grid {
+    margin: 2rem 2rem;
   }
 }
 
@@ -1852,14 +1988,20 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 0.75rem;
   }
-  .news-container {
-    height: 75rem;
-  }
   .blog-block-news-feed p {
     font-size: 0.75rem;
   }
   .how-to-subtitle {
-    padding: 1rem;
+    padding: 0;
+  }
+  .instructions-container {
+    margin-top: 1rem;
+  }
+  .instructions-container > section p {
+    font-size: 1rem;
+  }
+  .reminder-p a:hover {
+    color: #fc4385;
   }
 
   .at-scope-now-one img,
@@ -1877,7 +2019,7 @@ div.info-and-form {
   .q-tip img,
   .final-q-tip img,
   .place-mural img {
-    width: 23rem;
+    width: 100%;
     height: auto;
   }
   .slide-image img {
@@ -1886,6 +2028,19 @@ div.info-and-form {
   }
   .instructions-container p {
     padding: 1rem;
+  }
+  .sample-video {
+    width: 100%;
+  }
+  .sample-video iframe {
+    width: 90%;
+  }
+  .input {
+    font-size: 1rem;
+  }
+  .videos-title {
+    font-size: 1.75rem;
+    padding: 1rem 0;
   }
 }
 
@@ -1922,11 +2077,6 @@ div.info-and-form {
   .build-one,
   .lessons-preview {
     height: 28rem;
-  }
-  .news-container,
-  .twitter-container {
-    height: 90rem;
-    width: 100%;
   }
   .news-and-twitter {
     margin: 0;
@@ -1971,5 +2121,8 @@ div.info-and-form {
   }
   .reminder p {
     font-size: 1.5rem;
+  }
+  .youtube-link {
+    padding: 0.5;
   }
 }
