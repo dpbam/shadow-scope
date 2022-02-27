@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --csu-green: #1e4d2b;
+  --csu-gold: #c8c372;
+  --csu-white: #ffffff;
+  --eighty-gray: #59595b;
+  --aggie-orange: #d9782d;
+  --alfalfa: #c9d845;
+  --canyon: #cc5430;
+  --dark-slate: #105456;
+  --reservoir: #12a4b6;
+  --sunshine: #ecc530;
+}
+
 html {
   position: relative;
   /* min-height: 100vh; */
@@ -14,7 +27,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #e8ecee;
-  color: #696969;
+  color: var(--eighty-gray);
   margin: 0;
   padding: 0;
 }
@@ -25,8 +38,8 @@ body a {
 
 header {
   /* background-color: #2441bf; */
-  background: #1e4d2b;
-  color: #ffffff;
+  background: var(--csu-green);
+  color: var(--csu-white);
   padding: 2rem;
 }
 
@@ -51,8 +64,7 @@ header {
   font-size: 5rem;
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
-  /* color: #fdf17f; */
-  color: #c7c26d;
+  color: var(--csu-gold);
   display: flex;
   flex-direction: column;
   line-height: 4rem;
@@ -60,7 +72,7 @@ header {
 
 #logo a {
   text-decoration: none;
-  color: #bdb878;
+  color: var(--csu-gold);
   display: flex;
   flex-direction: column;
 }
@@ -74,15 +86,6 @@ header {
   font-size: 1.75rem;
   padding-left: 1.25rem;
   padding-bottom: -2rem;
-}
-
-#logo span a {
-  text-decoration: none;
-  color: #fdf17f;
-}
-
-#logo span a:hover {
-  color: #e6da6d;
 }
 
 .logo-container {
@@ -109,7 +112,7 @@ nav {
 .navbar a {
   float: left;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: var(--csu-white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -140,7 +143,7 @@ nav {
   float: left;
   overflow: hidden;
   /* border-end-end-radius: 15px; */
-  color: #ffffff;
+  color: var(--csu-white);
 }
 
 /* Dropdown button */
@@ -149,7 +152,7 @@ nav {
   text-transform: uppercase;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: var(--csu-white);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -167,7 +170,7 @@ nav {
   font-size: 1.5rem;
   padding-left: 2rem;
   background: none;
-  color: #ffffff;
+  color: var(--csu-white);
   font-family: 'Poppins';
   border: none;
 }
@@ -179,8 +182,8 @@ nav {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  color: #ff7e61;
-  background-color: #ffffff;
+  color: var(--aggie-orange);
+  background-color: var(--csu-white);
   border-radius: 5px;
 }
 
@@ -206,7 +209,7 @@ nav {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: var(--csu-white);
   display: block;
   transition: 0.3s;
 }
@@ -271,11 +274,9 @@ nav {
 
 #banner {
   padding: 4.5em;
-  background: white;
+  background: var(--csu-white);
   margin: 2rem auto 0 auto;
   border-radius: 10px;
-  /*margin: 0 auto;
-  top: -20px; */
 }
 
 #banner-wrapper {
@@ -287,7 +288,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 95%;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
   /* flex-flow: row wrap; */
 }
 
@@ -320,7 +321,6 @@ nav {
 
 #banner .scope-and-at-scope-button {
   display: flex;
-  /* justify-content: flex-end; */
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem;
@@ -333,26 +333,26 @@ nav {
   padding-bottom: 2.5rem;
 }
 
-#banner .button {
+#banner .scope-now-button {
   width: 100%;
   margin-bottom: 0.5em;
-  background: #b831ab;
-  color: #ffffff;
+  background: var(--aggie-orange);
+  color: var(--csu-white);
   border-radius: 10px;
   padding: 1rem;
   text-decoration: none;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
-#banner .button:hover {
+#banner .scope-now-button:hover {
   box-shadow: 0px 0px 0px #ffffff;
-  color: #ff7e61;
+  color: var(--dark-slate);
 }
 
-#banner .button.icon::before {
+#banner .scope-now-button.icon::before {
   position: absolute;
   right: 0.15em;
   top: 50%;
@@ -360,7 +360,7 @@ nav {
   display: none;
 }
 
-#banner .button.alt {
+#banner .scope-now-button.alt {
   margin-bottom: 0;
 }
 
@@ -420,7 +420,7 @@ nav {
   width: auto;
   margin-top: -2.5rem;
   padding: 2rem;
-  color: white;
+  color: var(--csu-white);
   font-weight: bold;
   font-size: 2rem;
   transition: 0.6s ease;
@@ -441,15 +441,7 @@ nav {
 }
 
 /* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 2rem;
-  padding: 1rem 1.5rem;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+/* var */
 
 /* Number text (1/3 etc) */
 /* .numbertext {
@@ -525,29 +517,30 @@ nav {
   width: 65%;
   max-width: 1500px;
   padding: 2.5rem 2rem 2rem 0;
-  color: #696969;
+  color: var(--eighty-gray);
 }
 
 .preview-card-title-and-paragraph h3 {
   font-size: 2rem;
   font-weight: 800;
-  color: #696969;
+  color: var(--eighty-gray);
   padding-bottom: 1rem;
 }
 
 .preview-card-title-and-paragraph p {
   font-size: 1.25rem;
   font-weight: 200;
-  color: #696969;
+  color: var(--eighty-gray);
 }
 
 .preview-card-title-and-paragraph h3:hover {
-  color: #ff7e61;
+  color: var(--canyon);
+  cursor: pointer;
 }
 
 .preview-card-title-and-paragraph a {
   text-decoration: none;
-  color: #696969;
+  color: var(--eighty-gray);
 }
 
 .about-shadow-microscopy,
@@ -556,16 +549,16 @@ nav {
 .build-one,
 .lessons-preview {
   display: flex;
-  background: white;
+  background: var(--csu-white);
   margin: 1rem 2rem 5rem 2rem;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
   height: 20rem;
   border-radius: 5px;
 }
 
 .img-video {
   width: 35%;
-  height: auto;
+  height: 100%;
   max-width: 400px;
   overflow: hidden;
   padding: 2rem 2rem 2rem 2rem;
@@ -582,7 +575,7 @@ nav {
   max-width: 100%;
   /* max-height: 100%; */
   width: 100%;
-  height: auto;
+  height: 20rem;
   object-fit: contain;
 }
 
@@ -590,7 +583,7 @@ nav {
 .videos-preview a,
 .learn-more-preview a,
 .build-one a {
-  color: #696969;
+  color: var(--eighty-gray);
   text-decoration: none;
 }
 
@@ -599,17 +592,18 @@ nav {
 .learn-more-preview a:hover,
 .build-one a:hover,
 .lessons-preview a:hover {
-  color: #ff7e61;
+  color: var(--canyon);
 }
 
 /* under construction */
 .coming-soon-preview p {
-  color: #ff7e61;
+  color: var(--aggie-orange);
   font-weight: 400;
   font-size: 3rem;
+  padding-top: 1rem;
 }
 .coming-soon p {
-  color: #ff7e61;
+  color: var(--aggie-orange);
   font-weight: 800;
   font-size: 4rem;
 }
@@ -628,11 +622,11 @@ nav {
 }
 
 .news-container {
-  height: 30rem;
+  height: 25rem;
   max-width: 52rem;
-  background-color: white;
+  background-color: var(--csu-white);
   border-radius: 7px;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
 
@@ -648,9 +642,9 @@ nav {
 .twitter-container {
   height: 80rem;
   max-width: 52rem;
-  background-color: white;
+  background-color: var(--csu-white);
   border-radius: 7px;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
 
@@ -659,7 +653,7 @@ nav {
   margin-top: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  color: #696969;
+  color: var(--eighty-gray);
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -668,19 +662,19 @@ nav {
 .twitter-feed {
   text-align: center;
   margin-bottom: 2rem;
-  color: white;
+  color: var(--csu-white);
   padding: 1rem;
   border-radius: 7px;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
 .news-feed {
-  background-color: cornflowerblue;
+  background-color: var(--reservoir);
 }
 
 .news-feed:hover {
-  box-shadow: 0px 0px 0px;
-  color: #ff7e61;
+  text-shadow: 0px 0px 0px lightgray;
+  color: var(--aggie-orange);
 }
 
 .blog-block-news-feed {
@@ -691,12 +685,22 @@ nav {
   padding-bottom: 1rem;
 }
 
-.blog-block-news-feed h4 {
+.blog-block-news-feed h4 a {
   font-weight: 400;
+  color: var(--eighty-gray);
+}
+
+.blog-block-news-feed h4 a:hover {
+  color: #fc4385;
 }
 
 .twitter-feed {
-  background-color: #ff7e61;
+  background-color: var(--canyon);
+}
+
+.twitter-feed:hover {
+  color: var(--reservoir);
+  text-shadow: 0px 0px 0px gray;
 }
 
 .twitter-container p {
@@ -704,7 +708,7 @@ nav {
   margin-top: 1rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 13pt;
-  color: #696969;
+  color: var(--eighty-gray);
   font-weight: 300;
   line-height: 2.25em;
 }
@@ -725,12 +729,12 @@ nav {
 
 .blog-block {
   border-radius: 15px;
-  background-color: white;
+  background-color: var(--csu-white);
   display: flex;
   flex-direction: column;
   max-width: 1000px;
   margin: 3em auto;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
 .blog-block span h3 {
@@ -770,6 +774,7 @@ nav {
 .videos-title {
   text-align: center;
   padding: 3rem 0 2rem 2rem;
+  font-size: 2.5rem;
 }
 
 .wait-for-videos {
@@ -783,16 +788,23 @@ nav {
 }
 
 .sample-video {
-  width: 20rem;
+  background-color: var(--csu-white);
+  width: 30rem;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px lightgray;
   /* margin: 1rem 0 3rem 0; */
 }
 
-.sample-video video {
+.sample-video iframe {
   margin: 1rem;
+  width: 25rem;
+  height: 20rem;
 }
 
 .video-card a {
-  color: #696969;
+  color: var(--eighty-gray);
 }
 
 .video-card a:hover {
@@ -801,6 +813,13 @@ nav {
 }
 
 /* search in videos page */
+
+.sample-and-youtube-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .search-container {
   display: flex;
   max-width: 35rem;
@@ -810,8 +829,9 @@ nav {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
-  margin-left: 3rem;
-  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
 }
 
 .search-bar {
@@ -822,7 +842,7 @@ nav {
 .searchIcon {
   padding: 1rem;
   width: 5rem;
-  background: white;
+  background: var(--csu-white);
 }
 
 #search {
@@ -834,10 +854,10 @@ nav {
 }
 
 .searchButton {
-  background: #538ac5;
+  background: var(--reservoir);
   width: 10rem;
   border: 0;
-  color: white;
+  color: var(--csu-white);
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -846,7 +866,23 @@ nav {
 }
 
 .searchButton:hover {
-  background: #3c6b9c;
+  background: var(--dark-slate);
+}
+
+.youtube-link {
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+.youtube-link h5 {
+  font-size: 1rem;
+}
+
+.youtube-link img {
+  width: 8rem;
+  padding: 1rem;
+  margin-left: 6rem;
 }
 
 /* #videos-grid {
@@ -878,7 +914,7 @@ video {
   /* border-width: 1px; */
   border-color: black;
   border-radius: 7px;
-  box-shadow: 2px 4px 4px gray;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
 .grid > div {
@@ -922,7 +958,7 @@ video {
 }
 
 .team-grid > div {
-  background: white;
+  background: var(--csu-white);
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 2px 4px 4px 4px lightgray;
@@ -969,7 +1005,7 @@ video {
   font-size: 3.5rem;
   text-transform: uppercase;
   padding-top: 3rem;
-  color: #fc4385;
+  color: var(--canyon);
   text-shadow: 2px 4px 4px lightgray;
 }
 
@@ -978,7 +1014,7 @@ video {
 }
 
 .instructions-container {
-  background: white;
+  background: var(--csu-white);
   margin: 2rem;
   border-radius: 5px;
   box-shadow: 2px 4px 4px lightgray;
@@ -1050,11 +1086,11 @@ hr {
 }
 
 .reminder a {
-  color: black;
+  color: var(--eighty-gray);
 }
 
 .reminder a:hover {
-  color: #fc4385;
+  color: var(--canyon);
   font-weight: bold;
 }
 
@@ -1063,18 +1099,29 @@ hr {
   text-align: center;
   font-size: 3rem;
   padding: 2rem;
-  color: #1e4d2b;
+  color: var(--csu-green);
 }
 
 .summary-cards {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* flex-wrap: wrap; */
   gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.title-and-arrow {
+  display: flex;
+}
+
+.fa-solid {
+  color: black;
+  background-color: gray;
 }
 
 .part-title-and-summary {
-  background-color: white;
+  background-color: var(--csu-white);
   display: flex;
   flex-direction: column;
   /* margin: 2rem; */
@@ -1082,6 +1129,7 @@ hr {
   width: 80%;
   box-shadow: 2px 4px 4px lightgray;
   border-radius: 5px;
+  min-height: 13rem;
 }
 
 .part-title {
@@ -1094,13 +1142,24 @@ hr {
 }
 
 .part-title a {
-  color: #696969;
+  color: var(--eighty-gray);
   padding: 3rem;
   font-weight: 600;
 }
 
 .part-title a:hover {
   color: #fc4385;
+}
+
+.part-one-img {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.part-one-img img {
+  width: 80%;
+  border-radius: 5px;
 }
 
 .build-pdf1 iframe,
@@ -1135,19 +1194,19 @@ hr {
 /* footer */
 footer {
   /* background: #2441bf; */
-  background: #1e4d2b;
+  background: var(--csu-green);
   /* background-image: url('../images/footer-bckgd.png');
   background-size: cover; */
   /* position: absolute; */
   bottom: 0;
   overflow: hidden;
-  color: #ffffff;
+  color: var(--csu-white);
   width: 100%;
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  text-shadow: 2px 2px 4px black;
+  /* text-shadow: 2px 2px 4px black; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -1173,9 +1232,9 @@ footer {
 
 .footer-icons i:hover {
   /* color: #fdf17f; */
-  color: #ffffff;
+  color: var(--csu-gold);
   cursor: pointer;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 4px 4px black;
 }
 
 .font-credit {
@@ -1185,7 +1244,7 @@ footer {
 
 .font-credit a {
   /* color: ivory; */
-  color: #ffffff;
+  color: var(--csu-white);
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
 }
@@ -1204,7 +1263,7 @@ footer {
 
 .resources a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--csu-white);
 }
 
 .resources a:hover {
@@ -1243,12 +1302,12 @@ footer {
 address,
 a {
   font-size: 1 rem;
-  color: #ffffff;
+  color: var(--csu-white);
   font-weight: 200;
 }
 
 .contact-info a {
-  color: #ffffff;
+  color: var(--csu-white);
   /* font-size: 1.5rem; */
 }
 
@@ -1312,7 +1371,7 @@ div.contact-container {
 .contact-container p {
   font-size: 25px;
   font-family: roboto;
-  color: #ffffff;
+  color: var(--csu-white);
 }
 
 .contact-container h4 {
@@ -1415,8 +1474,8 @@ textarea {
   border: 0;
   width: 97%;
   font-size: 1.5rem;
-  background-color: white;
-  color: black;
+  background-color: var(--csu-white);
+  color: var(--eighty-gray);
   border-radius: 4px;
 }
 
@@ -1451,7 +1510,7 @@ textarea {
   border-radius: 4px;
   display: inline-block;
   background-color: #4b8cfb;
-  color: #ffffff;
+  color: var(--csu-white);
   font-size: 18px;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
@@ -1475,7 +1534,7 @@ input[type='checkbox']:checked + label {
 }
 
 div.info-and-form {
-  background-color: white;
+  background-color: var(--csu-white);
 }
 
 /* media queries */
@@ -1526,6 +1585,7 @@ div.info-and-form {
   }
   .preview-cards {
     margin-top: 5rem;
+    width: 100%;
   }
   .about-shadow-microscopy,
   .videos-preview,
@@ -1539,7 +1599,7 @@ div.info-and-form {
   .learn-more-preview img,
   .lessons-preview img {
     width: 80%;
-    height: auto;
+    height: 20rem;
   }
 
   .build-one img {
@@ -1550,15 +1610,24 @@ div.info-and-form {
   .news-and-twitter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .news-feed,
   .twitter-feed {
-    width: 100%;
+    width: 88%;
+    margin-left: 1.5rem;
   }
-  .news,
-  .twitter {
-    width: 49%;
+  .news-container,
+  .twitter-container {
+    width: 25rem;
+    margin: 2rem;
+  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 15rem;
   }
 }
 
@@ -1575,15 +1644,19 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 2rem;
   }
+  .news-container,
+  .twitter-container {
+    width: 22rem;
+  }
 }
 
 @media (max-width: 888px) {
   .news-and-twitter {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
   }
-  .news,
+  /* .news,
   .twitter {
     width: 100%;
     margin: 0;
@@ -1592,7 +1665,7 @@ div.info-and-form {
   .twitter-container {
     width: 100%;
     margin-right: 0;
-  }
+  } */
   .about-shadow-microscopy,
   .videos-preview,
   .learn-more-preview,
@@ -1618,6 +1691,21 @@ div.info-and-form {
   }
   .coming-soon-preview p {
     font-size: 1.25rem;
+  }
+  .part-one-img {
+    padding: 1rem;
+  }
+  .part-one-img img {
+    width: 95%;
+  }
+  .news-container,
+  .twitter-container {
+    width: 20rem;
+  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10rem;
   }
 }
 
@@ -1656,13 +1744,24 @@ div.info-and-form {
     padding-left: 0;
   }
   .preview-cards {
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
   }
   .img-video {
     /* width: 50%; */
     padding-left: 1rem;
     padding-right: 0rem;
     float: left;
+  }
+  .about-shadow-microscopy,
+  .videos-preview,
+  .learn-more-preview,
+  .build-one,
+  .lessons-preview {
+    margin-bottom: 0 0 1rem 0;
+    display: block;
+    height: 20rem;
+    width: 100%;
+    margin-left: 0;
   }
   .about-shadow-microscopy img,
   .video-loop-preview,
@@ -1676,18 +1775,8 @@ div.info-and-form {
     width: auto;
     padding: 1rem;
   }
-
   .preview-card-title-and-paragraph p {
     text-align: justify;
-  }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
-    margin: 0rem 1rem 1rem 1rem;
-    display: block;
-    height: 23rem;
   }
   .about-shadow-microscopy p,
   .videos-preview p,
@@ -1697,8 +1786,23 @@ div.info-and-form {
     font-size: 1.15rem;
   }
   .news-and-twitter {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .news-feed,
+  .twitter-feed {
+    width: 100%;
+    margin: 0;
+  }
+  .news-container,
+  .twitter-container {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .news-container {
+    height: 22rem;
   }
   .how-to-subtitle {
     padding-bottom: 1rem;
@@ -1731,9 +1835,6 @@ div.info-and-form {
   .lessons-preview p {
     font-size: 0.9rem;
   }
-  .news-container {
-    height: 68rem;
-  }
   .happen-container {
     display: flex;
     flex-direction: column-reverse;
@@ -1742,7 +1843,8 @@ div.info-and-form {
     margin-top: 2rem;
   }
   .blog-block {
-    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
   }
   .at-scope-now-one img,
   .turned-on img,
@@ -1765,6 +1867,12 @@ div.info-and-form {
   .part-title-and-summary {
     width: 88%;
   }
+  .part-one-img img {
+    width: 98%;
+  }
+  .team-grid {
+    margin: 2rem 5rem;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1784,8 +1892,16 @@ div.info-and-form {
   .build-one img {
     padding-right: 0.5rem;
   }
-  .news-container {
-    height: 85rem;
+  .news-feed,
+  .twitter-feed {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news-container,
+  .twitter-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .at-scope-now-one img,
   .turned-on img,
@@ -1806,9 +1922,28 @@ div.info-and-form {
     width: 25rem;
     height: auto;
   }
+  .blog-block a {
+    font-size: 2rem;
+  }
   .part-title-and-summary {
     width: 88%;
     margin-left: 1.5rem;
+  }
+  .part-one-img {
+    padding: 0.5rem;
+  }
+  .part-one-img img {
+    width: 100%;
+  }
+  .sample-video {
+    width: 25rem;
+  }
+  .sample-video iframe {
+    width: 20rem;
+    height: 15rem;
+  }
+  .team-grid {
+    margin: 2rem 2rem;
   }
 }
 
@@ -1853,14 +1988,20 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 0.75rem;
   }
-  .news-container {
-    height: 75rem;
-  }
   .blog-block-news-feed p {
     font-size: 0.75rem;
   }
   .how-to-subtitle {
-    padding: 1rem;
+    padding: 0;
+  }
+  .instructions-container {
+    margin-top: 1rem;
+  }
+  .instructions-container > section p {
+    font-size: 1rem;
+  }
+  .reminder-p a:hover {
+    color: #fc4385;
   }
 
   .at-scope-now-one img,
@@ -1878,7 +2019,7 @@ div.info-and-form {
   .q-tip img,
   .final-q-tip img,
   .place-mural img {
-    width: 23rem;
+    width: 100%;
     height: auto;
   }
   .slide-image img {
@@ -1887,6 +2028,19 @@ div.info-and-form {
   }
   .instructions-container p {
     padding: 1rem;
+  }
+  .sample-video {
+    width: 100%;
+  }
+  .sample-video iframe {
+    width: 90%;
+  }
+  .input {
+    font-size: 1rem;
+  }
+  .videos-title {
+    font-size: 1.75rem;
+    padding: 1rem 0;
   }
 }
 
@@ -1923,11 +2077,6 @@ div.info-and-form {
   .build-one,
   .lessons-preview {
     height: 28rem;
-  }
-  .news-container,
-  .twitter-container {
-    height: 90rem;
-    width: 100%;
   }
   .news-and-twitter {
     margin: 0;
@@ -1972,5 +2121,8 @@ div.info-and-form {
   }
   .reminder p {
     font-size: 1.5rem;
+  }
+  .youtube-link {
+    padding: 0.5;
   }
 }
