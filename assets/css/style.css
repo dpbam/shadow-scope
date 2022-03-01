@@ -969,7 +969,14 @@ video {
 }
 
 .card {
+  position: relative;
+  display: inline-block;
   transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  left: 0;
 }
 
 .derek img {
