@@ -968,6 +968,49 @@ video {
   font-size: 1.5rem;
 }
 
+.card {
+  transform-style: preserve-3d;
+}
+
+.derek img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.frontside {
+  transform: translateX(-50%);
+}
+
+.backside {
+  background-color: var(--csu-white);
+  color: var(--eighty-gray);
+  transform: rotateY(-180deg) translateZ(1px) translateX(50%);
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg) scale(1, 1);
+  }
+  50% {
+    transform: rotateY(90deg) scale(1.2, 1.2);
+  }
+  100% {
+    transform: rotateY(180deg) scale(1, 1);
+  }
+}
+
+@keyframes unflip {
+  0% {
+    transform: rotateY(180deg) scale(1, 1);
+  }
+  50% {
+    transform: rotateY(90deg) scale(1.2, 1.2);
+  }
+  100% {
+    transform: rotateY(0deg) scale(1, 1);
+  }
+}
+
 /* learn more page */
 /* sidenav not to be confused with the popout sidenav for small screens */
 .sidenav {

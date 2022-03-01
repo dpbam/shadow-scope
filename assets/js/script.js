@@ -376,3 +376,20 @@ function setList(results) {
 // }
 
 // searchButton.addEventListener('click', searchFunction);
+
+// team page card flip function
+const applyClickRotate = (card) => {
+  let flipped = false;
+  card.addEventListener('click', () => {
+    flipped = !flipped;
+    card.setAttribute(
+      'style',
+      `animation: linear ${
+        flipped ? '' : 'un'
+      }flip 1s; -webkit-animation-fill-mode: forwards;`
+    );
+  });
+};
+
+const cards = document.getElementsByClassName('card');
+Array.from(cards).forEach(applyClickRotate);
