@@ -587,11 +587,11 @@ nav {
   text-decoration: none;
 }
 
-.about-shadow-microscopy a:hover,
+/* .about-shadow-microscopy a:hover, */
 .videos-preview a:hover,
-.learn-more-preview a:hover,
-.build-one a:hover,
-.lessons-preview a:hover {
+/* .learn-more-preview a:hover,
+.lessons-preview a:hover, */
+.build-one a:hover {
   color: var(--canyon);
 }
 
