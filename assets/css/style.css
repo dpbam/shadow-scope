@@ -877,6 +877,7 @@ nav {
 
 .youtube-link h5 {
   font-size: 1rem;
+  text-align: center;
 }
 
 .youtube-link img {
@@ -944,7 +945,7 @@ video {
 /* team page */
 
 .team-grid {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin: 3rem 20rem;
@@ -969,53 +970,21 @@ video {
 }
 
 .card {
-  position: relative;
-  display: inline-block;
-  transform-style: preserve-3d;
+  display: flex;
+  max-height: 30rem;
+  margin: 1rem;
 }
 
-.side {
-  position: absolute;
-  left: 0;
+.card img {
+  max-width: 25rem;
 }
 
-.frontside img {
-  width: 100%;
-  object-fit: contain;
+.name-and-bio {
+  padding: 1rem;
 }
 
-.frontside {
-  transform: translateX(-50%);
-}
-
-.backside {
-  background-color: var(--csu-white);
-  color: var(--eighty-gray);
-  transform: rotateY(-180deg) translateZ(1px) translateX(50%);
-}
-
-@keyframes flip {
-  0% {
-    transform: rotateY(0deg) scale(1, 1);
-  }
-  50% {
-    transform: rotateY(90deg) scale(1.2, 1.2);
-  }
-  100% {
-    transform: rotateY(180deg) scale(1, 1);
-  }
-}
-
-@keyframes unflip {
-  0% {
-    transform: rotateY(180deg) scale(1, 1);
-  }
-  50% {
-    transform: rotateY(90deg) scale(1.2, 1.2);
-  }
-  100% {
-    transform: rotateY(0deg) scale(1, 1);
-  }
+.bio {
+  font-size: 1.5rem;
 }
 
 /* learn more page */
