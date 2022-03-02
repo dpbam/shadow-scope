@@ -29,14 +29,38 @@
   <body>
     <div id="headerDIV"></div>
     <div class="pageContentWrapper">
-      <h2 class="videos-title">
-        Here's where you can search for the video(s) that you took on the Shadow
-        Scope!
-      </h2>
-      <h3 class="wait-for-videos">
-        *If you're coming from one of our events, give us
-        a few days before your video is searchable and appears here.
-      </h3>
+      <div class="title-and-search">
+        <div class="title-and-wait">
+          <h2 class="videos-title">
+            Here's where you can search for the video(s) that you took on the Shadow
+            Scope!
+          </h2>
+          <p class="wait-for-videos">
+            *If you're coming from one of our events, give us
+            a few days before your video is searchable and appears here.
+          </p>
+        </div>
+        <div class="search-container">
+          <div class="search-bar">
+            <i class="fa fa-search searchIcon"></i>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              class="input"
+              placeholder="Input Video ID #"
+            />
+            <button type="button" id="search-button" class="searchButton">
+              Search
+            </button>
+          </div>
+        </div>
+        <div id="videos-results">
+          <!-- Videos are to be injected by the script file -->
+        </div>
+      </div>
+    
+    
       <div class="sample-and-youtube-link">
         <div class="sample-video-container">
           <div class="sample-video">
@@ -66,29 +90,7 @@
           /></a>
         </div>
       </div>
-        <div class="search-container">
-          <div class="search-bar">
-            <i class="fa fa-search searchIcon"></i>
-            <input
-              type="text"
-              id="search"
-              name="search"
-              class="input"
-              placeholder="Input Video ID #"
-            />
-            <button type="button" id="search-button" class="searchButton">
-              Search
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="results-container">
-        <ul class="results-list" id="list"></ul>
-      </div>
-
-      <div id="videos-grid">
-        <!-- Videos are to be injected by the script file -->
-      </div>
+    </div> 
 
       <div class="share">
         <!-- <p>
