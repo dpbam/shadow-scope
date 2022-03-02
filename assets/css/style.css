@@ -944,35 +944,22 @@ video {
 
 /* team page */
 
-.team-grid {
-  /* display: grid; */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  margin: 3rem 20rem;
+.team-container {
+  margin: 3rem 10rem;
 }
 
-.team-grid > div > img {
-  width: 100%;
-  /* height: 100%; */
-  object-fit: contain;
-  padding-top: 1rem;
-}
-
-.team-grid > div {
+.card {
   background: var(--csu-white);
+  display: flex;
+  max-height: 35rem;
+  margin: 1.5rem;
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 2px 4px 4px 4px lightgray;
 }
 
-.team-grid > div > h2 {
+.team-container > div > h2 {
   font-size: 1.5rem;
-}
-
-.card {
-  display: flex;
-  max-height: 30rem;
-  margin: 1rem;
 }
 
 .card img {
@@ -1643,10 +1630,8 @@ div.info-and-form {
     width: 25rem;
     margin: 2rem;
   }
-  .team-grid {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 15rem;
+  .team-container {
+    margin: 3rem 5rem;
   }
 }
 
@@ -1666,6 +1651,9 @@ div.info-and-form {
   .news-container,
   .twitter-container {
     width: 22rem;
+  }
+  .team-container {
+    margin: 3rem 2rem;
   }
 }
 
@@ -1721,10 +1709,14 @@ div.info-and-form {
   .twitter-container {
     width: 20rem;
   }
-  .team-grid {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 10rem;
+  .team-container {
+    margin: 3rem 1rem;
+  }
+  .card img {
+    max-width: 20rem;
+  }
+  .bio {
+    font-size: 1.25rem;
   }
 }
 
@@ -1834,6 +1826,12 @@ div.info-and-form {
     width: 92%;
     margin-left: 1.5rem;
   }
+  .card img {
+    max-width: 15rem;
+  }
+  .bio {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1889,8 +1887,37 @@ div.info-and-form {
   .part-one-img img {
     width: 98%;
   }
-  .team-grid {
-    margin: 2rem 5rem;
+  .team-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tim,
+  .delaney,
+  .joseph {
+    display: flex;
+    flex-direction: column;
+    max-height: 50rem;
+    justify-content: center;
+  }
+  .andrew,
+  .ryan,
+  .derek {
+    display: flex;
+    flex-direction: column-reverse;
+    max-height: 50rem;
+    justify-content: center;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 30rem;
+    max-height: 30rem;
+    width: 100%;
+  }
+  .bio {
+    padding-bottom: 1rem;
   }
 }
 
@@ -1961,8 +1988,16 @@ div.info-and-form {
     width: 20rem;
     height: 15rem;
   }
-  .team-grid {
-    margin: 2rem 2rem;
+  .name-and-bio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bio {
+    font-size: 0.75rem;
+  }
+  .card {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
