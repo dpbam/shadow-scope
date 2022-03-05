@@ -206,12 +206,13 @@ nav {
 }
 
 .side-nav a {
-  padding: 10px 10px 10px 30px;
+  padding: 10px 20px 10px 20px;
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--csu-white);
   display: block;
   transition: 0.3s;
+  text-align: center;
 }
 
 .side-nav a:hover {
@@ -771,6 +772,16 @@ nav {
 }
 
 /* videos gallery page */
+.pageContentWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-and-wait {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .videos-title {
   text-align: center;
   padding: 3rem 0 2rem 2rem;
@@ -780,11 +791,13 @@ nav {
 .wait-for-videos {
   padding: 2rem;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .sample-video-container {
   display: flex;
   justify-content: center;
+  margin: 2rem;
 }
 
 .sample-video {
@@ -794,7 +807,6 @@ nav {
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 2px 4px 4px lightgray;
-  /* margin: 1rem 0 3rem 0; */
 }
 
 .sample-video iframe {
@@ -817,7 +829,7 @@ nav {
 .sample-and-youtube-link {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  margin-right: 5rem;
 }
 
 .search-container {
@@ -831,7 +843,7 @@ nav {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
+  margin-top: 5rem;
 }
 
 .search-bar {
@@ -873,10 +885,14 @@ nav {
   padding: 2rem;
   margin: 1rem auto;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 .youtube-link h5 {
   font-size: 1rem;
+  text-align: center;
 }
 
 .youtube-link img {
@@ -885,23 +901,23 @@ nav {
   margin-left: 6rem;
 }
 
-/* #videos-grid {
+/* #videos-results {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 6rem;
   margin: 3rem;
 } */
 
-#videos-grid {
+#videos-results {
   width: 500px;
   margin: 3rem;
 }
 
-#videos-grid h2 {
+#videos-results h2 {
   margin-bottom: 1rem;
 }
 
-#videos-grid p {
+#videos-results p {
   padding-top: 1rem;
   font-size: 1.5rem;
 }
@@ -917,21 +933,6 @@ video {
   box-shadow: 2px 4px 4px lightgray;
 }
 
-.grid > div {
-  /* ... */
-  display: grid;
-}
-.grid > div::before,
-.grid > div > img {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.grid > div > video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 .video-container {
   margin: 10rem;
 }
@@ -943,79 +944,34 @@ video {
 
 /* team page */
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  margin: 3rem 20rem;
+.team-container {
+  margin: 3rem 10rem;
 }
 
-.team-grid > div > img {
-  width: 100%;
-  /* height: 100%; */
-  object-fit: contain;
-  padding-top: 1rem;
-}
-
-.team-grid > div {
+.card {
   background: var(--csu-white);
+  display: flex;
+  max-height: 35rem;
+  margin: 1.5rem;
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 2px 4px 4px 4px lightgray;
 }
 
-.team-grid > div > h2 {
+.team-container > div > h2 {
   font-size: 1.5rem;
 }
 
-.card {
-  position: relative;
-  display: inline-block;
-  transform-style: preserve-3d;
+.card img {
+  max-width: 25rem;
 }
 
-.side {
-  position: absolute;
-  left: 0;
+.name-and-bio {
+  padding: 1rem;
 }
 
-.frontside img {
-  width: 100%;
-  object-fit: contain;
-}
-
-.frontside {
-  transform: translateX(-50%);
-}
-
-.backside {
-  background-color: var(--csu-white);
-  color: var(--eighty-gray);
-  transform: rotateY(-180deg) translateZ(1px) translateX(50%);
-}
-
-@keyframes flip {
-  0% {
-    transform: rotateY(0deg) scale(1, 1);
-  }
-  50% {
-    transform: rotateY(90deg) scale(1.2, 1.2);
-  }
-  100% {
-    transform: rotateY(180deg) scale(1, 1);
-  }
-}
-
-@keyframes unflip {
-  0% {
-    transform: rotateY(180deg) scale(1, 1);
-  }
-  50% {
-    transform: rotateY(90deg) scale(1.2, 1.2);
-  }
-  100% {
-    transform: rotateY(0deg) scale(1, 1);
-  }
+.bio {
+  font-size: 1.5rem;
 }
 
 /* learn more page */
@@ -1674,10 +1630,18 @@ div.info-and-form {
     width: 25rem;
     margin: 2rem;
   }
-  .team-grid {
+  .pageContentWrapper {
     display: flex;
-    flex-direction: column;
-    margin: 2rem 15rem;
+    flex-direction: column-reverse;
+  }
+  .sample-video-container {
+    display: none;
+  }
+  .youtube-link {
+    margin-left: 12rem;
+  }
+  .team-container {
+    margin: 3rem 5rem;
   }
 }
 
@@ -1697,6 +1661,9 @@ div.info-and-form {
   .news-container,
   .twitter-container {
     width: 22rem;
+  }
+  .team-container {
+    margin: 3rem 2rem;
   }
 }
 
@@ -1752,10 +1719,14 @@ div.info-and-form {
   .twitter-container {
     width: 20rem;
   }
-  .team-grid {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 10rem;
+  .team-container {
+    margin: 3rem 1rem;
+  }
+  .card img {
+    max-width: 20rem;
+  }
+  .bio {
+    font-size: 1.25rem;
   }
 }
 
@@ -1854,6 +1825,9 @@ div.info-and-form {
   .news-container {
     height: 22rem;
   }
+  .youtube-link {
+    margin-left: 10rem;
+  }
   .how-to-subtitle {
     padding-bottom: 1rem;
   }
@@ -1864,6 +1838,12 @@ div.info-and-form {
   .part-title-and-summary {
     width: 92%;
     margin-left: 1.5rem;
+  }
+  .card img {
+    max-width: 15rem;
+  }
+  .bio {
+    font-size: 1rem;
   }
 }
 
@@ -1896,6 +1876,21 @@ div.info-and-form {
     margin-top: 1rem;
     width: 100%;
   }
+  .youtube-link {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+  }
+  .youtube-link img {
+    margin-left: 4rem;
+  }
+  .videos-title {
+    padding-top: 0;
+  }
+  .title-and-wait {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .at-scope-now-one img,
   .turned-on img,
   .choose-slide img,
@@ -1920,8 +1915,37 @@ div.info-and-form {
   .part-one-img img {
     width: 98%;
   }
-  .team-grid {
-    margin: 2rem 5rem;
+  .team-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tim,
+  .delaney,
+  .joseph {
+    display: flex;
+    flex-direction: column;
+    max-height: 50rem;
+    justify-content: center;
+  }
+  .andrew,
+  .ryan,
+  .derek {
+    display: flex;
+    flex-direction: column-reverse;
+    max-height: 50rem;
+    justify-content: center;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 30rem;
+    max-height: 30rem;
+    width: 100%;
+  }
+  .bio {
+    padding-bottom: 1rem;
   }
 }
 
@@ -1985,6 +2009,9 @@ div.info-and-form {
   .part-one-img img {
     width: 100%;
   }
+  .youtube-link img {
+    margin-left: 3rem;
+  }
   .sample-video {
     width: 25rem;
   }
@@ -1992,8 +2019,16 @@ div.info-and-form {
     width: 20rem;
     height: 15rem;
   }
-  .team-grid {
-    margin: 2rem 2rem;
+  .name-and-bio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bio {
+    font-size: 0.75rem;
+  }
+  .card {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -2079,6 +2114,12 @@ div.info-and-form {
   .instructions-container p {
     padding: 1rem;
   }
+  .youtube-link {
+    margin-left: 4rem;
+  }
+  .youtube-link img {
+    margin-left: 1.5rem;
+  }
   .sample-video {
     width: 100%;
   }
@@ -2131,6 +2172,12 @@ div.info-and-form {
   .news-and-twitter {
     margin: 0;
     width: 100%;
+  }
+  .youtube-link {
+    margin-left: 1.5rem;
+  }
+  .youtube-link img {
+    margin-left: 0.5rem;
   }
   .instructions-container {
     border-radius: 0;
