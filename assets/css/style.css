@@ -966,6 +966,7 @@ video {
 .shape,
 .movement {
   display: flex;
+  justify-content: flex-end;
 }
 
 .radio-movement {
