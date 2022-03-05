@@ -951,7 +951,7 @@ video {
 .radio-buttons {
   display: flex;
   justify-content: space-evenly;
-  /* background-color: var(--csu-white); */
+  background-color: var(--csu-white);
 }
 
 .radio-title {
