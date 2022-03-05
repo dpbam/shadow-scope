@@ -238,17 +238,17 @@ const searchButton = document.getElementById('search-button');
 // Initially load the videos by default
 // renderVideos(videos);
 
-// Injects the videos into the grid based on the array of `videosToRender`
+// Injects the videos into the videos-results div based on the array of `videosToRender`
 
 function renderVideos(videosToRender) {
-  var videoGrid = document.getElementById('videos-grid');
+  var videoResults = document.getElementById('videos-results');
 
-  if (videoGrid !== null) {
-    videoGrid.innerHTML = '';
+  if (videoResults !== null) {
+    videoResults.innerHTML = '';
 
-    // Loop through each video and add the html element to the grid
+    // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
-      videoGrid.innerHTML += `
+      videoResults.innerHTML += `
         <div class="video-card">
           <h2>${video.name}</h2>
        
