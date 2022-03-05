@@ -934,12 +934,49 @@ video {
 }
 
 .video-container {
-  margin: 10rem;
+  margin: 5rem;
 }
 
 .share {
   margin-left: 2rem;
   margin-bottom: 2rem;
+}
+
+/* single video page */
+
+.what-see {
+  font-size: 2rem;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: var(--csu-white); */
+}
+
+.radio-title {
+  font-size: 1.5rem;
+}
+
+.radio-shape {
+  display: flex;
+  flex-direction: column;
+}
+
+.shape,
+.movement {
+  display: flex;
+}
+
+.radio-movement {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-size > input {
+  background-color: #acd3d8;
+  border-style: solid;
+  border-color: #111;
 }
 
 /* team page */
