@@ -382,6 +382,7 @@ function setList(results) {
 function submitFunction() {
   let radioShapeBtn = document.getElementById('radio-shape-btn');
   let radioMovementBtn = document.getElementById('radio-movement-btn');
+  let lengthInput = document.getElementById('length-input');
   let submitBtn = document.getElementById('submit-btn');
 
   if (radioShapeBtn.checked == true)
@@ -389,4 +390,10 @@ function submitFunction() {
   else if (radioMovementBtn.checked == true)
     alert('The button selected is: ' + radioMovementBtn.value);
   else alert('No radio button selected.');
+
+  if (lengthInput !== null)
+    alert(
+      'Your estimated length of the organism is ' + lengthInput.value + '.'
+    );
+  else alert('Please enter a number for how long you think the organism is.');
 }

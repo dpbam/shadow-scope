@@ -81,9 +81,16 @@
         </div>
       </div>
       <div class="input-size">
-        <h5 class="radio-title">Size</h5>
-        <input type="text" name="size" value="" class="size" />
-        <label for="size"> mm</label><br />
+        <h5 class="radio-title">Estimated Length</h5>
+        <input
+          id="length-input"
+          class="size"
+          type="text"
+          name="length"
+          value="length"
+          placeholder="Enter a number"
+        />
+        <label for="length"> mm</label><br />
       </div>
       <button id="submit-btn" onclick="submitFunction()">Submit</button>
     </form>
