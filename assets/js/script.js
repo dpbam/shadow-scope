@@ -376,3 +376,17 @@ function setList(results) {
 // }
 
 // searchButton.addEventListener('click', searchFunction);
+
+// video page radio button selection submit
+
+function submitFunction() {
+  let radioShapeBtn = document.getElementById('radio-shape-btn');
+  let radioMovementBtn = document.getElementById('radio-movement-btn');
+  let submitBtn = document.getElementById('submit-btn');
+
+  if (radioShapeBtn.checked == true)
+    alert('The button selected is: ' + radioShapeBtn.value);
+  else if (radioMovementBtn.checked == true)
+    alert('The button selected is: ' + radioMovementBtn.value);
+  else alert('No radio button selected.');
+}

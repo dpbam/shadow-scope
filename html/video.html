@@ -32,7 +32,7 @@
       <div class="radio-shape">
         <h3 class="radio-title">Shape</h3>
         <div class="shape">
-          <input type="radio" name="shape" value="worm" />
+          <input id="radio-shape-btn" type="radio" name="shape" value="worm" />
           <label for="worm">worm</label><br />
         </div>
         <div class="shape">
@@ -55,7 +55,12 @@
       <div class="radio-movement">
         <h4 class="radio-title">Motion</h4>
         <div class="movement">
-          <input type="radio" name="movement" value="fast" />
+          <input
+            id="radio-movement-btn"
+            type="radio"
+            name="movement"
+            value="fast"
+          /><br />
           <label for="fast">fast</label><br />
         </div>
         <div class="movement">
@@ -80,6 +85,7 @@
         <input type="text" name="size" value="" class="size" />
         <label for="size"> mm</label><br />
       </div>
+      <button id="submit-btn" onclick="submitFunction()">Submit</button>
     </form>
 
     <div id="footerDIV"></div>
