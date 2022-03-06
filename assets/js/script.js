@@ -391,7 +391,7 @@ function submitFunction() {
     alert('The button selected is: ' + radioMovementBtn.value);
   else alert('No radio button selected.');
 
-  if (lengthInput !== null)
+  if (lengthInput.value == true)
     alert(
       'Your estimated length of the organism is ' + lengthInput.value + '.'
     );
