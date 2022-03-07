@@ -28,7 +28,7 @@
       </video>
     </div>
     <h2 class="what-see">What do you see?</h2>
-    <form class="radio-buttons">
+    <form class="radio-buttons" method="POST">
       <div class="radio-animal">
         <h3 class="radio-title">Basic</h3>
         <div class="basic">
@@ -157,7 +157,14 @@
       </div>
       <div class="input-size">
         <h5 class="radio-title">Estimated Size</h5>
-        <input id="size-input" class="size" type="text" placeholder="" />
+        <input
+          id="size-input"
+          class="size"
+          type="text"
+          name="size"
+          placeholder=""
+          required
+        />
         <label for="length"> mm</label><br />
       </div>
       <div class="input-comments">
@@ -166,6 +173,7 @@
           id="comment-input"
           class="comment"
           type="text"
+          name="comment"
           placeholder="Enter a comment"
         />
         <label for="comment"></label><br />

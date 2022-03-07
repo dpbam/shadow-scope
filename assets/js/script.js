@@ -385,6 +385,10 @@ function submitFunction() {
   let radioProtistBtn = document.getElementById('radio-protist-btn');
   let radioUnknownBtn = document.getElementById('radio-unknown-btn');
   let radioWormBtn = document.getElementById('radio-worm-btn');
+  let radioRoundBtn = document.getElementById('radio-round-btn');
+  let radioDonutBtn = document.getElementById('radio-donut-btn');
+  let radioThinBtn = document.getElementById('radio-thin-btn');
+  let radioLongBtn = document.getElementById('radio-long-btn');
   let radioBeetleBtn = document.getElementById('radio-beetle-btn');
   let radioBlobBtn = document.getElementById('radio-blob-btn');
   let radioStickBtn = document.getElementById('radio-stick-btn');
@@ -410,6 +414,14 @@ function submitFunction() {
 
   if (radioWormBtn.checked == true)
     alert('The Shape button selected is: ' + radioWormBtn.value);
+  else if (radioRoundBtn.checked == true)
+    alert('The Shape button selected is: ' + radioRoundBtn.value);
+  else if (radioDonutBtn.checked == true)
+    alert('The Shape button selected is: ' + radioDonutBtn.value);
+  else if (radioThinBtn.checked == true)
+    alert('The Shape button selected is: ' + radioThinBtn.value);
+  else if (radioLongBtn.checked == true)
+    alert('The Shape button selected is: ' + radioLongBtn.value);
   else if (radioBeetleBtn.checked == true)
     alert('The Shape button selected is: ' + radioBeetleBtn.value);
   else if (radioBlobBtn.checked == true)
