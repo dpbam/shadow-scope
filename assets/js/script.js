@@ -387,7 +387,7 @@ function submitFunction() {
   let radioLeggyBtn = document.getElementById('radio-leggy-btn');
   let radioFastBtn = document.getElementById('radio-fast-btn');
   let radioErraticBtn = document.getElementById('radio-erratic-btn');
-  let radioDirectionalBtn = document.getElementById('radio-directional-btn');
+  let radioStraightBtn = document.getElementById('radio-straight-btn');
   let radioSpinningBtn = document.getElementById('radio-spinning-btn');
   let radioCircularBtn = document.getElementById('radio-circular-btn');
   let lengthInput = document.getElementById('length-input');
@@ -409,8 +409,8 @@ function submitFunction() {
     alert('The motion button selected is: ' + radioFastBtn.value);
   else if (radioErraticBtn.checked == true)
     alert('The motion button selected is: ' + radioErraticBtn.value);
-  else if (radioDirectionalBtn.checked == true)
-    alert('The motion button selected is: ' + radioDirectionalBtn.value);
+  else if (radioStraightBtn.checked == true)
+    alert('The motion button selected is: ' + radioStraightBtn.value);
   else if (radioSpinningBtn.checked == true)
     alert('The motion button selected is: ' + radioSpinningBtn.value);
   else if (radioCircularBtn.checked == true)
