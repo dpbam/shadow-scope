@@ -380,6 +380,10 @@ function setList(results) {
 // video page radio button selection submit
 
 function submitFunction() {
+  let radioPlantBtn = document.getElementById('radio-plant-btn');
+  let radioAnimalBtn = document.getElementById('radio-animal-btn');
+  let radioProtistBtn = document.getElementById('radio-protist-btn');
+  let radioUnknownBtn = document.getElementById('radio-unknown-btn');
   let radioWormBtn = document.getElementById('radio-worm-btn');
   let radioBeetleBtn = document.getElementById('radio-beetle-btn');
   let radioBlobBtn = document.getElementById('radio-blob-btn');
@@ -390,37 +394,52 @@ function submitFunction() {
   let radioStraightBtn = document.getElementById('radio-straight-btn');
   let radioSpinningBtn = document.getElementById('radio-spinning-btn');
   let radioCircularBtn = document.getElementById('radio-circular-btn');
-  let lengthInput = document.getElementById('length-input');
+  let sizeInput = document.getElementById('size-input');
+  let commentInput = document.getElementById('comment-input');
   // let submitBtn = document.getElementById('submit-btn');
 
+  if (radioPlantBtn.checked == true)
+    alert('The Basic button selected is: ' + radioPlantBtn.value);
+  else if (radioAnimalBtn.checked == true)
+    alert('The Basic button selected is: ' + radioAnimalBtn.value);
+  else if (radioProtistBtn.checked == true)
+    alert('The Basic button selected is: ' + radioProtistBtn.value);
+  else if (radioUnknownBtn.checked == true)
+    alert('The Basic button selected is: ' + radioUnknownBtn.value);
+  else alert('No Basic button selected.');
+
   if (radioWormBtn.checked == true)
-    alert('The shape button selected is: ' + radioWormBtn.value);
+    alert('The Shape button selected is: ' + radioWormBtn.value);
   else if (radioBeetleBtn.checked == true)
-    alert('The shape button selected is: ' + radioBeetleBtn.value);
+    alert('The Shape button selected is: ' + radioBeetleBtn.value);
   else if (radioBlobBtn.checked == true)
-    alert('The shape button selected is: ' + radioBlobBtn.value);
+    alert('The Shape button selected is: ' + radioBlobBtn.value);
   else if (radioStickBtn.checked == true)
-    alert('The shape button selected is: ' + radioStickBtn.value);
+    alert('The Shape button selected is: ' + radioStickBtn.value);
   else if (radioLeggyBtn.checked == true)
-    alert('The shape button selected is: ' + radioLeggyBtn.value);
-  else alert('No radio button selected.');
+    alert('The Shape button selected is: ' + radioLeggyBtn.value);
+  else alert('No Shape button selected.');
 
   if (radioFastBtn.checked == true)
-    alert('The motion button selected is: ' + radioFastBtn.value);
+    alert('The Motion button selected is: ' + radioFastBtn.value);
   else if (radioErraticBtn.checked == true)
-    alert('The motion button selected is: ' + radioErraticBtn.value);
+    alert('The Motion button selected is: ' + radioErraticBtn.value);
   else if (radioStraightBtn.checked == true)
-    alert('The motion button selected is: ' + radioStraightBtn.value);
+    alert('The Motion button selected is: ' + radioStraightBtn.value);
   else if (radioSpinningBtn.checked == true)
-    alert('The motion button selected is: ' + radioSpinningBtn.value);
+    alert('The Motion button selected is: ' + radioSpinningBtn.value);
   else if (radioCircularBtn.checked == true)
-    alert('The motion button selected is: ' + radioCircularBtn.value);
+    alert('The Motion button selected is: ' + radioCircularBtn.value);
+  else alert('No Motion button selected.');
 
-  if (lengthInput.value) {
-    alert(
-      'Your estimated length of the organism is ' + lengthInput.value + '.'
-    );
+  if (sizeInput.value) {
+    alert('Your estimated size of the organism is ' + sizeInput.value + '.');
   } else {
     alert('Please enter a number for how long you think the organism is.');
+  }
+  if (commentInput.value) {
+    alert('Your comment is "' + commentInput.value + '"');
+  } else {
+    alert('Please enter a comment, any additional observations you have.');
   }
 }

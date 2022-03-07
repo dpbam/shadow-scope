@@ -946,6 +946,7 @@ video {
 
 .what-see {
   font-size: 2rem;
+  padding: 1rem;
 }
 
 .radio-buttons {
@@ -955,10 +956,12 @@ video {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 1rem;
 }
 
 .radio-title {
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .radio-shape {
@@ -977,10 +980,34 @@ video {
   flex-direction: column;
 }
 
+.basic > input,
+.shape > input,
+.movement > input {
+  width: 20px;
+  margin-right: 1rem;
+}
+
+.shape > label,
+.movement > label {
+  flex-basis: 1;
+}
+
 .input-size > input {
-  background-color: #c4d2d4;
+  background-color: #dce1e2;
   border-style: solid;
-  border-color: #111;
+  border-width: thin;
+  width: 5rem;
+}
+
+.input-comments > input {
+  border-style: solid;
+  border-width: thin;
+}
+
+#submit-btn {
+  max-height: 4rem;
+  width: 10rem;
+  margin-top: 2rem;
 }
 
 /* team page */

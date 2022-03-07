@@ -29,11 +29,61 @@
     </div>
     <h2 class="what-see">What do you see?</h2>
     <form class="radio-buttons">
+      <div class="radio-animal">
+        <h3 class="radio-title">Basic</h3>
+        <div class="basic">
+          <input id="radio-plant-btn" type="radio" name="shape" value="plant" />
+          <label for="plant">plant</label><br />
+        </div>
+        <div class="basic">
+          <input
+            id="radio-animal-btn"
+            type="radio"
+            name="shape"
+            value="animal"
+          />
+          <label for="animal">animal</label><br />
+        </div>
+        <div class="basic">
+          <input
+            id="radio-protist-btn"
+            type="radio"
+            name="shape"
+            value="protist"
+          />
+          <label for="protist">protist</label><br />
+        </div>
+        <div class="basic">
+          <input
+            id="radio-unknown-btn"
+            type="radio"
+            name="shape"
+            value="unknown"
+          />
+          <label for="unknown">unknown</label><br />
+        </div>
+      </div>
       <div class="radio-shape">
         <h3 class="radio-title">Shape</h3>
         <div class="shape">
           <input id="radio-worm-btn" type="radio" name="shape" value="worm" />
           <label for="worm">worm</label><br />
+        </div>
+        <div class="shape">
+          <input id="radio-round-btn" type="radio" name="shape" value="round" />
+          <label for="round">round</label><br />
+        </div>
+        <div class="shape">
+          <input id="radio-donut-btn" type="radio" name="shape" value="donut" />
+          <label for="donut">donut</label><br />
+        </div>
+        <div class="shape">
+          <input id="radio-thin-btn" type="radio" name="shape" value="thin" />
+          <label for="thin">thin</label><br />
+        </div>
+        <div class="shape">
+          <input id="radio-long-btn" type="radio" name="shape" value="long" />
+          <label for="long">long</label><br />
         </div>
         <div class="shape">
           <input
@@ -106,14 +156,19 @@
         </div>
       </div>
       <div class="input-size">
-        <h5 class="radio-title">Estimated Length</h5>
-        <input
-          id="length-input"
-          class="size"
-          type="text"
-          placeholder="Enter a number"
-        />
+        <h5 class="radio-title">Estimated Size</h5>
+        <input id="size-input" class="size" type="text" placeholder="" />
         <label for="length"> mm</label><br />
+      </div>
+      <div class="input-comments">
+        <h6 class="radio-title">Comment:</h6>
+        <input
+          id="comment-input"
+          class="comment"
+          type="text"
+          placeholder="Enter a comment"
+        />
+        <label for="comment"></label><br />
       </div>
       <button id="submit-btn" onclick="submitFunction()">Submit</button>
     </form>
