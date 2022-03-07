@@ -380,20 +380,47 @@ function setList(results) {
 // video page radio button selection submit
 
 function submitFunction() {
-  let radioShapeBtn = document.getElementById('radio-shape-btn');
-  let radioMovementBtn = document.getElementById('radio-movement-btn');
+  let radioWormBtn = document.getElementById('radio-worm-btn');
+  let radioBeetleBtn = document.getElementById('radio-beetle-btn');
+  let radioBlobBtn = document.getElementById('radio-blob-btn');
+  let radioStickBtn = document.getElementById('radio-stick-btn');
+  let radioLeggyBtn = document.getElementById('radio-leggy-btn');
+  let radioFastBtn = document.getElementById('radio-fast-btn');
+  let radioErraticBtn = document.getElementById('radio-erratic-btn');
+  let radioDirectionalBtn = document.getElementById('radio-directional-btn');
+  let radioSpinningBtn = document.getElementById('radio-spinning-btn');
+  let radioCircularBtn = document.getElementById('radio-circular-btn');
   let lengthInput = document.getElementById('length-input');
-  let submitBtn = document.getElementById('submit-btn');
+  // let submitBtn = document.getElementById('submit-btn');
 
-  if (radioShapeBtn.checked == true)
-    alert('The button selected is: ' + radioShapeBtn.value);
-  else if (radioMovementBtn.checked == true)
-    alert('The button selected is: ' + radioMovementBtn.value);
+  if (radioWormBtn.checked == true)
+    alert('The shape button selected is: ' + radioWormBtn.value);
+  else if (radioBeetleBtn.checked == true)
+    alert('The shape button selected is: ' + radioBeetleBtn.value);
+  else if (radioBlobBtn.checked == true)
+    alert('The shape button selected is: ' + radioBlobBtn.value);
+  else if (radioStickBtn.checked == true)
+    alert('The shape button selected is: ' + radioStickBtn.value);
+  else if (radioLeggyBtn.checked == true)
+    alert('The shape button selected is: ' + radioLeggyBtn.value);
   else alert('No radio button selected.');
 
-  if (lengthInput.value == true)
+  if (radioFastBtn.checked == true)
+    alert('The motion button selected is: ' + radioFastBtn.value);
+  else if (radioErraticBtn.checked == true)
+    alert('The motion button selected is: ' + radioErraticBtn.value);
+  else if (radioDirectionalBtn.checked == true)
+    alert('The motion button selected is: ' + radioDirectionalBtn.value);
+  else if (radioSpinningBtn.checked == true)
+    alert('The motion button selected is: ' + radioSpinningBtn.value);
+  else if (radioCircularBtn.checked == true)
+    alert('The motion button selected is: ' + radioCircularBtn.value);
+
+  if (lengthInput.value) {
     alert(
       'Your estimated length of the organism is ' + lengthInput.value + '.'
     );
-  else alert('Please enter a number for how long you think the organism is.');
+  } else {
+    alert('Please enter a number for how long you think the organism is.');
+  }
 }

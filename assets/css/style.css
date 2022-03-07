@@ -1706,11 +1706,11 @@ div.info-and-form {
 }
 
 @media (max-width: 888px) {
-  .news-and-twitter {
-    /* display: flex;
+  /* .news-and-twitter {
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
-  }
+    justify-content: center;
+  } */
   /* .news,
   .twitter {
     width: 100%;
