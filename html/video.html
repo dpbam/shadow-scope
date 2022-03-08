@@ -156,7 +156,8 @@
         </div>
       </div>
       <div class="input-size">
-        <h5 class="radio-title">Estimated Size</h5>
+        <label class="radio-title" for="length">Estimated Size (mm)</label
+        ><br />
         <input
           id="size-input"
           class="size"
@@ -165,20 +166,20 @@
           placeholder=""
           required
         />
-        <label for="length"> mm</label><br />
       </div>
       <div class="input-comments">
-        <h6 class="radio-title">Comment:</h6>
-        <input
+        <label class="radio-title" for="comment">Comment:</label><br />
+        <textarea
           id="comment-input"
           class="comment"
           type="text"
           name="comment"
-          placeholder="Enter a comment"
-        />
-        <label for="comment"></label><br />
+          placeholder="Enter any additional comments"
+          rows="4"
+          cols="20"
+        ></textarea>
       </div>
-      <button id="submit-btn" onclick="submitFunction()">Submit</button>
+      <button id="submit-btn" onclick="submitFunction()">SUBMIT</button>
     </form>
 
     <div id="footerDIV"></div>

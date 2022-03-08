@@ -956,12 +956,13 @@ video {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 4px 4px lightgray;
 }
 
 .radio-title {
   font-size: 1.5rem;
-  padding: 0.5rem;
 }
 
 .radio-shape {
@@ -993,13 +994,13 @@ video {
 }
 
 .input-size > input {
-  background-color: #dce1e2;
+  /* background-color: #dce1e2; */
   border-style: solid;
   border-width: thin;
   width: 5rem;
 }
 
-.input-comments > input {
+.input-comments > textarea {
   border-style: solid;
   border-width: thin;
 }
@@ -1007,7 +1008,11 @@ video {
 #submit-btn {
   max-height: 4rem;
   width: 10rem;
-  margin-top: 2rem;
+  margin-top: 1.75rem;
+  color: var(--csu-white);
+  background-color: var(--aggie-orange);
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 /* team page */
