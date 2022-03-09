@@ -1201,6 +1201,13 @@ hr {
   padding-bottom: 3rem;
 }
 
+/* history of microscopy page */
+.history img,
+.references img {
+  width: 100%;
+  margin: 2rem auto 2rem auto;
+}
+
 /* footer */
 footer {
   /* background: #2441bf; */
