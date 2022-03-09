@@ -206,7 +206,7 @@ nav {
 }
 
 .side-nav a {
-  padding: 10px 20px 10px 20px;
+  padding: 0.75rem 1rem 0.5rem 2rem;
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--csu-white);
@@ -217,6 +217,10 @@ nav {
 
 .side-nav a:hover {
   color: rgb(184, 180, 180);
+}
+
+.side-nav li {
+  list-style-type: none;
 }
 
 .side-nav .btn-close {
