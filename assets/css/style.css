@@ -956,6 +956,11 @@ video {
   margin: 3rem 10rem;
 }
 
+.team-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .card {
   background: var(--csu-white);
   display: flex;
