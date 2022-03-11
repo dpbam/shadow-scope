@@ -1000,7 +1000,8 @@ video {
   /* background-color: #dce1e2; */
   border-style: solid;
   border-width: thin;
-  width: 5rem;
+  width: 6rem;
+  font-size: 1.25rem;
 }
 
 .input-comments > textarea {
