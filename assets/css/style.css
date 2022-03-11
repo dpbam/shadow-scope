@@ -206,7 +206,7 @@ nav {
 }
 
 .side-nav a {
-  padding: 10px 20px 10px 20px;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--csu-white);
@@ -215,8 +215,16 @@ nav {
   text-align: center;
 }
 
+a.videos-page-link {
+  margin-right: 4rem;
+}
+
 .side-nav a:hover {
   color: rgb(184, 180, 180);
+}
+
+.side-nav li {
+  list-style-type: none;
 }
 
 .side-nav .btn-close {
@@ -588,7 +596,7 @@ nav {
   text-decoration: none;
 }
 
-/* .about-shadow-microscopy a:hover, */
+.about-shadow-microscopy a:hover,
 .videos-preview a:hover,
 /* .learn-more-preview a:hover,
 .lessons-preview a:hover, */
@@ -674,7 +682,7 @@ nav {
 }
 
 .news-feed:hover {
-  text-shadow: 0px 0px 0px lightgray;
+  box-shadow: 0px 0px 0px #e8ecee;
   color: var(--aggie-orange);
 }
 
@@ -948,6 +956,11 @@ video {
   margin: 3rem 10rem;
 }
 
+.team-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .card {
   background: var(--csu-white);
   display: flex;
@@ -1195,6 +1208,13 @@ hr {
 
 .learn-content h2 {
   padding-bottom: 3rem;
+}
+
+/* history of microscopy page */
+.history img,
+.references img {
+  width: 100%;
+  margin: 2rem auto 2rem auto;
 }
 
 /* footer */
