@@ -1,4 +1,4 @@
-// const { videos } = require('./videosArray');
+import videos from './videosArray';
 
 function openSlideMenu() {
   document.getElementById('side-menu').style.width = '300px';
