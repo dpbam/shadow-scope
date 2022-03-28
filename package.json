@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/dpbam/shadow-scope#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "nedb": "^1.8.0"
   }
 }
