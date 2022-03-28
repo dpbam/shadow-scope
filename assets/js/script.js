@@ -1,13 +1,15 @@
-import { videos } from './videosArray.mjs';
+import { videos } from './videosArray.js';
 
 function openSlideMenu() {
   document.getElementById('side-menu').style.width = '300px';
   document.getElementById('main').style.marginLeft = '250px';
 }
+openSlideMenu();
 function closeSlideMenu() {
   document.getElementById('side-menu').style.width = '0';
   document.getElementById('main').style.marginLeft = '0';
 }
+closeSlideMenu();
 
 $(function () {
   $('#headerDIV').load('../html/header.html');
@@ -982,11 +984,11 @@ function showSlides() {
 // ];
 
 for (let i = 0; i < videos.length; i++) {
-  console.log(videos[i]);
+  // console.log(videos[i]);
 }
 
 videos.forEach(function (value, index, videos) {
-  console.log(value, index, videos);
+  // console.log(value, index, videos);
 });
 
 const searchInput = document.querySelector('.input');
