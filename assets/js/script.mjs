@@ -1,4 +1,4 @@
-import { videos } from './videosArray';
+import { videos } from './videosArray.mjs';
 
 function openSlideMenu() {
   document.getElementById('side-menu').style.width = '300px';
