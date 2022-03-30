@@ -1186,13 +1186,14 @@ hr {
   /* padding: 3rem; */
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .part-one-img img,
 .part-two-imgs img {
   width: 100%;
   border-radius: 5px;
+  padding: 0 1rem;
 }
 
 .main {
