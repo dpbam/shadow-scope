@@ -136,6 +136,7 @@ nav {
 
 .csu-ram img {
   height: 4rem;
+  width: 4rem;
 }
 
 /* The dropdown container */
@@ -730,7 +731,16 @@ a.videos-page-link {
   line-height: 2.25em;
 }
 
+.girl-moon-img {
+  margin-top: 5rem;
+}
+
+.girl-moon-img img {
+  width: 100%;
+}
+
 /* blog page */
+
 /* .happen-container {
   display: flex;
   justify-content: space-around;
