@@ -106,12 +106,21 @@ header {
   font-size: xx-large;
 }
 
+/* Navbar container */
+
 nav {
   display: flex;
   align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
-/* Navbar container */
+.csu-ram {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+} 
+
 .navbar {
   overflow: hidden;
   padding-right: 2rem;
@@ -138,10 +147,7 @@ nav {
   justify-content: space-between;
 }
 
-.csu-ram {
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 .csu-ram img {
   height: 4rem;
@@ -1765,12 +1771,24 @@ div.info-and-form {
 }
 
 @media (max-width: 768px) {
+  #logo img {
+    width: 8rem;
+    margin-right: 1rem;
+  }
   #logo span {
     padding-left: 0;
   }
   .navbar {
     display: flex;
     justify-content: end;
+  }
+  .navbar a {
+    padding-right: 0;
+  }
+  nav {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .csu-ram {
     display: flex;
@@ -1884,10 +1902,6 @@ div.info-and-form {
 @media (max-width: 640px) {
   #logo {
     margin-left: 0;
-  }
-  nav {
-    flex-direction: column-reverse;
-    align-items: center;
   }
   .navbar {
     padding: 0;
