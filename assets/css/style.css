@@ -188,7 +188,7 @@ nav {
 .dropdown:hover .dropbtn {
   color: var(--aggie-orange);
   background-color: var(--csu-white);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .fa-caret-down {
@@ -289,7 +289,7 @@ a.videos-page-link {
   padding: 4.5em;
   background: var(--csu-white);
   margin: 2rem auto 0 auto;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 #banner-wrapper {
@@ -351,7 +351,7 @@ a.videos-page-link {
   margin-bottom: 0.5em;
   background: var(--aggie-orange);
   color: var(--csu-white);
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 1rem;
   text-decoration: none;
   text-align: center;
@@ -392,7 +392,7 @@ a.videos-page-link {
 
 .shadow-scope-img1 img {
   margin-bottom: 1rem;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 100%;
   height: auto;
 }
@@ -566,7 +566,7 @@ a.videos-page-link {
   margin: 1rem 2rem 5rem 2rem;
   box-shadow: 2px 4px 4px lightgray;
   height: 20rem;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .img-video {
@@ -638,7 +638,7 @@ a.videos-page-link {
   height: 37rem;
   max-width: 52rem;
   background-color: var(--csu-white);
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
@@ -656,7 +656,7 @@ a.videos-page-link {
   height: 80rem;
   max-width: 52rem;
   background-color: var(--csu-white);
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
@@ -677,7 +677,7 @@ a.videos-page-link {
   margin-bottom: 2rem;
   color: var(--csu-white);
   padding: 1rem;
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -749,7 +749,7 @@ a.videos-page-link {
 }
 
 .blog-block {
-  border-radius: 15px;
+  border-radius: 3px;
   background-color: var(--csu-white);
   display: flex;
   flex-direction: column;
@@ -825,7 +825,7 @@ a.videos-page-link {
   width: 30rem;
   height: 100%;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -859,7 +859,7 @@ a.videos-page-link {
   flex: 1 1 300px;
   position: relative;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -904,7 +904,7 @@ a.videos-page-link {
 .youtube-link {
   padding: 2rem;
   margin: 1rem auto;
-  border-radius: 4px;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -949,7 +949,7 @@ video {
   /* border-style: solid; */
   /* border-width: 1px; */
   border-color: black;
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -979,7 +979,7 @@ video {
   max-height: 35rem;
   margin: 1.5rem;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px 4px lightgray;
 }
 
@@ -1047,7 +1047,7 @@ video {
 .instructions-container {
   background: var(--csu-white);
   margin: 2rem;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -1163,7 +1163,7 @@ hr {
   margin: auto;
   width: 80%;
   box-shadow: 2px 4px 4px lightgray;
-  border-radius: 5px;
+  border-radius: 3px;
   min-height: 13rem;
 }
 
@@ -1196,7 +1196,7 @@ hr {
 .part-one-img img,
 .part-two-imgs img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 0 1rem;
 }
 
@@ -1395,7 +1395,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px midnightblue;
 }
 
@@ -1426,7 +1426,7 @@ div.contact-container {
   background-color: lightslategrey;
   box-shadow: lightslategrey;
   width: 50vw;
-  border-radius: 5px;
+  border-radius: 3px;
   display: block;
   /* margin-right: auto;
   margin-left: auto; */
@@ -1484,7 +1484,7 @@ textarea:valid ~ label {
   width: 293px;
   margin: 1rem 0;
   position: relative;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .styled-input label {
@@ -1511,7 +1511,7 @@ textarea {
   font-size: 1.5rem;
   background-color: var(--csu-white);
   color: var(--eighty-gray);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 input:focus,
@@ -1542,7 +1542,7 @@ textarea {
   width: 12rem;
   margin-top: 15px;
   padding: 7px 35px;
-  border-radius: 4px;
+  border-radius: 3px;
   display: inline-block;
   background-color: #4b8cfb;
   color: var(--csu-white);
