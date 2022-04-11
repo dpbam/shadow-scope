@@ -521,6 +521,7 @@ a.videos-page-link {
   flex-direction: column;
   margin-top: 2rem;
   width: 75%;
+  height: 26rem;
 }
 
 .preview-card-title-and-paragraph {
@@ -731,7 +732,7 @@ a.videos-page-link {
   line-height: 2.25em;
 }
 
-.girl-moon-img {
+.headphone-boy-img {
   margin-top: 5rem;
 }
 
