@@ -1666,6 +1666,9 @@ div.info-and-form {
 }
 
 @media (max-width: 1185px) {
+  #logo {
+    font-size: 4.5rem;
+  }
   .news-container,
   .twitter-container {
     width: 33rem;
@@ -1679,6 +1682,9 @@ div.info-and-form {
 }
 
 @media (max-width: 1110px) {
+  #logo {
+    font-size: 4.25rem;
+  }
   .news-container,
   .twitter-container {
     width: 31rem;
@@ -1692,9 +1698,15 @@ div.info-and-form {
 }
 
 @media (max-width: 1024px) {
+  #logo {
+    font-size: 3.75rem;
+  }
   .csu-ram {
     margin-top: 0;
-    margin-right: 1rem;
+  }
+  .csu-ram, 
+  .navbar {
+    padding-right: 0;
   }
   .blog-title {
     font-size: 2rem;
@@ -1720,6 +1732,15 @@ div.info-and-form {
 }
 
 @media (max-width: 888px) {
+  header {
+    padding: 1.5rem;
+  }
+  #logo {
+    font-size: 3.25rem;
+  }
+  #logo img {
+    margin-right: 1rem;
+  }
   .preview-card {
     margin: 0rem 2rem 2rem 2rem;
   }
@@ -1768,16 +1789,21 @@ div.info-and-form {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  #logo {
+    font-size: 2.75rem;
+  }
   #logo img {
-    width: 8rem;
-    margin-right: 1rem;
+    width: 6rem;
+    margin: 1.5rem 0.75rem 1.5rem 0;
   }
   #logo span {
     padding-left: 0;
   }
   .navbar {
-    display: flex;
-    justify-content: end;
+    padding-right: 1rem;
   }
   .navbar a {
     padding-right: 0;
@@ -1885,9 +1911,10 @@ div.info-and-form {
 @media (max-width: 640px) {
   #logo {
     margin-left: 0;
+    font-size: 2.5rem;
   }
   .navbar {
-    padding: 0;
+    padding: 0 1rem 0 0;
   }
   .preview-card p {
     font-size: 0.9rem;
@@ -1981,7 +2008,10 @@ div.info-and-form {
 
 @media (max-width: 510px) {
   #logo {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  #logo img {
+    margin-top: 3rem;
   }
   .preview-card {
     height: 20rem;
@@ -2066,10 +2096,14 @@ div.info-and-form {
     padding: 1rem;
   }
   #logo {
-    font-size: 2.85rem;
+    flex-direction: column;
+    font-size: 2.5rem;
   }
-  nav {
-    justify-content: space-between;
+  #logo img {
+    margin:0;
+  }
+  .logo-title {
+    margin-top: 0;
   }
   .csu-ram img {
     height: 3.5rem;
