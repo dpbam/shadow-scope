@@ -1714,6 +1714,9 @@ div.info-and-form {
   .preview-card-title-and-paragraph {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
   }
+  .preview-card-title-and-paragraph h3{
+    font-size: 2.75rem;
+  }
   .coming-soon-preview p {
     font-size: 2rem;
   }
@@ -1755,6 +1758,9 @@ div.info-and-form {
   .preview-card-title-and-paragraph {
     padding-right: 0.2;
     padding-top: 1rem;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 1rem;
   }
   .moon-boy img {
     display: none;
@@ -1846,10 +1852,11 @@ div.info-and-form {
     padding-left: 1rem;
     padding-right: 0rem;
     float: left;
+    width: 35%;
   }
   .preview-card {
     margin-bottom: 0 0 1rem 0;
-    display: block;
+    display: flex;
     height: 20rem;
     width: 100%;
     margin-left: 0;
@@ -1859,11 +1866,15 @@ div.info-and-form {
     height: auto;
   }
   .preview-card-title-and-paragraph {
-    width: auto;
+    width: 65%;
     padding: 1rem;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 2rem;
   }
   .preview-card-title-and-paragraph p {
     text-align: justify;
+    font-size: 1rem;
   }
   .preview-card p {
     font-size: 1.15rem;
@@ -2104,6 +2115,7 @@ div.info-and-form {
   }
   .logo-title {
     margin-top: 0;
+    line-height: 3rem;
   }
   .csu-ram img {
     height: 3.5rem;
@@ -2113,6 +2125,9 @@ div.info-and-form {
   }
   #banner h4 {
     font-size: 2.5rem;
+  }
+  #banner .scope-now-button {
+    font-size: 1.5rem;
   }
   .preview-card {
     height: 22rem;
