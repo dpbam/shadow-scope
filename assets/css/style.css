@@ -57,16 +57,21 @@ header {
     url('Webfont.svg#webfont') format('svg');
 }
 
+#logo img {
+  width: 8rem;
+  margin-right: 2rem;
+}
+
 #logo {
   position: relative;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   font-family: 'bemio';
   font-size: 5rem;
   font-weight: 900;
   text-shadow: 10px 10px 10px black;
   color: var(--csu-gold);
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   line-height: 4rem;
 }
 
@@ -79,6 +84,10 @@ header {
 
 #logo a:hover {
   text-shadow: none;
+}
+
+.logo-title {
+  margin-top: 3rem;
 }
 
 #logo span {
@@ -97,12 +106,21 @@ header {
   font-size: xx-large;
 }
 
+/* Navbar container */
+
 nav {
   display: flex;
   align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
-/* Navbar container */
+.csu-ram {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+} 
+
 .navbar {
   overflow: hidden;
   padding-right: 2rem;
@@ -129,10 +147,7 @@ nav {
   justify-content: space-between;
 }
 
-.csu-ram {
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 .csu-ram img {
   height: 4rem;
@@ -184,7 +199,7 @@ nav {
 .dropdown:hover .dropbtn {
   color: var(--aggie-orange);
   background-color: var(--csu-white);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .fa-caret-down {
@@ -285,7 +300,7 @@ a.videos-page-link {
   padding: 4.5em;
   background: var(--csu-white);
   margin: 2rem auto 0 auto;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 #banner-wrapper {
@@ -347,7 +362,7 @@ a.videos-page-link {
   margin-bottom: 0.5em;
   background: var(--aggie-orange);
   color: var(--csu-white);
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 1rem;
   text-decoration: none;
   text-align: center;
@@ -388,7 +403,7 @@ a.videos-page-link {
 
 .shadow-scope-img1 img {
   margin-bottom: 1rem;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 100%;
   height: auto;
 }
@@ -536,15 +551,15 @@ a.videos-page-link {
   padding-bottom: 1rem;
 }
 
+.preview-card-title-and-paragraph h3:hover {
+  color: var(--canyon);
+  cursor: pointer;
+}
+
 .preview-card-title-and-paragraph p {
   font-size: 1.25rem;
   font-weight: 200;
   color: var(--eighty-gray);
-}
-
-.preview-card-title-and-paragraph h3:hover {
-  color: var(--canyon);
-  cursor: pointer;
 }
 
 .preview-card-title-and-paragraph a {
@@ -552,17 +567,21 @@ a.videos-page-link {
   color: var(--eighty-gray);
 }
 
-.about-shadow-microscopy,
-.videos-preview,
-.learn-more-preview,
-.build-one,
-.lessons-preview {
+.preview-card {
   display: flex;
   background: var(--csu-white);
   margin: 1rem 2rem 5rem 2rem;
   box-shadow: 2px 4px 4px lightgray;
+  border-radius: 3px;
+  height: 26rem;
+}
+
+.preview-card img {
+  max-width: 100%;
+  /* max-height: 100%; */
+  width: 100%;
   height: 20rem;
-  border-radius: 5px;
+  object-fit: contain;
 }
 
 .img-video {
@@ -576,22 +595,11 @@ a.videos-page-link {
   justify-content: center;
 }
 
-.about-shadow-microscopy img,
-.video-loop-preview,
-.learn-more-preview img,
-.build-one img,
-.lessons-preview img {
-  max-width: 100%;
-  /* max-height: 100%; */
-  width: 100%;
-  height: 20rem;
-  object-fit: contain;
+.video-loop-preview {
+  height: 19rem;
 }
 
-.about-shadow-microscopy a,
-.videos-preview a,
-.learn-more-preview a,
-.build-one a {
+.preview-card a {
   color: var(--eighty-gray);
   text-decoration: none;
 }
@@ -631,10 +639,10 @@ a.videos-page-link {
 }
 
 .news-container {
-  height: 37rem;
+  height: 47rem;
   max-width: 52rem;
   background-color: var(--csu-white);
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
@@ -649,10 +657,10 @@ a.videos-page-link {
 }
 
 .twitter-container {
-  height: 80rem;
+  height: 60rem;
   max-width: 52rem;
   background-color: var(--csu-white);
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
@@ -673,7 +681,7 @@ a.videos-page-link {
   margin-bottom: 2rem;
   color: var(--csu-white);
   padding: 1rem;
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -730,12 +738,6 @@ a.videos-page-link {
   line-height: 2.25em;
 }
 
-/* blog page */
-/* .happen-container {
-  display: flex;
-  justify-content: space-around;
-} */
-
 .blog-title {
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -745,7 +747,7 @@ a.videos-page-link {
 }
 
 .blog-block {
-  border-radius: 15px;
+  border-radius: 3px;
   background-color: var(--csu-white);
   display: flex;
   flex-direction: column;
@@ -821,7 +823,7 @@ a.videos-page-link {
   width: 30rem;
   height: 100%;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -855,7 +857,7 @@ a.videos-page-link {
   flex: 1 1 300px;
   position: relative;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -900,7 +902,7 @@ a.videos-page-link {
 .youtube-link {
   padding: 2rem;
   margin: 1rem auto;
-  border-radius: 4px;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -945,7 +947,7 @@ video {
   /* border-style: solid; */
   /* border-width: 1px; */
   border-color: black;
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -975,7 +977,7 @@ video {
   max-height: 35rem;
   margin: 1.5rem;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px 4px lightgray;
 }
 
@@ -1043,7 +1045,7 @@ video {
 .instructions-container {
   background: var(--csu-white);
   margin: 2rem;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -1159,7 +1161,7 @@ hr {
   margin: auto;
   width: 80%;
   box-shadow: 2px 4px 4px lightgray;
-  border-radius: 5px;
+  border-radius: 3px;
   min-height: 13rem;
 }
 
@@ -1192,7 +1194,7 @@ hr {
 .part-one-img img,
 .part-two-imgs img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 0 1rem;
 }
 
@@ -1255,8 +1257,9 @@ footer {
 } */
 
 .footer-icons {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
   float: left;
   font-size: 4rem;
 }
@@ -1270,7 +1273,7 @@ footer {
 
 .font-credit {
   font-size: 1rem;
-  margin-top: 1rem;
+  padding: 1rem 0;
 }
 
 .font-credit a {
@@ -1278,6 +1281,15 @@ footer {
   color: var(--csu-white);
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
+}
+
+.nsf {
+  font-size: 1rem;
+}
+
+.nsf img{
+  width: 10rem;
+  padding: 1rem 0 0 0.5rem;
 }
 
 .resources {
@@ -1391,7 +1403,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 2px 4px 4px midnightblue;
 }
 
@@ -1422,7 +1434,7 @@ div.contact-container {
   background-color: lightslategrey;
   box-shadow: lightslategrey;
   width: 50vw;
-  border-radius: 5px;
+  border-radius: 3px;
   display: block;
   /* margin-right: auto;
   margin-left: auto; */
@@ -1480,7 +1492,7 @@ textarea:valid ~ label {
   width: 293px;
   margin: 1rem 0;
   position: relative;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .styled-input label {
@@ -1507,7 +1519,7 @@ textarea {
   font-size: 1.5rem;
   background-color: var(--csu-white);
   color: var(--eighty-gray);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 input:focus,
@@ -1538,7 +1550,7 @@ textarea {
   width: 12rem;
   margin-top: 15px;
   padding: 7px 35px;
-  border-radius: 4px;
+  border-radius: 3px;
   display: inline-block;
   background-color: #4b8cfb;
   color: var(--csu-white);
@@ -1571,13 +1583,8 @@ div.info-and-form {
 /* media queries */
 
 @media (min-width: 1536px) {
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
-    margin: 0rem 2rem 2rem 2rem;
-    height: 35rem;
+  .preview-card {
+    margin: 0 2rem 1rem 2rem;
   }
   .preview-card-title-and-paragraph h3 {
     font-size: 3rem;
@@ -1589,27 +1596,18 @@ div.info-and-form {
     font-size: 3rem;
   }
 }
-@media (min-width: 1281px) {
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
-    margin: 0rem 2rem 2rem 2rem;
-    height: 35rem;
-  }
-}
 
 @media (max-width: 1536px) {
   .coming-soon-preview p {
     font-size: 2rem;
   }
+  .preview-card {
+    margin: 0 2rem 2rem 2rem;
+    height: 22rem;
+  }
 }
 
 @media (max-width: 1280px) {
-  /* .navbar-nav {
-    display: none;
-  } */
   .main-container {
     display: flex;
     flex-direction: column;
@@ -1618,15 +1616,10 @@ div.info-and-form {
     margin-top: 5rem;
     width: 100%;
   }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
-    height: 25rem;
+  .preview-card {
+    height: 22rem;
   }
   .about-shadow-microscopy img,
-  .video-loop-preview,
   .learn-more-preview img,
   .lessons-preview img {
     width: 80%;
@@ -1638,6 +1631,18 @@ div.info-and-form {
     height: auto;
   }
 
+  .video-loop-preview {
+    height: 18rem;
+  }
+
+  .preview-card-title-and-paragraph h3 {
+    font-size: 3rem;
+  }
+
+  .preview-card-title-and-paragraph p {
+    font-size: 1.25rem;
+  }
+
   .news-and-twitter {
     display: flex;
     flex-direction: row;
@@ -1647,13 +1652,13 @@ div.info-and-form {
   }
   .news-feed,
   .twitter-feed {
-    width: 88%;
-    margin-left: 1.5rem;
+    width: 94.5%;
+    margin-left: 1rem;
   }
   .news-container,
   .twitter-container {
-    width: 25rem;
-    margin: 2rem;
+    width: 35rem;
+    margin: 1rem;
   }
   .pageContentWrapper {
     display: flex;
@@ -1670,22 +1675,76 @@ div.info-and-form {
   }
 }
 
-@media (max-width: 1024px) {
-  .csu-ram {
-    margin-top: 0;
-    margin-right: 1rem;
-  }
-
-  .blog-title {
-    font-size: 2rem;
-  }
-
-  .coming-soon-preview p {
-    font-size: 2rem;
+@media (max-width: 1185px) {
+  #logo {
+    font-size: 4.5rem;
   }
   .news-container,
   .twitter-container {
-    width: 22rem;
+    width: 33rem;
+    margin: 0.75rem;
+  }
+  .news-feed,
+  .twitter-feed {
+    width: 95.5%;
+    margin-left: 0.75rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  #logo {
+    font-size: 4.25rem;
+  }
+  .news-container,
+  .twitter-container {
+    width: 31rem;
+    margin: 0.5rem;
+  }
+  .news-feed,
+  .twitter-feed {
+    width: 96.85%;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #logo {
+    font-size: 3.75rem;
+  }
+  .csu-ram {
+    margin-top: 0;
+  }
+  .csu-ram, 
+  .navbar {
+    padding-right: 0;
+  }
+  .blog-title {
+    font-size: 2rem;
+  }
+  .img-video {
+    width: 45%;
+  }
+  .preview-card-title-and-paragraph {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    width: 55%
+  }
+  .preview-card-title-and-paragraph h3{
+    font-size: 2.5rem;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 1rem;
+  }
+  .coming-soon-preview p {
+    font-size: 1.5rem;
+  }
+  .news-container,
+  .twitter-container {
+    width: 26rem;
+  }
+  .news-feed,
+  .twitter-feed {
+    width: 96.75%;
+    margin-left: 0.5rem;
   }
   .team-container {
     margin: 3rem 2rem;
@@ -1693,30 +1752,19 @@ div.info-and-form {
 }
 
 @media (max-width: 888px) {
-  /* .news-and-twitter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-  } */
-  /* .news,
-  .twitter {
-    width: 100%;
-    margin: 0;
+  header {
+    padding: 1.5rem;
   }
-  .news-container,
-  .twitter-container {
-    width: 100%;
-    margin-right: 0;
-  } */
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
-    margin: 0rem 2rem 2rem 2rem;
+  #logo {
+    font-size: 3.25rem;
+  }
+  #logo img {
+    margin-right: 1rem;
+  }
+  .preview-card {
+    margin: 0rem 2rem 1rem 2rem;
   }
   .img-video {
-    /* width: 50%; */
     padding-left: 1rem;
     padding-right: 0rem;
     float: left;
@@ -1728,21 +1776,29 @@ div.info-and-form {
     padding-right: 0.2;
     padding-top: 1rem;
   }
+  .preview-card-title-and-paragraph p {
+    font-size: 1rem;
+  }
   .moon-boy img {
     display: none;
   }
   .coming-soon-preview p {
     font-size: 1.25rem;
   }
+  .news-container,
+  .twitter-container {
+    width: 23rem;
+  }
+  .news-feed,
+  .twitter-feed {
+    width: 96.3%;
+    margin-left: 0.5rem;
+  }
   .part-one-img {
     padding: 1rem;
   }
   .part-one-img img {
     width: 95%;
-  }
-  .news-container,
-  .twitter-container {
-    width: 20rem;
   }
   .team-container {
     margin: 3rem 1rem;
@@ -1756,12 +1812,29 @@ div.info-and-form {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  #logo {
+    font-size: 2.75rem;
+  }
+  #logo img {
+    width: 6rem;
+    margin: 1.5rem 0.75rem 1.5rem 0;
+  }
   #logo span {
     padding-left: 0;
   }
   .navbar {
-    display: flex;
-    justify-content: end;
+    padding-right: 1rem;
+  }
+  .navbar a {
+    padding-right: 0;
+  }
+  nav {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .csu-ram {
     display: flex;
@@ -1790,47 +1863,39 @@ div.info-and-form {
     padding-left: 0;
   }
   .preview-cards {
-    margin-bottom: 2rem;
+    margin-top: 3rem;
   }
   .img-video {
-    /* width: 50%; */
     padding-left: 1rem;
     padding-right: 0rem;
     float: left;
+    width: 45%;
   }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
+  .preview-card {
     margin-bottom: 0 0 1rem 0;
-    display: block;
+    display: flex;
     height: 20rem;
     width: 100%;
     margin-left: 0;
   }
-  .about-shadow-microscopy img,
-  .video-loop-preview,
-  .learn-more-preview img,
-  .build-one img,
-  .lessons-preview img {
+  .preview-card img {
     width: 95%;
     height: auto;
   }
   .preview-card-title-and-paragraph {
-    width: auto;
+    width: 50%;
     padding: 1rem;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 1.75rem;
   }
   .preview-card-title-and-paragraph p {
     text-align: justify;
+    font-size: 1rem;
   }
-  .about-shadow-microscopy p,
-  .videos-preview p,
-  .learn-more-preview p,
-  .build-one p,
-  .lessons-preview p {
+  /* .preview-card p {
     font-size: 1.15rem;
-  }
+  } */
   .news-and-twitter {
     display: flex;
     flex-direction: column;
@@ -1844,8 +1909,7 @@ div.info-and-form {
   .news-container,
   .twitter-container {
     width: 100%;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 1rem 0 1rem 0;
   }
   .news-container {
     height: 30rem;
@@ -1875,20 +1939,28 @@ div.info-and-form {
 @media (max-width: 640px) {
   #logo {
     margin-left: 0;
-  }
-  nav {
-    flex-direction: column-reverse;
-    align-items: center;
+    font-size: 2.5rem;
   }
   .navbar {
-    padding: 0;
+    padding: 0 1rem 0 0;
   }
-  .about-shadow-microscopy p,
-  .videos-preview p,
-  .learn-more-preview p,
-  .build-one p,
-  .lessons-preview p {
+  .preview-card {
+    height: 25rem;
+  }
+  .preview-card p {
     font-size: 0.9rem;
+  }
+  .img-video {
+    width: 60%;
+  }
+  .preview-card-title-and-paragraph {
+    width: 40%;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 1.75rem;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 0.8rem;
   }
   .news-container {
     height: 32rem;
@@ -1979,17 +2051,39 @@ div.info-and-form {
 
 @media (max-width: 510px) {
   #logo {
-    font-size: 4rem;
+    font-size: 3rem;
   }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
-    height: 20rem;
+  #logo img {
+    margin-top: 3rem;
+  }
+  .banner-title h4 {
+    font-size: 2.5rem;
+  }
+  .preview-card {
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-card img, 
+  .img-video iframe {
+    width: 100%;
   }
   .img-video {
-    padding-left: 0.5;
+    width: 65%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+  }
+  .preview-card-title-and-paragraph {
+    width: 100%;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 1rem;
+    text-align: center;
   }
   .build-one img {
     padding-right: 0.5rem;
@@ -2043,6 +2137,9 @@ div.info-and-form {
   .youtube-link img {
     margin-left: 3rem;
   }
+  .input {
+    font-size: 1rem;
+  }
   .sample-video {
     width: 25rem;
   }
@@ -2068,10 +2165,15 @@ div.info-and-form {
     padding: 1rem;
   }
   #logo {
-    font-size: 2.85rem;
+    flex-direction: column;
+    font-size: 2.5rem;
   }
-  nav {
-    justify-content: space-between;
+  #logo img {
+    margin:0;
+  }
+  .logo-title {
+    margin-top: 0;
+    line-height: 3rem;
   }
   .csu-ram img {
     height: 3.5rem;
@@ -2082,27 +2184,29 @@ div.info-and-form {
   #banner h4 {
     font-size: 2.5rem;
   }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
+  #banner .scope-now-button {
+    font-size: 1.5rem;
+  }
+  /* .preview-card {
     height: 22rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .img-video {
-    width: 100%;
-    height: auto;
+    width: 75%;
+    height: 60%;
+  }
+  .video-loop-preview {
+    height: 15rem;
   }
   .preview-card-title-and-paragraph h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
   }
   .preview-card-title-and-paragraph p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .blog-block-news-feed p {
     font-size: 0.75rem;
@@ -2151,14 +2255,14 @@ div.info-and-form {
   .youtube-link img {
     margin-left: 1.5rem;
   }
+  .input {
+    font-size: 0.75rem;
+  }
   .sample-video {
     width: 100%;
   }
   .sample-video iframe {
     width: 90%;
-  }
-  .input {
-    font-size: 1rem;
   }
   .videos-title {
     font-size: 1.75rem;
@@ -2193,12 +2297,20 @@ div.info-and-form {
     font-size: 1.5rem;
     padding-bottom: 1rem;
   }
-  .about-shadow-microscopy,
-  .videos-preview,
-  .learn-more-preview,
-  .build-one,
-  .lessons-preview {
+  .preview-card {
     height: 28rem;
+  }
+  .img-video {
+    width: 65%;
+  }
+  .video-loop-preview {
+    height: 13rem;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 1.5rem;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 0.75rem;
   }
   .news-and-twitter {
     margin: 0;
