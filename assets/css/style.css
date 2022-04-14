@@ -1001,17 +1001,17 @@ video {
 /* sidenav not to be confused with the popout sidenav for small screens */
 .sidenav {
   /* hidden until this page is done */
-  display: none;
-  width: 250px;
-  position: absolute;
+  display: flex;
+  width: 100%;
+  position: sticky;
   z-index: 1;
   /* top: 0; */
-  left: 0;
-  /* background-color: lightblue; */
+  /* left: 0; */
+  background-color: lightblue;
   overflow-x: hidden;
   margin-top: 2rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   box-shadow: 2px 4px 4px 4px lightgray;
 }
 
@@ -1124,6 +1124,37 @@ hr {
 }
 
 /* build page */
+.build-sidenav {
+  /* hidden until this page is done */
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* top: 0; */
+  /* left: 0; */
+  background-color: var(--csu-green);
+  overflow-x: hidden;
+  /* margin-top: 1rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* box-shadow: 2px 4px 4px 4px lightgray; */
+}
+
+.build-sidenav button {
+  padding: 1rem;
+  background-color: var(--aggie-orange);
+  color: var(--csu-white);
+  margin: 0 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
 .build-title {
   text-align: center;
   font-size: 3rem;
