@@ -1030,11 +1030,12 @@ video {
   flex-basis: 1;
 }
 
-.input-size > input {
+#size-input {
   /* background-color: #dce1e2; */
   border-style: solid;
   border-width: thin;
-  width: 6rem;
+  width: 5rem;
+  height: 3rem;
   font-size: 1.25rem;
 }
 
@@ -1051,6 +1052,7 @@ video {
   background-color: var(--aggie-orange);
   border-radius: 4px;
   font-size: 1rem;
+  border:none;
 }
 
 /* team page */
