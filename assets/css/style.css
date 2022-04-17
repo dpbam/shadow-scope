@@ -1028,6 +1028,57 @@ video {
   /* text-shadow: 2px 4px 4px black; */
 }
 
+/* learn more page */
+.main {
+  margin: 5rem auto;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
+  position: relative;
+}
+
+.learn-card {
+  background-color: var(--aggie-orange);
+  max-width: 20rem;
+  max-height: 30rem;
+  border-radius: 3px;
+  box-shadow: 2px 4px 4px gray;
+  padding: 1rem;
+  margin: 2rem;
+  color: var(--csu-white);
+}
+
+.learn-card h3 {
+  font-size: 2rem;
+}
+
+.learn-card p {
+  padding: 1rem 0;
+}
+
+.learn-card a {
+  color: var(--csu-white);
+  font-weight: 800;
+}
+
+.learn-card a:hover {
+  color: var(--canyon);
+  font-weight: 800;
+}
+
+.learn-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5rem;
+}
+
+.learn-content h2 {
+  padding-bottom: 3rem;
+}
+
 /* how-to page */
 .how-to-title {
   text-align: center;
@@ -1198,24 +1249,6 @@ hr {
   padding: 0 1rem;
 }
 
-.main {
-  /* hide for now */
-  display: none;
-  margin: 5rem 10rem 5rem 20rem;
-  padding: 0px 10px;
-}
-
-.learn-content {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 5rem;
-}
-
-.learn-content h2 {
-  padding-bottom: 3rem;
-}
 
 /* history of microscopy page */
 .history img,
@@ -1241,6 +1274,7 @@ footer {
   flex-wrap: wrap;
   /* text-shadow: 2px 2px 4px black; */
   font-family: 'Poppins', sans-serif;
+  height: 30rem;
 }
 
 /* .footer-after::after {
