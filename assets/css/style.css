@@ -1034,12 +1034,11 @@ video {
   padding: 0px 10px;
   display: flex;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 50vh;
   position: relative;
 }
 
 .learn-card {
-  background-color: var(--aggie-orange);
   max-width: 20rem;
   max-height: 30rem;
   border-radius: 3px;
@@ -1065,6 +1064,22 @@ video {
 .learn-card a:hover {
   color: var(--canyon);
   font-weight: 800;
+}
+
+.history-card {
+  background-color: var(--aggie-orange);
+}
+
+.shadows-card {
+  background-color: var(--alfalfa);
+}
+
+.light-card {
+  background-color: var(--canyon);
+}
+
+.microorganisms-card {
+  background-color: var(--reservoir);
 }
 
 .learn-content {
