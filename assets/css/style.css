@@ -1033,12 +1033,14 @@ video {
   margin: 5rem auto;
   padding: 0px 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   min-height: 50vh;
   position: relative;
 }
 
 .learn-card {
+  aspect-ratio: 3 / 4;
   max-width: 20rem;
   max-height: 30rem;
   border-radius: 3px;
@@ -1056,13 +1058,8 @@ video {
   padding: 1rem 0;
 }
 
-.learn-card a {
+.learn-card-clickme {
   color: var(--csu-white);
-  font-weight: 800;
-}
-
-.learn-card a:hover {
-  color: var(--canyon);
   font-weight: 800;
 }
 
@@ -1070,16 +1067,33 @@ video {
   background-color: var(--aggie-orange);
 }
 
+.history-card-clickme:hover {
+  color: var(--reservoir);
+  font-weight: 800;
+}
+
 .shadows-card {
   background-color: var(--alfalfa);
+}
+
+.shadows-card-clickme:hover {
+  color: var(--canyon);
 }
 
 .light-card {
   background-color: var(--canyon);
 }
 
+.light-card-clickme:hover {
+  color: var(--reservoir);
+}
+
 .microorganisms-card {
   background-color: var(--reservoir);
+}
+
+.microorganisms-card-clickme:hover {
+  color: var(--canyon);
 }
 
 .learn-content {
@@ -2317,6 +2331,15 @@ div.info-and-form {
     font-size: 1.75rem;
     padding: 1rem 0;
   }
+  .learn-card {
+    height: 20rem;
+  }
+  .learn-card h3 {
+    font-size: 1.25rem;
+  }
+  .learn-card p {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 281px) {
@@ -2413,5 +2436,8 @@ div.info-and-form {
   }
   .youtube-link {
     padding: 0.5;
+  }
+  .learn-card h3 {
+    font-size: 1rem;
   }
 }
