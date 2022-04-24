@@ -26,9 +26,9 @@
     <div id="headerDIV"></div>
 
     <div class="video-container">
-      <h1>Video #001 in Detail:</h1>
+      <h1>${video.name}</h1>
       <video width="400" height="300" controls>
-        <source src="Video Link" />
+        <source src="${video.url}" />
       </video>
     </div>
     <h2 class="what-see">What do you see?</h2>
@@ -36,14 +36,14 @@
       <div class="radio-animal">
         <h3 class="radio-title">Basic</h3>
         <div class="basic">
-          <input id="radio-plant-btn" type="radio" name="shape" value="plant" />
+          <input id="radio-plant-btn" type="radio" name="basic" value="plant" />
           <label for="plant">plant</label><br />
         </div>
         <div class="basic">
           <input
             id="radio-animal-btn"
             type="radio"
-            name="shape"
+            name="basic"
             value="animal"
           />
           <label for="animal">animal</label><br />
@@ -52,7 +52,7 @@
           <input
             id="radio-protist-btn"
             type="radio"
-            name="shape"
+            name="basic"
             value="protist"
           />
           <label for="protist">protist</label><br />
@@ -61,7 +61,7 @@
           <input
             id="radio-unknown-btn"
             type="radio"
-            name="shape"
+            name="basic"
             value="unknown"
           />
           <label for="unknown">unknown</label><br />

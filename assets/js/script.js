@@ -1007,7 +1007,7 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
         <div class="video-card">
-          <h2>${video.name}</h2>
+          <a href="/html/video.html"><h2>${video.name}</h2></a>
        
             <source src="${video.url}" />
             <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
@@ -1044,8 +1044,10 @@ function filterVideos(value) {
       v.name.toLocaleLowerCase().includes(value) ||
       v.event.toLocaleLowerCase().includes(value)
     // || v.teacher.toLocaleLowerCase().includes(value)
+    // || v.basic.toLocaleLowerCase().includes(value)
     // || v.shape.toLocaleLowerCase().includes(value)
-    // || v.direction.toLocaleLowerCase().includes(value)
+    // || v.movement.toLocaleLowerCase().includes(value)
+    // || v.size.toLocaleLowerCase().includes(value)
   );
 
   renderVideos(filteredVideos);
