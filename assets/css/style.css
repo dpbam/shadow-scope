@@ -956,13 +956,8 @@ video {
   height: 82%;
   /* border-style: solid; */
   /* border-width: 1px; */
-<<<<<<< HEAD
-  /* border-color: black; */
-  border-radius: 7px;
-=======
   border-color: black;
   border-radius: 3px;
->>>>>>> develop
   box-shadow: 2px 4px 4px lightgray;
 }
 
@@ -991,8 +986,7 @@ video {
   justify-content: space-evenly;
   background-color: var(--csu-white);
   max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2rem auto;
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 2px 4px 4px lightgray;
@@ -1028,6 +1022,11 @@ video {
 .shape > label,
 .movement > label {
   flex-basis: 1;
+}
+
+.size-container {
+  display: flex;
+  flex-direction: column;
 }
 
 #size-input {
