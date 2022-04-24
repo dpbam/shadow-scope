@@ -983,7 +983,7 @@ video {
 
 .what-see {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 1rem 0 1rem 5rem;
 }
 
 .radio-buttons {
@@ -1053,6 +1053,7 @@ video {
   border-radius: 4px;
   font-size: 1rem;
   border:none;
+  cursor: pointer;
 }
 
 /* team page */

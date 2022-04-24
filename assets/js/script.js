@@ -1212,3 +1212,17 @@ function submitFunction() {
     alert('Please enter a comment, any additional observations you have.');
   }
 }
+
+function SubForm() {
+  $.ajax({
+    url: 'https://api.apispreadsheets.com/data/pd5qEOIclKcTu7E3//',
+    type: 'post',
+    data: $('#myForm').serializeArray(),
+    success: function () {
+      alert('Form Data Submitted :)');
+    },
+    error: function () {
+      alert('There was an error :(');
+    },
+  });
+}

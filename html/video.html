@@ -8,7 +8,11 @@
       src="https://kit.fontawesome.com/0e4312690b.js"
       crossorigin="anonymous"
     ></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +32,7 @@
       </video>
     </div>
     <h2 class="what-see">What do you see?</h2>
-    <form class="radio-buttons" method="POST">
+    <form class="radio-buttons" id="myForm" method="POST">
       <div class="radio-animal">
         <h3 class="radio-title">Basic</h3>
         <div class="basic">
@@ -237,7 +241,7 @@
       <!-- where to send the form data, which file or url -->
       "
       >
-        <button id="submit-btn" onclick="submitFunction()">SUBMIT</button>
+        <button id="submit-btn" onclick="SubForm()">SUBMIT</button>
       </form>
     </form>
 
