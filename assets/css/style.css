@@ -946,9 +946,18 @@ a.videos-page-link {
   margin-bottom: 1rem;
 }
 
+#videos-results h2:hover {
+  color:var(--reservoir);
+  cursor: pointer;
+}
+
 #videos-results p {
   padding-top: 1rem;
   font-size: 1.5rem;
+}
+
+#selected-video-header {
+  padding-bottom: 1rem;
 }
 
 video {

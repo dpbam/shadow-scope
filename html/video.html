@@ -26,10 +26,8 @@
     <div id="headerDIV"></div>
 
     <div class="video-container">
-      <h1>`${video.name}`</h1>
-      <video width="400" height="300" controls>
-        <source src="${video.url}" />
-      </video>
+      <h1 id="selected-video-header">${selectedVideo.name}</h1>
+        <iframe width="500" height="400" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
     </div>
     <h2 class="what-see">What do you see?</h2>
     <form class="radio-buttons" id="myForm" method="POST">

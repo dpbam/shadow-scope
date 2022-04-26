@@ -14,6 +14,15 @@ $(function () {
   $('#footerDIV').load('../html/footer.html');
 });
 
+// Selected Video
+var selectedVideoString = localStorage.getItem('selectedVideo');
+var selectedVideo =
+  selectedVideoString != null ? JSON.parse(selectedVideoString) : null;
+var selectedVideoHeader = document.getElementById('selected-video-header');
+if (selectedVideoHeader != null) {
+  selectedVideoHeader.innerHTML = selectedVideo?.name ?? 'Video Not Found...';
+}
+
 // Slideshow
 
 // Automatic slideshow
@@ -999,6 +1008,7 @@ const searchButton = document.getElementById('search-button');
 
 function renderVideos(videosToRender) {
   var videoResults = document.getElementById('videos-results');
+
   if (videoResults !== null) {
     videoResults.innerHTML = '';
 
@@ -1006,9 +1016,8 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
         <div class="video-card">
-          <a href="/html/video.html" id="video-click"><h2>${video.name}</h2></a>
+          <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
        
-            <source src="${video.url}" />
             <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
           
         </div>
@@ -1017,9 +1026,20 @@ function renderVideos(videosToRender) {
           friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
         </p>
       `;
-      const element = document.getElementById('video-click');
-      element.addEventListener('click', myFunction(video));
     });
+  }
+}
+
+function setSelectedVideo(event) {
+  var videoName = event.srcElement.dataset.videoName;
+  if (videoName != null) {
+    selectedVideo = videos.find((v) => v.name === videoName);
+    if (selectedVideo != null) {
+      var jsonSelectedVideo = JSON.stringify(selectedVideo);
+      localStorage.setItem('selectedVideo', jsonSelectedVideo);
+    }
+
+    location.href = '/html/video.html';
   }
 }
 
