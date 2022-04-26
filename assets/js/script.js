@@ -965,7 +965,7 @@ var videos = [
     url: 'https://www.youtube.com/embed/7KTRfrh7D14',
   },
   {
-    name: '99884',
+    name: ' ',
     event: 'Curfman Gallery Art & Science Exhibit',
     url: 'https://www.youtube.com/embed/W20YpPNspsg',
   },
@@ -999,7 +999,6 @@ const searchButton = document.getElementById('search-button');
 
 function renderVideos(videosToRender) {
   var videoResults = document.getElementById('videos-results');
-
   if (videoResults !== null) {
     videoResults.innerHTML = '';
 
@@ -1007,7 +1006,7 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
         <div class="video-card">
-          <a href="/html/video.html"><h2>${video.name}</h2></a>
+          <a href="/html/video.html" id="video-click"><h2>${video.name}</h2></a>
        
             <source src="${video.url}" />
             <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
@@ -1018,6 +1017,8 @@ function renderVideos(videosToRender) {
           friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
         </p>
       `;
+      const element = document.getElementById('video-click');
+      element.addEventListener('click', myFunction(video));
     });
   }
 }
@@ -1215,11 +1216,16 @@ function submitFunction() {
   }
 }
 
-function SubForm() {
+var selectedVideo = {}; // TODO: assign the selected video to this variable
+
+function SubForm(video) {
   $.ajax({
     url: 'https://api.apispreadsheets.com/data/pd5qEOIclKcTu7E3//',
     type: 'post',
-    data: $('#myForm').serializeArray(),
+    data: {
+      video: selectedVideo,
+      form: $('#myForm').serializeArray(),
+    },
     success: function () {
       alert('Form Data Submitted :)');
     },
