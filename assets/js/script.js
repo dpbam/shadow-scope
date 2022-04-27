@@ -68,6 +68,7 @@ function showSlides() {
 
 // videos search bar
 
+// url is from YouTube Embed. Click Share then copy-paste url from inside embed
 var videos = [
   {
     name: 'Video001',
@@ -979,6 +980,526 @@ var videos = [
     event: 'Curfman Gallery Art & Science Exhibit',
     url: 'https://www.youtube.com/embed/wO2l8dDLlDA',
   },
+  {
+    name: '21205',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/JCffblwOPLE',
+  },
+  {
+    name: '21513',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/_l10xdknHQc',
+  },
+  {
+    name: '23023',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/OUsZSN2hFfo',
+  },
+  {
+    name: '23106',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/9VHAfe-ZLOw',
+  },
+  {
+    name: '25537',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/XaZ7IDNK2Qk',
+  },
+  {
+    name: '26849',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/eq9MvHv53Pg',
+  },
+  {
+    name: '27282',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/4x_hoYKG_EI',
+  },
+  {
+    name: '11111',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/R7VUBabLQxQ',
+  },
+  {
+    name: '12764',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/FaclCGlGG8Q',
+  },
+  {
+    name: '15129',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/UTtc0Ivky5A',
+  },
+  {
+    name: '16947',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/8n98DSUQ9hA',
+  },
+  {
+    name: '18817',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/90ZcZ2KAL4w',
+  },
+  {
+    name: '17999',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/PU2z0BCBcV4',
+  },
+  {
+    name: '20196',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/bXxeEtNQuvs',
+  },
+  {
+    name: '19376',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/-rbDNlF9jsE',
+  },
+  {
+    name: '29922',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/qeK1oB9sllc',
+  },
+  {
+    name: '34498',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/crvBMMeBJPg',
+  },
+  {
+    name: '34576',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/vs9FsAIqk_U',
+  },
+  {
+    name: '34605',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/0gLG9fLWZUI',
+  },
+  {
+    name: '34841',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/HxBlPS4YQ_Q',
+  },
+  {
+    name: '35369',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/2KXl8D4jSfU',
+  },
+  {
+    name: '27823',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/4prck0tdsFI',
+  },
+  {
+    name: '27958',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/m8d0KRphQU4',
+  },
+  {
+    name: '30837',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/NBRzz-wERMs',
+  },
+  {
+    name: '32665',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/sSbY2Nv6TK4',
+  },
+  {
+    name: '32760',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/wWxkUZTEtX0',
+  },
+  {
+    name: '33083',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/kXvGuUa1TNI',
+  },
+  {
+    name: '40756',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/QgTRtMu2Yes',
+  },
+  {
+    name: '41129',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/AIN4QPI3hjY',
+  },
+  {
+    name: '41473',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/8aZhDeU16YY',
+  },
+  {
+    name: '37408',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/6CLJbjiW3_k',
+  },
+  {
+    name: '38711',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/KZFbAG5Vy30',
+  },
+  {
+    name: '42619',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/eMey_Vbs4aM',
+  },
+  {
+    name: '43928',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/nc-AnPrTgx4',
+  },
+  {
+    name: '36117',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/sY8DiAgjSD8',
+  },
+  {
+    name: '36291',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/HZkuQAYvQZY',
+  },
+  {
+    name: '36615',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/2TeaFqRjj9Y',
+  },
+  {
+    name: '28715',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/YSUEkavkAiI',
+  },
+  {
+    name: '28987',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/rvcMkfFPwPI',
+  },
+  {
+    name: '29448',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/h4VE8vMdZw0',
+  },
+  {
+    name: '50515',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/A4g00Jn7Chw',
+  },
+  {
+    name: '53830',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/EKcbzIKUjdI',
+  },
+  {
+    name: '54617',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/UcnrhdgGq5U',
+  },
+  {
+    name: '54835',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/W-OKepq67lU',
+  },
+  {
+    name: '56199',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/AKiHekOcIIs',
+  },
+  {
+    name: '56332',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/ANLhENeEwcs',
+  },
+  {
+    name: '56349',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/CkXgoW1k2_k',
+  },
+  {
+    name: '56475',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/p7gjk1PESZ0',
+  },
+  {
+    name: '44518',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/UIwbHlGVqd4',
+  },
+  {
+    name: '46889',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/nr9RWP6kXE8',
+  },
+  {
+    name: '48170',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/XjOl8LksZn8',
+  },
+  {
+    name: '49399',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/2WDp4-qhNFo',
+  },
+  {
+    name: '50442',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/EMzqrsi5jNY',
+  },
+  {
+    name: '44658',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/-272JQBpjvk',
+  },
+  {
+    name: '46285',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/S25KaeqG_So',
+  },
+  {
+    name: '62539',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/6-Kr5VxFK10',
+  },
+  {
+    name: '62868',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/MqiHgBxyWHU',
+  },
+  {
+    name: '64125',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/yJokeHgo9qc',
+  },
+  {
+    name: '65033',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/3ab28svUQ9U',
+  },
+  {
+    name: '65242',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/v57mcrT1IeM',
+  },
+  {
+    name: '65683',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/1W9YLux7c2w',
+  },
+  {
+    name: '66965',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/0CnlXxmNfnk',
+  },
+  {
+    name: '56872',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/N0lttcPIU-w',
+  },
+  {
+    name: '57524',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/AAK2ShZNbtY',
+  },
+  {
+    name: '58262',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/oyKeNk9bKps',
+  },
+  {
+    name: '58715',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/rhV7JjMWAOg',
+  },
+  {
+    name: '60274',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/jEwQceOTKqk',
+  },
+  {
+    name: '61547',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/YlXdYcHRKDs',
+  },
+  {
+    name: '62135',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/NkuA3Y5ticM',
+  },
+  {
+    name: '62386',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/NSc8U6pQfB0',
+  },
+  {
+    name: '73567',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/faky3xb9uv0',
+  },
+  {
+    name: '74631',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/yXksTkcIQmM',
+  },
+  {
+    name: '79320',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/vaAVHL7eomk',
+  },
+  {
+    name: '67687',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/LIBbtZVicpM',
+  },
+  {
+    name: '69300',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/RyVsSAMYzbk',
+  },
+  {
+    name: '72862',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/OFOCRPoaVII',
+  },
+  {
+    name: '71076',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/jgBqG6c4wmw',
+  },
+  {
+    name: '73199',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/w7_Xblxa0RE',
+  },
+  {
+    name: '73369',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/8spY3HdErsc',
+  },
+  {
+    name: '70235',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/8wjuGVsu65g',
+  },
+  {
+    name: '70484',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/fna65XL26t0',
+  },
+  {
+    name: '70989',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/Rf2wL6HQxaM',
+  },
+  {
+    name: '70650',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/iMoS4MUJTOc',
+  },
+  {
+    name: '91441',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/8qrHCJb0bLI',
+  },
+  {
+    name: '92311',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/OJQtnrsMSC4',
+  },
+  {
+    name: '94720',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/GsxZOUw3uFs',
+  },
+  {
+    name: '95197',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/n1dW25JTFbE',
+  },
+  {
+    name: '81134',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/YKjFP5O0fm0',
+  },
+  {
+    name: '81430',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/fiZ8c6whgPU',
+  },
+  {
+    name: '81693',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/F7EUUHnbGIY',
+  },
+  {
+    name: '82314',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/n9w7-nvYyLg',
+  },
+  {
+    name: '83550',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/yWLQmg4GbG4',
+  },
+  {
+    name: '83727',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/NzUi5Wr1sOY',
+  },
+  {
+    name: '84855',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/XefUfUGy63Y',
+  },
+  {
+    name: '85603',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/YR4Dy3aWEDA',
+  },
+  {
+    name: '85801',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/yvAIAd308xQ',
+  },
+  {
+    name: '89058',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/O3azhcvyZOI',
+  },
+  {
+    name: '97595',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/x1vzQMCruuU',
+  },
+  {
+    name: '97597',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/Ok4e9utY8XE',
+  },
+  {
+    name: '96285',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/A2oKuyjos3I',
+  },
+  {
+    name: '98146',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/Mf19F4OF0nE',
+  },
+  {
+    name: '97387',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/_d02hIpN1Xk',
+  },
+  {
+    name: '97326',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/KPt0iz8Hqg4',
+  },
+  {
+    name: '97324',
+    event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
+    url: 'https://www.youtube.com/embed/-qRjdkGDFeU',
+  },
 ];
 
 for (let i = 0; i < videos.length; i++) {
@@ -1044,6 +1565,7 @@ function filterVideos(value) {
       v.name.toLocaleLowerCase().includes(value) ||
       v.event.toLocaleLowerCase().includes(value)
     // || v.teacher.toLocaleLowerCase().includes(value)
+    // || v.date.toLocaleLowerCase().includes(value)
     // || v.shape.toLocaleLowerCase().includes(value)
     // || v.direction.toLocaleLowerCase().includes(value)
   );
