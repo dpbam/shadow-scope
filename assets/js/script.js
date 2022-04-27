@@ -1240,14 +1240,18 @@ function submitFunction() {
   }
 }
 
-function SubForm() {
+function SubForm(video) {
+  var dataList = [
+    {
+      name: 'video-name',
+      value: selectedVideo?.name,
+    },
+    ...$('#myForm').serializeArray(),
+  ];
   $.ajax({
     url: 'https://api.apispreadsheets.com/data/sgEAZi7Pix3ehgpG/',
     type: 'post',
-    data: {
-      video: selectedVideo,
-      form: $('#myForm').serializeArray(),
-    },
+    data: dataList,
     success: function () {
       alert('Form Data Submitted :)');
     },
