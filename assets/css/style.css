@@ -789,6 +789,11 @@ a.videos-page-link {
   height: auto;
 }
 
+.delaney-blogtwo {
+  display: flex;
+  flex-direction: column;
+}
+
 /* videos gallery page */
 .pageContentWrapper {
   display: flex;
