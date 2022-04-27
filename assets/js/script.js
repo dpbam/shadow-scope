@@ -22,7 +22,7 @@ var selectedVideoContainer =
   document.getElementsByClassName('video-container')[0];
 if (selectedVideoContainer != null) {
   selectedVideoContainer.innerHTML = `
-  <h1>${selectedVideo.name}</h1>
+  <h1 name="video-name">${selectedVideo.name}</h1>
   <iframe width="500" height="400" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
   `;
 }
@@ -1242,7 +1242,7 @@ function submitFunction() {
 
 function SubForm() {
   $.ajax({
-    url: 'https://api.apispreadsheets.com/data/pd5qEOIclKcTu7E3//',
+    url: 'https://api.apispreadsheets.com/data/sgEAZi7Pix3ehgpG/',
     type: 'post',
     data: {
       video: selectedVideo,
