@@ -18,9 +18,13 @@ $(function () {
 var selectedVideoString = localStorage.getItem('selectedVideo');
 var selectedVideo =
   selectedVideoString != null ? JSON.parse(selectedVideoString) : null;
-var selectedVideoHeader = document.getElementById('selected-video-header');
-if (selectedVideoHeader != null) {
-  selectedVideoHeader.innerHTML = selectedVideo?.name ?? 'Video Not Found...';
+var selectedVideoContainer =
+  document.getElementsByClassName('video-container')[0];
+if (selectedVideoContainer != null) {
+  selectedVideoContainer.innerHTML = `
+  <h1>${selectedVideo.name}</h1>
+  <iframe width="500" height="400" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+  `;
 }
 
 // Slideshow
@@ -1236,9 +1240,7 @@ function submitFunction() {
   }
 }
 
-var selectedVideo = {}; // TODO: assign the selected video to this variable
-
-function SubForm(video) {
+function SubForm() {
   $.ajax({
     url: 'https://api.apispreadsheets.com/data/pd5qEOIclKcTu7E3//',
     type: 'post',
