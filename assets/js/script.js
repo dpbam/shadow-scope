@@ -995,11 +995,11 @@ var videos = [
 ];
 
 for (let i = 0; i < videos.length; i++) {
-  console.log(videos[i]);
+  // console.log(videos[i]);
 }
 
 videos.forEach(function (value, index, videos) {
-  console.log(value, index, videos);
+  // console.log(value, index, videos);
 });
 
 const searchInput = document.querySelector('.input');
@@ -1019,12 +1019,13 @@ function renderVideos(videosToRender) {
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
-        <div class="video-card">
+        <div class="video-card list" id="list">
           <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
        
             <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
           
         </div>
+        <div class="pagenumbers" id="pagination"></div>
         <p>
           Click the three vertical dots, download your video, and share with your
           friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
@@ -1260,3 +1261,62 @@ function SubForm(video) {
     },
   });
 }
+
+// pagination
+
+const list_element = document.getElementById('list');
+const pagination_element = document.getElementById('pagination');
+
+let current_page = 1;
+let rows = 5;
+
+function DisplayList(items, wrapper, rows_per_page, page) {
+  wrapper.innerHTML = '';
+  page--;
+
+  let start = rows_per_page * page;
+  let end = start + rows_per_page;
+  let paginatedItems = items.slice(start, end);
+
+  for (let i = loop_start; i < paginatedItems.length + rows_per_page; i++) {
+    let item = paginatedItems[i];
+
+    let item_element = document.createElement('div');
+    item_element.classList.add('item');
+    item_element.innerText = item;
+
+    wrapper.appendChild(item_element);
+  }
+}
+
+function SetupPagination(items, wrapper, rows_per_page) {
+  wrapper.innerHTML = '';
+
+  let page_count = Math.ceil(items.length / rows_per_page);
+  for (let i = 1; i < page_count + 1; i++) {
+    let btn = PaginationButton(i, items);
+    wrapper.appendChild(btn);
+  }
+}
+
+function PaginationButton(page, items) {
+  let button = document.createElement('button');
+  button.innerText = page;
+
+  if (current_page == page) button.classList.add('active');
+
+  button.addEventListener('click', function () {
+    current_page = page;
+    DisplayList(items, list_element, rows, current_page);
+
+    let current_btn = document.querySelector('.pagenumbers button.active');
+    current_btn.classList.remove('active');
+
+    button.classList.add('active');
+  });
+
+  return button;
+}
+
+DisplayList(videos, list_element, rows, current_page);
+SetupPagination(list_items, pagination_element, rows);
