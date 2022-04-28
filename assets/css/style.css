@@ -789,6 +789,20 @@ a.videos-page-link {
   height: auto;
 }
 
+.delaney-blogtwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.delaney-blogtwo a {
+  color: var(--eighty-gray);
+  font-weight: 800;
+}
+
+.delaney-blogtwo a:hover {
+  color: var(--canyon);
+}
+
 /* videos gallery page */
 .pageContentWrapper {
   display: flex;
