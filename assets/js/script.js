@@ -1025,7 +1025,6 @@ function renderVideos(videosToRender) {
             <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
           
         </div>
-        <div class="pagenumbers" id="pagination"></div>
         <p>
           Click the three vertical dots, download your video, and share with your
           friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
@@ -1264,7 +1263,8 @@ function SubForm(video) {
 
 // pagination
 
-const list_element = document.getElementById('list');
+// const list_element = document.getElementById('list');
+const list_element = document.getElementById('videos-results');
 const pagination_element = document.getElementById('pagination');
 
 let current_page = 1;
@@ -1279,7 +1279,7 @@ function DisplayList(items, wrapper, rows_per_page, page) {
   let end = start + rows_per_page;
   let paginatedItems = items.slice(start, end);
 
-  for (let i = loop_start; i < paginatedItems.length + rows_per_page; i++) {
+  for (let i = 0; i < paginatedItems.length + rows_per_page; i++) {
     let item = paginatedItems[i];
 
     let item_element = document.createElement('div');
@@ -1320,4 +1320,4 @@ function PaginationButton(page, items) {
 }
 
 DisplayList(videos, list_element, rows, current_page);
-SetupPagination(list_items, pagination_element, rows);
+SetupPagination(videos, pagination_element, rows);
