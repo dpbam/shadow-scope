@@ -1270,6 +1270,7 @@ const pagination_element = document.getElementById('pagination');
 let current_page = 1;
 let rows = 5;
 
+// displaylist function
 function DisplayList(items, wrapper, rows_per_page, page) {
   wrapper.innerHTML = '';
   page--;
