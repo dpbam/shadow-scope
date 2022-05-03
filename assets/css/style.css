@@ -789,7 +789,7 @@ a.videos-page-link {
   height: auto;
 }
 
-.delaney-blogtwo {
+.delaney-blogtwo, .derek-blogone {
   display: flex;
   flex-direction: column;
 }
@@ -801,6 +801,10 @@ a.videos-page-link {
 
 .delaney-blogtwo a:hover {
   color: var(--canyon);
+}
+
+.derek-blogone img{
+  width: 100%;
 }
 
 /* videos gallery page */
