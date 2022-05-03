@@ -604,6 +604,10 @@ a.videos-page-link {
   text-decoration: none;
 }
 
+.preview-card a:hover {
+  color: var(--canyon);
+}
+
 .about-shadow-microscopy a:hover,
 .videos-preview a:hover,
 /* .learn-more-preview a:hover,
