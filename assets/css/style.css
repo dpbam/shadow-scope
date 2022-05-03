@@ -851,6 +851,20 @@ a.videos-page-link {
   height: 20rem;
 }
 
+
+
+.videos-cards {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.video-card {
+  cursor: pointer;
+  margin: 1rem;
+}
+
 .video-card a {
   color: var(--eighty-gray);
 }
