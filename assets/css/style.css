@@ -948,15 +948,16 @@ a.videos-page-link {
 
 #videos-results {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 
 #videos-results .list{
   width: 100%;
-  max-width: 700px;
+  max-width: 10rem;
   background-color: var(--csu-white);
-  margin: 2rem auto;
-  gap: 2rem;
+  margin: 1rem auto;
+  gap: 1rem;
 }
 
 #videos-results h2 {
@@ -1073,6 +1074,7 @@ video {
 
 .radio-title {
   font-size: 1.5rem;
+  padding:1rem;
 }
 
 .radio-shape {

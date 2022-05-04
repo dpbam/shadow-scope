@@ -1542,10 +1542,15 @@ function renderVideos(videosToRender) {
       videoResults.innerHTML += `
         <div class="video-card list" id="list">
           <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
-       
-            <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
-          
+        </div>
       `;
+      // videoResults.innerHTML += `
+      //   <div class="video-card list" id="list">
+      //     <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
+
+      //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+
+      // `;
       // videoResults.innerHTML += `
       //   <div class="video-card">
       //     <h2>${video.name}</h2>
