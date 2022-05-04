@@ -870,6 +870,17 @@ a.videos-page-link {
   margin-right: 5rem;
 }
 
+.search-and-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* .search-options {
+  margin-left: 10rem;
+} */
+
 .search-container {
   display: flex;
   max-width: 35rem;
@@ -879,9 +890,7 @@ a.videos-page-link {
   border: 1px solid #ccc;
   border-radius: 3px;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5rem;
+  margin: 1rem auto;
 }
 
 .search-bar {
