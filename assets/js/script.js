@@ -14,6 +14,19 @@ $(function () {
   $('#footerDIV').load('../html/footer.html');
 });
 
+// Selected Video
+var selectedVideoString = localStorage.getItem('selectedVideo');
+var selectedVideo =
+  selectedVideoString != null ? JSON.parse(selectedVideoString) : null;
+var selectedVideoContainer =
+  document.getElementsByClassName('video-container')[0];
+if (selectedVideoContainer != null) {
+  selectedVideoContainer.innerHTML = `
+  <h1 name="video-name">${selectedVideo.name}</h1>
+  <iframe width="500" height="400" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+  `;
+}
+
 // Slideshow
 
 // Automatic slideshow
@@ -966,7 +979,7 @@ var videos = [
     url: 'https://www.youtube.com/embed/7KTRfrh7D14',
   },
   {
-    name: '99884',
+    name: ' ',
     event: 'Curfman Gallery Art & Science Exhibit',
     url: 'https://www.youtube.com/embed/W20YpPNspsg',
   },
@@ -1503,11 +1516,11 @@ var videos = [
 ];
 
 for (let i = 0; i < videos.length; i++) {
-  console.log(videos[i]);
+  // console.log(videos[i]);
 }
 
 videos.forEach(function (value, index, videos) {
-  console.log(value, index, videos);
+  // console.log(value, index, videos);
 });
 
 const searchInput = document.querySelector('.input');
@@ -1527,9 +1540,10 @@ function renderVideos(videosToRender) {
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
-        <div class="video-card">
-          <h2>${video.name}</h2>
+        <div class="video-card list" id="list">
+          <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
        
+            <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
           
       `;
       // videoResults.innerHTML += `
@@ -1546,6 +1560,19 @@ function renderVideos(videosToRender) {
       //   </p>
       // `;
     });
+  }
+}
+
+function setSelectedVideo(event) {
+  var videoName = event.srcElement.dataset.videoName;
+  if (videoName != null) {
+    selectedVideo = videos.find((v) => v.name === videoName);
+    if (selectedVideo != null) {
+      var jsonSelectedVideo = JSON.stringify(selectedVideo);
+      localStorage.setItem('selectedVideo', jsonSelectedVideo);
+    }
+
+    location.href = '/html/video.html';
   }
 }
 
@@ -1571,9 +1598,10 @@ function filterVideos(value) {
       v.name.toLocaleLowerCase().includes(value) ||
       v.event.toLocaleLowerCase().includes(value)
     // || v.teacher.toLocaleLowerCase().includes(value)
-    // || v.date.toLocaleLowerCase().includes(value)
+    // || v.basic.toLocaleLowerCase().includes(value)
     // || v.shape.toLocaleLowerCase().includes(value)
-    // || v.direction.toLocaleLowerCase().includes(value)
+    // || v.movement.toLocaleLowerCase().includes(value)
+    // || v.size.toLocaleLowerCase().includes(value)
   );
 
   renderVideos(filteredVideos);
@@ -1661,3 +1689,164 @@ function setList(results) {
 // }
 
 // searchButton.addEventListener('click', searchFunction);
+
+// video page radio button selection submit
+
+function submitFunction() {
+  let radioPlantBtn = document.getElementById('radio-plant-btn');
+  let radioAnimalBtn = document.getElementById('radio-animal-btn');
+  let radioProtistBtn = document.getElementById('radio-protist-btn');
+  let radioUnknownBtn = document.getElementById('radio-unknown-btn');
+  let radioWormBtn = document.getElementById('radio-worm-btn');
+  let radioRoundBtn = document.getElementById('radio-round-btn');
+  let radioDonutBtn = document.getElementById('radio-donut-btn');
+  let radioThinBtn = document.getElementById('radio-thin-btn');
+  let radioLongBtn = document.getElementById('radio-long-btn');
+  let radioBeetleBtn = document.getElementById('radio-beetle-btn');
+  let radioBlobBtn = document.getElementById('radio-blob-btn');
+  let radioStickBtn = document.getElementById('radio-stick-btn');
+  let radioLeggyBtn = document.getElementById('radio-leggy-btn');
+  let radioFastBtn = document.getElementById('radio-fast-btn');
+  let radioErraticBtn = document.getElementById('radio-erratic-btn');
+  let radioStraightBtn = document.getElementById('radio-straight-btn');
+  let radioSpinningBtn = document.getElementById('radio-spinning-btn');
+  let radioCircularBtn = document.getElementById('radio-circular-btn');
+  let sizeInput = document.getElementById('size-input');
+  let commentInput = document.getElementById('comment-input');
+  // let submitBtn = document.getElementById('submit-btn');
+
+  if (radioPlantBtn.checked == true)
+    alert('The Basic button selected is: ' + radioPlantBtn.value);
+  else if (radioAnimalBtn.checked == true)
+    alert('The Basic button selected is: ' + radioAnimalBtn.value);
+  else if (radioProtistBtn.checked == true)
+    alert('The Basic button selected is: ' + radioProtistBtn.value);
+  else if (radioUnknownBtn.checked == true)
+    alert('The Basic button selected is: ' + radioUnknownBtn.value);
+  else alert('No Basic button selected.');
+
+  if (radioWormBtn.checked == true)
+    alert('The Shape button selected is: ' + radioWormBtn.value);
+  else if (radioRoundBtn.checked == true)
+    alert('The Shape button selected is: ' + radioRoundBtn.value);
+  else if (radioDonutBtn.checked == true)
+    alert('The Shape button selected is: ' + radioDonutBtn.value);
+  else if (radioThinBtn.checked == true)
+    alert('The Shape button selected is: ' + radioThinBtn.value);
+  else if (radioLongBtn.checked == true)
+    alert('The Shape button selected is: ' + radioLongBtn.value);
+  else if (radioBeetleBtn.checked == true)
+    alert('The Shape button selected is: ' + radioBeetleBtn.value);
+  else if (radioBlobBtn.checked == true)
+    alert('The Shape button selected is: ' + radioBlobBtn.value);
+  else if (radioStickBtn.checked == true)
+    alert('The Shape button selected is: ' + radioStickBtn.value);
+  else if (radioLeggyBtn.checked == true)
+    alert('The Shape button selected is: ' + radioLeggyBtn.value);
+  else alert('No Shape button selected.');
+
+  if (radioFastBtn.checked == true)
+    alert('The Motion button selected is: ' + radioFastBtn.value);
+  else if (radioErraticBtn.checked == true)
+    alert('The Motion button selected is: ' + radioErraticBtn.value);
+  else if (radioStraightBtn.checked == true)
+    alert('The Motion button selected is: ' + radioStraightBtn.value);
+  else if (radioSpinningBtn.checked == true)
+    alert('The Motion button selected is: ' + radioSpinningBtn.value);
+  else if (radioCircularBtn.checked == true)
+    alert('The Motion button selected is: ' + radioCircularBtn.value);
+  else alert('No Motion button selected.');
+
+  if (sizeInput.value) {
+    alert('Your estimated size of the organism is ' + sizeInput.value + '.');
+  } else {
+    alert('Please enter a number for how long you think the organism is.');
+  }
+  if (commentInput.value) {
+    alert('Your comment is "' + commentInput.value + '"');
+  } else {
+    alert('Please enter a comment, any additional observations you have.');
+  }
+}
+
+function SubForm(video) {
+  var dataList = [
+    {
+      name: 'video-name',
+      value: selectedVideo?.name,
+    },
+    ...$('#myForm').serializeArray(),
+  ];
+  $.ajax({
+    url: 'https://api.apispreadsheets.com/data/sgEAZi7Pix3ehgpG/',
+    type: 'post',
+    data: dataList,
+    success: function () {
+      alert('Form Data Submitted :)');
+    },
+    error: function () {
+      alert('There was an error :(');
+    },
+  });
+}
+
+// pagination
+
+// const list_element = document.getElementById('list');
+// const list_element = document.getElementById('videos-results');
+// const pagination_element = document.getElementById('pagination');
+
+// let current_page = 1;
+// let rows = 5;
+
+// // displaylist function
+// function DisplayList(items, wrapper, rows_per_page, page) {
+//   wrapper.innerHTML = '';
+//   page--;
+
+//   let start = rows_per_page * page;
+//   let end = start + rows_per_page;
+//   let paginatedItems = items.slice(start, end);
+
+//   for (let i = 0; i < paginatedItems.length + rows_per_page; i++) {
+//     let item = paginatedItems[i];
+
+//     let item_element = document.createElement('div');
+//     item_element.classList.add('item');
+//     item_element.innerText = item;
+
+//     wrapper.appendChild(item_element);
+//   }
+// }
+
+// function SetupPagination(items, wrapper, rows_per_page) {
+//   wrapper.innerHTML = '';
+
+//   let page_count = Math.ceil(items.length / rows_per_page);
+//   for (let i = 1; i < page_count + 1; i++) {
+//     let btn = PaginationButton(i, items);
+//     wrapper.appendChild(btn);
+//   }
+// }
+
+// function PaginationButton(page, items) {
+//   let button = document.createElement('button');
+//   button.innerText = page;
+
+//   if (current_page == page) button.classList.add('active');
+
+//   button.addEventListener('click', function () {
+//     current_page = page;
+//     DisplayList(items, list_element, rows, current_page);
+
+//     let current_btn = document.querySelector('.pagenumbers button.active');
+//     current_btn.classList.remove('active');
+
+//     button.classList.add('active');
+//   });
+
+//   return button;
+// }
+
+// DisplayList(videos, list_element, rows, current_page);
+// SetupPagination(videos, pagination_element, rows);
