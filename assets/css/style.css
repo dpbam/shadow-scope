@@ -857,6 +857,7 @@ a.videos-page-link {
   display:flex;
   /* flex-direction: column; */
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 1rem;
 }
 
@@ -867,6 +868,10 @@ a.videos-page-link {
   color:var(--csu-white);
   padding: 2rem;
   width: 10rem;
+}
+
+.featured-videos {
+  background-color: var(--alfalfa);
 }
 
 .video-card a {
