@@ -1502,13 +1502,13 @@ var videos = [
   },
 ];
 
-for (let i = 0; i < videos.length; i++) {
-  console.log(videos[i]);
-}
+// for (let i = 0; i < videos.length; i++) {
+//   console.log(videos[i]);
+// }
 
-videos.forEach(function (value, index, videos) {
-  console.log(value, index, videos);
-});
+// videos.forEach(function (value, index, videos) {
+//   console.log(value, index, videos);
+// });
 
 const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
@@ -1656,3 +1656,29 @@ function setList(results) {
 // }
 
 // searchButton.addEventListener('click', searchFunction);
+
+const featuredDiv = document.getElementById('featured-videos');
+const event1Div = document.getElementById('event1-videos');
+const event2Div = document.getElementById('event2-videos');
+const artandscienceDiv = document.getElementById('artandscience-videos');
+const bennettDiv = document.getElementById('bennett-videos');
+const irishDiv = document.getElementById('irish-videos');
+
+featuredDiv.addEventListener('click', (event) => {
+  console.log('featured CLICKED!');
+});
+event1Div.addEventListener('click', (event) => {
+  console.log('event 1 CLICKED!');
+});
+event2Div.addEventListener('click', (event) => {
+  console.log('event 2 CLICKED!');
+});
+artandscienceDiv.addEventListener('click', (event) => {
+  console.log('artandscience CLICKED!');
+});
+bennettDiv.addEventListener('click', (event) => {
+  console.log('bennett CLICKED!');
+});
+irishDiv.addEventListener('click', (event) => {
+  console.log('irish CLICKED!');
+});
