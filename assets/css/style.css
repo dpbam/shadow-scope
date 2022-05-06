@@ -868,6 +868,7 @@ a.videos-page-link {
   color:var(--csu-white);
   padding: 2rem;
   width: 10rem;
+  border-radius: 3px;
 }
 
 .featured-videos {
