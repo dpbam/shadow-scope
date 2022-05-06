@@ -1528,17 +1528,18 @@ function renderVideos(videosToRender) {
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
         <div class="video-card">
-          <h2>${video.name}</h2>
-       
-            <source src="${video.url}" />
-            <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
-          
+          <h2>${video.name}</h2>   
         </div>
-        <p>
-          Click the three vertical dots, download your video, and share with your
-          friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
-        </p>
       `;
+      // videoResults.innerHTML += `
+      //   <div class="video-card">
+      //     <h2>${video.name}</h2>
+
+      //       <source src="${video.url}" />
+      //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+
+      //   </div>
+      // `;
     });
   }
 }
