@@ -1668,10 +1668,10 @@ featuredDiv.addEventListener('click', (event) => {
   console.log('featured CLICKED!');
 });
 event1Div.addEventListener('click', (event) => {
-  console.log('event 1 CLICKED!');
+  console.log('event1 CLICKED!');
 });
 event2Div.addEventListener('click', (event) => {
-  console.log('event 2 CLICKED!');
+  console.log('event2 CLICKED!');
 });
 artandscienceDiv.addEventListener('click', (event) => {
   console.log('artandscience CLICKED!');
