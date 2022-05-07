@@ -39,37 +39,44 @@
             *If you're coming from <strong>Mr. Sweeney's Bennett Elementary</strong> class, your videos are available to search now using your video's unique 5-digit ID.
           </p>
           <p class="wait-for-videos">
-            *If you're coming from <strong>Irish Elementary</strong>, your videos will be available by the end of the week.
+            *If you're coming from <strong>Irish Elementary</strong>, your videos will be available soon.
           </p>
         </div>
-        <div class="search-container">
-          <div class="search-bar">
-            <i class="fa fa-search searchIcon"></i>
-            <input
-              type="text"
-              id="search"
-              name="search"
-              class="input"
-              placeholder="Input Video ID # (i.e. 34058)"
-            />
-            <button type="button" id="search-button" class="searchButton">
-              Search
-            </button>
+        
+        <div class="search-and-options">
+          <div class="search-options">
+          <p>Search using video id # or event or teacher. Then click on a video id to view video.</p>
+        </div>
+          <div class="search-container">
+            
+            <div class="search-bar">
+              <i class="fa fa-search searchIcon"></i>
+              <input
+                type="text"
+                id="search"
+                name="search"
+                class="input"
+                placeholder="Input Video ID # (i.e. 34058)"
+              />
+              <button type="button" id="search-button" class="searchButton">
+                Search
+              </button>
+            </div>
           </div>
         </div>
         <div id="videos-results">
           <!-- Videos are to be injected by the script file -->
+
         </div>
-        <div class="container">
-          <div id="pagination-wrapper"></div>
-        </div>
+                <div class="pagenumbers" id="pagination"></div>
+
       </div>
     
     
       <div class="sample-and-youtube-link">
         <div class="sample-video-container">
           <div class="sample-video">
-            <h4>Sample video:</h4>
+            <h4>Featured video:</h4>
             <iframe
              
               src="https://www.youtube.com/embed/mwR3JC4MfaE"
@@ -100,7 +107,7 @@
       <div class="share">
         <!-- <p>
           Share this video with your friends! (Don't forget to tag us
-          @CSUShadowScope)
+          <strong>@CSUShadowScope</strong>)
         </p> -->
         <br />
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
