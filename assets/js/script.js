@@ -1577,7 +1577,7 @@ function setSelectedVideo(event) {
       localStorage.setItem('selectedVideo', jsonSelectedVideo);
     }
 
-    location.href = '/html/video.html';
+    location.href = 'html/video.html';
   }
 }
 
