@@ -73,6 +73,7 @@ var videos = [
   {
     name: 'Video001',
     event: 'event1',
+    tags: ['event1', 'featured'],
     url: 'https://www.youtube.com/embed/tx-0LNf7nLw',
   },
   {
@@ -1564,7 +1565,11 @@ function filterVideos(value) {
   let filteredVideos = videos.filter(
     (v) =>
       v.name.toLocaleLowerCase().includes(value) ||
-      v.event.toLocaleLowerCase().includes(value)
+      v.event.toLocaleLowerCase().includes(value) ||
+      (value?.length > 0 && v.tags?.length > 0)
+        ? value.every((v) => v.tags.includes(v))
+        : false
+
     // || v.teacher.toLocaleLowerCase().includes(value)
     // || v.date.toLocaleLowerCase().includes(value)
     // || v.shape.toLocaleLowerCase().includes(value)
@@ -1666,8 +1671,8 @@ const irishDiv = document.getElementById('irish-videos');
 
 featuredDiv.addEventListener('click', (event) => {
   console.log('featured CLICKED!');
-  var featured = ['81693', '91441', '44518'];
-  filterVideos(featured);
+
+  filterVideos(['featured']);
 });
 event1Div.addEventListener('click', (event) => {
   filterVideos('event1');
@@ -1676,14 +1681,11 @@ event2Div.addEventListener('click', (event) => {
   filterVideos('event2');
 });
 artandscienceDiv.addEventListener('click', (event) => {
-  console.log('curfman clicked');
-  filterVideos('Curfman Gallery Art & Science Exhibit');
+  filterVideos('curfman');
 });
 bennettDiv.addEventListener('click', (event) => {
-  console.log('bennett clicked');
-  filterVideos('Bennett Elementary Mr. Sweeney Apr 22, 2022');
+  filterVideos('bennett');
 });
 irishDiv.addEventListener('click', (event) => {
-  console.log('irish clicked');
-  filterVideos('Irish Elementary Poudre River Investigation');
+  filterVideos('irish');
 });
