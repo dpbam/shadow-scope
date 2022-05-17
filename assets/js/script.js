@@ -1682,5 +1682,6 @@ bennettDiv.addEventListener('click', (event) => {
   filterVideos('Bennett Elementary Mr. Sweeney Apr 22, 2022');
 });
 irishDiv.addEventListener('click', (event) => {
+  console.log('irish clicked');
   filterVideos('Irish Elementary Poudre River Investigation');
 });
