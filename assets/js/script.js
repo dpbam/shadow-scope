@@ -1666,6 +1666,8 @@ const irishDiv = document.getElementById('irish-videos');
 
 featuredDiv.addEventListener('click', (event) => {
   console.log('featured CLICKED!');
+  var featured = ['81693', '91441', '44518'];
+  filterVideos(featured);
 });
 event1Div.addEventListener('click', (event) => {
   filterVideos('event1');
