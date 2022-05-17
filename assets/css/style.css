@@ -884,6 +884,10 @@ a.videos-page-link {
   cursor: pointer;
 }
 
+.video-name-card {
+  border-radius: 3px;
+}
+
 /* search in videos page */
 
 .sample-and-youtube-link {

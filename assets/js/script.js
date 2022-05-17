@@ -1527,7 +1527,7 @@ function renderVideos(videosToRender) {
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
-        <div class="video-card">
+        <div class="video-name-card">
           <h2>${video.name}</h2>   
         </div>
       `;
@@ -1674,9 +1674,11 @@ event2Div.addEventListener('click', (event) => {
   filterVideos('event2');
 });
 artandscienceDiv.addEventListener('click', (event) => {
+  console.log('curfman clicked');
   filterVideos('Curfman Gallery Art & Science Exhibit');
 });
 bennettDiv.addEventListener('click', (event) => {
+  console.log('bennett clicked');
   filterVideos('Bennett Elementary Mr. Sweeney Apr 22, 2022');
 });
 irishDiv.addEventListener('click', (event) => {
