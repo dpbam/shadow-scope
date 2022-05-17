@@ -1666,10 +1666,10 @@ const irishDiv = document.getElementById('irish-videos');
 
 featuredDiv.addEventListener('click', (event) => {
   console.log('featured CLICKED!');
-  renderVideos();
 });
 event1Div.addEventListener('click', (event) => {
   console.log('event1 CLICKED!');
+  renderVideos('event1');
 });
 event2Div.addEventListener('click', (event) => {
   console.log('event2 CLICKED!');
