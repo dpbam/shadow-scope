@@ -1617,7 +1617,7 @@ searchInput.addEventListener('keyup', (e) => {
     } else {
       // 5. return nothing
       // input is invalid -- show an error message or show no results
-      console.log('Try your search again');
+      alert('Try your search again');
     }
   }
 });
@@ -1668,18 +1668,17 @@ featuredDiv.addEventListener('click', (event) => {
   console.log('featured CLICKED!');
 });
 event1Div.addEventListener('click', (event) => {
-  console.log('event1 CLICKED!');
-  renderVideos('event1');
+  filterVideos('event1');
 });
 event2Div.addEventListener('click', (event) => {
-  console.log('event2 CLICKED!');
+  filterVideos('event2');
 });
 artandscienceDiv.addEventListener('click', (event) => {
-  console.log('artandscience CLICKED!');
+  filterVideos('Curfman Gallery Art & Science Exhibit');
 });
 bennettDiv.addEventListener('click', (event) => {
-  console.log('bennett CLICKED!');
+  filterVideos('Bennett Elementary Mr. Sweeney Apr 22, 2022');
 });
 irishDiv.addEventListener('click', (event) => {
-  console.log('irish CLICKED!');
+  filterVideos('Irish Elementary Poudre River Investigation');
 });
