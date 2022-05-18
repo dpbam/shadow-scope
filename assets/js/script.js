@@ -129,6 +129,7 @@ var videos = [
   {
     name: 'Video012',
     event: 'event1',
+    tags: ['event1', 'featured'],
     url: 'https://www.youtube.com/embed/QcKVCuRgp4s',
   },
   {
@@ -1528,6 +1529,7 @@ function renderVideos(videosToRender) {
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
+      
         <div class="video-name-card">
           <h2>${video.name}</h2>   
         </div>
@@ -1567,7 +1569,7 @@ function filterVideos(value) {
       v.name.toLocaleLowerCase().includes(value) ||
       v.event.toLocaleLowerCase().includes(value) ||
       (value?.length > 0 && v.tags?.length > 0)
-        ? value.every((v) => v.tags.includes(v))
+        ? value.every((val) => v.tags.includes(val))
         : false
 
     // || v.teacher.toLocaleLowerCase().includes(value)
