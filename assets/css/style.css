@@ -902,6 +902,10 @@ a.videos-page-link {
 
 .video-name-card {
   border-radius: 3px;
+  background-color: var(--csu-white);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 10rem;
 }
 
 /* search in videos page */

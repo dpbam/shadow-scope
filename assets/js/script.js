@@ -1672,8 +1672,6 @@ const bennettDiv = document.getElementById('bennett-videos');
 const irishDiv = document.getElementById('irish-videos');
 
 featuredDiv.addEventListener('click', (event) => {
-  console.log('featured CLICKED!');
-
   filterVideos(['featured']);
 });
 event1Div.addEventListener('click', (event) => {
