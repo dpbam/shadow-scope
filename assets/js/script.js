@@ -1564,13 +1564,14 @@ function renderVideos(videosToRender) {
 // }
 
 function filterVideos(value) {
+  console.log('value', value);
   let filteredVideos = videos.filter(
     (v) =>
       v.name.toLocaleLowerCase().includes(value) ||
       v.event.toLocaleLowerCase().includes(value) ||
-      (value?.length > 0 && v.tags?.length > 0)
+      (Array.isArray(value) && v.tags?.length > 0
         ? value.every((val) => v.tags.includes(val))
-        : false
+        : false)
 
     // || v.teacher.toLocaleLowerCase().includes(value)
     // || v.date.toLocaleLowerCase().includes(value)
