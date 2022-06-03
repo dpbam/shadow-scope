@@ -2022,15 +2022,6 @@ var videos = [
   // },
 ];
 
-<<<<<<< HEAD
-for (let i = 0; i < videos.length; i++) {
-  // console.log(videos[i]);
-}
-
-videos.forEach(function (value, index, videos) {
-  // console.log(value, index, videos);
-});
-=======
 // for (let i = 0; i < videos.length; i++) {
 //   console.log(videos[i]);
 // }
@@ -2038,7 +2029,6 @@ videos.forEach(function (value, index, videos) {
 // videos.forEach(function (value, index, videos) {
 //   console.log(value, index, videos);
 // });
->>>>>>> feature/videos-page-option
 
 const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
@@ -2057,27 +2047,12 @@ function renderVideos(videosToRender) {
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
-<<<<<<< HEAD
-        <div class="video-card list" id="list">
-          <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
-        </div>
-      `;
-      // videoResults.innerHTML += `
-      //   <div class="video-card list" id="list">
-      //     <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
-
-      //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
-
-      // `;
-      // videoResults.innerHTML += `
-=======
       
         <div class="video-name-card">
           <h2>${video.name}</h2>   
         </div>
       `;
       // videoResults.innerHTML += `
->>>>>>> feature/videos-page-option
       //   <div class="video-card">
       //     <h2>${video.name}</h2>
 
@@ -2085,13 +2060,6 @@ function renderVideos(videosToRender) {
       //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
 
       //   </div>
-<<<<<<< HEAD
-      //   <p>
-      //     Click the three vertical dots, download your video, and share with your
-      //     friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
-      //   </p>
-=======
->>>>>>> feature/videos-page-option
       // `;
     });
   }
@@ -2229,7 +2197,6 @@ function setList(results) {
 
 // searchButton.addEventListener('click', searchFunction);
 
-<<<<<<< HEAD
 // video page radio button selection submit
 
 function submitFunction() {
@@ -2390,7 +2357,6 @@ function SubForm(video) {
 
 // DisplayList(videos, list_element, rows, current_page);
 // SetupPagination(videos, pagination_element, rows);
-=======
 const featuredDiv = document.getElementById('featured-videos');
 const event1Div = document.getElementById('event1-videos');
 const event2Div = document.getElementById('event2-videos');
@@ -2416,4 +2382,3 @@ bennettDiv.addEventListener('click', (event) => {
 irishDiv.addEventListener('click', (event) => {
   filterVideos('irish');
 });
->>>>>>> feature/videos-page-option
