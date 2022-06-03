@@ -840,7 +840,7 @@ a.videos-page-link {
   background-color: var(--csu-white);
   width: 30rem;
   height: 100%;
-  padding: 2rem;
+  padding: 1rem 2rem 1rem 1.65rem;
   border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
