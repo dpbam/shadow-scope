@@ -845,7 +845,7 @@ a.videos-page-link {
   background-color: var(--csu-white);
   width: 30rem;
   height: 100%;
-  padding: 2rem 1rem 2rem 1.5rem;
+  padding: 1rem 2rem 1rem 1.65rem;
   border-radius: 3px;
   box-shadow: 2px 4px 4px lightgray;
 }
@@ -860,6 +860,41 @@ a.videos-page-link {
   height: 20rem;
 }
 
+.videos-cards-title {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.videos-cards {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem;  
+}
+
+.video-card {
+  cursor: pointer;
+  margin: 1rem;
+  background-color: var(--aggie-orange);
+  color:var(--csu-white);
+  padding: 2rem;
+  width: 50rem;
+  min-height: 10rem;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 4px 4px lightgray;
+}
+
+.featured-videos {
+  background-color: var(--alfalfa);
+}
+
+.video-card h4 {
+  font-size: 1.5rem;
+}
+
 .video-card a {
   color: var(--eighty-gray);
 }
@@ -867,6 +902,19 @@ a.videos-page-link {
 .video-card a:hover {
   color: #fc4385;
   cursor: pointer;
+}
+
+.video-card:active {
+  background-color: yellow;
+  box-shadow: none;
+}
+
+.video-name-card {
+  border-radius: 3px;
+  background-color: var(--csu-white);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 10rem;
 }
 
 /* search in videos page */
@@ -897,7 +945,10 @@ a.videos-page-link {
   border: 1px solid #ccc;
   border-radius: 3px;
   overflow: hidden;
-  margin: 1rem auto;
+  margin: 5rem auto 3rem auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
 }
 
 .search-bar {
@@ -987,6 +1038,7 @@ a.videos-page-link {
 
 #videos-results iframe {
   margin: 2rem;
+  margin-left: 1rem;
 }
 
 #videos-results p {

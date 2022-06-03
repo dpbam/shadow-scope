@@ -86,6 +86,7 @@ var videos = [
   {
     name: 'Video001',
     event: 'event1',
+    tags: ['event1', 'featured'],
     url: 'https://www.youtube.com/embed/tx-0LNf7nLw',
   },
   {
@@ -141,6 +142,7 @@ var videos = [
   {
     name: 'Video012',
     event: 'event1',
+    tags: ['event1', 'featured'],
     url: 'https://www.youtube.com/embed/QcKVCuRgp4s',
   },
   {
@@ -2020,6 +2022,7 @@ var videos = [
   // },
 ];
 
+<<<<<<< HEAD
 for (let i = 0; i < videos.length; i++) {
   // console.log(videos[i]);
 }
@@ -2027,6 +2030,15 @@ for (let i = 0; i < videos.length; i++) {
 videos.forEach(function (value, index, videos) {
   // console.log(value, index, videos);
 });
+=======
+// for (let i = 0; i < videos.length; i++) {
+//   console.log(videos[i]);
+// }
+
+// videos.forEach(function (value, index, videos) {
+//   console.log(value, index, videos);
+// });
+>>>>>>> feature/videos-page-option
 
 const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
@@ -2045,6 +2057,7 @@ function renderVideos(videosToRender) {
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
       videoResults.innerHTML += `
+<<<<<<< HEAD
         <div class="video-card list" id="list">
           <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
         </div>
@@ -2057,6 +2070,14 @@ function renderVideos(videosToRender) {
 
       // `;
       // videoResults.innerHTML += `
+=======
+      
+        <div class="video-name-card">
+          <h2>${video.name}</h2>   
+        </div>
+      `;
+      // videoResults.innerHTML += `
+>>>>>>> feature/videos-page-option
       //   <div class="video-card">
       //     <h2>${video.name}</h2>
 
@@ -2064,10 +2085,13 @@ function renderVideos(videosToRender) {
       //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
 
       //   </div>
+<<<<<<< HEAD
       //   <p>
       //     Click the three vertical dots, download your video, and share with your
       //     friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
       //   </p>
+=======
+>>>>>>> feature/videos-page-option
       // `;
     });
   }
@@ -2103,10 +2127,15 @@ function setSelectedVideo(event) {
 // }
 
 function filterVideos(value) {
+  console.log('value', value);
   let filteredVideos = videos.filter(
     (v) =>
       v.name.toLocaleLowerCase().includes(value) ||
-      v.event.toLocaleLowerCase().includes(value)
+      v.event.toLocaleLowerCase().includes(value) ||
+      (Array.isArray(value) && v.tags?.length > 0
+        ? value.every((val) => v.tags.includes(val))
+        : false)
+
     // || v.teacher.toLocaleLowerCase().includes(value)
     // || v.basic.toLocaleLowerCase().includes(value)
     // || v.shape.toLocaleLowerCase().includes(value)
@@ -2160,7 +2189,7 @@ searchInput.addEventListener('keyup', (e) => {
     } else {
       // 5. return nothing
       // input is invalid -- show an error message or show no results
-      console.log('Try your search again');
+      alert('Try your search again');
     }
   }
 });
@@ -2200,6 +2229,7 @@ function setList(results) {
 
 // searchButton.addEventListener('click', searchFunction);
 
+<<<<<<< HEAD
 // video page radio button selection submit
 
 function submitFunction() {
@@ -2360,3 +2390,30 @@ function SubForm(video) {
 
 // DisplayList(videos, list_element, rows, current_page);
 // SetupPagination(videos, pagination_element, rows);
+=======
+const featuredDiv = document.getElementById('featured-videos');
+const event1Div = document.getElementById('event1-videos');
+const event2Div = document.getElementById('event2-videos');
+const artandscienceDiv = document.getElementById('artandscience-videos');
+const bennettDiv = document.getElementById('bennett-videos');
+const irishDiv = document.getElementById('irish-videos');
+
+featuredDiv.addEventListener('click', (event) => {
+  filterVideos(['featured']);
+});
+event1Div.addEventListener('click', (event) => {
+  filterVideos('event1');
+});
+event2Div.addEventListener('click', (event) => {
+  filterVideos('event2');
+});
+artandscienceDiv.addEventListener('click', (event) => {
+  filterVideos('curfman');
+});
+bennettDiv.addEventListener('click', (event) => {
+  filterVideos('bennett');
+});
+irishDiv.addEventListener('click', (event) => {
+  filterVideos('irish');
+});
+>>>>>>> feature/videos-page-option
