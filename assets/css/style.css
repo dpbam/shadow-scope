@@ -2048,6 +2048,9 @@ div.info-and-form {
     width: 96.3%;
     margin-left: 0.5rem;
   }
+  .video-card {
+    width: 40rem;
+  }
   .part-one-img {
     padding: 1rem;
   }
@@ -2170,6 +2173,9 @@ div.info-and-form {
   }
   .youtube-link {
     margin-left: 10rem;
+  }
+  .video-card {
+    width: 30rem;
   }
   .how-to-subtitle {
     padding-bottom: 1rem;
@@ -2356,6 +2362,9 @@ div.info-and-form {
   .news-container {
     height: 35rem;
   }
+  .video-card {
+    width: 25rem;
+  }
   .at-scope-now-one img,
   .turned-on img,
   .slide-image img,
@@ -2465,6 +2474,9 @@ div.info-and-form {
   .blog-block-news-feed p {
     font-size: 0.75rem;
   }
+    .video-card {
+      width: 15rem;
+    }
   .how-to-subtitle {
     padding: 0;
   }
