@@ -2477,9 +2477,10 @@ div.info-and-form {
   .blog-block-news-feed p {
     font-size: 0.75rem;
   }
-    .video-card {
-      width: 15rem;
-    }
+  .video-card {
+     width: 15rem;
+     font-size: 1rem;
+  }
   .how-to-subtitle {
     padding: 0;
   }
