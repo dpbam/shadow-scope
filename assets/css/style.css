@@ -861,13 +861,13 @@ a.videos-page-link {
 }
 
 .videos-cards-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 
 .videos-cards {
   display:flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 1rem;  
@@ -878,9 +878,9 @@ a.videos-page-link {
   margin: 1rem;
   background-color: var(--aggie-orange);
   color:var(--csu-white);
-  padding: 2rem;
-  width: 50rem;
-  min-height: 10rem;
+  padding: 1rem;
+  width: 20rem;
+  min-height: 4rem;
   border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
@@ -892,7 +892,7 @@ a.videos-page-link {
 }
 
 .video-card h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .video-card a {
@@ -929,7 +929,7 @@ a.videos-page-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 /* .search-options {
