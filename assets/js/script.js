@@ -2035,46 +2035,6 @@ var videos = [
     event: 'Campus Middle School May 23, 2022 and May 24, 2022',
     url: 'https://www.youtube.com/embed/FA78FTBj0yk',
   },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
-  {
-    name: '',
-    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
-    url: '',
-  },
 ];
 
 // for (let i = 0; i < videos.length; i++) {
@@ -2418,6 +2378,7 @@ const event2Div = document.getElementById('event2-videos');
 const artandscienceDiv = document.getElementById('artandscience-videos');
 const bennettDiv = document.getElementById('bennett-videos');
 const irishDiv = document.getElementById('irish-videos');
+const campusDiv = document.getElementById('campus-videos');
 
 featuredDiv.addEventListener('click', (event) => {
   filterVideos(['featured']);
@@ -2436,4 +2397,7 @@ bennettDiv.addEventListener('click', (event) => {
 });
 irishDiv.addEventListener('click', (event) => {
   filterVideos('irish');
+});
+campusDiv.addEventListener('click', (event) => {
+  filterVideos('campus');
 });
