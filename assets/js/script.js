@@ -2061,21 +2061,15 @@ function renderVideos(videosToRender) {
 
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
-      videoResults.innerHTML += `
-      
-        <div class="video-name-card">
-          <h2>${video.name}</h2>   
-        </div>
-      `;
-      // videoResults.innerHTML += `
-      //   <div class="video-card">
-      //     <h2>${video.name}</h2>
+      const newVideoCard = document.createElement('div');
+      newVideoCard.className = 'video-name-card';
+      newVideoCard.innerHTML = `<h2>${video.name}<h2>`;
+      newVideoCard.dataset.videoName = video.name;
+      newVideoCard.addEventListener('click', (event) => {
+        setSelectedVideo(event);
+      });
 
-      //       <source src="${video.url}" />
-      //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
-
-      //   </div>
-      // `;
+      videoResults.appendChild(newVideoCard);
     });
   }
 }
@@ -2213,7 +2207,6 @@ function setList(results) {
 // searchButton.addEventListener('click', searchFunction);
 
 // video page radio button selection submit
-
 function submitFunction() {
   let radioPlantBtn = document.getElementById('radio-plant-btn');
   let radioAnimalBtn = document.getElementById('radio-animal-btn');
