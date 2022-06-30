@@ -2075,7 +2075,7 @@ function renderVideos(videosToRender) {
 }
 
 function setSelectedVideo(event) {
-  var videoName = event.srcElement.dataset.videoName;
+  var videoName = event?.currentTarget?.dataset?.videoName;
   if (videoName != null) {
     selectedVideo = videos.find((v) => v.name === videoName);
     if (selectedVideo != null) {
