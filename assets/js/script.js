@@ -23,7 +23,7 @@ var selectedVideoContainer =
 if (selectedVideoContainer != null) {
   selectedVideoContainer.innerHTML = `
   <h1 name="video-name">${selectedVideo.name}</h1>
-  <iframe width="500" height="400" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+  <iframe width="600" height="600" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
   `;
 }
 
