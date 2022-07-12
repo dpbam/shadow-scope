@@ -1110,7 +1110,7 @@ video {
 }
 
 .video-container {
-  margin: 5rem;
+  margin: 5rem 5rem 1rem 5rem;
 }
 
 .video-container video {
@@ -1123,6 +1123,10 @@ video {
 }
 
 /* single video page */
+
+.scale-img {
+  margin-left: 28rem;
+}
 
 .what-see {
   font-size: 2rem;
