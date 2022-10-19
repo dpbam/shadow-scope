@@ -776,12 +776,33 @@ a.videos-page-link {
 .blog-block p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 2rem;
 }
 
+.blog-paragraph-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  padding: 1rem 0 0 1rem;
+}
+
+.blog-paragraph-title-secondary {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem 0 0 2rem;
+}
+
+.caption {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding-left: 1rem;
+}
+
 .blog-video {
-  width: 50%;
+  width: 100%;
 }
 
 .delaney-blogone {
