@@ -23,7 +23,7 @@ var selectedVideoContainer =
 if (selectedVideoContainer != null) {
   selectedVideoContainer.innerHTML = `
   <h1 name="video-name">${selectedVideo.name}</h1>
-  <iframe width="500" height="400" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
+  <iframe width="600" height="600" src="${selectedVideo.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
   `;
 }
 
@@ -86,6 +86,7 @@ var videos = [
   {
     name: 'Video001',
     event: 'event1',
+    tags: ['event1', 'featured'],
     url: 'https://www.youtube.com/embed/tx-0LNf7nLw',
   },
   {
@@ -141,6 +142,7 @@ var videos = [
   {
     name: 'Video012',
     event: 'event1',
+    tags: ['event1', 'featured'],
     url: 'https://www.youtube.com/embed/QcKVCuRgp4s',
   },
   {
@@ -1513,15 +1515,1955 @@ var videos = [
     event: 'Bennett Elementary Mr. Sweeney Apr 22, 2022',
     url: 'https://www.youtube.com/embed/-qRjdkGDFeU',
   },
+  {
+    name: '19796',
+    event: 'Irish Elementary Poudre River Investigation May 2, 2022',
+    url: 'https://www.youtube.com/embed/5NVLv_pDk2Y',
+  },
+  {
+    name: '62429',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/TH5FFeVZrbg',
+  },
+  {
+    name: '63120',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/7ZF8HjsHccc',
+  },
+  {
+    name: '63990',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/DxH9ZEWOCQc',
+  },
+  {
+    name: '64513',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/gGnaJvQZWT0',
+  },
+  {
+    name: '62087',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3jBCvtJjKLY',
+  },
+  {
+    name: '59641',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/WJaDzbE0CuU',
+  },
+  {
+    name: '61432',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/iHpgElMEeIE',
+  },
+  {
+    name: '61759',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/dpS8vjuJanw',
+  },
+  {
+    name: '58882',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nnIOraHcV-M',
+  },
+  {
+    name: '58892',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/sRWSik234zg',
+  },
+  {
+    name: '59595',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/BrHFmq9dDUM',
+  },
+  {
+    name: '57840',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/xhOwkdZxIpM',
+  },
+  {
+    name: '58275',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/v8YItH2IPrU',
+  },
+  {
+    name: '58797',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/hCHRWL6Es04',
+  },
+  {
+    name: '54953',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/iQjEi3zyFn4',
+  },
+  {
+    name: '55253',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/e0GJG2Bh4Js',
+  },
+  {
+    name: '56596',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3wmwmAk62TM',
+  },
+  {
+    name: '53633',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/KEoHtxwXUxk',
+  },
+  {
+    name: '54260',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/4dKcicDh0zs',
+  },
+  {
+    name: '54419',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ghzKUP8PgIQ',
+  },
+  {
+    name: '54872',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/UP0BTXv9sCY',
+  },
+  {
+    name: '53304',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/9dJjZ5FDloI',
+  },
+  {
+    name: '53403',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/LdVATuvWIy8',
+  },
+  {
+    name: '50397',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pq47fTbVUZ0',
+  },
+  {
+    name: '50848',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/L1sNGtAxDHw',
+  },
+  {
+    name: '52605',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/0w-j55oweAY',
+  },
+  {
+    name: '52698',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nyT9Uk5mEoE',
+  },
+  {
+    name: '49835',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Le9N6NK1g-c',
+  },
+  {
+    name: '49905',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/gpGeE5_Neeo',
+  },
+  {
+    name: '49011',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/e-h8ZKfz_EE',
+  },
+  {
+    name: '49265',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/RpZTSx4wU2A',
+  },
+  {
+    name: '49732',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3pHshIl2Fdo',
+  },
+  {
+    name: '47071',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/IQUFCIbwj48',
+  },
+  {
+    name: '47818',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/66YJvyieBUE',
+  },
+  {
+    name: '48127',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Jd_G7t0j1xQ',
+  },
+  {
+    name: '44591',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ydbdebl0G0I',
+  },
+  {
+    name: '45256',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ukVQvGXmF_4',
+  },
+  {
+    name: '45711',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/KQnMNQPcm40',
+  },
+  {
+    name: '46620',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ac1EgNMlA0k',
+  },
+  {
+    name: '47001',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/71iY9VjEtRw',
+  },
+  {
+    name: '44524',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/HuxVieMBZUI',
+  },
+  {
+    name: '43541',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/WbxL7VEY-mQ',
+  },
+  {
+    name: '44059',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/qo2AQQ5GHek',
+  },
+  {
+    name: '44088',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/K81JHWrRdkU',
+  },
+  {
+    name: '44303',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Gj7Ku7NWeTM',
+  },
+  {
+    name: '43073',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/RZgSLR6XDMU',
+  },
+  {
+    name: '43405',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/mYe086EUg7c',
+  },
+  {
+    name: '41198',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/vJflpfabOM4',
+  },
+  {
+    name: '42173',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/p7WMUkhjAR8',
+  },
+  {
+    name: '42694',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/x1BRkNzwl3k',
+  },
+  {
+    name: '40844',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GT8loKnd4y8',
+  },
+  {
+    name: '40890',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3Ra_rRQMRp4',
+  },
+  {
+    name: '41196',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/zgCC-y3Ho6Y',
+  },
+  {
+    name: '38096',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/wRTo9GEPFI0',
+  },
+  {
+    name: '38354',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/2y2yB3RZPcw',
+  },
+  {
+    name: '40076',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/e8b4uX1-GWM',
+  },
+  {
+    name: '37235',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/cJmEJ5Goq4c',
+  },
+  {
+    name: '37492',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/WQmNvsb5ajw',
+  },
+  {
+    name: '37618',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/rzciG27MBGs',
+  },
+  {
+    name: '36402',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/0dcSMtZFcQU',
+  },
+  {
+    name: '36982',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ybsvLuZULyc',
+  },
+  {
+    name: '37164',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/OHziz4jRW5U',
+  },
+  {
+    name: '33892',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/SPsPbrQARrk',
+  },
+  {
+    name: '35514',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/edcAj6jkpvI',
+  },
+  {
+    name: '36225',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/B3--QWz576Y',
+  },
+  {
+    name: '33447',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/g-JLZAKM1rQ',
+  },
+  {
+    name: '33645',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/1esCQiWJM2k',
+  },
+  {
+    name: '32791',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/sUDnhPfKLCw',
+  },
+  {
+    name: '32895',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3f5xYdqycDY',
+  },
+  {
+    name: '33155',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ZSjgUBrB5Fs',
+  },
+  {
+    name: '33155',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ZSjgUBrB5Fs',
+  },
+  {
+    name: '32916',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/u0OiYV_lG6k',
+  },
+  {
+    name: '30766',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/0wpXTvV9jJs',
+  },
+  {
+    name: '32699',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/LAHTb6SDrh4',
+  },
+  {
+    name: '32718',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/5TW0wHzDosI',
+  },
+  {
+    name: '27322',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/j0DGnfFhYZU',
+  },
+  {
+    name: '28737',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_MC02xKRG0k',
+  },
+  {
+    name: '29797',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/V9jBaDLIzKg',
+  },
+  {
+    name: '26183',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/QTigs057jb8',
+  },
+  {
+    name: '26912',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/vjREXWM67jQ',
+  },
+  {
+    name: '27139',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/LiErNtuxV84',
+  },
+  {
+    name: '22548',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3me5k7nPiHo',
+  },
+  {
+    name: '25170',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/qXtnMmxh5bM',
+  },
+  {
+    name: '25297',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/-k61LiOvEkg',
+  },
+  {
+    name: '17123',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/fXfj-cTesjY',
+  },
+  {
+    name: '18737',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/sRchaAuizfE',
+  },
+  {
+    name: '19332',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/XGMsNELbUGA',
+  },
+  {
+    name: '21875',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/7iWgkfB7ly',
+  },
+  {
+    name: '15963',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/tT7R9SF0dsI',
+  },
+  {
+    name: '16216',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/8yVigHxkOg8',
+  },
+  {
+    name: '14693',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/XOsrRqxBzxQ',
+  },
+  {
+    name: '14363',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/qlO_srfgKgI',
+  },
+  {
+    name: '14034',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/O7A0qxcsypA',
+  },
+  {
+    name: '14736',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/dAsjlGBH_Ic',
+  },
+  {
+    name: '14947',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/fl5D5P6rXr8',
+  },
+  {
+    name: '15426',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/qhrS6QxnVMc',
+  },
+  {
+    name: '11797',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/gOPZGGzX9sE',
+  },
+  {
+    name: '11797',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/gOPZGGzX9sE',
+  },
+  {
+    name: '12187',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/NQncNeDo3RA',
+  },
+  {
+    name: '12485',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/CqXCmWAIeeo',
+  },
+  {
+    name: '13803',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_fALfCFYNlI',
+  },
+  {
+    name: '10618',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pKth2T1N4h8',
+  },
+  {
+    name: '10763',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/FA78FTBj0yk',
+  },
+  {
+    name: '98131',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/KL9WIaCdUgs',
+  },
+  {
+    name: '99379',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/1joDvwnPBAo',
+  },
+  {
+    name: '99572',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/KD3cZwNDrvo',
+  },
+  {
+    name: '99596',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/kKhds1kr0GI',
+  },
+  {
+    name: '99772',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/jMiChuK8_qE',
+  },
+  {
+    name: '99802',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Hm9R7ue25DM',
+  },
+  {
+    name: '92897',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/PIFFt50xvK8',
+  },
+  {
+    name: '93044',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/m9jo93HLiHQ',
+  },
+  {
+    name: '93275',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/h5xezBE7lik',
+  },
+  {
+    name: '93293',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/UkrRpsi9GSc',
+  },
+  {
+    name: '94656',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/u5diEZcpQNE',
+  },
+  {
+    name: '95651',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nBncpdQKNCU',
+  },
+  {
+    name: '96551',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nVBd8gR4rXs',
+  },
+  {
+    name: '96619',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/KjLF4LQSdiw',
+  },
+  {
+    name: '96969',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Izr3pB5t17w',
+  },
+  {
+    name: '97565',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/-MXByx-pmsQ',
+  },
+  {
+    name: '88300',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_PEKErPKsgs',
+  },
+  {
+    name: '88471',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/MbeYDty6-Gk',
+  },
+  {
+    name: '88495',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/HdBodT_4d6M',
+  },
+  {
+    name: '89096',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/hrRKgra3Mlo',
+  },
+  {
+    name: '89173',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Lk96qcTaO4w',
+  },
+  {
+    name: '89523',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ITDVd5lz4aM',
+  },
+  {
+    name: '90638',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/e5Dr-3e8emc',
+  },
+  {
+    name: '91976',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nEDEccxrtzA',
+  },
+  {
+    name: '92226',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/9z6dWt8mnAc',
+  },
+  {
+    name: '92488',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/qECDmTsdnu0',
+  },
+  {
+    name: '82060',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/8LTrV5Rt-Ak',
+  },
+  {
+    name: '82060',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/8LTrV5Rt-Ak',
+  },
+  {
+    name: '82102',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/A2Jr8wUjXso',
+  },
+  {
+    name: '82102',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/A2Jr8wUjXso',
+  },
+  {
+    name: '83406',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_xowdCD6pPI',
+  },
+  {
+    name: '83406',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_xowdCD6pPI',
+  },
+  {
+    name: '83747',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/xTLwP0nafrs',
+  },
+  {
+    name: '83747',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/xTLwP0nafrs',
+  },
+  {
+    name: '84306',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/dS2EQadpswI',
+  },
+  {
+    name: '84306',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/dS2EQadpswI',
+  },
+  {
+    name: '87113',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/osty5KkSiV8',
+  },
+  {
+    name: '87229',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/camMdnaNjR4',
+  },
+  {
+    name: '87567',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/JBBrVzu4J5s',
+  },
+  {
+    name: '87567',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/JBBrVzu4J5s',
+  },
+  {
+    name: '87602',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ab-SNpJce2k',
+  },
+  {
+    name: '87607',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/sOkjv8MQYps',
+  },
+  {
+    name: '76218',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/lgP7kKsovjY',
+  },
+  {
+    name: '76288',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/XwJQ5Kn9TKc',
+  },
+  {
+    name: '76585',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Uw6zZmDCWdY',
+  },
+  {
+    name: '76814',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/RISJ71dLi_s',
+  },
+  {
+    name: '77030',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/H8AdirMeHQE',
+  },
+  {
+    name: '78317',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/5GNB4Y7lvuw',
+  },
+  {
+    name: '78331',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/N0tumIraRBQ',
+  },
+  {
+    name: '79958',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/N9TSQDptfrc',
+  },
+  {
+    name: '80522',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/29ChL1_59rY',
+  },
+  {
+    name: '81411',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/9bl_Ug0vGik',
+  },
+  {
+    name: '68236',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/sn-C87y_Eo8',
+  },
+  {
+    name: '68295',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_Iu4Mh1U02U',
+  },
+  {
+    name: '68786',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/EKx7QG3dL70',
+  },
+  {
+    name: '69228',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/0bRcgekV4t0',
+  },
+  {
+    name: '69804',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/j0Lx-pCU7oI',
+  },
+  {
+    name: '71232',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Wj7_n7wbrI0',
+  },
+  {
+    name: '73755',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/2qrQyIC5NGg',
+  },
+  {
+    name: '73449',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pDom1aNO_Ho',
+  },
+  {
+    name: '73938',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/kEfU0X2HCnY',
+  },
+  {
+    name: '74217',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/KBjv0htCDF4',
+  },
+  {
+    name: '63455',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/-sH9NKrTlyc',
+  },
+  {
+    name: '63710',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/rR3SDQcG_os',
+  },
+  {
+    name: '64323',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/cwzXyt6ys-k',
+  },
+  {
+    name: '65120',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nnnotCV1MHw',
+  },
+  {
+    name: '65291',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nDsvLwFw45A',
+  },
+  {
+    name: '65608',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/MdROeuo1nds',
+  },
+  {
+    name: '65952',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/NwrvNRrohls',
+  },
+  {
+    name: '66205',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/tvGdrxqGbOU',
+  },
+  {
+    name: '66894',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/6rletsX-G-k',
+  },
+  {
+    name: '67889',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/P9XRUcpXRbU',
+  },
+  {
+    name: '59272',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/14sRFFLJ94w',
+  },
+  {
+    name: '59736',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/kIpc_W2f4GM',
+  },
+  {
+    name: '60005',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/zL2MoNJrzHg',
+  },
+  {
+    name: '60497',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/H-bovcjzbQY',
+  },
+  {
+    name: '60648',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/b7UpzsuPuT0',
+  },
+  {
+    name: '61500',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/EXYb34q6YPc',
+  },
+  {
+    name: '61665',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ZKiKY-0Nczg',
+  },
+  {
+    name: '62398',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/qhmJrrlFPvE',
+  },
+  {
+    name: '62508',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/XpLPL0Bmw4M',
+  },
+  {
+    name: '63447',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/YXfu1HUbgh4',
+  },
+  {
+    name: '55181',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/taVI6_kuOYY',
+  },
+  {
+    name: '55583',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/iSS48zt8nMQ',
+  },
+  {
+    name: '55628',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ngRJ9zS0yJs',
+  },
+  {
+    name: '56585',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/cdMKIbJnx0U',
+  },
+  {
+    name: '56738',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Hel52Y74e8A',
+  },
+  {
+    name: '57177',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/LAHBN4CpPgE',
+  },
+  {
+    name: '57218',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Sa2ASiGjItA',
+  },
+  {
+    name: '58274',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/YcSVXUlyp-U',
+  },
+  {
+    name: '58378',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/bW-bfbmTdLQ',
+  },
+  {
+    name: '58634',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/PoZgAXax8DQ',
+  },
+  {
+    name: '48724',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/7x8Swuc5bQM',
+  },
+  {
+    name: '48803',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Ajrp6C_Aakg',
+  },
+  {
+    name: '49080',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GkGeJnWOtnc',
+  },
+  {
+    name: '50543',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/w65gmRq4vCo',
+  },
+  {
+    name: '50689',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/V5YJPyUjxdM',
+  },
+  {
+    name: '51423',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/SvoMtQMz5DI',
+  },
+  {
+    name: '51505',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/knIPP56L6CE',
+  },
+  {
+    name: '53418',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/e9VxQ9xU1D4',
+  },
+  {
+    name: '53954',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/kTW2AigXfHY',
+  },
+  {
+    name: '54094',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3r93LrpTz74',
+  },
+  {
+    name: '44285',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/uALpuyRfErM',
+  },
+  {
+    name: '45158',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/RhxvSSE5lLM',
+  },
+  {
+    name: '45641',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/TdUPO3QhGW0',
+  },
+  {
+    name: '46113',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/lfmOVNufaok',
+  },
+  {
+    name: '46474',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/IKlPRCEgnx0',
+  },
+  {
+    name: '46488',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/vy7Cfdt9zGA',
+  },
+  {
+    name: '47211',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/DCSuwD1JTIY',
+  },
+  {
+    name: '47225',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pjtGHpQEA3A',
+  },
+  {
+    name: '48271',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/8Sw-E0z2GGQ',
+  },
+  {
+    name: '48272',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/mxNB4aAPISo',
+  },
+  {
+    name: '39936',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/k9_pe7grinA',
+  },
+  {
+    name: '40267',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ZkPoY8LGg2o',
+  },
+  {
+    name: '40532',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/9WVnlTYodG4',
+  },
+  {
+    name: '40630',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/F_Pu2KdfWGE',
+  },
+  {
+    name: '40933',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/YFfPIQ0MrNE',
+  },
+  {
+    name: '41221',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/txbPPxvtLhU',
+  },
+  {
+    name: '42205',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nhDZeZHxFac',
+  },
+  {
+    name: '42217',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/bgPk1M8ecOM',
+  },
+  {
+    name: '42503',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/sMjSce0tOso',
+  },
+  {
+    name: '43891',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/knXsaxSYZZw',
+  },
+  {
+    name: '35745',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/db_sqCEu3fM',
+  },
+  {
+    name: '36263',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3NCXxXgVBn4',
+  },
+  {
+    name: '36949',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nLTNmfsZppY',
+  },
+  {
+    name: '37115',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/RWTEeKidJ2g',
+  },
+  {
+    name: '37257',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/B7EvpTcxRW8',
+  },
+  {
+    name: '38197',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/bChTnvwzYEA',
+  },
+  {
+    name: '38433',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ljEYaDpqnlQ',
+  },
+  {
+    name: '38694',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/C-qIZdmNfTk',
+  },
+  {
+    name: '38783',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/aoXG4VLhxOQ',
+  },
+  {
+    name: '39584',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Fq2SrlctguU',
+  },
+  {
+    name: '31950',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ZUj6h9wG6dI',
+  },
+  {
+    name: '32740',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/0o0LDCE2r-s',
+  },
+  {
+    name: '32897',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/I3PbCr7LAE4',
+  },
+  {
+    name: '33526',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3dTJLu6kbkE',
+  },
+  {
+    name: '33664',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/-ygISAQP7J4',
+  },
+  {
+    name: '33833',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/oFkPlfW974I',
+  },
+  {
+    name: '34042',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/mF9pu-RkseY',
+  },
+  {
+    name: '34620',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/UpNM364fZY4',
+  },
+  {
+    name: '34670',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/aAKfQg_2WgM',
+  },
+  {
+    name: '35056',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/oK_LRpC8rmk',
+  },
+  {
+    name: '26967',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/kZX_Xy-R8_k',
+  },
+  {
+    name: '28032',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/7QvFT-C7uMU',
+  },
+  {
+    name: '29845',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/2Rfe_cZ__aU',
+  },
+  {
+    name: '31157',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nR0LKWwjSc0',
+  },
+  {
+    name: '30322',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pelmGZiggTQ',
+  },
+  {
+    name: '31217',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/OUSZRU2KG9g',
+  },
+  {
+    name: '31607',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/K0SD_THXq1k',
+  },
+  {
+    name: '31643',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/c-8dgGONxbw',
+  },
+  {
+    name: '31752',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/-NdrUVA8HxI',
+  },
+  {
+    name: '31766',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_HOtMH7ZF5E',
+  },
+  {
+    name: '24002',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/STr8QJjnceo',
+  },
+  {
+    name: '24237',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/JS8pguCTqG8',
+  },
+  {
+    name: '24913',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/P0cvCtMgSMo',
+  },
+  {
+    name: '25072',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/1saOQCE36DI',
+  },
+  {
+    name: '25339',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/AS0wpXmlIKA',
+  },
+  {
+    name: '26227',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pb6C1QS5SlU',
+  },
+  {
+    name: '26227',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pb6C1QS5SlU',
+  },
+  {
+    name: '26425',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/fE1JDX41CZk',
+  },
+  {
+    name: '26710',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GQIyds2_Nbo',
+  },
+  {
+    name: '26710',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GQIyds2_Nbo',
+  },
+  {
+    name: '26783',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/aEG7eKo8fX4',
+  },
+  {
+    name: '26787',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/rVfmAy_4DFM',
+  },
+  {
+    name: '26787',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/rVfmAy_4DFM',
+  },
+  {
+    name: '18272',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/x5MofaFcyuU',
+  },
+  {
+    name: '19388',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/s4b1Jgk3k3Q',
+  },
+  {
+    name: '20219',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/4fu-GGEtOXA',
+  },
+  {
+    name: '20276',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/q0ik5jjOG3I',
+  },
+  {
+    name: '21197',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/8OpHvsMFTAY',
+  },
+  {
+    name: '21647',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/5-xxQ6kxQKQ',
+  },
+  {
+    name: '21785',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/rfawhbu6cQo',
+  },
+  {
+    name: '22019',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ylb4mkghGxs',
+  },
+  {
+    name: '23162',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/YSAeXVYZnLs',
+  },
+  {
+    name: '10181',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/6D2_2vtzlo0',
+  },
+  {
+    name: '10915',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/MMhOSODf_zs',
+  },
+  {
+    name: '11371',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/zE2VseibkkY',
+  },
+  {
+    name: '11755',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/h_JTAN6uSqw',
+  },
+  {
+    name: '13826',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/j-DCqh45NSk',
+  },
+  {
+    name: '14041',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/P1Pv75RoVVI',
+  },
+  {
+    name: '14706',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GMsmtDjKWRY',
+  },
+  {
+    name: '15171',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/1g1XNkzvvUs',
+  },
+  {
+    name: '16915',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/bdD_S6tnnEA',
+  },
+  {
+    name: '17047',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/QI5vYUPRhwI',
+  },
+  {
+    name: '25064',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GJGXLrvx1yY',
+  },
+  {
+    name: '22466',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Gc31mUWJAPs',
+  },
+  {
+    name: '22291',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/S1cKMU3RBoI',
+  },
+  {
+    name: '23680',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/tm75QM4RYxE',
+  },
+  {
+    name: '23662',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/g9gzbcoEClw',
+  },
+  {
+    name: '23228',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/FjtlEVmSAhc',
+  },
+  {
+    name: '19423',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/08aIxNRfv0c',
+  },
+  {
+    name: '18697',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/yVh6VdYNklc',
+  },
+  {
+    name: '21758',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/zfUxonULkh8',
+  },
+  {
+    name: '21317',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/TNtUR7r7HZ4',
+  },
+  {
+    name: '19998',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/i0q456PmA9c',
+  },
+  {
+    name: '18082',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/fCIi1a1mEX8',
+  },
+  {
+    name: '17558',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/xkqIZqsW5kE',
+  },
+  {
+    name: '18545',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/rtkB8hjJdzk',
+  },
+  {
+    name: '18495',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/6LMWadhxdQw',
+  },
+  {
+    name: '18244',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/-Ppddft8GAc',
+  },
+  {
+    name: '16593',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/6GOvM6ij_ic',
+  },
+  {
+    name: '16444',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/XLERC9x8yAc',
+  },
+  {
+    name: '16016',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/omVZsT2zay4',
+  },
+  {
+    name: '17513',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/0fYXSZTFIgE',
+  },
+  {
+    name: '16755',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/m0pGrRmBiKo',
+  },
+  {
+    name: '14409',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ELDc_Eoegy8',
+  },
+  {
+    name: '13249',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/4XyhZwsfX98',
+  },
+  {
+    name: '12880',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/h6_0yfh9bFc',
+  },
+  {
+    name: '15342',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/QRp8TtZhGCE',
+  },
+  {
+    name: '14530',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/dc7t2KRCGUk',
+  },
+  {
+    name: '11312',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/R3lyX63zm_c',
+  },
+  {
+    name: '11001',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/dKNb_XWG09c',
+  },
+  {
+    name: '12876',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/hXETYpTxH1c',
+  },
+  {
+    name: '12745',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/txva04UD_IA',
+  },
+  {
+    name: '11398',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/pYm7ga4QUwQ',
+  },
+  {
+    name: '99821',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/IbLQ-j6F_hA',
+  },
+  {
+    name: '99653',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/cGPnNAIghN0',
+  },
+  {
+    name: '99576',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/EBYunW1jAUM',
+  },
+  {
+    name: '99890',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/YTJqfALawkY',
+  },
+  {
+    name: '96758',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/-4Qm-JEElvg',
+  },
+  {
+    name: '96550',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/vYyAeHiEF-M',
+  },
+  {
+    name: '98841',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/84fCxUMrLL8',
+  },
+  {
+    name: '97685',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/WMVUswwYSyg',
+  },
+  {
+    name: '96927',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/LJ7GzKMeFy0',
+  },
+  {
+    name: '95202',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/XQg5QE8ufbM',
+  },
+  {
+    name: '94849',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/1ttHri0YYis',
+  },
+  {
+    name: '94534',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/lWkyghUPd28',
+  },
+  {
+    name: '95761',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GFhZeC_K57w',
+  },
+  {
+    name: '95603',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/KYe5KWGssZI',
+  },
+  {
+    name: '93481',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/TNpUn4C_rHE',
+  },
+  {
+    name: '92571',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/DYeKTPhvkPE',
+  },
+  {
+    name: '93855',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/IMSXAmM6xtQ',
+  },
+  {
+    name: '93698',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/LKeuwC6OLys',
+  },
+  {
+    name: '93691',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/NlDl8p2H-eE',
+  },
+  {
+    name: '88848',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/BNMw0557RuI',
+  },
+  {
+    name: '88746',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/JXWL7uF7ovo',
+  },
+  {
+    name: '91717',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/MYYUALZD0I4',
+  },
+  {
+    name: '91240',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/3SzuzqzhRS8',
+  },
+  {
+    name: '88856',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/jx-QlX4QbVY',
+  },
+  {
+    name: '87850',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/bE1BlLFG0SY',
+  },
+  {
+    name: '87707',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/SWxVmGLxInk',
+  },
+  {
+    name: '87450',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_9HW_p3vngA',
+  },
+  {
+    name: '88644',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ESfRf8KlJOQ',
+  },
+  {
+    name: '88447',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/NYNmkfSHJeo',
+  },
+  {
+    name: '85306',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/er5EjlC2yV0',
+  },
+  {
+    name: '84694',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/HCYSq-ga7sY',
+  },
+  {
+    name: '86754',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Ei5f6VUhs9k',
+  },
+  {
+    name: '86623',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/5j97y3hQNOA',
+  },
+  {
+    name: '85624',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/GX40YZBQbXg',
+  },
+  {
+    name: '83467',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/d6GsqEc8-gU',
+  },
+  {
+    name: '83127',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/nbtvk4Ak5Lo',
+  },
+  {
+    name: '81230',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ycBeWNMhVio',
+  },
+  {
+    name: '83818',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/EhiKXq8y0sI',
+  },
+  {
+    name: '83508',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/T7DBBKRsEhw',
+  },
+  {
+    name: '80004',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/jg0xjLNyK3w',
+  },
+  {
+    name: '79385',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/CHXPk6jGSko',
+  },
+  {
+    name: '80995',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/6AlkUYxm0EA',
+  },
+  {
+    name: '80910',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/wKAeqesvUrI',
+  },
+  {
+    name: '80471',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/6fJA8lydL44',
+  },
+  {
+    name: '76912',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/AIgaSH273Xw',
+  },
+  {
+    name: '76405',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/D8tX-EqUU_E',
+  },
+  {
+    name: '77986',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/2Ocy2FXGnFU',
+  },
+  {
+    name: '77449',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/DJ_qNW_SX3I',
+  },
+  {
+    name: '76966',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_mAz5yVq9uM',
+  },
+  {
+    name: '75207',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/cvTI5FsxrJs',
+  },
+  {
+    name: '75206',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/rxEFtp09T88',
+  },
+  {
+    name: '75124',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/9eHGX9EOgWA',
+  },
+  {
+    name: '74414',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/yzOYNCKGYC4',
+  },
+  {
+    name: '76322',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Sivly4SYjM0',
+  },
+  {
+    name: '72142',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/gu3PchEtHDw',
+  },
+  {
+    name: '72127',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/_RwAKf5k8U8',
+  },
+  {
+    name: '72024',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/aL44w65fwnU',
+  },
+  {
+    name: '74200',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/MCSunVhg9IY',
+  },
+  {
+    name: '73965',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/WEjBAlq9zrU',
+  },
+  {
+    name: '70098',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/J0x0-LmmHzI',
+  },
+  {
+    name: '68185',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/dPilO7aWps8',
+  },
+  {
+    name: '67689',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/z4zZdure4kI',
+  },
+  {
+    name: '70614',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ikRPu-PqhC0',
+  },
+  {
+    name: '70455',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/ardrs4Bi-og',
+  },
+  {
+    name: '65653',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/HMd1HIOTL8k',
+  },
+  {
+    name: '65507',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/9Es1xQwyfwo',
+  },
+  {
+    name: '62392',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/MXX5hE7vHHo',
+  },
+  {
+    name: '66829',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/Q0ycmSzjsNA',
+  },
+  {
+    name: '66635',
+    event: 'Campus Middle School May 23, 2022 and May 24, 2022',
+    url: 'https://www.youtube.com/embed/CAx-6r4Qpf8',
+  },
 ];
 
-for (let i = 0; i < videos.length; i++) {
-  // console.log(videos[i]);
-}
+// for (let i = 0; i < videos.length; i++) {
+//   console.log(videos[i]);
+// }
 
-videos.forEach(function (value, index, videos) {
-  // console.log(value, index, videos);
-});
+// videos.forEach(function (value, index, videos) {
+//   console.log(value, index, videos);
+// });
 
 const searchInput = document.querySelector('.input');
 const searchButton = document.getElementById('search-button');
@@ -1539,37 +3481,21 @@ function renderVideos(videosToRender) {
 
     // Loop through each video and add the html element to the videos-results div
     videosToRender.forEach((video) => {
-      videoResults.innerHTML += `
-        <div class="video-card list" id="list">
-          <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
-        </div>
-      `;
-      // videoResults.innerHTML += `
-      //   <div class="video-card list" id="list">
-      //     <h2 onClick="setSelectedVideo(event)" data-video-name="${video.name}">${video.name}</h2>
+      const newVideoCard = document.createElement('div');
+      newVideoCard.className = 'video-name-card';
+      newVideoCard.innerHTML = `<h2>${video.name}<h2>`;
+      newVideoCard.dataset.videoName = video.name;
+      newVideoCard.addEventListener('click', (event) => {
+        setSelectedVideo(event);
+      });
 
-      //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
-
-      // `;
-      // videoResults.innerHTML += `
-      //   <div class="video-card">
-      //     <h2>${video.name}</h2>
-
-      //       <source src="${video.url}" />
-      //       <iframe width="500" height="400" src="${video.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>/>
-
-      //   </div>
-      //   <p>
-      //     Click the three vertical dots, download your video, and share with your
-      //     friends! (Don't forget to tag us on <em>Twitter</em> @CSUShadowScope)
-      //   </p>
-      // `;
+      videoResults.appendChild(newVideoCard);
     });
   }
 }
 
 function setSelectedVideo(event) {
-  var videoName = event.srcElement.dataset.videoName;
+  var videoName = event?.currentTarget?.dataset?.videoName;
   if (videoName != null) {
     selectedVideo = videos.find((v) => v.name === videoName);
     if (selectedVideo != null) {
@@ -1598,10 +3524,15 @@ function setSelectedVideo(event) {
 // }
 
 function filterVideos(value) {
+  console.log('value', value);
   let filteredVideos = videos.filter(
     (v) =>
       v.name.toLocaleLowerCase().includes(value) ||
-      v.event.toLocaleLowerCase().includes(value)
+      v.event.toLocaleLowerCase().includes(value) ||
+      (Array.isArray(value) && v.tags?.length > 0
+        ? value.every((val) => v.tags.includes(val))
+        : false)
+
     // || v.teacher.toLocaleLowerCase().includes(value)
     // || v.basic.toLocaleLowerCase().includes(value)
     // || v.shape.toLocaleLowerCase().includes(value)
@@ -1655,7 +3586,7 @@ searchInput.addEventListener('keyup', (e) => {
     } else {
       // 5. return nothing
       // input is invalid -- show an error message or show no results
-      console.log('Try your search again');
+      alert('Try your search again');
     }
   }
 });
@@ -1696,7 +3627,6 @@ function setList(results) {
 // searchButton.addEventListener('click', searchFunction);
 
 // video page radio button selection submit
-
 function submitFunction() {
   let radioPlantBtn = document.getElementById('radio-plant-btn');
   let radioAnimalBtn = document.getElementById('radio-animal-btn');
@@ -1855,3 +3785,32 @@ function SubForm(video) {
 
 // DisplayList(videos, list_element, rows, current_page);
 // SetupPagination(videos, pagination_element, rows);
+const featuredDiv = document.getElementById('featured-videos');
+const event1Div = document.getElementById('event1-videos');
+const event2Div = document.getElementById('event2-videos');
+const artandscienceDiv = document.getElementById('artandscience-videos');
+const bennettDiv = document.getElementById('bennett-videos');
+const irishDiv = document.getElementById('irish-videos');
+const campusDiv = document.getElementById('campus-videos');
+
+featuredDiv.addEventListener('click', (event) => {
+  filterVideos(['featured']);
+});
+event1Div.addEventListener('click', (event) => {
+  filterVideos('event1');
+});
+event2Div.addEventListener('click', (event) => {
+  filterVideos('event2');
+});
+artandscienceDiv.addEventListener('click', (event) => {
+  filterVideos('curfman');
+});
+bennettDiv.addEventListener('click', (event) => {
+  filterVideos('bennett');
+});
+irishDiv.addEventListener('click', (event) => {
+  filterVideos('irish');
+});
+campusDiv.addEventListener('click', (event) => {
+  filterVideos('campus');
+});
