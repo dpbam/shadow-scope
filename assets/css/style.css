@@ -777,7 +777,7 @@ a.videos-page-link {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .blog-paragraph-title {
@@ -831,6 +831,11 @@ a.videos-page-link {
 
 .derek-blogone img{
   width: 100%;
+}
+
+.bullet-list {
+  padding-left: 4rem;
+  padding-right: 10rem;
 }
 
 /* videos gallery page */
