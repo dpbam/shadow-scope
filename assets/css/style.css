@@ -838,6 +838,11 @@ a.videos-page-link {
   padding-right: 10rem;
 }
 
+.blog-hyperlink {
+  text-decoration: underline;
+  color: blue;
+}
+
 /* videos gallery page */
 .pageContentWrapper {
   display: flex;
