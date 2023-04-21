@@ -647,7 +647,8 @@ a.videos-page-link {
   height: 47rem;
   max-width: 52rem;
   background-color: var(--csu-white);
-  border-radius: 3px;
+  border-radius: 9px;
+  border: 0px solid black;
   box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
@@ -662,10 +663,10 @@ a.videos-page-link {
 }
 
 .twitter-container {
-  height: 60rem;
+  height: 47rem;
   max-width: 52rem;
   background-color: var(--csu-white);
-  border-radius: 3px;
+  border-radius:11px;
   box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
 }
