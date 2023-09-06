@@ -847,6 +847,11 @@ a.videos-page-link {
 .pageContentWrapper {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+
+.title-search-sample-div {
+  display: flex;
 }
 
 .title-and-wait {

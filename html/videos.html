@@ -29,50 +29,86 @@
   <body>
     <div id="headerDIV"></div>
     <div class="pageContentWrapper">
-      <div class="title-and-search">
-        <div class="title-and-wait">
-          <h2 class="videos-title">
-            Here's where you can search for the videos that you took on the
-            Shadow Scope!
-          </h2>
-          <!-- <p class="wait-for-videos">
+      <div class="title-search-sample-div">
+        <div class="title-and-search">
+          <div class="title-and-wait">
+            <h2 class="videos-title">
+              Here's where you can search for the videos that you took on the
+              Shadow Scope!
+            </h2>
+            <!-- <p class="wait-for-videos">
             *If you're coming from <strong>the Wade River event at Lee Martinez Park on 9/2/23</strong>, your videos are available to search now using your video's unique 5-digit ID.
           </p> -->
-        </div>
-
-        <div class="search-and-options">
-          <div class="search-options">
-            <p>
-              Search using video id #, event, or teacher. Then click on a video
-              id to view video.<br /><br />Wade River Event videos are not
-              searchable yet. Click on the Wade River Event card below to go to
-              the Wade River Event playlist on YouTube!
-            </p>
-            <p></p>
           </div>
-          <div class="search-container">
-            <div class="search-bar">
-              <i class="fa fa-search searchIcon"></i>
-              <input
-                type="text"
-                id="search"
-                name="search"
-                class="input"
-                placeholder="Input Video ID # (i.e. 34058)"
-              />
-              <button type="button" id="search-button" class="searchButton">
-                Search
-              </button>
+
+          <div class="search-and-options">
+            <div class="search-options">
+              <p>
+                Search using video id #, event, or teacher. Then click on a
+                video id to view video.<br /><br />Wade River Event videos are
+                not searchable yet. Click on the Wade River Event card below to
+                go to the Wade River Event playlist on YouTube!
+              </p>
+              <p></p>
+            </div>
+            <div class="search-container">
+              <div class="search-bar">
+                <i class="fa fa-search searchIcon"></i>
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  class="input"
+                  placeholder="Input Video ID # (i.e. 34058)"
+                />
+                <button type="button" id="search-button" class="searchButton">
+                  Search
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <h3 class="videos-cards-title">
-          Click on your event to see your videos on YouTube.
-        </h3>
-        <p class="videos-cards-title">
-          Once on the playlist on YouTube, CTRL+F and search for your video's
-          5-digit code.
-        </p>
+
+        <div class="sample-and-youtube-link">
+          <div class="sample-video-container">
+            <div class="sample-video">
+              <h4>Featured video:</h4>
+              <iframe
+                src="https://www.youtube.com/embed/mwR3JC4MfaE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="youtube-link">
+            <h5>
+              Visit the CSU Shadow Scope YouTube channel <br />to peruse our
+              full video gallery!
+            </h5>
+            <a
+              href="https://www.youtube.com/channel/UC8vDwQw8BC7o_AM1sfn1Tvw/featured"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img
+                src="../assets/icons/yt_logo_rgb_light.png"
+                alt="csu shadow scope youtube channel link"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="videos-results">
+        <!-- Videos are to be injected by the script file -->
+      </div>
+      <h3 class="videos-cards-title">
+        Click on your event to see your videos on YouTube.
+      </h3>
+      <p class="videos-cards-title">
+        Once on the playlist on YouTube, CTRL+F and search for your video's
+        5-digit code.
+      </p>
+      <div class="video-card-titles-and-cards">
         <div class="videos-cards">
           <!-- <div class="featured-videos video-card" id="featured-videos">
            <h4>Featured Videos</h3>
@@ -87,16 +123,13 @@
               >
             </h4>
           </div>
-          <div
-            class="artandscience-videos video-card"
-            id="artandscience-videos"
-          >
+          <div class="campus-videos video-card" id="campus-videos">
             <h4>
               <a
-                href="https://www.youtube.com/playlist?list=PL5LtFNcAsLZjug7AYz8UJVet6V7aoxsnV"
+                href="https://www.youtube.com/playlist?list=PL5LtFNcAsLZhlc6mCqvHWf4JKHVIH70qf"
                 target="blank"
-                ><strong>Curfman Gallery Art & Science Exhibit</strong
-                ><br />March, 2022</a
+                ><strong>Campus Middle School</strong><br />5/23/2022 and
+                5/24/2022</a
               >
             </h4>
           </div>
@@ -109,16 +142,16 @@
               >
             </h4>
           </div>
-          <!-- <div class="irish-videos video-card" id="irish-videos">
-            <h4><a href="" target="blank"><strong>Irish Elementary videos</strong><br>Poudre River Investigation<br>5/2/2022</a></h4>
-          </div> -->
-          <div class="campus-videos video-card" id="campus-videos">
+          <div
+            class="artandscience-videos video-card"
+            id="artandscience-videos"
+          >
             <h4>
               <a
-                href="https://www.youtube.com/playlist?list=PL5LtFNcAsLZhlc6mCqvHWf4JKHVIH70qf"
+                href="https://www.youtube.com/playlist?list=PL5LtFNcAsLZjug7AYz8UJVet6V7aoxsnV"
                 target="blank"
-                ><strong>Campus Middle School</strong><br />5/23/2022 and
-                5/24/2022</a
+                ><strong>Curfman Gallery Art & Science Exhibit</strong
+                ><br />March, 2022</a
               >
             </h4>
           </div>
@@ -167,41 +200,13 @@
               >
             </h4>
           </div>
-          <div id="videos-results">
-            <!-- Videos are to be injected by the script file -->
-          </div>
-          <div class="pagenumbers" id="pagination"></div>
+          <!-- <div class="irish-videos video-card" id="irish-videos">
+            <h4><a href="" target="blank"><strong>Irish Elementary videos</strong><br>Poudre River Investigation<br>5/2/2022</a></h4>
+          </div> -->
         </div>
-
-        <div class="sample-and-youtube-link">
-          <div class="sample-video-container">
-            <div class="sample-video">
-              <h4>Featured video:</h4>
-              <iframe
-                src="https://www.youtube.com/embed/mwR3JC4MfaE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-          <div class="youtube-link">
-            <h5>
-              Visit the CSU Shadow Scope YouTube channel <br />to peruse our
-              full video gallery!
-            </h5>
-            <a
-              href="https://www.youtube.com/channel/UC8vDwQw8BC7o_AM1sfn1Tvw/featured"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img
-                src="../assets/icons/yt_logo_rgb_light.png"
-                alt="csu shadow scope youtube channel link"
-            /></a>
-          </div>
-        </div>
+        <!-- <div class="pagenumbers" id="pagination"></div> -->
       </div>
+      <!-- </div> -->
 
       <div class="share">
         <!-- <p>
