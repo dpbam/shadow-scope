@@ -927,18 +927,20 @@ a.videos-page-link {
 }
 
 .video-card a {
-  color: var(--eighty-gray);
+  color: var(--csu-white);
+  font-size: 1.25rem;
 }
 
 .video-card a:hover {
-  color: #fc4385;
+  /* color: #fc4385; */
+  color: var(--alfalfa);
   cursor: pointer;
 }
 
-.video-card:active {
+/* .video-card:active {
   background-color: yellow;
   box-shadow: none;
-}
+} */
 
 .video-name-card {
   border-radius: 3px;
@@ -963,9 +965,9 @@ a.videos-page-link {
   /* margin-top: 2rem; */
 }
 
-/* .search-options {
-  margin-left: 10rem;
-} */
+.search-options {
+  margin-left: 5rem;
+}
 
 .search-container {
   display: flex;
