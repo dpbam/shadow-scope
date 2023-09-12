@@ -3756,9 +3756,9 @@ var videos = [
     url: 'https://youtube.com/embed/aT8TLiU4lv8',
   },
   {
-    name: '',
+    name: '53309',
     event: 'Wade River Event Sept 2, 2023',
-    url: '',
+    url: 'https://youtube.com/shorts/jzbdjEJFaUQ',
   },
   {
     name: '',
