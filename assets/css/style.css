@@ -1187,33 +1187,32 @@ video {
   padding: 1rem;
 }
 
-.radio-shape {
+.radio-animal,
+.radio-shape,
+.radio-movement {
   display: flex;
   flex-direction: column;
 }
 
+.basic,
 .shape,
 .movement {
   display: flex;
   /* justify-content: flex-end; */
 }
 
-.radio-movement {
-  display: flex;
-  flex-direction: column;
-}
-
 .basic > input,
 .shape > input,
 .movement > input {
-  width: 20px;
+  width: 15px;
   margin-right: 1rem;
 }
 
+/* .basic > label,
 .shape > label,
 .movement > label {
   flex-basis: 1;
-}
+} */
 
 .size-container {
   display: flex;
@@ -1226,7 +1225,16 @@ video {
   border-width: thin;
   width: 5.8rem;
   height: 3rem;
+  margin-left: 1rem;
   font-size: 1.25rem;
+}
+
+.input-comments {
+  padding: 1rem;
+}
+
+.input-comments > .radio-title {
+  padding-left: 0;
 }
 
 .input-comments > textarea {
@@ -1237,7 +1245,7 @@ video {
 #submit-btn {
   max-height: 4rem;
   width: 10rem;
-  margin-top: 1.75rem;
+  margin-top: 15.2rem;
   color: var(--csu-white);
   background-color: var(--aggie-orange);
   border-radius: 4px;
@@ -1802,7 +1810,7 @@ textarea {
   padding: 30px;
   border: 0;
   width: 97%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: var(--csu-white);
   color: var(--eighty-gray);
   border-radius: 3px;
@@ -1822,7 +1830,8 @@ textarea:focus ~ span {
 
 textarea {
   width: 100%;
-  min-height: 15em;
+  min-height: 10em;
+  margin-top: 1rem;
 }
 
 .input-container {
@@ -1959,6 +1968,9 @@ div.info-and-form {
     display: none;
   } */
 
+  .search-options {
+    margin: 2rem 2rem 1rem 5rem;
+  }
   .sample-video {
     width: 25rem;
     height: 20rem;
@@ -1976,6 +1988,13 @@ div.info-and-form {
 
   .youtube-link h5 {
     font-size: 0.75rem;
+  }
+
+  #submit-btn {
+    max-height: 4rem;
+    width: 10rem;
+    /* margin: 15.25rem 1rem 0 1rem; */
+    padding: 1rem;
   }
 
   .team-container {
@@ -1996,6 +2015,23 @@ div.info-and-form {
   .twitter-feed {
     width: 95.5%;
     margin-left: 0.75rem;
+  }
+  .radio-animal {
+    padding-right: 1rem;
+  }
+  #size-input {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .comment {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .input-comments {
+    padding-bottom: 0;
+  }
+  #submit-btn {
+    margin-top: 11rem;
   }
 }
 
@@ -2064,6 +2100,23 @@ div.info-and-form {
 
   .sample-and-youtube-link {
     margin-right: 0rem;
+  }
+  .what-see {
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 5rem;
+  }
+  .radio-title {
+    font-size: 1.25rem;
+  }
+  .basic > input,
+  .shape > input,
+  .movement > input {
+    width: 15px;
+    margin-right: 0.5rem;
+  }
+  #submit-btn {
+    max-height: 3rem;
+    width: 7rem;
   }
 }
 
