@@ -2031,7 +2031,7 @@ div.info-and-form {
     padding-bottom: 0;
   }
   #submit-btn {
-    margin-top: 11rem;
+    margin-top: 11.25rem;
   }
 }
 
@@ -2114,9 +2114,13 @@ div.info-and-form {
     width: 15px;
     margin-right: 0.5rem;
   }
+  .size-container > .radio-title {
+    padding-right: 0;
+  }
   #submit-btn {
     max-height: 3rem;
     width: 7rem;
+    margin-top: 12rem;
   }
 }
 
@@ -2194,6 +2198,30 @@ div.info-and-form {
     flex-direction: row;
     align-items: center;
     margin: auto;
+  }
+  .radio-title {
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .radio-animal,
+  .radio-shape,
+  .radio-movement {
+    font-size: 0.85rem;
+  }
+  .basic > input,
+  .shape > input,
+  .movement > input {
+    width: 12px;
+  }
+  #size-input {
+    margin-left: 0.5rem;
+    width: 5rem;
+    height: 3rem;
+  }
+  #submit-btn {
+    margin-top: 11.75rem;
+    font-size: 0.75rem;
+    width: 5rem;
   }
   .part-one-img {
     padding: 1rem;
@@ -2321,6 +2349,30 @@ div.info-and-form {
   .video-card {
     width: 30rem;
   }
+  .video-container {
+    margin: 5rem 2rem 1rem 2rem;
+  }
+  .scale-img {
+    margin-left: 26rem;
+  }
+  .radio-title {
+    padding-left: 0;
+  }
+  .size-container > .radio-title {
+    padding-left: 0.5rem;
+    font-size: 1.15rem;
+  }
+  #size-input {
+    width: 3.75rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+  }
+  .input-comments > textarea {
+    font-size: 0.75rem;
+  }
+  #submit-btn {
+    margin-top: 9.5rem;
+  }
   .how-to-subtitle {
     padding-bottom: 1rem;
   }
@@ -2401,6 +2453,24 @@ div.info-and-form {
   }
   .title-and-wait {
     padding: 1rem;
+  }
+  .video-container {
+    margin: 1.25rem;
+  }
+  .video-container > iframe {
+    width: 20rem;
+  }
+  .scale-img {
+    margin-left: 24rem;
+  }
+  .what-see {
+    padding-left: 2.5rem;
+  }
+  #submit-btn {
+    height: 2.5rem;
+    width: 4rem;
+    font-size: 0.57rem;
+    padding: 0.75rem;
   }
   .at-scope-now-one img,
   .turned-on img,
