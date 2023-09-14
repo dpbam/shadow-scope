@@ -1148,7 +1148,11 @@ video {
 }
 
 .video-container {
-  margin: 5rem 5rem 1rem 5rem;
+  margin: 3rem 5rem 1rem 5rem;
+}
+
+.video-container > h1 {
+  padding: 0 0 1rem 1rem;
 }
 
 .video-container video {
@@ -1176,12 +1180,14 @@ video {
 }
 
 .scale-img {
-  margin-left: 28rem;
+  float: right;
+  margin: 0 5rem 2rem 0;
 }
 
 .what-see {
   font-size: 2rem;
   padding: 1rem 0 1rem 5rem;
+  margin: 4rem 0 1rem 2rem;
 }
 
 .radio-buttons {
@@ -1216,7 +1222,7 @@ video {
 .shape,
 .movement {
   display: flex;
-  /* justify-content: flex-end; */
+  padding: 0.25rem;
 }
 
 .basic > input,
@@ -1262,13 +1268,14 @@ textarea:valid ~ label {
 }
 
 #submit-btn {
-  max-height: 4rem;
+  height: 3rem;
   width: 10rem;
-  margin-top: 15.2rem;
+  float: right;
+  margin-right: 3rem;
+  font-size: 1.5rem;
   color: var(--csu-white);
   background-color: var(--aggie-orange);
   border-radius: 4px;
-  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
