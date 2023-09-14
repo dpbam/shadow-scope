@@ -2455,13 +2455,16 @@ div.info-and-form {
     padding: 1rem;
   }
   .video-container {
-    margin: 1.25rem;
+    /* margin: 1.25rem; */
+    margin-left: 0 auto 0 auto;
   }
   .video-container > iframe {
-    width: 20rem;
+    width: 28rem;
+    height: 28rem;
   }
   .scale-img {
     margin-left: 24rem;
+    width: 6rem;
   }
   .what-see {
     padding-left: 2.5rem;
