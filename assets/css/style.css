@@ -1162,6 +1162,19 @@ video {
 
 /* single video page */
 
+.video-and-questions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-container-container {
+  width: 30%;
+}
+
+.whatsee-and-questions {
+  width: 70%;
+}
+
 .scale-img {
   margin-left: 28rem;
 }
@@ -1182,8 +1195,13 @@ video {
   box-shadow: 2px 4px 4px lightgray;
 }
 
+.radios {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .radio-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 1rem;
 }
 
@@ -1204,15 +1222,16 @@ video {
 .basic > input,
 .shape > input,
 .movement > input {
-  width: 15px;
+  width: 20px;
   margin-right: 1rem;
 }
 
-/* .basic > label,
-.shape > label,
-.movement > label {
-  flex-basis: 1;
-} */
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 2rem;
+}
 
 .size-container {
   display: flex;
