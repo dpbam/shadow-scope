@@ -1925,12 +1925,9 @@ div.info-and-form {
 }
 
 @media (min-width: 1900px) {
-  .video-container-container > iframe {
-    width: 300px;
-  }
-
-  .whatsee-and-questions {
-    width: 70%;
+  .video-container > iframe {
+    width: 500px;
+    height: 500px;
   }
   .radio-title {
     font-size: 1.5rem;
@@ -1961,6 +1958,10 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 3rem;
   }
+  .video-container > iframe {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 @media (max-width: 1536px) {
@@ -1970,6 +1971,18 @@ div.info-and-form {
   .preview-card {
     margin: 0 2rem 2rem 2rem;
     height: 22rem;
+  }
+  .video-container {
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  .video-container > iframe {
+    width: 800px;
+    height: 800px;
+  }
+  .whatsee-and-questions {
+    width: 100%;
   }
 }
 
@@ -1991,24 +2004,19 @@ div.info-and-form {
     width: 80%;
     height: 20rem;
   }
-
   .build-one img {
     width: 100%;
     height: auto;
   }
-
   .video-loop-preview {
     height: 18rem;
   }
-
   .preview-card-title-and-paragraph h3 {
     font-size: 3rem;
   }
-
   .preview-card-title-and-paragraph p {
     font-size: 1.25rem;
   }
-
   .news-and-twitter {
     display: flex;
     flex-direction: row;
@@ -2030,15 +2038,12 @@ div.info-and-form {
     display: flex;
     /* flex-direction: column-reverse; */
   }
-
   .videos-title {
     font-size: 1.5rem;
   }
-
   /* .sample-video-container {
     display: none;
   } */
-
   .search-options {
     margin: 2rem 2rem 1rem 5rem;
   }
@@ -2046,28 +2051,24 @@ div.info-and-form {
     width: 25rem;
     height: 20rem;
   }
-
   .sample-video iframe {
     margin: 1rem;
     width: 20rem;
     height: 15rem;
   }
-
   .youtube-link {
     margin-left: 5rem;
   }
-
   .youtube-link h5 {
     font-size: 0.75rem;
   }
-
   #submit-btn {
     max-height: 4rem;
-    width: 10rem;
-    /* margin: 15.25rem 1rem 0 1rem; */
+    width: 8rem;
+    margin-top: 1rem;
     padding: 1rem;
+    font-size: 1.15rem;
   }
-
   .team-container {
     margin: 3rem 5rem;
   }
@@ -2087,12 +2088,14 @@ div.info-and-form {
     width: 95.5%;
     margin-left: 0.75rem;
   }
-  .radio-animal {
-    padding-right: 1rem;
+  .basic,
+  .shape,
+  .movement {
+    font-size: 1.25rem;
   }
   #size-input {
     margin-left: 1rem;
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
   .comment {
     font-size: 1rem;
@@ -2102,7 +2105,7 @@ div.info-and-form {
     padding-bottom: 0;
   }
   #submit-btn {
-    margin-top: 11.25rem;
+    /* margin-top: 11.25rem; */
   }
 }
 
@@ -2119,6 +2122,14 @@ div.info-and-form {
   .twitter-feed {
     width: 96.85%;
     margin-left: 0.5rem;
+  }
+  .video-container {
+    margin: 3rem 0 1rem 6rem;
+  }
+  .radio-buttons {
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -2164,11 +2175,9 @@ div.info-and-form {
   .team-container {
     margin: 3rem 2rem;
   }
-
   .sample-video-container {
     display: none;
   }
-
   .sample-and-youtube-link {
     margin-right: 0rem;
   }
@@ -2191,7 +2200,7 @@ div.info-and-form {
   #submit-btn {
     max-height: 3rem;
     width: 7rem;
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
   }
 }
 
@@ -2290,7 +2299,7 @@ div.info-and-form {
     height: 3rem;
   }
   #submit-btn {
-    margin-top: 11.75rem;
+    /* margin-top: 11.75rem; */
     font-size: 0.75rem;
     width: 5rem;
   }
@@ -2442,7 +2451,7 @@ div.info-and-form {
     font-size: 0.75rem;
   }
   #submit-btn {
-    margin-top: 9.5rem;
+    /* margin-top: 9.5rem; */
   }
   .how-to-subtitle {
     padding-bottom: 1rem;
