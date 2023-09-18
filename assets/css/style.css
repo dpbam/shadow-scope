@@ -1163,22 +1163,22 @@ video {
 }
 
 .video-container {
-  width: 40%;
+  /* width: 40%; */
   margin: 3rem 5rem 1rem 5rem;
-}
-
-.video-container > iframe {
-  width: 600px;
-  height: 600px;
 }
 
 .video-container > h1 {
   padding: 0 0 1rem 1rem;
 }
 
-.video-container video {
-  width: 60rem;
+.video-container > iframe {
+  width: 40rem;
+  height: 40rem;
 }
+
+/* .video-container video {
+  width: 60rem;
+} */
 
 .whatsee-and-questions {
   width: 60%;
@@ -1925,9 +1925,35 @@ div.info-and-form {
 }
 
 @media (min-width: 1900px) {
-  .video-container > iframe {
+  /* .video-container > iframe {
     width: 500px;
     height: 500px;
+  } */
+}
+
+@media (min-width: 1536px) {
+  .preview-card {
+    margin: 0 2rem 1rem 2rem;
+  }
+  .preview-card-title-and-paragraph h3 {
+    font-size: 3rem;
+  }
+  .preview-card-title-and-paragraph p {
+    font-size: 1.5rem;
+  }
+  .coming-soon-preview p {
+    font-size: 3rem;
+  }
+  /* .video-container > iframe {
+    width: 400px;
+    height: 400px;
+  } */
+}
+
+@media (max-width: 2000px) {
+  .video-container > iframe {
+    width: 30rem;
+    height: 30rem;
   }
   .radio-title {
     font-size: 1.5rem;
@@ -1945,23 +1971,7 @@ div.info-and-form {
   }
 }
 
-@media (min-width: 1536px) {
-  .preview-card {
-    margin: 0 2rem 1rem 2rem;
-  }
-  .preview-card-title-and-paragraph h3 {
-    font-size: 3rem;
-  }
-  .preview-card-title-and-paragraph p {
-    font-size: 1.5rem;
-  }
-  .coming-soon-preview p {
-    font-size: 3rem;
-  }
-  .video-container > iframe {
-    width: 400px;
-    height: 400px;
-  }
+@media (max-width: 1900px) {
 }
 
 @media (max-width: 1536px) {
