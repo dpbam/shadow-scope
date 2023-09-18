@@ -1162,6 +1162,11 @@ video {
 
 /* single video page */
 
+.video-container > iframe {
+  width: 600px;
+  height: 600px;
+}
+
 .scale-img {
   margin-left: 28rem;
 }
@@ -1203,17 +1208,23 @@ video {
   flex-direction: column;
 }
 
+.basic,
+.shape,
+.movement {
+  font-size: 1.25rem;
+}
+
 .basic > input,
 .shape > input,
 .movement > input {
-  width: 20px;
+  width: 15px;
   margin-right: 1rem;
 }
 
-.shape > label,
+/* .shape > label,
 .movement > label {
   flex-basis: 1;
-}
+} */
 
 .size-container {
   display: flex;
@@ -1822,7 +1833,8 @@ textarea:focus ~ span {
 
 textarea {
   width: 100%;
-  min-height: 15em;
+  min-height: 20rem;
+  min-width: 30rem;
 }
 
 .input-container {
