@@ -2124,13 +2124,11 @@ div.info-and-form {
     font-size: 1.25rem;
   }
   .news-container,
-  .twitter-container {
-    width: 23rem;
-  }
+  .twitter-container,
   .news-feed,
   .twitter-feed {
-    width: 96.3%;
-    margin-left: 0.5rem;
+    width: 42rem;
+    margin: 1rem auto 1rem auto;
   }
   .video-card {
     width: 40rem;
@@ -2254,25 +2252,27 @@ div.info-and-form {
     font-size: 1rem;
   }
   .preview-card p {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
   .news-and-twitter {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+  /* .news-feed,
+  .twitter-feed {
+    width: ;
+    margin: 0;
+  } */
+  .news-container,
+  .twitter-container,
   .news-feed,
   .twitter-feed {
-    width: 100%;
-    margin: 0;
-  }
-  .news-container,
-  .twitter-container {
-    width: 100%;
-    margin: 1rem 0 1rem 0;
+    width: 42rem;
+    margin: 1rem auto 1rem auto;
   }
   .news-container {
-    height: 30rem;
+    height: 50rem;
   }
   .youtube-link {
     margin-left: 10rem;
