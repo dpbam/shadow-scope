@@ -1932,9 +1932,9 @@ div.info-and-form {
 }
 
 @media (min-width: 1536px) {
-  .preview-card {
+  /* .preview-card {
     margin: 0 2rem 1rem 2rem;
-  }
+  } */
   .preview-card-title-and-paragraph h3 {
     font-size: 3rem;
   }
@@ -1988,8 +1988,8 @@ div.info-and-form {
     margin-right: auto; */
   }
   .video-container > iframe {
-    width: 800px;
-    height: 800px;
+    width: 25rem;
+    height: 25rem;
   }
   .whatsee-and-questions {
     width: 100%;
