@@ -2083,16 +2083,6 @@ div.info-and-form {
   header {
     padding: 1.5rem;
   }
-  .news-and-twitter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .news,
-  .twitter {
-    width: 100%;
-    margin: 0;
-  }
   #logo {
     font-size: 3.25rem;
   }
@@ -2123,12 +2113,53 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 1.25rem;
   }
+  /* .news-and-twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 0;
+  } */
+  /* .news-feed, */
+  /* .twitter-feed {
+    width: 93%;
+    margin-left: 0;
+  } */
+  /* .news,
+  .twitter {
+    width: 90%;
+    margin: auto;
+  } */
+
+  /* .news-feed,
+  .twitter-feed {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news-container,
+  .twitter-container {
+    width: 100%;
+    margin: 1rem auto 1rem auto;
+  } */
+  .news-and-twitter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
     width: 42rem;
     margin: 1rem auto 1rem auto;
+  }
+  .news-container {
+    height: 15rem;
+  }
+  .news-container img {
+    display: none;
   }
   .video-card {
     width: 40rem;
@@ -2259,21 +2290,16 @@ div.info-and-form {
     flex-direction: column;
     width: 100%;
   }
-  /* .news-feed,
-  .twitter-feed {
-    width: ;
-    margin: 0;
-  } */
   .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
-    width: 42rem;
+    width: 40rem;
     margin: 1rem auto 1rem auto;
   }
-  .news-container {
+  /* .news-container {
     height: 50rem;
-  }
+  } */
   .youtube-link {
     margin-left: 10rem;
   }
@@ -2325,8 +2351,11 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 0.8rem;
   }
-  .news-container {
-    height: 32rem;
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 31rem;
   }
   .happen-container {
     display: flex;
@@ -2464,13 +2493,16 @@ div.info-and-form {
     margin-right: auto;
   }
   .news-container,
-  .twitter-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 25rem;
   }
-  .news-container {
-    height: 35rem;
+  /* .news-container {
+    height: 40rem;
+  } */
+  .news-container img {
+    width: 20rem;
   }
   .video-card {
     width: 25rem;
@@ -2563,13 +2595,12 @@ div.info-and-form {
   #banner .scope-now-button {
     font-size: 1.5rem;
   }
-  /* .preview-card {
-    height: 22rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 25rem;
+  }
   .img-video {
     width: 75%;
     height: 60%;
@@ -2591,7 +2622,6 @@ div.info-and-form {
     width: 100%;
     font-size: 1rem;
   }
-
   .how-to-subtitle {
     padding: 0;
   }
@@ -2660,6 +2690,45 @@ div.info-and-form {
   }
 }
 
+@media (max-width: 400px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 23rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 21rem;
+  }
+}
+
+@media (max-width: 337px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 305px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 17rem;
+  }
+  .twitter-timeline {
+    width: 17rem;
+  }
+}
+
 @media (max-width: 281px) {
   header {
     padding: 1rem;
@@ -2702,10 +2771,10 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 0.75rem;
   }
-  .news-and-twitter {
+  /* .news-and-twitter {
     margin: 0;
     width: 100%;
-  }
+  } */
   /* .youtube-link {
     margin-left: 1.5rem;
   } */
