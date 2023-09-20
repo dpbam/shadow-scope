@@ -348,6 +348,7 @@ a.videos-page-link {
   flex-wrap: wrap;
   padding: 2rem;
   width: 40%;
+  height: fit-content;
 }
 
 #banner .at-scope-now {
@@ -721,6 +722,13 @@ a.videos-page-link {
 
 .blog-block-news-feed h4 a:hover {
   color: #fc4385;
+}
+
+.blog-block-news-feed img {
+  width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .twitter-feed {
@@ -1895,6 +1903,13 @@ div.info-and-form {
   }
 }
 
+@media (max-width: 1600px) {
+  .main-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1536px) {
   .coming-soon-preview p {
     font-size: 2rem;
@@ -1903,9 +1918,22 @@ div.info-and-form {
     margin: 0 2rem 2rem 2rem;
     height: 22rem;
   }
+  .preview-cards {
+    width: 70%;
+  }
+  /* .blog-block-news-feed img {
+    margin-left: 1rem;
+  } */
+  .news-and-twitter {
+    margin: 2rem 2rem 2rem 0;
+    width: 25%;
+  }
 }
 
 @media (max-width: 1280px) {
+  #banner p {
+    font-size: 1.25rem;
+  }
   .main-container {
     display: flex;
     flex-direction: column;
@@ -1999,6 +2027,9 @@ div.info-and-form {
   #logo {
     font-size: 4.5rem;
   }
+  #banner .scope-now-button {
+    font-size: 1.5rem;
+  }
   .news-container,
   .twitter-container {
     width: 33rem;
@@ -2014,6 +2045,9 @@ div.info-and-form {
 @media (max-width: 1110px) {
   #logo {
     font-size: 4.25rem;
+  }
+  .banner-title h4 {
+    font-size: 2.5rem;
   }
   .news-container,
   .twitter-container {
@@ -2044,6 +2078,19 @@ div.info-and-form {
   .img-video {
     width: 45%;
   }
+  .banner-title h4 {
+    font-size: 2rem;
+  }
+  #banner.box {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  #banner p {
+    font-size: 1rem;
+  }
+  #banner .scope-now-button {
+    font-size: 1.1rem;
+  }
   .preview-card-title-and-paragraph {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     width: 55%;
@@ -2069,11 +2116,9 @@ div.info-and-form {
   .team-container {
     margin: 3rem 2rem;
   }
-
   .sample-video-container {
     display: none;
   }
-
   .sample-and-youtube-link {
     margin-right: 0rem;
   }
@@ -2083,21 +2128,15 @@ div.info-and-form {
   header {
     padding: 1.5rem;
   }
-  .news-and-twitter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .news,
-  .twitter {
-    width: 100%;
-    margin: 0;
-  }
   #logo {
     font-size: 3.25rem;
   }
   #logo img {
     margin-right: 1rem;
+  }
+  #banner .scope-now-button {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
   .preview-card {
     margin: 0rem 2rem 1rem 2rem;
@@ -2123,14 +2162,53 @@ div.info-and-form {
   .coming-soon-preview p {
     font-size: 1.25rem;
   }
+  /* .news-and-twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 0;
+  } */
+  /* .news-feed, */
+  /* .twitter-feed {
+    width: 93%;
+    margin-left: 0;
+  } */
+  /* .news,
+  .twitter {
+    width: 90%;
+    margin: auto;
+  } */
+
+  /* .news-feed,
+  .twitter-feed {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .news-container,
   .twitter-container {
-    width: 23rem;
+    width: 100%;
+    margin: 1rem auto 1rem auto;
+  } */
+  .news-and-twitter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
+  .news-container,
+  .twitter-container,
   .news-feed,
   .twitter-feed {
-    width: 96.3%;
-    margin-left: 0.5rem;
+    width: 42rem;
+    margin: 1rem auto 1rem auto;
+  }
+  .news-container {
+    height: 15rem;
+  }
+  .news-container img {
+    display: none;
   }
   .video-card {
     width: 40rem;
@@ -2214,13 +2292,16 @@ div.info-and-form {
     width: 100%;
   }
   .banner-title-and-paragraph {
-    width: 100%;
+    width: 95%;
     padding-bottom: 1rem;
   }
   #banner .scope-and-at-scope-button {
     width: 100%;
     padding-bottom: 2rem;
     padding-left: 0;
+  }
+  #banner .scope-now-button {
+    font-size: 2rem;
   }
   .preview-cards {
     margin-top: 3rem;
@@ -2254,26 +2335,23 @@ div.info-and-form {
     font-size: 1rem;
   }
   .preview-card p {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
   .news-and-twitter {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+  .news-container,
+  .twitter-container,
   .news-feed,
   .twitter-feed {
-    width: 100%;
-    margin: 0;
+    width: 40rem;
+    margin: 1rem auto 1rem auto;
   }
-  .news-container,
-  .twitter-container {
-    width: 100%;
-    margin: 1rem 0 1rem 0;
-  }
-  .news-container {
-    height: 30rem;
-  }
+  /* .news-container {
+    height: 50rem;
+  } */
   .youtube-link {
     margin-left: 10rem;
   }
@@ -2325,8 +2403,11 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 0.8rem;
   }
-  .news-container {
-    height: 32rem;
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 31rem;
   }
   .happen-container {
     display: flex;
@@ -2427,7 +2508,7 @@ div.info-and-form {
     margin-top: 3rem;
   }
   .banner-title h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .preview-card {
     height: 36rem;
@@ -2464,13 +2545,16 @@ div.info-and-form {
     margin-right: auto;
   }
   .news-container,
-  .twitter-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 25rem;
   }
-  .news-container {
-    height: 35rem;
+  /* .news-container {
+    height: 40rem;
+  } */
+  .news-container img {
+    width: 20rem;
   }
   .video-card {
     width: 25rem;
@@ -2558,18 +2642,17 @@ div.info-and-form {
     margin-left: 6rem;
   }
   #banner h4 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
   #banner .scope-now-button {
     font-size: 1.5rem;
   }
-  /* .preview-card {
-    height: 22rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 25rem;
+  }
   .img-video {
     width: 75%;
     height: 60%;
@@ -2591,7 +2674,6 @@ div.info-and-form {
     width: 100%;
     font-size: 1rem;
   }
-
   .how-to-subtitle {
     padding: 0;
   }
@@ -2660,6 +2742,45 @@ div.info-and-form {
   }
 }
 
+@media (max-width: 400px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 23rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 21rem;
+  }
+}
+
+@media (max-width: 337px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 305px) {
+  .news-container,
+  .twitter-container,
+  .news-feed,
+  .twitter-feed {
+    width: 17rem;
+  }
+  .twitter-timeline {
+    width: 17rem;
+  }
+}
+
 @media (max-width: 281px) {
   header {
     padding: 1rem;
@@ -2702,10 +2823,10 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 0.75rem;
   }
-  .news-and-twitter {
+  /* .news-and-twitter {
     margin: 0;
     width: 100%;
-  }
+  } */
   /* .youtube-link {
     margin-left: 1.5rem;
   } */
