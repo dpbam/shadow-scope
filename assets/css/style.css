@@ -1952,8 +1952,19 @@ div.info-and-form {
 
 @media (max-width: 2000px) {
   .video-container > iframe {
-    width: 30rem;
-    height: 30rem;
+    width: 40rem;
+    height: 40rem;
+  }
+  .radio-buttons {
+    margin-right: 0.5rem;
+    max-width: 100%;
+  }
+  .what-see {
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+  .whatsee-and-questions {
+    width: 50%;
   }
   .radio-title {
     font-size: 1.5rem;
@@ -1972,11 +1983,30 @@ div.info-and-form {
 }
 
 @media (max-width: 1600px) {
+  .video-container-container {
+    width: 40%;
+  }
+  .video-container iframe {
+    width: 30rem;
+    height: 30rem;
+  }
+  .scale-img {
+    width: 10rem;
+    margin-right: 7rem;
+  }
   .video-container {
-    width: 100%;
+    margin-right: 1rem;
+    margin-left: 2rem;
+  }
+  .what-see {
+    padding-left: 1rem;
   }
   .whatsee-and-questions {
-    width: 100%;
+    width: 60%;
+  }
+  .radios,
+  .size-and-comments {
+    width: 50%;
   }
 }
 
@@ -1988,17 +2018,16 @@ div.info-and-form {
     margin: 0 2rem 2rem 2rem;
     height: 22rem;
   }
-  .video-container {
-    width: 100%;
-    /* margin-left: auto;
-    margin-right: auto; */
-  }
-  .video-container > iframe {
+}
+
+@media (max-width: 1400px) {
+  .video-container iframe {
     width: 25rem;
     height: 25rem;
   }
-  .whatsee-and-questions {
-    width: 100%;
+  .scale-img {
+    width: 9rem;
+    margin-right: 8rem;
   }
 }
 
@@ -2140,12 +2169,28 @@ div.info-and-form {
     margin-left: 0.5rem;
   }
   .video-container {
-    margin: 3rem 0 1rem 6rem;
+    margin: 4rem 0 1rem 1rem;
+  }
+  .video-container iframe {
+    width: 22rem;
+    height: 22rem;
+  }
+  .scale-img {
+    margin-right: 4rem;
+    width: 8rem;
   }
   .radio-buttons {
     max-width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .radio-title {
+    font-size: 1.25rem;
+  }
+  .basic,
+  .shape,
+  .movement {
+    font-size: 1rem;
   }
 }
 
@@ -2198,11 +2243,19 @@ div.info-and-form {
     margin-right: 0rem;
   }
   .what-see {
-    font-size: 1.5rem;
-    padding: 1rem 0 1rem 5rem;
+    font-size: 2rem;
+    padding: 1rem 0 1rem 2rem;
+  }
+  .radio-buttons {
+    margin-right: 0.5rem;
   }
   .radio-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+  }
+  .basic,
+  .shape,
+  .movement {
+    font-size: 0.85rem;
   }
   .basic > input,
   .shape > input,
@@ -2217,6 +2270,25 @@ div.info-and-form {
     max-height: 3rem;
     width: 7rem;
     /* margin-top: 12rem; */
+  }
+}
+
+@media (max-width: 975px) {
+  .video-container iframe {
+    width: 20rem;
+    height: 20rem;
+  }
+  .scale-img {
+    margin-right: 2rem;
+  }
+  .radio-title {
+    padding-left: 0.5rem;
+  }
+  .basic > input,
+  .shape > input,
+  .movement > input {
+    width: 12px;
+    margin-right: 0.3rem;
   }
 }
 
