@@ -1971,7 +1971,13 @@ div.info-and-form {
   }
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1600px) {
+  .video-container {
+    width: 100%;
+  }
+  .whatsee-and-questions {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1536px) {
