@@ -348,6 +348,7 @@ a.videos-page-link {
   flex-wrap: wrap;
   padding: 2rem;
   width: 40%;
+  height: fit-content;
 }
 
 #banner .at-scope-now {
@@ -725,6 +726,13 @@ a.videos-page-link {
 
 .blog-block-news-feed h4 a:hover {
   color: #fc4385;
+}
+
+.blog-block-news-feed img {
+  width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .twitter-feed {
@@ -1884,24 +1892,23 @@ div.info-and-form {
 
 /* media queries */
 
-/* @media (min-width: 1536px) {
-  .preview-card {
-    margin: 0 2rem 1rem 2rem;
-  }
-  .preview-card-title-and-paragraph h3 {
-    font-size: 3rem;
-  }
-  .preview-card-title-and-paragraph p {
-    font-size: 1.5rem;
-  }
-  .coming-soon-preview p {
-    font-size: 3rem;
-  }
-} */
-
 @media (max-width: 1730px) {
   .banner-title {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .main-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1600px) {
+  .main-container {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1920,18 +1927,22 @@ div.info-and-form {
     margin: 0 2rem 2rem 2rem;
     height: 22rem;
   }
-  .news-container img {
-    width: 20rem;
-  }
   .preview-cards {
     width: 70%;
   }
+  /* .blog-block-news-feed img {
+    margin-left: 1rem;
+  } */
   .news-and-twitter {
-    width: 30%;
+    margin: 2rem 2rem 2rem 0;
+    width: 25%;
   }
 }
 
 @media (max-width: 1280px) {
+  #banner p {
+    font-size: 1.25rem;
+  }
   .main-container {
     display: flex;
     flex-direction: column;
@@ -2025,6 +2036,9 @@ div.info-and-form {
   #logo {
     font-size: 4.5rem;
   }
+  #banner .scope-now-button {
+    font-size: 1.5rem;
+  }
   .news-container,
   .twitter-container {
     width: 33rem;
@@ -2040,6 +2054,9 @@ div.info-and-form {
 @media (max-width: 1110px) {
   #logo {
     font-size: 4.25rem;
+  }
+  .banner-title h4 {
+    font-size: 2.5rem;
   }
   .news-container,
   .twitter-container {
@@ -2070,6 +2087,19 @@ div.info-and-form {
   .img-video {
     width: 45%;
   }
+  .banner-title h4 {
+    font-size: 2rem;
+  }
+  #banner.box {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  #banner p {
+    font-size: 1rem;
+  }
+  #banner .scope-now-button {
+    font-size: 1.1rem;
+  }
   .preview-card-title-and-paragraph {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     width: 55%;
@@ -2095,11 +2125,9 @@ div.info-and-form {
   .team-container {
     margin: 3rem 2rem;
   }
-
   .sample-video-container {
     display: none;
   }
-
   .sample-and-youtube-link {
     margin-right: 0rem;
   }
@@ -2114,6 +2142,10 @@ div.info-and-form {
   }
   #logo img {
     margin-right: 1rem;
+  }
+  #banner .scope-now-button {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
   .preview-card {
     margin: 0rem 2rem 1rem 2rem;
@@ -2269,13 +2301,16 @@ div.info-and-form {
     width: 100%;
   }
   .banner-title-and-paragraph {
-    width: 100%;
+    width: 95%;
     padding-bottom: 1rem;
   }
   #banner .scope-and-at-scope-button {
     width: 100%;
     padding-bottom: 2rem;
     padding-left: 0;
+  }
+  #banner .scope-now-button {
+    font-size: 2rem;
   }
   .preview-cards {
     margin-top: 3rem;
@@ -2482,7 +2517,7 @@ div.info-and-form {
     margin-top: 3rem;
   }
   .banner-title h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .preview-card {
     height: 36rem;
@@ -2616,7 +2651,7 @@ div.info-and-form {
     margin-left: 6rem;
   }
   #banner h4 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
   #banner .scope-now-button {
     font-size: 1.5rem;
