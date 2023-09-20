@@ -1931,8 +1931,8 @@ div.info-and-form {
 }
 
 @media (max-width: 1280px) {
-  .about-scope p {
-    font-size: 5rem;
+  #banner p {
+    font-size: 1.25rem;
   }
   .main-container {
     display: flex;
@@ -2078,6 +2078,16 @@ div.info-and-form {
   .img-video {
     width: 45%;
   }
+  .banner-title h4 {
+    font-size: 2rem;
+  }
+  #banner.box {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  #banner p {
+    font-size: 1rem;
+  }
   #banner .scope-now-button {
     font-size: 1.1rem;
   }
@@ -2106,11 +2116,9 @@ div.info-and-form {
   .team-container {
     margin: 3rem 2rem;
   }
-
   .sample-video-container {
     display: none;
   }
-
   .sample-and-youtube-link {
     margin-right: 0rem;
   }
@@ -2284,7 +2292,7 @@ div.info-and-form {
     width: 100%;
   }
   .banner-title-and-paragraph {
-    width: 100%;
+    width: 95%;
     padding-bottom: 1rem;
   }
   #banner .scope-and-at-scope-button {
@@ -2500,7 +2508,7 @@ div.info-and-form {
     margin-top: 3rem;
   }
   .banner-title h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .preview-card {
     height: 36rem;
@@ -2634,7 +2642,7 @@ div.info-and-form {
     margin-left: 6rem;
   }
   #banner h4 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
   #banner .scope-now-button {
     font-size: 1.5rem;
