@@ -2107,6 +2107,9 @@ div.info-and-form {
   .youtube-link h5 {
     font-size: 0.75rem;
   }
+  .scale-img {
+    margin-right: 5rem;
+  }
   #submit-btn {
     max-height: 4rem;
     width: 8rem;
@@ -2244,7 +2247,7 @@ div.info-and-form {
   }
   .what-see {
     font-size: 2rem;
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem 0 1rem 1rem;
   }
   .radio-buttons {
     margin-right: 0.5rem;
@@ -2547,7 +2550,7 @@ div.info-and-form {
     width: 100%;
   }
   .video-container {
-    margin: 5rem 2rem 1rem 0.5rem;
+    margin: 5rem 1rem 1rem 0.5rem;
   }
   .video-container iframe {
     width: 38rem;
@@ -2685,7 +2688,10 @@ div.info-and-form {
   }
   .what-see {
     margin-top: 0;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
+  }
+  .whatsee-and-questions {
+    width: 100%;
   }
   #submit-btn {
     height: 2.5rem;
@@ -2863,14 +2869,19 @@ div.info-and-form {
     width: 26rem;
     height: 26rem;
   }
+  .whatsee-and-questions {
+    margin: 0;
+  }
   .what-see {
     margin-left: 0;
     margin-bottom: 0;
-    padding-left: 0.75rem;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
   }
   .radio-buttons {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
   }
   .radios {
     width: 100%;
