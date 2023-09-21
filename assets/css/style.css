@@ -723,7 +723,7 @@ a.videos-page-link {
 }
 
 .twitter-container {
-  height: 120rem;
+  height: 60rem;
   max-width: 52rem;
   background-color: var(--csu-white);
   border-radius: 11px;
@@ -1176,7 +1176,7 @@ video {
 
 .video-container {
   /* width: 40%; */
-  margin: 3rem 5rem 1rem 5rem;
+  margin: 3rem 3rem 1rem 15rem;
 }
 
 .video-container > h1 {
@@ -1184,13 +1184,14 @@ video {
 }
 
 .video-container > iframe {
-  width: 40rem;
-  height: 40rem;
+  width: 50rem;
+  height: 50rem;
 }
 
-/* .video-container video {
-  width: 60rem;
-} */
+.scale-img {
+  width: 12rem;
+  margin-bottom: 20rem;
+}
 
 .whatsee-and-questions {
   width: 60%;
@@ -1240,6 +1241,7 @@ video {
 .shape,
 .movement {
   display: flex;
+  font-size: 1.25rem;
   /* justify-content: flex-end; */
 }
 
@@ -1966,6 +1968,26 @@ div.info-and-form {
   }
 } */
 
+@media (max-width: 2720px) {
+  .video-container iframe {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 2320px) {
+  .video-container {
+    margin-left: 10rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 2120px) {
+  .video-container {
+    margin-left: 5rem;
+  }
+}
+
 @media (max-width: 2000px) {
   .video-container > iframe {
     width: 40rem;
@@ -1995,6 +2017,20 @@ div.info-and-form {
   .movement > input {
     width: 15px;
     margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 1800px) {
+  .video-container {
+    margin-right: 3rem;
+  }
+  .video-container iframe {
+    width: 35rem;
+    height: 35rem;
+  }
+  .comment {
+    min-width: 15rem;
+    min-height: 15rem;
   }
 }
 
@@ -2040,6 +2076,26 @@ div.info-and-form {
   .preview-card {
     margin: 0 2rem 2rem 2rem;
     height: 22rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .video-container iframe {
+    width: 28rem;
+    height: 28rem;
+  }
+  .scale-img {
+    width: 8rem;
+    margin-right: 5rem;
+  }
+  .radio-buttons {
+    min-height: 33rem;
+  }
+  .input-comments {
+    height: 5rem;
+  }
+  #submit-btn {
+    margin-top: 15rem;
   }
 }
 
@@ -2125,10 +2181,18 @@ div.info-and-form {
   .scale-img {
     margin-right: 5rem;
   }
+  .radio-buttons {
+    width: 95%;
+  }
+  .basic,
+  .shape,
+  .movement {
+    font-size: 1.15rem;
+  }
   #submit-btn {
     max-height: 4rem;
     width: 8rem;
-    margin-top: 1rem;
+    /* margin-top: 15rem; */
     padding: 1rem;
     font-size: 1.15rem;
   }
@@ -2154,10 +2218,8 @@ div.info-and-form {
     width: 95.5%;
     margin-left: 0.75rem;
   }
-  .basic,
-  .shape,
-  .movement {
-    font-size: 1.25rem;
+  .radio-buttons {
+    width: 90%;
   }
   #size-input {
     margin-left: 1rem;
