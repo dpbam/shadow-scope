@@ -2367,8 +2367,19 @@ div.info-and-form {
     align-items: center;
     margin: auto;
   }
+  .video-container iframe {
+    width: 18rem;
+    height: 18rem;
+  }
+  .scale-img {
+    width: 7rem;
+    height: 1.5rem;
+  }
+  .radio-buttons {
+    margin-left: 1rem;
+  }
   .radio-title {
-    padding-left: 0.5rem;
+    padding-left: 0.25rem;
     font-size: 1.1rem;
   }
   .radio-animal,
@@ -2381,14 +2392,28 @@ div.info-and-form {
   .movement > input {
     width: 12px;
   }
+  .size-container > label {
+    padding-left: 1rem;
+  }
   #size-input {
-    margin-left: 0.5rem;
-    width: 5rem;
-    height: 3rem;
-    font-size: 1rem;
+    margin-left: 1rem;
+    width: 4rem;
+    height: 2.5rem;
+    font-size: 0.85rem;
+  }
+  .input-comments {
+    padding-right: 0;
+  }
+  .input-comments > textarea {
+    margin-top: 0.5rem;
+    height: 5rem;
+    font-size: 0.85rem;
+  }
+  .comment {
+    padding: 0.5rem;
   }
   #submit-btn {
-    /* margin-top: 11.75rem; */
+    margin: 0.5rem 1rem;
     font-size: 0.75rem;
     width: 5rem;
   }
@@ -2518,14 +2543,32 @@ div.info-and-form {
   .video-card {
     width: 30rem;
   }
+  .video-container-container {
+    width: 100%;
+  }
   .video-container {
-    margin: 5rem 2rem 1rem 2rem;
+    margin: 5rem 2rem 1rem 0.5rem;
+  }
+  .video-container iframe {
+    width: 38rem;
+    height: 38rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .scale-img {
-    margin-left: 26rem;
+    margin-right: 7rem;
+    width: 10rem;
+    height: 2rem;
   }
   .radio-title {
     padding-left: 0;
+  }
+  .whatsee-and-questions {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .size-container > .radio-title {
     padding-left: 0.5rem;
@@ -2623,19 +2666,25 @@ div.info-and-form {
   .title-and-wait {
     padding: 1rem;
   }
+  .video-container h1 {
+    padding-top: 1rem;
+  }
   .video-container {
-    /* margin: 1.25rem; */
-    margin-left: 0 auto 0 auto;
+    margin: 0 auto 1rem auto;
   }
   .video-container > iframe {
-    width: 28rem;
-    height: 28rem;
+    width: 32rem;
+    height: 32rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .scale-img {
-    margin-left: 24rem;
-    width: 6rem;
+    margin-right: 4rem;
+    width: 8rem;
   }
   .what-see {
+    margin-top: 0;
     padding-left: 2.5rem;
   }
   #submit-btn {
@@ -2806,6 +2855,29 @@ div.info-and-form {
     width: 20rem;
     height: 15rem;
   }
+  .video-container h1 {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+  }
+  .video-container iframe {
+    width: 26rem;
+    height: 26rem;
+  }
+  .what-see {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0.75rem;
+  }
+  .radio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .radios {
+    width: 100%;
+  }
+  .size-and-comments {
+    width: 100%;
+  }
   .name-and-bio {
     padding-left: 0;
     padding-right: 0;
@@ -2874,7 +2946,24 @@ div.info-and-form {
     width: 100%;
     font-size: 1rem;
   }
-
+  .video-container iframe {
+    width: 23rem;
+    height: 23rem;
+  }
+  .scale-img {
+    width: 6rem;
+    height: 1.5rem;
+  }
+  .whatsee-and-questions {
+    width: 100%;
+    margin: 0;
+  }
+  .what-see {
+    font-size: 1.5rem;
+  }
+  .radio-buttons {
+    margin: 0;
+  }
   .how-to-subtitle {
     padding: 0;
   }
@@ -2887,7 +2976,6 @@ div.info-and-form {
   .reminder-p a:hover {
     color: #fc4385;
   }
-
   .at-scope-now-one img,
   .turned-on img,
   .choose-slide img,
@@ -2940,6 +3028,27 @@ div.info-and-form {
   }
   .videos-cards-title {
     font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 372px) {
+  .video-container h1 {
+    padding-left: 0.5rem;
+  }
+  .video-container iframe {
+    width: 20rem;
+    height: 20rem;
+  }
+  .scale-img {
+    width: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 324px) {
+  .video-container iframe {
+    width: 17rem;
+    height: 17rem;
   }
 }
 
