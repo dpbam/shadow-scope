@@ -24,222 +24,273 @@
   </head>
   <body>
     <div id="headerDIV"></div>
-    <div class="video-container-container">
-      <div class="video-container">
-        <!-- injected from script.js -->
-      </div>
-      <img
-        class="scale-img"
-        src="../assets/images/measurement-scale.jpg"
-        alt="measurement scale"
-      />
-    </div>
-    <h2 class="what-see">What do you see?</h2>
-    <form class="radio-buttons" id="myForm" method="POST">
-      <div class="radio-animal">
-        <h3 class="radio-title">Basic</h3>
-        <div class="basic">
-          <input id="radio-plant-btn" type="radio" name="basic" value="plant" />
-          <label for="plant">plant</label><br />
+    <div class="video-and-questions">
+      <div class="video-container-container">
+        <div class="video-container">
+          <!-- injected from script.js -->
         </div>
-        <div class="basic">
-          <input
-            id="radio-animal-btn"
-            type="radio"
-            name="basic"
-            value="animal"
-          />
-          <label for="animal">animal</label><br />
-        </div>
-        <div class="basic">
-          <input
-            id="radio-protist-btn"
-            type="radio"
-            name="basic"
-            value="protist"
-          />
-          <label for="protist">protist</label><br />
-        </div>
-        <div class="basic">
-          <input
-            id="radio-unknown-btn"
-            type="radio"
-            name="basic"
-            value="unknown"
-          />
-          <label for="unknown">unknown</label><br />
-        </div>
-      </div>
-      <div class="radio-shape">
-        <h3 class="radio-title">Shape</h3>
-        <div class="shape">
-          <input id="radio-worm-btn" type="radio" name="shape" value="worm" />
-          <label for="worm">worm</label><br />
-        </div>
-        <div class="shape">
-          <input id="radio-round-btn" type="radio" name="shape" value="round" />
-          <label for="round">round</label><br />
-        </div>
-        <div class="shape">
-          <input id="radio-donut-btn" type="radio" name="shape" value="donut" />
-          <label for="donut">donut</label><br />
-        </div>
-        <div class="shape">
-          <input id="radio-thin-btn" type="radio" name="shape" value="thin" />
-          <label for="thin">thin</label><br />
-        </div>
-        <div class="shape">
-          <input id="radio-long-btn" type="radio" name="shape" value="long" />
-          <label for="long">long</label><br />
-        </div>
-        <div class="shape">
-          <input
-            id="radio-beetle-btn"
-            type="radio"
-            name="shape"
-            value="beetle"
-          />
-          <label for="beetle">beetle</label><br />
-        </div>
-        <div class="shape">
-          <input id="radio-blob-btn" type="radio" name="shape" value="blob" />
-          <label for="blob">blob</label><br />
-        </div>
-        <div class="shape">
-          <input id="radio-stick-btn" type="radio" name="shape" value="stick" />
-          <label for="stick">stick</label><br />
-        </div>
-        <div class="shape">
-          <input id="radio-leggy-btn" type="radio" name="shape" value="leggy" />
-          <label for="leggy">leggy</label><br />
-        </div>
-      </div>
-      <div class="radio-movement">
-        <h4 class="radio-title">Motion</h4>
-        <div class="movement">
-          <input
-            id="radio-fast-btn"
-            type="radio"
-            name="movement"
-            value="fast"
-          /><br />
-          <label for="fast">fast</label><br />
-        </div>
-        <div class="movement">
-          <input
-            id="radio-erratic-btn"
-            type="radio"
-            name="movement"
-            value="erratic"
-          />
-          <label for="erratic">erratic</label><br />
-        </div>
-        <div class="movement">
-          <input
-            id="radio-straight-btn"
-            type="radio"
-            name="movement"
-            value="straight"
-          />
-          <label for="straight">straight</label><br />
-        </div>
-        <div class="movement">
-          <input
-            id="radio-spinning-btn"
-            type="radio"
-            name="movement"
-            value="spinning"
-          />
-          <label for="spinning">spinning</label><br />
-        </div>
-        <div class="movement">
-          <input
-            id="radio-circular-btn"
-            type="radio"
-            name="movement"
-            value="circular"
-          />
-          <label for="circular">circular</label><br />
-        </div>
-      </div>
-      <!-- <div class="input-size">
-        <label class="radio-title" for="length">Estimated Size (mm)</label
-        ><br />
-        <input
-          id="size-input"
-          class="size"
-          type="text"
-          name="size"
-          placeholder=""
-          required
+        <img
+          class="scale-img"
+          src="../assets/images/measurement-scale.jpg"
+          alt="measurement scale"
         />
-      </div> -->
-    <div class="size-container">
-        <label for="length" class="radio-title">Estimated Size:</label>
-        <select name="size" id="size-input" class="size" required>
-          <option value="1mm">0.1mm</option>
-          <option value="2mm">0.2mm</option>
-          <option value="3mm">0.3mm</option>
-          <option value="4mm">0.4mm</option>
-          <option value="5mm">0.5mm</option>
-          <option value="6mm">0.6mm</option>
-          <option value="7mm">0.7mm</option>
-          <option value="8mm">0.8mm</option>
-          <option value="9mm">0.9mm</option>
-          <option value="10mm">1.0mm</option>
-          <option value="11mm">1.1mm</option>
-          <option value="12mm">1.2mm</option>
-          <option value="13mm">1.3mm</option>
-          <option value="14mm">1.4mm</option>
-          <option value="15mm">1.5mm</option>
-          <option value="16mm">1.6mm</option>
-          <option value="17mm">1.7mm</option>
-          <option value="18mm">1.8mm</option>
-          <option value="19mm">1.9mm</option>
-          <option value="20mm">2.0mm</option>
-          <option value="21mm">2.1mm</option>
-          <option value="22mm">2.2mm</option>
-          <option value="23mm">2.3mm</option>
-          <option value="24mm">2.4mm</option>
-          <option value="25mm">2.5mm</option>
-          <option value="26mm">2.6mm</option>
-          <option value="27mm">2.7mm</option>
-          <option value="28mm">2.8mm</option>
-          <option value="29mm">2.9mm</option>
-          <option value="30mm">3.0mm</option>
-          <option value="31mm">3.1mm</option>
-          <option value="32mm">3.2mm</option>
-          <option value="33mm">3.3mm</option>
-          <option value="34mm">3.4mm</option>
-          <option value="35mm">3.5mm</option>
-          <option value="36mm">3.6mm</option>
-          <option value="37mm">3.7mm</option>
-          <option value="38mm">3.8mm</option>
-          <option value="39mm">3.9mm</option>
-          <option value="40mm">4.0mm</option>
-        </select>
       </div>
-    <div class="input-comments">
-        <label class="radio-title" for="comment">Comment:</label><br />
-        <textarea
-          id="comment-input"
-          class="comment"
-          type="text"
-          name="comment"
-          placeholder="Enter any additional comments"
-          rows="4"
-          cols="20"
-        ></textarea>
+      <div class="whatsee-and-questions">
+        <h2 class="what-see">What do you see?</h2>
+        <form class="radio-buttons" id="myForm" method="POST">
+          <div class="radios">
+            <div class="radio-animal">
+              <h3 class="radio-title">Basic</h3>
+              <div class="basic">
+                <input
+                  id="radio-plant-btn"
+                  type="radio"
+                  name="basic"
+                  value="plant"
+                />
+                <label for="plant">plant</label><br />
+              </div>
+              <div class="basic">
+                <input
+                  id="radio-animal-btn"
+                  type="radio"
+                  name="basic"
+                  value="animal"
+                />
+                <label for="animal">animal</label><br />
+              </div>
+              <div class="basic">
+                <input
+                  id="radio-protist-btn"
+                  type="radio"
+                  name="basic"
+                  value="protist"
+                />
+                <label for="protist">protist</label><br />
+              </div>
+              <div class="basic">
+                <input
+                  id="radio-unknown-btn"
+                  type="radio"
+                  name="basic"
+                  value="unknown"
+                />
+                <label for="unknown">unknown</label><br />
+              </div>
+            </div>
+            <div class="radio-shape">
+              <h3 class="radio-title">Shape</h3>
+              <div class="shape">
+                <input
+                  id="radio-worm-btn"
+                  type="radio"
+                  name="shape"
+                  value="worm"
+                />
+                <label for="worm">worm</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-round-btn"
+                  type="radio"
+                  name="shape"
+                  value="round"
+                />
+                <label for="round">round</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-donut-btn"
+                  type="radio"
+                  name="shape"
+                  value="donut"
+                />
+                <label for="donut">donut</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-thin-btn"
+                  type="radio"
+                  name="shape"
+                  value="thin"
+                />
+                <label for="thin">thin</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-long-btn"
+                  type="radio"
+                  name="shape"
+                  value="long"
+                />
+                <label for="long">long</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-beetle-btn"
+                  type="radio"
+                  name="shape"
+                  value="beetle"
+                />
+                <label for="beetle">beetle</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-blob-btn"
+                  type="radio"
+                  name="shape"
+                  value="blob"
+                />
+                <label for="blob">blob</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-stick-btn"
+                  type="radio"
+                  name="shape"
+                  value="stick"
+                />
+                <label for="stick">stick</label><br />
+              </div>
+              <div class="shape">
+                <input
+                  id="radio-leggy-btn"
+                  type="radio"
+                  name="shape"
+                  value="leggy"
+                />
+                <label for="leggy">leggy</label><br />
+              </div>
+            </div>
+            <div class="radio-movement">
+              <h4 class="radio-title">Motion</h4>
+              <div class="movement">
+                <input
+                  id="radio-fast-btn"
+                  type="radio"
+                  name="movement"
+                  value="fast"
+                /><br />
+                <label for="fast">fast</label><br />
+              </div>
+              <div class="movement">
+                <input
+                  id="radio-erratic-btn"
+                  type="radio"
+                  name="movement"
+                  value="erratic"
+                />
+                <label for="erratic">erratic</label><br />
+              </div>
+              <div class="movement">
+                <input
+                  id="radio-straight-btn"
+                  type="radio"
+                  name="movement"
+                  value="straight"
+                />
+                <label for="straight">straight</label><br />
+              </div>
+              <div class="movement">
+                <input
+                  id="radio-spinning-btn"
+                  type="radio"
+                  name="movement"
+                  value="spinning"
+                />
+                <label for="spinning">spinning</label><br />
+              </div>
+              <div class="movement">
+                <input
+                  id="radio-circular-btn"
+                  type="radio"
+                  name="movement"
+                  value="circular"
+                />
+                <label for="circular">circular</label><br />
+              </div>
+            </div>
+            <!-- <div class="input-size">
+              <label class="radio-title" for="length">Estimated Size (mm)</label
+              ><br />
+              <input
+                id="size-input"
+                class="size"
+                type="text"
+                name="size"
+                placeholder=""
+                required
+              />
+            </div> -->
+          </div>
+          <div class="size-and-comments">
+            <div class="size-container">
+              <label for="length" class="radio-title">Estimated Size:</label>
+              <select name="size" id="size-input" class="size" required>
+                <option value="1mm">0.1mm</option>
+                <option value="2mm">0.2mm</option>
+                <option value="3mm">0.3mm</option>
+                <option value="4mm">0.4mm</option>
+                <option value="5mm">0.5mm</option>
+                <option value="6mm">0.6mm</option>
+                <option value="7mm">0.7mm</option>
+                <option value="8mm">0.8mm</option>
+                <option value="9mm">0.9mm</option>
+                <option value="10mm">1.0mm</option>
+                <option value="11mm">1.1mm</option>
+                <option value="12mm">1.2mm</option>
+                <option value="13mm">1.3mm</option>
+                <option value="14mm">1.4mm</option>
+                <option value="15mm">1.5mm</option>
+                <option value="16mm">1.6mm</option>
+                <option value="17mm">1.7mm</option>
+                <option value="18mm">1.8mm</option>
+                <option value="19mm">1.9mm</option>
+                <option value="20mm">2.0mm</option>
+                <option value="21mm">2.1mm</option>
+                <option value="22mm">2.2mm</option>
+                <option value="23mm">2.3mm</option>
+                <option value="24mm">2.4mm</option>
+                <option value="25mm">2.5mm</option>
+                <option value="26mm">2.6mm</option>
+                <option value="27mm">2.7mm</option>
+                <option value="28mm">2.8mm</option>
+                <option value="29mm">2.9mm</option>
+                <option value="30mm">3.0mm</option>
+                <option value="31mm">3.1mm</option>
+                <option value="32mm">3.2mm</option>
+                <option value="33mm">3.3mm</option>
+                <option value="34mm">3.4mm</option>
+                <option value="35mm">3.5mm</option>
+                <option value="36mm">3.6mm</option>
+                <option value="37mm">3.7mm</option>
+                <option value="38mm">3.8mm</option>
+                <option value="39mm">3.9mm</option>
+                <option value="40mm">4.0mm</option>
+              </select>
+            </div>
+            <div class="input-comments">
+              <label class="radio-title" for="comment">Comments:</label><br />
+              <textarea
+                id="comment-input"
+                class="comment"
+                type="text"
+                name="comment"
+                placeholder="Enter any additional comments"
+                rows="8"
+                cols="20"
+              ></textarea>
+            </div>
+            <form>
+              <button id="submit-btn" type="button" onclick="SubForm()">
+                SUBMIT
+              </button>
+            </form>
+          </div>
+        </form>
       </div>
-    <form>
-        <button id="submit-btn" type="button" onclick="SubForm()">
-          SUBMIT
-        </button>
-      </form>
-    <!-- </form>  -->
-
+    </div>
     <div id="footerDIV"></div>
-
     <script type="text/javascript" src="../assets/js/script.js"></script>
   </body>
 </html>
