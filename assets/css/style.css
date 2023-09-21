@@ -661,19 +661,6 @@ a.videos-page-link {
   font-weight: 200;
 }
 
-.twitter-container {
-  height: 47rem;
-  max-width: 52rem;
-  background-color: var(--csu-white);
-  border-radius: 11px;
-  box-shadow: 2px 4px 4px lightgray;
-  margin-bottom: 5rem;
-}
-
-/* .twitter-timeline {
-  data-height: '2300px';
-} */
-
 .news-container p {
   text-align: center;
   margin-top: 1rem;
@@ -735,6 +722,15 @@ a.videos-page-link {
   margin-right: auto;
 }
 
+.twitter-container {
+  height: 120rem;
+  max-width: 52rem;
+  background-color: var(--csu-white);
+  border-radius: 11px;
+  box-shadow: 2px 4px 4px lightgray;
+  margin-bottom: 5rem;
+}
+
 .twitter-feed {
   background-color: var(--canyon);
 }
@@ -752,6 +748,10 @@ a.videos-page-link {
   color: var(--eighty-gray);
   font-weight: 300;
   line-height: 2.25em;
+}
+
+.twitter-widget-0 {
+  height: 119rem;
 }
 
 .blog-title {
