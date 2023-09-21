@@ -1953,23 +1953,18 @@ div.info-and-form {
   } */
 }
 
-@media (max-width: 1600px) {
+/* @media (max-width: 1600px) {
   .main-container {
     margin-left: 0;
     margin-right: 0;
   }
-}
+} */
 
-@media (max-width: 1600px) {
-  .main-container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  /* .video-container > iframe {
+/* .video-container > iframe {
     width: 400px;
     height: 400px;
-  } */
-}
+  }
+} */
 
 @media (max-width: 2000px) {
   .video-container > iframe {
