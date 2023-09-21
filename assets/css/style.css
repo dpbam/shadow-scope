@@ -723,7 +723,7 @@ a.videos-page-link {
 }
 
 .twitter-container {
-  height: 47rem;
+  height: 120rem;
   max-width: 52rem;
   background-color: var(--csu-white);
   border-radius: 11px;
@@ -750,9 +750,9 @@ a.videos-page-link {
   line-height: 2.25em;
 }
 
-.twitter-widget-0 {
+/* .twitter-widget-0 {
   height: 49rem;
-}
+} */
 
 .blog-title {
   text-align: center;
