@@ -723,7 +723,7 @@ a.videos-page-link {
 }
 
 .twitter-container {
-  height: 120rem;
+  height: 47rem;
   max-width: 52rem;
   background-color: var(--csu-white);
   border-radius: 11px;
@@ -750,8 +750,12 @@ a.videos-page-link {
   line-height: 2.25em;
 }
 
+/* .twitter-timeline {
+  height: 50%;
+} */
+
 /* .twitter-widget-0 {
-  height: 49rem;
+  height: 50%;
 } */
 
 .blog-title {
@@ -1176,7 +1180,7 @@ video {
 
 .video-container {
   /* width: 40%; */
-  margin: 3rem 5rem 1rem 5rem;
+  margin: 3rem 3rem 1rem 15rem;
 }
 
 .video-container > h1 {
@@ -1184,13 +1188,14 @@ video {
 }
 
 .video-container > iframe {
-  width: 40rem;
-  height: 40rem;
+  width: 50rem;
+  height: 50rem;
 }
 
-/* .video-container video {
-  width: 60rem;
-} */
+.scale-img {
+  width: 12rem;
+  margin-bottom: 20rem;
+}
 
 .whatsee-and-questions {
   width: 60%;
@@ -1240,6 +1245,7 @@ video {
 .shape,
 .movement {
   display: flex;
+  font-size: 1.25rem;
   /* justify-content: flex-end; */
 }
 
@@ -1966,6 +1972,26 @@ div.info-and-form {
   }
 } */
 
+@media (max-width: 2720px) {
+  .video-container iframe {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 2320px) {
+  .video-container {
+    margin-left: 10rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 2120px) {
+  .video-container {
+    margin-left: 5rem;
+  }
+}
+
 @media (max-width: 2000px) {
   .video-container > iframe {
     width: 40rem;
@@ -1995,6 +2021,20 @@ div.info-and-form {
   .movement > input {
     width: 15px;
     margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 1800px) {
+  .video-container {
+    margin-right: 3rem;
+  }
+  .video-container iframe {
+    width: 35rem;
+    height: 35rem;
+  }
+  .comment {
+    min-width: 15rem;
+    min-height: 15rem;
   }
 }
 
@@ -2040,6 +2080,26 @@ div.info-and-form {
   .preview-card {
     margin: 0 2rem 2rem 2rem;
     height: 22rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .video-container iframe {
+    width: 28rem;
+    height: 28rem;
+  }
+  .scale-img {
+    width: 8rem;
+    margin-right: 5rem;
+  }
+  .radio-buttons {
+    min-height: 33rem;
+  }
+  .input-comments {
+    height: 5rem;
+  }
+  #submit-btn {
+    margin-top: 15rem;
   }
 }
 
@@ -2123,12 +2183,19 @@ div.info-and-form {
     font-size: 0.75rem;
   }
   .scale-img {
-    margin-right: 5rem;
+    margin-right: 3rem;
+  }
+  .radio-buttons {
+    width: 95%;
+  }
+  .basic,
+  .shape,
+  .movement {
+    font-size: 1.15rem;
   }
   #submit-btn {
     max-height: 4rem;
     width: 8rem;
-    margin-top: 1rem;
     padding: 1rem;
     font-size: 1.15rem;
   }
@@ -2154,10 +2221,11 @@ div.info-and-form {
     width: 95.5%;
     margin-left: 0.75rem;
   }
-  .basic,
-  .shape,
-  .movement {
-    font-size: 1.25rem;
+  .scale-img {
+    margin-right: 1rem;
+  }
+  .radio-buttons {
+    width: 90%;
   }
   #size-input {
     margin-left: 1rem;
@@ -2169,9 +2237,6 @@ div.info-and-form {
   }
   .input-comments {
     padding-bottom: 0;
-  }
-  #submit-btn {
-    /* margin-top: 11.25rem; */
   }
 }
 
@@ -2207,6 +2272,7 @@ div.info-and-form {
     max-width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
+    min-height: 26rem;
   }
   .radio-title {
     font-size: 1.25rem;
@@ -2215,6 +2281,13 @@ div.info-and-form {
   .shape,
   .movement {
     font-size: 1rem;
+  }
+  .comment {
+    min-height: 10rem;
+  }
+  #submit-btn {
+    margin-top: 10rem;
+    margin-right: 1rem;
   }
 }
 
@@ -2288,6 +2361,7 @@ div.info-and-form {
   }
   .radio-title {
     font-size: 1.15rem;
+    padding-left: 0.2rem;
   }
   .basic,
   .shape,
@@ -2297,20 +2371,24 @@ div.info-and-form {
   .basic > input,
   .shape > input,
   .movement > input {
-    width: 15px;
-    margin-right: 0.5rem;
+    width: 12px;
+    margin-right: 0.3rem;
   }
   .size-container > .radio-title {
     padding-right: 0;
+    padding-left: 1rem;
   }
   #submit-btn {
     max-height: 3rem;
     width: 7rem;
-    /* margin-top: 12rem; */
+    margin-right: 1rem;
   }
 }
 
 @media (max-width: 975px) {
+  .video-container {
+    margin-right: 1rem;
+  }
   .video-container iframe {
     width: 20rem;
     height: 20rem;
@@ -2318,14 +2396,14 @@ div.info-and-form {
   .scale-img {
     margin-right: 2rem;
   }
+  .radio-buttons {
+    margin-right: 1rem;
+  }
   .radio-title {
     padding-left: 0.5rem;
   }
-  .basic > input,
-  .shape > input,
-  .movement > input {
-    width: 12px;
-    margin-right: 0.3rem;
+  #comment-input {
+    min-width: 10rem;
   }
 }
 
@@ -2386,29 +2464,32 @@ div.info-and-form {
     margin: auto;
   } */
 
-  /* .news-feed,
+  .news-feed,
   .twitter-feed {
-    width: 100%;
+    width: 93%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
   }
   .news-container,
   .twitter-container {
-    width: 100%;
+    width: 93%;
+    display: block;
     margin: 1rem auto 1rem auto;
-  } */
+  }
   .news-and-twitter {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .news-container,
+  /* .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
     width: 42rem;
     margin: 1rem auto 1rem auto;
-  }
+  } */
   .news-container {
     height: 15rem;
   }
@@ -2457,6 +2538,9 @@ div.info-and-form {
   .radio-movement {
     font-size: 0.85rem;
   }
+  .radio-animal {
+    padding-right: 0.5rem;
+  }
   .basic > input,
   .shape > input,
   .movement > input {
@@ -2483,7 +2567,7 @@ div.info-and-form {
     padding: 0.5rem;
   }
   #submit-btn {
-    margin: 0.5rem 1rem;
+    /* margin-top: 10rem; */
     font-size: 0.75rem;
     width: 5rem;
   }
@@ -2597,16 +2681,14 @@ div.info-and-form {
     flex-direction: column;
     width: 100%;
   }
-  .news-container,
-  .twitter-container,
   .news-feed,
   .twitter-feed {
-    width: 40rem;
-    margin: 1rem auto 1rem auto;
+    width: 100%;
   }
-  /* .news-container {
-    height: 50rem;
-  } */
+  .news-container,
+  .twitter-container {
+    width: 100%;
+  }
   .youtube-link {
     margin-left: 10rem;
   }
@@ -2634,8 +2716,11 @@ div.info-and-form {
   .radio-title {
     padding-left: 0;
   }
+  .radio-buttons {
+    width: 95%;
+  }
   .whatsee-and-questions {
-    width: 90%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2697,12 +2782,12 @@ div.info-and-form {
   .preview-card-title-and-paragraph p {
     font-size: 0.8rem;
   }
-  .news-container,
+  /* .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
     width: 31rem;
-  }
+  } */
   .happen-container {
     display: flex;
     flex-direction: column-reverse;
@@ -2868,12 +2953,12 @@ div.info-and-form {
     margin-left: auto;
     margin-right: auto;
   }
-  .news-container,
+  /* .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
     width: 25rem;
-  }
+  } */
   /* .news-container {
     height: 40rem;
   } */
@@ -2902,9 +2987,9 @@ div.info-and-form {
     width: 25rem;
     height: auto;
   }
-  .blog-block a {
+  /* .blog-block a {
     font-size: 2rem;
-  }
+  } */
   .part-title-and-summary {
     width: 88%;
     margin-left: 1.5rem;
@@ -2951,13 +3036,18 @@ div.info-and-form {
   .radio-buttons {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    width: 100%;
+    height: 40rem;
+    margin: 0 0 1rem 0;
   }
   .radios {
     width: 100%;
   }
   .size-and-comments {
     width: 100%;
+  }
+  .worms-hyperlink {
+    font-size: 1rem;
   }
   .name-and-bio {
     padding-left: 0;
@@ -2999,12 +3089,12 @@ div.info-and-form {
   #banner .scope-now-button {
     font-size: 1.5rem;
   }
-  .news-container,
+  /* .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
     width: 25rem;
-  }
+  } */
   .img-video {
     width: 75%;
     height: 60%;
@@ -3112,41 +3202,32 @@ div.info-and-form {
 }
 
 @media (max-width: 400px) {
-  .news-container,
-  .twitter-container,
-  .news-feed,
-  .twitter-feed {
-    width: 23rem;
+  .worms-hyperlink {
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 370px) {
-  .news-container,
+  /* .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
     width: 21rem;
-  }
+  } */
 }
 
 @media (max-width: 337px) {
-  .news-container,
+  /* .news-container,
   .twitter-container,
   .news-feed,
   .twitter-feed {
     width: 19rem;
-  }
+  } */
 }
 
 @media (max-width: 305px) {
-  .news-container,
-  .twitter-container,
-  .news-feed,
-  .twitter-feed {
-    width: 17rem;
-  }
-  .twitter-timeline {
-    width: 17rem;
+  .worms-hyperlink {
+    font-size: 0.5rem;
   }
 }
 
