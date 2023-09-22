@@ -2987,9 +2987,9 @@ div.info-and-form {
     width: 25rem;
     height: auto;
   }
-  .blog-block a {
+  /* .blog-block a {
     font-size: 2rem;
-  }
+  } */
   .part-title-and-summary {
     width: 88%;
     margin-left: 1.5rem;
@@ -3045,6 +3045,9 @@ div.info-and-form {
   }
   .size-and-comments {
     width: 100%;
+  }
+  .worms-hyperlink {
+    font-size: 1rem;
   }
   .name-and-bio {
     padding-left: 0;
@@ -3199,12 +3202,9 @@ div.info-and-form {
 }
 
 @media (max-width: 400px) {
-  /* .news-container,
-  .twitter-container,
-  .news-feed,
-  .twitter-feed {
-    width: 23rem;
-  } */
+  .worms-hyperlink {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 370px) {
@@ -3226,12 +3226,9 @@ div.info-and-form {
 }
 
 @media (max-width: 305px) {
-  /* .news-container,
-  .twitter-container,
-  .news-feed,
-  .twitter-feed {
-    width: 17rem;
-  } */
+  .worms-hyperlink {
+    font-size: 0.5rem;
+  }
 }
 
 @media (max-width: 372px) {
