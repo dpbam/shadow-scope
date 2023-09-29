@@ -990,6 +990,12 @@ a.videos-page-link {
   margin-left: 5rem;
 }
 
+.search-options p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
 .search-container {
   display: flex;
   max-width: 35rem;
