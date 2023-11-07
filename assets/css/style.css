@@ -2085,7 +2085,7 @@ div.info-and-form {
   }
   .preview-card {
     margin: 0 2rem 2rem 2rem;
-    height: 22rem;
+    /* height: 22rem; */
   }
 }
 
