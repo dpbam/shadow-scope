@@ -729,6 +729,7 @@ a.videos-page-link {
   border-radius: 11px;
   box-shadow: 2px 4px 4px lightgray;
   margin-bottom: 5rem;
+  /* position: relative; */
 }
 
 .twitter-feed {
@@ -751,11 +752,19 @@ a.videos-page-link {
 }
 
 /* .twitter-timeline {
-  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 } */
 
 /* .twitter-widget-0 {
-  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 } */
 
 .blog-title {
