@@ -27,6 +27,26 @@ if (selectedVideoContainer != null) {
   `;
 }
 
+function loadTwitterWidget() {
+  const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+  const defaultHeight = 46 * rootFontSize; // 46 comes from the css class .twitter-container height.
+
+  // Get the height of the twitter-container
+  const twitterContainerElement = document.getElementsByClassName('twitter-container')[0];
+  const containerHeight = twitterContainerElement?.offsetHeight ?? defaultHeight;
+
+  const aElement = document.createElement('a');
+  aElement.className = 'twitter-timeline';
+  aElement.href = "https://twitter.com/CSUShadowScope?ref_src=twsrc%5Etfw";
+  aElement.setAttribute('data-width', "800");
+  aElement.setAttribute('data-height', containerHeight);
+  aElement.innerText = "Tweets by CSUShadowScope";
+  
+  twitterContainerElement.appendChild(aElement);
+}
+
+loadTwitterWidget();
+
 // Slideshow
 
 // Automatic slideshow
