@@ -1484,6 +1484,7 @@ hr {
 
 .reminder a {
   color: var(--eighty-gray);
+  text-decoration: underline;
 }
 
 .reminder a:hover {
