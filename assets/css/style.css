@@ -1625,11 +1625,11 @@ footer {
 } */
 
 .footer-icons {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+  display: flex;
+  flex-direction: column-reverse;
   float: left;
   font-size: 4rem;
+  margin-top: 1rem;
 }
 
 .footer-icons i:hover {
