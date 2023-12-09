@@ -42,7 +42,7 @@ function loadTwitterWidget() {
   aElement.setAttribute('data-height', containerHeight);
   aElement.innerText = "Tweets by CSUShadowScope";
   
-  twitterContainerElement.appendChild(aElement);
+  twitterContainerElement?.appendChild(aElement);
 }
 
 loadTwitterWidget();
@@ -4413,7 +4413,7 @@ function filterVideos(value) {
   renderVideos(filteredVideos);
 }
 
-searchButton.addEventListener('click', (e) => {
+searchButton?.addEventListener('click', (e) => {
   // inside, we will need to achieve a few things:
   // 1. declare and assign the value of the event's target to a variable AKA whatever is typed into the search bar
   let searchInputValue = searchInput.value;
@@ -4435,7 +4435,7 @@ searchButton.addEventListener('click', (e) => {
   }
 });
 
-searchInput.addEventListener('keyup', (e) => {
+searchInput?.addEventListener('keyup', (e) => {
   // Enter key is hit, apply filter
   if (e.key == 'Enter' || e.keyCode == 13) {
     // This is duplicate code as in the searchButton click event listener above.
@@ -4663,24 +4663,24 @@ const bennettDiv = document.getElementById('bennett-videos');
 const irishDiv = document.getElementById('irish-videos');
 const campusDiv = document.getElementById('campus-videos');
 
-featuredDiv.addEventListener('click', (event) => {
+featuredDiv?.addEventListener('click', (event) => {
   filterVideos(['featured']);
 });
-event1Div.addEventListener('click', (event) => {
+event1Div?.addEventListener('click', (event) => {
   filterVideos('event1');
 });
-event2Div.addEventListener('click', (event) => {
+event2Div?.addEventListener('click', (event) => {
   filterVideos('event2');
 });
-artandscienceDiv.addEventListener('click', (event) => {
+artandscienceDiv?.addEventListener('click', (event) => {
   filterVideos('curfman');
 });
-bennettDiv.addEventListener('click', (event) => {
+bennettDiv?.addEventListener('click', (event) => {
   filterVideos('bennett');
 });
-irishDiv.addEventListener('click', (event) => {
+irishDiv?.addEventListener('click', (event) => {
   filterVideos('irish');
 });
-campusDiv.addEventListener('click', (event) => {
+campusDiv?.addEventListener('click', (event) => {
   filterVideos('campus');
 });
